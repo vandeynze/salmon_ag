@@ -134,12 +134,12 @@ count_cdl_pixels <-
 
 
 # Set working directory
-wd <- "D:/Braeden/OneDrive/Documents/My Work/NOAA/Agriculture/Analysis/"
-setwd(wd)
+# wd <- "D:/Braeden/OneDrive/Documents/My Work/NOAA/Agriculture/Analysis/"
+# setwd(wd)
 
 # Load recovery domain shape files
-setwd("./data")
-sf_recoverydomain <- st_read("./recovery_subdomains/subdomains-ver7.shp") %>% clean_names()
+# setwd("./data")
+sf_recoverydomain <- st_read("./data/recovery_subdomains/subdomains-ver7.shp") %>% clean_names()
 
 # Get CDL data
 # raster_cdl <-
@@ -154,7 +154,7 @@ sf_recoverydomain <- st_read("./recovery_subdomains/subdomains-ver7.shp") %>% cl
 # raster_cdl_merge <- raster::merge(raster_cdl$CA2017, raster_cdl$OR2017, raster_cdl$WA2017, raster_cdl$ID2017, overlap = TRUE)
 # plot(raster_cdl_merge)
 # writeRaster(raster_cdl_merge, "cdl_west.tif", format = "GTiff", overwrite = TRUE) # Saves data for downstream use
-raster_cdl_merge <- raster("cdl_west.tif")
+raster_cdl_merge <- raster("./data/cdl_west.tif")
 
 # Prep maps ====
 sf_recoverydomain <-

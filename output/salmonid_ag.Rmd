@@ -1,0 +1,447 @@
+---
+title: "Agricultural Land Cover and Pacific Salmonid Habitat"
+author: "B. Van Deynze"
+date: "June 19, 2020"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: true
+---
+```{css zoom-lib-src, echo = FALSE}
+script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+```
+
+```{js zoom-jquery, echo = FALSE}
+ $(document).ready(function() {
+    $('body').prepend('<div class=\"zoomDiv\"><img src=\"\" class=\"zoomImg\"></div>');
+    // onClick function for all plots (img's)
+    $('img:not(.zoomImg)').click(function() {
+      $('.zoomImg').attr('src', $(this).attr('src')).css({width: '100%'});
+      $('.zoomDiv').css({opacity: '1', width: 'auto', border: '1px solid white', borderRadius: '5px', position: 'fixed', top: '50%', left: '50%', marginRight: '-50%', transform: 'translate(-50%, -50%)', boxShadow: '0px 0px 50px #888888', zIndex: '50', overflow: 'auto', maxHeight: '100%'});
+    });
+    // onClick function for zoomImg
+    $('img.zoomImg').click(function() {
+      $('.zoomDiv').css({opacity: '0', width: '0%'}); 
+    });
+  });
+```
+
+```{r setup, include=FALSE}
+# Set knitr options
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+# knitr::opts_chunk$set(fig.dim = c(8, 6))
+
+# Clear existing environment
+rm(list = ls())
+
+# Load libraries
+library(cdlTools)
+library(raster)
+library(tidyverse)
+library(ggthemes)
+library(janitor)
+library(sf)
+library(stars)
+library(ggspatial)
+library(tmap)
+library(units)
+library(tabularaster)
+library(cowplot)
+library(knitr)
+library(kableExtra)
+
+# Set ggplot2 themes
+theme_set(theme_clean())
+theme_update(
+  plot.background = element_rect(color = NA),
+  plot.title.position = "plot",
+  plot.caption.position = "plot"
+)
+
+# Set top-level working directory
+# wd <- "C:/Users/braeden.vandeynze/Documents/Salmon Cost Project/Analysis/"  # For Braeden; comment out for other users
+# wd <- "C:/Users/Braeden/Desktop/NOAA/Analysis"
+# wd <- "D:/Braeden/OneDrive/Documents/My Work/NOAA/Agriculture/Analysis"
+# knitr::opts_knit$set(root.dir = wd)
+# setwd(wd)
+# setwd("./data")
+```
+
+
+```{r data-prep, echo=FALSE, message=FALSE}
+# Get CDL data
+raster_cdl <-
+  getCDL(
+    c("CA", "WA", "OR", "ID"),
+    2017
+  )
+NAvalue(raster_cdl$CA2017) <- 0
+NAvalue(raster_cdl$OR2017) <- 0
+NAvalue(raster_cdl$WA2017) <- 0
+NAvalue(raster_cdl$ID2017) <- 0
+raster_cdl_merge <- raster::merge(raster_cdl$CA2017, raster_cdl$OR2017, raster_cdl$WA2017, raster_cdl$ID2017, overlap = TRUE)
+# plot(raster_cdl_merge)
+# writeRaster(raster_cdl_merge, "cdl_west.tif", format = "GTiff", overwrite = TRUE) # Saves data for downstream use
+# raster_cdl_merge <- raster("./data/cdl_west.tif")
+
+sf_recoverydomain <- st_read("./data/recovery_subdomains/subdomains-ver7.shp") %>% clean_names()
+sf_recoverydomain <-
+  sf_recoverydomain %>%
+  distinct(.keep_all = TRUE) %>%
+  filter(class == "Accessible") %>%
+  select(-class, -sourcethm) %>%
+  mutate(
+    species2 = case_when(
+      species == "Steelhead" ~ "Steelhead",
+      str_detect(species, "Chinook") ~ "Chinook",
+      str_detect(species, "Chum") ~ "Chum",
+      str_detect(species, "Pink") ~ "Pink",
+      TRUE ~ species
+    ),
+    species3 = case_when(
+      species == "Steelhead" ~ "Trout",
+      TRUE ~ "Salmon"
+    ),
+    domain = case_when(
+      subdomain == "Washington Coast" ~ "Puget Sound",
+      subdomain == "Snake River" ~ "Interior Columbia",
+      subdomain == "Middle Columbia River" ~ "Interior Columbia",
+      subdomain == "Upper Columbia River" ~ "Interior Columbia",
+      subdomain == "Lower Columbia River" ~ "Willamette/Lower Columbia",
+      subdomain == "Upper Willamette River" ~ "Willamette/Lower Columbia",
+      subdomain == "California Central Valley" ~ "Central Valley",
+      subdomain == "North-Central California Coast" ~ "North-Central California Coast",
+      TRUE ~ subdomain
+    ),
+    area = st_area(geometry),
+    area = set_units(area, km^2)
+  ) %>%
+  st_transform(raster_cdl_merge@crs)
+
+df_crdcount <- read_csv("data_subdomains_crd.csv")
+
+# Add collapsed categories
+df_crdcount_summ <-
+  df_crdcount %>%
+  rowwise() %>%
+  mutate(
+    v_summ_count_total = sum(c_across(contains("_count_")), na.rm = TRUE),
+    v_summ_count_developed = sum(c_across(contains("developed") &
+                                            contains("_count_")), na.rm = TRUE),
+    v_summ_pct_developed = sum(c_across(contains("developed") &
+                                          contains("_pct_")), na.rm = TRUE),
+    v_summ_count_forest = sum(c_across(contains("forest") &
+                                         contains("_count_")), na.rm = TRUE),
+    v_summ_pct_forest = sum(c_across(contains("forest") &
+                                       contains("_pct_")), na.rm = TRUE),
+    v_summ_count_smgrains = sum(c_across((
+      contains("rye") |
+        contains("barley") |
+        contains("winter_wheat") |
+        contains("oats") |
+        contains("sprint_wheat") |
+        contains("triticale") |
+        contains("sorghum") |
+        contains("buckwheat") |
+        contains("millet") |
+        contains("durum_wheat")
+    ) & contains("_count_")
+    ), na.rm = TRUE),
+    v_summ_pct_smgrains = sum(c_across((
+      contains("rye") |
+        contains("barley") |
+        contains("winter_wheat") |
+        contains("oats") |
+        contains("sprint_wheat") |
+        contains("triticale") |
+        contains("sorghum") |
+        contains("buckwheat") |
+        contains("millet") |
+        contains("durum_wheat")
+    )  & contains("_pct_")
+    ), na.rm = TRUE),
+    v_summ_count_nuts = sum(c_across((
+      contains("walnuts") |
+        contains("almonds") |
+        contains("pistachios")
+    ) & contains("_count_")
+    ), na.rm = TRUE),
+    v_summ_pct_nuts = sum(c_across((
+      contains("walnuts") |
+        contains("almonds") |
+        contains("pistachios")
+    ) & contains("_pct_")
+    ), na.rm = TRUE),
+    v_summ_count_pasture = sum(c_across(contains("pasture") &
+                                          contains("_count_")), na.rm = TRUE),
+    v_summ_pct_pasture = sum(c_across(contains("pasture") &
+                                        contains("_pct_")), na.rm = TRUE),
+    v_summ_count_ag = sum(c_across((
+      !contains("wetands") &
+        !contains("forest") &
+        !contains("clover_wildflowers") &
+        !contains("aquaculture") &
+        !contains("ice_snow") &
+        !contains("background") &
+        !contains("barren") &
+        !contains("shrubland") &
+        !contains("water") &
+        !contains("summ")
+    ) & contains("_count_")
+    ), na.rm = TRUE),
+    v_summ_pct_ag = sum(c_across((
+      !contains("wetlands") &
+        !contains("developed") &
+        !contains("forest") &
+        !contains("clover_wildflowers") &
+        !contains("aquaculture") &
+        !contains("ice_snow") &
+        !contains("background") &
+        !contains("barren") &
+        !contains("shrubland") &
+        !contains("water") &
+        !contains("summ")
+    ) & contains("_pct_")
+    ), na.rm = TRUE),
+    v_summ_count_ag_nopasture = v_summ_count_ag - v_summ_count_pasture,
+    v_summ_pct_ag_nopasture = v_summ_pct_ag - v_summ_pct_pasture,
+    v_summ_pct_shrubland = v_pct_shrubland,
+    v_summ_count_other = v_summ_count_total - v_summ_count_ag + v_summ_count_developed + v_summ_count_forest,
+    v_summ_pct_other = 1 - v_summ_pct_ag - v_summ_pct_developed - v_summ_pct_forest - v_summ_pct_shrubland
+  )
+
+# Transform for plotting
+df_crdcount_long <-
+  df_crdcount %>%
+  select(-starts_with("v_pct")) %>%
+  pivot_longer(starts_with("v_count"), names_to = "v", names_prefix = "v_count_", values_to = "v_count", values_drop_na = TRUE) %>%
+  group_by(esu_dps, domain, subdomain) %>%
+  mutate(v_pct = v_count / sum(v_count), v_tot = sum(v_count)) %>%
+  ungroup()
+
+df_crdcount_summ_long <-
+  df_crdcount_summ %>%
+  select(
+    esu_dps, status, domain, subdomain, species, species2, species3,
+    v_summ_pct_ag_nopasture, v_summ_pct_pasture, v_summ_pct_forest, v_summ_pct_developed, v_summ_pct_other, v_summ_pct_shrubland
+  ) %>%
+  pivot_longer(starts_with("v_summ_pct"), names_to = "v", names_prefix = "v_summ_pct_", values_to = "v_summ_pct", values_drop_na = TRUE) %>%
+  mutate(
+    v = factor(v, levels = c("ag_nopasture", "pasture", "shrubland", "forest", "developed", "other")),
+    esu_dps = ordered(esu_dps, df_crdcount_summ %>% arrange(-v_summ_pct_ag) %>% pull(esu_dps)),
+    domain = factor(domain, levels = c( "Puget Sound", "Interior Columbia", "Willamette/Lower Columbia", "Oregon Coast", "Southern Oregon/Northern California Coast", "North-Central California Coast", "Central Valley", "South-Central/Southern California Coast")),
+    species2 = factor(species2, levels = c( "Steelhead", "Chinook", "Coho", "Sockeye", "Chum", "Pink"))
+  )
+
+```
+This document summarizes land cover over the habitat range of listed salmonid populations on the West Coast, with a focus on agriculture. Included are land cover summaries for 30 Distinct Population Segments (DPS). Details on each DPS life history are also reprinted from Crozier et al. (2019), for reference, along with their map of the eight distinct recover domains (ecoregions with distinct climatic and ecological characteristics). (I've been having some trouble efficiently creating maps that include the land cover data as the raster data over the full Pacific Coast is way too large to hold in memory on my laptop.)
+
+![](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0217711.g001)
+**Salmon recovery domains** Reprinted from Crozier et al. (2019).
+
+# Land Cover
+Land cover data is from the 2017 NASS [Cropland Data Layer](https://data.nal.usda.gov/dataset/cropscape-cropland-data-layer) (CDL). The DPS habitat range data is courtesy of Damon Holzer. Land cover shares were computed for each habitat range by extracting the raster values from the mask of the habitat range borders over the CDL.
+
+## All DPS
+The figure below presents rough summaries of land cover in the habitat ranges for all DPS. Agricultural land cover, including pasture, makes up a large share of the habitat range for many DPS. DPS in the Central Valley recovery domain have particularly large cropland land cover shares. Some Interior Columbia DPS have sizable cropland shares, driven mainly by winter wheat acreage in Eastern Washington. Upper Willamette Steelhead also have a large amount of cropland in their range, driven mostly by sod seed acreage in the Willamette Valley.
+
+Pasture and developed land cover, both of which may also negatively affect salmon habitat quality, also make up large land cover shares of many DPS. Developed land cover is particularly common for Southern and Central California Steelhead, while pasture is especially common in the range of South-Central California Coast Steelhead.
+
+```{r all-species, fig.height=12, fig.width=14, echo = FALSE}
+# Broad Categories All Species
+df_crdcount_summ_long %>%
+  filter(status != "Not Warranted") %>%
+  ggplot() +
+  geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
+  geom_point(aes(x = esu_dps, y = -0.05, color = status), fill = NA, size = 7, shape = "square", position = "identity") +
+  geom_text(aes(x = esu_dps, y = 1.25, label = domain), vjust = 0.5, size = 3.5, fontface = "plain") +
+  scale_fill_manual(
+    limits = c("ag_nopasture", "pasture", "shrubland", "forest", "developed", "other"),
+    labels = c("Cropland", "Pasture", "Shrubland", "Forest", "Developed", "Other"),
+    values = c("darkgoldenrod", "goldenrod", "palegreen", "darkgreen", "darkgrey", "lightgrey"),
+    name = "Land Cover"
+  ) +
+  scale_color_manual(
+    limits = c("Not Warranted", "Species of Concern", "Threatened", "Endangered"),
+    values = c("green", "yellow", "darkorange", "red"),
+    name = "Status"
+  ) +
+  scale_y_continuous(breaks = c(-0.05, 0.5, 1.25), labels = c("Status", "Land Use", "Domain"), limits = c(-0.05, 1.4),
+                     minor_breaks = c(0, 0.25, 0.5, 0.75, 1),
+                     sec.axis = dup_axis(breaks = c(0, 0.25, 0.5, 0.75, 1), labels = scales::label_percent())) +
+  guides(
+    x = guide_axis(position = "top", order = 0, check.overlap = TRUE),
+    x.sec = guide_axis(position = "bottom", order = 1, check.overlap = TRUE),
+    y = guide_axis(position = "left")
+  ) +
+  theme(
+    axis.text.y = element_text(hjust = 1, vjust = 0.5),
+    panel.spacing = unit(0.1, "lines"),
+    axis.line.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.text.x = element_text(size = 12, face = "bold"),
+    axis.title = element_blank(),
+    panel.grid.minor.x = element_line(linetype = "dashed", color = "black"),
+    legend.position = "bottom",
+    legend.box = "vertical",
+    legend.background = element_blank(),
+    # panel.background = element_rect(color = "black"),
+    strip.background = element_rect(fill = "lightgrey"),
+    strip.placement = "outside"
+  ) +
+  facet_grid(rows = "species2", switch = "y", scales = "free_y", space = "free_y") +
+  coord_flip() +
+  ggtitle("Land cover in habitat range for listed salmonid DPS")
+```
+
+## DPS Breakdowns
+This section provides breakdowns of the most common land covers for all 30 DPS, along with a rough map of their range. The tables provided reveal the most common crops grown in the ranges of each DPS (if any). For species in the Central Valley, rice, walnuts, and almonds are the most common crops in their habitat range. All three crops have high water demands. Winter wheat is the most common crop in the Interior Columbia ranges. Note that winter wheat is commonly rotated against fallow (i.e. one year wheat, the next year fallow, for each field), which is also very common in these ranges. If conservation tillage is not used, fallow fields can be particularly vulnerable to sediment and nutrient run-off.
+
+```{r species-summs, fig.height=12, fig.width=6, results="asis", echo=FALSE}
+states_core <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+states_expand <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+
+dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
+# i = dps[5]
+for(i in dps) {
+  cat("  \n###", i)
+  cat("  \n**Status:**", df_crdcount %>% filter(esu_dps == i) %>% pull(status))
+  cat("  \n**Domain:**", df_crdcount %>% filter(esu_dps == i) %>% pull(domain))
+  cat("  \n")
+
+  # Range
+  p_range <-
+    ggplot() +
+    geom_sf(data = land, fill = "antiquewhite1") +
+    geom_sf(data = states_expand, fill = "antiquewhite1") +
+    geom_sf(data = sf_recoverydomain %>% filter(esu_dps == i), fill = NA, color = "red") +
+    coord_sf(
+      xlim = st_bbox(states_core)[c(1,3)],
+      ylim = st_bbox(states_core)[c(2,4)]
+    ) +
+    theme_void() +
+    theme(
+      panel.background = element_rect(fill = "aliceblue", color = NA)
+    )
+  # Land cover bar plot
+  p_cover <-
+    df_crdcount_summ_long %>%
+    filter(esu_dps == i) %>%
+    ggplot() +
+    geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
+    scale_fill_manual(
+      limits = c("ag_nopasture", "pasture", "shrubland", "forest", "developed", "other"),
+      labels = c("Cropland", "Pasture", "Shrubland", "Forest", "Developed", "Other"),
+      values = c("darkgoldenrod", "goldenrod", "palegreen", "darkgreen", "darkgrey", "lightgrey"),
+      name = ""
+    ) +
+    scale_y_continuous(breaks = c(0, 0.25, 0.5, 0.75, 1), labels = scales::label_percent()) +
+    # guides(
+    #   x = guide_axis(position = "top", order = 0, check.overlap = TRUE),
+    #   y = guide_axis(position = "left")
+    # ) +
+    theme_void() +
+    theme(
+      # axis.text.x = element_text(hjust = 1, vjust = 0.5),
+      panel.spacing = unit(0.1, "lines"),
+      axis.line = element_blank(),
+      # axis.ticks = element_blank(),
+      axis.text.x = element_text(),
+      axis.title = element_blank(),
+      panel.grid.major.x = element_line(linetype = "dashed", color = "black"),
+      legend.position = "bottom",
+      legend.box = "horizontal",
+      legend.background = element_blank(),
+      plot.title.position = "plot",
+      # panel.background = element_rect(color = "black"),
+      strip.background = element_rect(fill = "lightgrey"),
+      strip.placement = "outside"
+    ) +
+    coord_flip() +
+    ggtitle("Land Cover Share")
+  # p_row <- plot_grid(p_range, p_cover, rel_heights = c(0.8, 0.2))
+  # Titles
+  p_title <-
+    ggdraw() + 
+    draw_label(
+      "Habitat range and land cover share",
+      fontface = 'bold',
+      x = 0,
+      hjust = 0
+    ) +
+    theme(
+      # add margin on the left of the drawing canvas,
+      # so title is aligned with left edge of first plot
+      plot.margin = margin(0, 0, 0, 0)
+    )
+  p_subtitle <-
+    ggdraw() + 
+    draw_label(
+      i,
+      fontface = 'bold',
+      size = 12,
+      x = 0,
+      hjust = 0
+    ) +
+    theme(
+      # add margin on the left of the drawing canvas,
+      # so title is aligned with left edge of first plot
+      plot.margin = margin(0, 0, 0, 0)
+    )
+  
+  # Plot it all
+  cat("  \n#### Habitat range and land cover")  
+  cat("  \n")
+  plot_grid(
+    p_range, p_cover,
+    ncol = 1,
+    # rel_heights values control vertical title margins
+    rel_heights = c(0.7, 0.15)
+  ) %>%
+    print
+
+  # List
+  df_crdcount_long %>%
+    filter(esu_dps == i) %>%
+    select(v, v_pct) %>% 
+    arrange(-v_pct) %>%
+    filter(v_pct >= 0.01) %>%
+    mutate(
+      v = make_clean_names(v, "sentence"),
+      v_pct = scales::percent(v_pct, accuracy = 0.1)
+    ) %>%
+    rename(
+      "Land cover" = v,
+      "%" = v_pct
+    ) %>%
+    # mutate("All other" = )
+    kable() %>%
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed"), fixed_thead = T, full_width = F, position = "float_right") %>%
+    # scroll_box(height = "200px") %>%
+    footnote("All other land covers < 1%") %>%
+    print
+  
+    cat("  \n")
+}
+```
+# Life Histories and Seasonality
+The effects of agriculture on salmon will depend on their life histories. DPS migrate, rear, and spawn at different times throughout the year. When environmentally stressful agricultural practices occurs also varies by crop.
+
+To facilitate discussion about possible temporal overlaps, I provide the life histories of each species below, followed by links to the crop progress reports for commodity crops in the four states. Reports for crops with major geographic overlap with specific species can be compared to their life histories to reveal when certain species might be particularly vulnurable to field operations.
+
+Note that the [supplementary material](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0217711.s007&type=supplementary) in Crozier et al. (2019) has maps that break DPS ranges down by use type (i.e. migration, rearing, spawning), which could allow us to break down land cover in even more detail over each species' life history.
+
+![](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0217711.g002)
+**Salmon life histories** Reprinted from Crozier et al. (2019). Colors represent life stages, where yellow indicates adult freshwater migration and holding, red spawning, orange incubation, light blue juvenile freshwater rearing and migration, green estuary and nearshore rearing, and dark blue marine stage.
+
+[NASS Crop Progress Reports](https://www.nass.usda.gov/Charts_and_Maps/Crop_Progress_&_Condition/2019/index.php)  
+[CA](https://www.nass.usda.gov/Charts_and_Maps/Crop_Progress_&_Condition/2019/CA_2019.pdf) | [OR](https://www.nass.usda.gov/Charts_and_Maps/Crop_Progress_&_Condition/2019/OR_2019.pdf) | [WA](https://www.nass.usda.gov/Charts_and_Maps/Crop_Progress_&_Condition/2019/WA_2019.pdf) | [ID](https://www.nass.usda.gov/Charts_and_Maps/Crop_Progress_&_Condition/2019/ID_2019.pdf)
+
+# Citations
+Crozier, L. G., McClure, M. M., Beechie, T., Bograd, S. J., Boughton, D. A., Carr, M., ... & Hazen, E. L. (2019). Climate vulnerability assessment for Pacific salmon and steelhead in the California Current Large Marine Ecosystem. *PloS One*, 14(7), e0217711. [Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0217711)
+
