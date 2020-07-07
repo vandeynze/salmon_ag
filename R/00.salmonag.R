@@ -399,7 +399,8 @@ df_crdcount_summ_long <-
 df_crdcount_summ_long %>% print(n=200)
 
 # Broad Categories All Species
-df_crdcount_summ_long %>%
+plot_summary <-
+  df_crdcount_summ_long %>%
   filter(status != "Not Warranted") %>%
   ggplot() +
   geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
@@ -469,8 +470,8 @@ states_core <- st_as_sf(map("state", regions = c("california", "oregon", "washin
 states_expand <- st_as_sf(map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
 land <- st_as_sf(map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
 
-
-ggplot() +
+plot_map <-
+  ggplot() +
   geom_sf(data = land, fill = "antiquewhite1") +
   geom_sf(data = states_expand, fill = "antiquewhite1") +
   geom_sf(data = sf_recoverydomain %>% slice(32), fill = NA, color = "red") +

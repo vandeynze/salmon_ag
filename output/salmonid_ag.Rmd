@@ -1,7 +1,7 @@
 ---
 title: "Agricultural Land Cover and Pacific Salmonid Habitat"
 author: "B. Van Deynze"
-date: "June 19, 2020"
+date: "July 7, 2020"
 output:
   html_document:
     toc: true
@@ -53,6 +53,7 @@ library(tabularaster)
 library(cowplot)
 library(knitr)
 library(kableExtra)
+library(here)
 
 # Set ggplot2 themes
 theme_set(theme_clean())
@@ -72,27 +73,27 @@ theme_update(
 ```
 
 
-```{r data-prep, echo=FALSE, message=FALSE}
+```{r data-prep, echo=FALSE, message=FALSE, include=FALSE}
 # Get CDL data
-raster_cdl <-
-  getCDL(
-    c("CA", "WA", "OR", "ID"),
-    2017
-  )
-NAvalue(raster_cdl$CA2017) <- 0
-NAvalue(raster_cdl$OR2017) <- 0
-NAvalue(raster_cdl$WA2017) <- 0
-NAvalue(raster_cdl$ID2017) <- 0
-raster_cdl_merge <- raster::merge(raster_cdl$CA2017, raster_cdl$OR2017, raster_cdl$WA2017, raster_cdl$ID2017, overlap = TRUE)
+# raster_cdl <-
+#   getCDL(
+#     c("CA", "WA", "OR", "ID"),
+#     2017
+#   )
+# NAvalue(raster_cdl$CA2017) <- 0
+# NAvalue(raster_cdl$OR2017) <- 0
+# NAvalue(raster_cdl$WA2017) <- 0
+# NAvalue(raster_cdl$ID2017) <- 0
+# raster_cdl_merge <- raster::merge(raster_cdl$CA2017, raster_cdl$OR2017, raster_cdl$WA2017, raster_cdl$ID2017, overlap = TRUE)
 # plot(raster_cdl_merge)
 # writeRaster(raster_cdl_merge, "cdl_west.tif", format = "GTiff", overwrite = TRUE) # Saves data for downstream use
-# raster_cdl_merge <- raster("./data/cdl_west.tif")
+raster_cdl_merge <- raster(paste0(here("data"), "/cdl_west.tif"))
 
-sf_recoverydomain <- st_read("./data/recovery_subdomains/subdomains-ver7.shp") %>% clean_names()
+sf_recoverydomain <- st_read(paste0(here("data"), "/recovery_subdomains/subdomains-ver7.shp")) %>% clean_names()
 sf_recoverydomain <-
   sf_recoverydomain %>%
   distinct(.keep_all = TRUE) %>%
-  filter(class == "Accessible") %>%
+  dplyr::filter(`class` == "Accessible") %>%
   select(-class, -sourcethm) %>%
   mutate(
     species2 = case_when(
@@ -122,7 +123,7 @@ sf_recoverydomain <-
   ) %>%
   st_transform(raster_cdl_merge@crs)
 
-df_crdcount <- read_csv("data_subdomains_crd.csv")
+df_crdcount <- read_csv(paste0(here("data"), "/data_subdomains_crd.csv"))
 
 # Add collapsed categories
 df_crdcount_summ <-
@@ -242,6 +243,57 @@ This document summarizes land cover over the habitat range of listed salmonid po
 
 ![](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0217711.g001)
 **Salmon recovery domains** Reprinted from Crozier et al. (2019).
+
+Among the 30 DPS, five are listed as endangered, 23 are listed as threatened, and two are listed as species of concern. Six species are represented across 11 Recovery Domains. Total habitat area for listed DPS by species ranges from a low of 931 sq. km for Sockeye salmon (*Oncorhynchus nerka*) to a high of 375,089 sq. km for Chinook salmon (*Oncorhynchus tshawytscha*).
+
+```{r species-table, echo=FALSE, results="asis"}
+df_rd_species2 <-
+  sf_recoverydomain %>%
+  st_drop_geometry() %>%
+  filter(species != "Not Warranted") %>%
+  mutate(
+    area = set_units(area, km^2),
+    area_endangered = area * as.numeric(I(status == "Endangered")),
+    area_threatened = area * as.numeric(I(status == "Threatened")),
+    area_concern = area * as.numeric(I(status == "Species of Concern"))
+  ) %>%
+  group_by(species2) %>%
+  summarize(
+    n_domain = n_distinct(subdomain),
+    n_endangered = sum(status == "Endangered"),
+    n_threatened = sum(status == "Threatened"),
+    n_concern = sum(status == "Species of Concern"),
+    area_tot = as.vector(sum(area)),
+    area_endangered = as.vector(sum(area_endangered)),
+    area_threatened = as.vector(sum(area_threatened)),
+    area_concern = as.vector(sum(area_concern))
+  )
+df_rd_species2 %>%
+  rename(
+    "Common Name" = species2,
+    "Total DPS" = n_domain,
+    "Endangered DPS" = n_endangered,
+    "Threatened DPS" = n_threatened,
+    "Species of Concern DPS" = n_concern,
+    "Total Habitat Area (km^2)" = area_tot,
+    "Endangered Habitat Area (km^2)" = area_endangered,
+    "Threatened Habitat Area (km^2)" = area_threatened,
+    "Species of Concern Habitat Area (km^2)" = area_concern
+  ) %>%
+  # mutate("All other" = )
+  kable(
+    digits = 0, 
+    format.args = list(
+      big.mark = ",", 
+      scientific = FALSE
+    ),
+    caption = "Pacific salmonid species habitat area for listed DPS"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"), fixed_thead = T, full_width = F) %>%
+  # scroll_box(height = "200px") %>%
+  footnote("Habitat area totals only include area for listed DPS") %>%
+  print
+```
 
 # Land Cover
 Land cover data is from the 2017 NASS [Cropland Data Layer](https://data.nal.usda.gov/dataset/cropscape-cropland-data-layer) (CDL). The DPS habitat range data is courtesy of Damon Holzer. Land cover shares were computed for each habitat range by extracting the raster values from the mask of the habitat range borders over the CDL.
