@@ -20,6 +20,7 @@ library(tmap)
 library(units)
 library(tabularaster)
 library(osmdata)
+library(here)
 
 
 # Build functions
@@ -214,6 +215,7 @@ df_rd_species
 df_rd_species2 <-
   sf_recoverydomain %>%
   st_drop_geometry() %>%
+  filter(species != "Not Warranted") %>%
   mutate(
     area = set_units(area, km^2),
     area_endangered = area * as.numeric(I(status == "Endangered")),
@@ -283,7 +285,7 @@ sf_recoverydomain <-
 # 
 # # Save
 # write_csv(df_crdcount, "data_subdomains_crd.csv")
-df_crdcount <- read_csv("data_subdomains_crd.csv")
+df_crdcount <- read_csv(paste0(here("data"), "/data_subdomains_crd.csv"))
 
 # Add collapsed categories
 df_crdcount_summ <-
@@ -466,11 +468,11 @@ plot_summary <-
 #   geom_raster(data = raster_cdl$CA2017) +
 #   coord_sf()
 
-states_core <- st_as_sf(map("state", regions = c("california", "oregon", "washington", "idaho"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
-states_expand <- st_as_sf(map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
-land <- st_as_sf(map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+states_core <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+states_expand <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
 
-plot_map <-
+(plot_map <-
   ggplot() +
   geom_sf(data = land, fill = "antiquewhite1") +
   geom_sf(data = states_expand, fill = "antiquewhite1") +
@@ -483,3 +485,15 @@ plot_map <-
   theme(
     panel.background = element_rect(fill = "aliceblue", color = NA)
   )
+)
+
+# Plot raster separately
+(border <- sf_recoverydomain %>% slice(23))
+clip1 <- raster::crop(raster_cdl_merge, extent(border)) # Clip cdl to rectangle extents of the polygon
+clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
+
+values(clip2) <- updateNamesCDL(values(clip2))
+
+plot(clip1)
+
+plot(clip2)
