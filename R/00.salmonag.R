@@ -488,12 +488,13 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 )
 
 # Plot raster separately
-(border <- sf_recoverydomain %>% slice(23))
+(border <- sf_recoverydomain %>% arrange(area) %>% slice(10)) # Lake Ozette Sockeye
 clip1 <- raster::crop(raster_cdl_merge, extent(border)) # Clip cdl to rectangle extents of the polygon
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
 
-values(clip2) <- updateNamesCDL(values(clip2))
+(df_clip2 <- as.data.frame(clip2, xy = TRUE))
+df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 
-plot(clip1)
+# setValues(clip2, as.factor(updateNamesCDL(values(clip2))))
 
-plot(clip2)
+ggplot(df_clip2) + geom_raster(aes(x = x, y = y, fill = updateNamesCDL(cdl_west)))
