@@ -476,7 +476,7 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
   ggplot() +
   geom_sf(data = land, fill = "antiquewhite1") +
   geom_sf(data = states_expand, fill = "antiquewhite1") +
-  geom_sf(data = sf_recoverydomain %>% slice(32), fill = NA, color = "red") +
+  geom_sf(data = sf_recoverydomain %>% slice(5), fill = NA, color = "red") +
   coord_sf(
     xlim = st_bbox(states_core)[c(1,3)],
     ylim = st_bbox(states_core)[c(2,4)]
@@ -488,9 +488,15 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 )
 
 # Plot raster separately
-(border <- sf_recoverydomain %>% arrange(area) %>% slice(10)) # Lake Ozette Sockeye
+(border <- sf_recoverydomain %>% arrange(area) %>% slice(5)) # Lake Ozette Sockeye
 clip1 <- raster::crop(raster_cdl_merge, extent(border)) # Clip cdl to rectangle extents of the polygon
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
+plot(clip1)
+plot(clip2)
+# Treats values as continuous b/c cdl uses number codes... so you can get a
+# picture of the diversity of land use but not super informative
+
+# Nothing past here really works....
 
 (df_clip2 <- as.data.frame(clip2, xy = TRUE))
 df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))

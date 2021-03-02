@@ -31,7 +31,7 @@ library(here)
 # re_*: ESU rear/migrate
 # mi_*: ESU migrate only
 
-# Species codes are
+# Species codes are (first code is for r_*, second is for sp_*, re_*, mi_*)
 # ch/l_chin: chinook
 # ch_sp/l_chsp: spring chinook
 # ch_sp_su/l_chsps: spring/summer chinook
@@ -50,15 +50,23 @@ data("linkdata")
 linkdata
 
 # Test maps ----
+
+# Idea here is we start with coho, try to find a smaller region so the CDL work
+# doesn't take so long
+
+# Generates list of species (switch out "r_coho" in the tabyl call to select another species)
 species <- sf_recoverydomain %>%
   tabyl(r_coho) %>% pull(1)
+species
 i = 2
 species[i]
+
 tibble("hab_use" = sf_recoverydomain %>%
          st_drop_geometry() %>%
          filter(r_coho == species[i]) %>%
          select(sp_l_coho:mi_l_coho) %>%
          as.matrix() %*% 1:3) %>% tabyl(hab_use)
+# Note that several species do not have 
 
 sf_recoverydomain %>%
   filter(r_coho == species[i]) %>%
@@ -93,7 +101,7 @@ sf_recoverydomain %>%
   geom_sf()
 projection(sf_recoverydomain_species)
 
-# Test raster pull
+# Test raster pull (can be really slow!)
 # Full box
 (
   cdl_test <- GetCDLData(
@@ -108,7 +116,7 @@ projection(sf_recoverydomain_species)
   )
 ) %>% plot()
 
-cdl_test %>%
+cdl_test_mask %>% raster::resample()
   ggplot() + geom_raster(aes(x = x, y = y, fill = factor(value)))
 
 projection(cdl_test)
