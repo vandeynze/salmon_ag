@@ -362,7 +362,7 @@ df_crdcount_summ <-
         contains("strawberries") |
         contains("other_tree_crops") |
         contains("olives") |
-        contains("watermelons") 
+        contains("watermelons")
     ) & contains("_count_")
     ), na.rm = TRUE),
     v_summ_pct_fruit = sum(c_across((
@@ -383,7 +383,7 @@ df_crdcount_summ <-
         contains("strawberries") |
         contains("other_tree_crops") |
         contains("olives") |
-        contains("watermelons") 
+        contains("watermelons")
     ) & contains("_pct_")
     ), na.rm = TRUE),
     v_summ_count_veg = sum(c_across((
@@ -407,9 +407,9 @@ df_crdcount_summ <-
         contains("squash") |
         contains("sweet_corn") |
         contains("sweet_potatoes") |
-        contains("turnips") 
+        contains("turnips")
     ) & contains("_count_")
-    ), na.rm = TRUE),    
+    ), na.rm = TRUE),
     v_summ_pct_veg = sum(c_across((
       contains("tomatoes") |
         contains("asparagus") |
@@ -431,7 +431,7 @@ df_crdcount_summ <-
         contains("squash") |
         contains("sweet_corn") |
         contains("sweet_potatoes") |
-        contains("turnips") 
+        contains("turnips")
     ) & contains("_pct_")
     ), na.rm = TRUE),
     v_summ_count_othercrops = sum(c_across((
@@ -452,7 +452,7 @@ df_crdcount_summ <-
         contains("sod_grass_seed") |
         contains("sugarbeets") |
         contains("sunflower") |
-        contains("vetch") 
+        contains("vetch")
     ) & contains("_count_")
     ), na.rm = TRUE),
     v_summ_pct_othercrops = sum(c_across((
@@ -473,7 +473,7 @@ df_crdcount_summ <-
         contains("sod_grass_seed") |
         contains("sugarbeets") |
         contains("sunflower") |
-        contains("vetch") 
+        contains("vetch")
     ) & contains("_pct_")
     ), na.rm = TRUE),
     v_summ_count_hay = sum(c_across((
@@ -485,7 +485,7 @@ df_crdcount_summ <-
       contains("alfalfa") |
         contains("other_hay_non_alfalfa")
     ) & contains("_pct_")
-    ), na.rm = TRUE),  
+    ), na.rm = TRUE),
     v_summ_count_pasture = sum(c_across(contains("pasture") &
                                           contains("_count_")), na.rm = TRUE),
     v_summ_pct_pasture = sum(c_across(contains("pasture") &
@@ -519,29 +519,24 @@ df_crdcount_summ <-
     ) & contains("_pct_")
     ), na.rm = TRUE),
     
-    
-    v_summ_pct_ag2 = sum(c_across(
-      matches("v_summ_pct_smgrains") |
-        matches("v_summ_pct_nuts") |
-        matches("v_summ_pct_fruit") |
-        matches("v_summ_pct_veg") |
-        matches("v_summ_pct_othercrops") |
-        matches("v_summ_pct_hay") |
-        matches("v_summ_pct_pasture") |
-        matches("v_pct_corn") |
-        matches("v_pct_cotton") |
-        matches("v_pct_grapes") |
-        matches("v_pct_rice") |
-        matches("v_pct_fallow_idle_cropland") |
-        matches("v_pct_potatoes")
-    ), na.rm = TRUE),
-    
+    v_summ_pct_corn = sum(c_across(
+        matches("v_pct_corn")), na.rm = TRUE),
+    v_summ_pct_cotton = sum(c_across(
+      matches("v_pct_cotton")), na.rm = TRUE),
+    v_summ_pct_grapes = sum(c_across(
+      matches("v_pct_grapes")), na.rm = TRUE),
+    v_summ_pct_rice = sum(c_across(
+      matches("v_pct_rice")), na.rm = TRUE),
+    v_summ_pct_fallow = sum(c_across(
+      matches("v_pct_fallow_idle_cropland")), na.rm = TRUE),
+    v_summ_pct_potatoes = sum(c_across(
+      matches("v_pct_potatoes")), na.rm = TRUE),
+   
     v_summ_count_ag_nopasture = v_summ_count_ag - v_summ_count_pasture,
     v_summ_pct_ag_nopasture = v_summ_pct_ag - v_summ_pct_pasture,
     v_summ_count_other = v_summ_count_total - v_summ_count_ag + v_summ_count_developed + v_summ_count_forest,
     v_summ_pct_other = 1 - v_summ_pct_ag - v_summ_pct_developed - v_summ_pct_forest
   )
-
 
 # Transform for plotting
 df_crdcount_long <-
@@ -556,11 +551,13 @@ df_crdcount_summ_long <-
   df_crdcount_summ %>%
   select(
     esu_dps, status, domain, subdomain, species, species2, species3,
-    v_summ_pct_ag_nopasture, v_summ_pct_pasture, v_summ_pct_forest, v_summ_pct_developed, v_summ_pct_other, v_summ_pct_nuts, v_summ_pct_smgrains, v_summ_pct_fruit, v_summ_pct_hay, v_summ_pct_potatoes=v_pct_potatoes, v_summ_pct_rice=v_pct_rice, v_summ_pct_cotton=v_pct_cotton, v_summ_pct_fallow=v_pct_fallow_idle_cropland, v_summ_pct_grapes=v_pct_grapes, v_summ_pct_veg, v_summ_pct_corn=v_pct_corn,
+    v_summ_pct_ag_nopasture, v_summ_pct_pasture, v_summ_pct_forest, v_summ_pct_developed, v_summ_pct_other, 
+    v_summ_pct_nuts, v_summ_pct_smgrains, v_summ_pct_fruit, v_summ_pct_hay, v_summ_pct_potatoes, v_summ_pct_rice, 
+    v_summ_pct_cotton, v_summ_pct_fallow, v_summ_pct_grapes, v_summ_pct_veg, v_summ_pct_corn, v_summ_pct_othercrops,
   ) %>%
   pivot_longer(starts_with("v_summ_pct"), names_to = "v", names_prefix = "v_summ_pct_", values_to = "v_summ_pct", values_drop_na = TRUE) %>%
   mutate(
-    v = factor(v, levels = c("ag_nopasture", "pasture",  "forest", "developed", "other", "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn")),
+    v = factor(v, levels = c("pasture", "ag_nopasture",   "forest", "developed", "other", "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops")),
     esu_dps = ordered(esu_dps, df_crdcount_summ %>% arrange(-v_summ_pct_ag) %>% pull(esu_dps)),
     domain = factor(domain, levels = c( "Puget Sound", "Interior Columbia", "Willamette/Lower Columbia", "Oregon Coast", "Southern Oregon/Northern California Coast", "North-Central California Coast", "Central Valley", "South-Central/Southern California Coast")),
     species2 = factor(species2, levels = c( "Steelhead", "Chinook", "Coho", "Sockeye", "Chum", "Pink"))
@@ -571,6 +568,8 @@ df_crdcount_summ_long %>% print(n=200)
 plot_summary <-
   df_crdcount_summ_long %>%
   filter(status != "Not Warranted") %>%
+  filter(v != "nuts", v != "smgrains", v != "fruit", v != "hay", v != "potatoes", v != "rice", v != "cotton", v != "fallow", v != "veg", v != "grapes", v != "corn", v != "othercrops") %>% 
+#  filter(v != "forest", v != "developed", v != "other") %>%  #toggle to see just cropland and pasture on the figure
   ggplot() +
   geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
   geom_point(aes(x = esu_dps, y = -0.05, color = status), fill = NA, size = 5, shape = "square", position = "identity") +
@@ -601,7 +600,7 @@ plot_summary <-
   ) +
   facet_grid(rows = "species2", switch = "y", scales = "free_y", space = "free_y") +
   coord_flip()
-plot_summary  #Something funky is going on with this figure; I must have changed the underlying data with my groups
+plot_summary  
 
 #Only ag categories, all species
 plot_summary_ag <-
@@ -612,9 +611,9 @@ plot_summary_ag <-
   geom_point(aes(x = esu_dps, y = -0.05, color = status), fill = NA, size = 4, shape = "square", position = "identity") +
   geom_text(aes(x = esu_dps, y = 1, label = domain), vjust = 0.5, size = 3.5, fontface = "plain") +
   scale_fill_manual(
-    limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn"),
-    labels = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn"),
-    values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "lightgrey", "purple", "lightgreen", "gold"),
+    limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops"),
+    labels = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops"),
+    values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "lightgrey", "purple", "lightgreen", "gold", "lightblue"),
     name = "Land Use"
   ) +
   scale_color_manual(
