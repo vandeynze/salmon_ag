@@ -136,7 +136,8 @@ count_cdl_pixels <-
 
 # Set working directory
 # wd <- "D:/Braeden/OneDrive/Documents/My Work/NOAA/Agriculture/Analysis/"
-# setwd(wd)
+wd <- "C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/"
+ setwd(wd)
 
 # Load recovery domain shape files
 # setwd("./data")
@@ -330,15 +331,157 @@ df_crdcount_summ <-
     v_summ_count_nuts = sum(c_across((
       contains("walnuts") |
         contains("almonds") |
+        contains("pecans") |
         contains("pistachios")
     ) & contains("_count_")
     ), na.rm = TRUE),
     v_summ_pct_nuts = sum(c_across((
       contains("walnuts") |
         contains("almonds") |
+        contains("pecans") |
         contains("pistachios")
     ) & contains("_pct_")
     ), na.rm = TRUE),
+    v_summ_count_fruit = sum(c_across((
+      contains("apples") |
+        contains("apricots") |
+        contains("blueberries") |
+        contains("caneberries") |
+        contains("cantaloupes") |
+        contains("cherries") |
+        contains("citrus") |
+        contains("honeydew_melons") |
+        contains("nectarines") |
+        contains("oranges") |
+        contains("peaches") |
+        contains("pears") |
+        contains("plums") |
+        contains("pomegranates") |
+        contains("strawberries") |
+        contains("other_tree_crops") |
+        contains("olives") |
+        contains("watermelons") 
+    ) & contains("_count_")
+    ), na.rm = TRUE),
+    v_summ_pct_fruit = sum(c_across((
+      contains("apples") |
+        contains("apricots") |
+        contains("blueberries") |
+        contains("caneberries") |
+        contains("cantaloupes") |
+        contains("cherries") |
+        contains("citrus") |
+        contains("honeydew_melons") |
+        contains("nectarines") |
+        contains("oranges") |
+        contains("peaches") |
+        contains("pears") |
+        contains("plums") |
+        contains("pomegranates") |
+        contains("strawberries") |
+        contains("other_tree_crops") |
+        contains("olives") |
+        contains("watermelons") 
+    ) & contains("_pct_")
+    ), na.rm = TRUE),
+    v_summ_count_veg = sum(c_across((
+      contains("tomatoes") |
+        contains("asparagus") |
+        contains("broccoli") |
+        contains("cabbage") |
+        contains("carrots") |
+        contains("cauliflower") |
+        contains("cucumbers") |
+        contains("garlic") |
+        contains("gourds") |
+        contains("greens") |
+        contains("lettuce") |
+        contains("onions") |
+        contains("peas") |
+        contains("peppers") |
+        contains("pop_or_orn_corn") |
+        contains("pumpkins") |
+        contains("radishes") |
+        contains("squash") |
+        contains("sweet_corn") |
+        contains("sweet_potatoes") |
+        contains("turnips") 
+    ) & contains("_count_")
+    ), na.rm = TRUE),    
+    v_summ_pct_veg = sum(c_across((
+      contains("tomatoes") |
+        contains("asparagus") |
+        contains("broccoli") |
+        contains("cabbage") |
+        contains("carrots") |
+        contains("cauliflower") |
+        contains("cucumbers") |
+        contains("garlic") |
+        contains("gourds") |
+        contains("greens") |
+        contains("lettuce") |
+        contains("onions") |
+        contains("peas") |
+        contains("peppers") |
+        contains("pop_or_orn_corn") |
+        contains("pumpkins") |
+        contains("radishes") |
+        contains("squash") |
+        contains("sweet_corn") |
+        contains("sweet_potatoes") |
+        contains("turnips") 
+    ) & contains("_pct_")
+    ), na.rm = TRUE),
+    v_summ_count_othercrops = sum(c_across((
+      contains("chick_peas") |
+        contains("christmas_trees") |
+        contains("dry_beans") |
+        contains("flaxseed") |
+        contains("herbs") |
+        contains("hops") |
+        contains("lentils") |
+        contains("mint") |
+        contains("misc_vegs_fruits") |
+        contains("mustard") |
+        contains("other_crops") |
+        contains("rape_seed") |
+        contains("safflower") |
+        contains("sod_grass_seed") |
+        contains("sugarbeets") |
+        contains("sunflower") |
+        contains("vetch") 
+    ) & contains("_count_")
+    ), na.rm = TRUE),
+    v_summ_pct_othercrops = sum(c_across((
+      contains("chick_peas") |
+        contains("christmas_trees") |
+        contains("dry_beans") |
+        contains("flaxseed") |
+        contains("herbs") |
+        contains("hops") |
+        contains("lentils") |
+        contains("mint") |
+        contains("misc_vegs_fruits") |
+        contains("mustard") |
+        contains("other_crops") |
+        contains("rape_seed") |
+        contains("safflower") |
+        contains("sod_grass_seed") |
+        contains("sugarbeets") |
+        contains("sunflower") |
+        contains("vetch") 
+    ) & contains("_pct_")
+    ), na.rm = TRUE),
+    v_summ_count_hay = sum(c_across((
+      contains("alfalfa") |
+        contains("other_hay_non_alfalfa")
+    ) & contains("_count_")
+    ), na.rm = TRUE),
+    v_summ_pct_hay = sum(c_across((
+      contains("alfalfa") |
+        contains("other_hay_non_alfalfa")
+    ) & contains("_pct_")
+    ), na.rm = TRUE),  
     v_summ_count_pasture = sum(c_across(contains("pasture") &
                                           contains("_count_")), na.rm = TRUE),
     v_summ_pct_pasture = sum(c_across(contains("pasture") &
@@ -376,6 +519,7 @@ df_crdcount_summ <-
     v_summ_pct_other = 1 - v_summ_pct_ag - v_summ_pct_developed - v_summ_pct_forest
   )
 
+
 # Transform for plotting
 df_crdcount_long <-
   df_crdcount %>%
@@ -389,11 +533,11 @@ df_crdcount_summ_long <-
   df_crdcount_summ %>%
   select(
     esu_dps, status, domain, subdomain, species, species2, species3,
-    v_summ_pct_ag_nopasture, v_summ_pct_pasture, v_summ_pct_forest, v_summ_pct_developed, v_summ_pct_other
+    v_summ_pct_ag_nopasture, v_summ_pct_pasture, v_summ_pct_forest, v_summ_pct_developed, v_summ_pct_other, v_summ_pct_nuts, v_summ_pct_smgrains, v_summ_pct_fruit, v_summ_pct_hay, v_summ_pct_potatoes=v_pct_potatoes, v_summ_pct_rice=v_pct_rice, v_summ_pct_cotton=v_pct_cotton, v_summ_pct_fallow=v_pct_fallow_idle_cropland, v_summ_pct_grapes=v_pct_grapes, v_summ_pct_veg, v_summ_pct_corn=v_pct_corn,
   ) %>%
   pivot_longer(starts_with("v_summ_pct"), names_to = "v", names_prefix = "v_summ_pct_", values_to = "v_summ_pct", values_drop_na = TRUE) %>%
   mutate(
-    v = factor(v, levels = c("pasture", "ag_nopasture", "forest", "developed", "other")),
+    v = factor(v, levels = c("ag_nopasture", "pasture",  "forest", "developed", "other", "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn")),
     esu_dps = ordered(esu_dps, df_crdcount_summ %>% arrange(-v_summ_pct_ag) %>% pull(esu_dps)),
     domain = factor(domain, levels = c( "Puget Sound", "Interior Columbia", "Willamette/Lower Columbia", "Oregon Coast", "Southern Oregon/Northern California Coast", "North-Central California Coast", "Central Valley", "South-Central/Southern California Coast")),
     species2 = factor(species2, levels = c( "Steelhead", "Chinook", "Coho", "Sockeye", "Chum", "Pink"))
@@ -435,6 +579,42 @@ plot_summary <-
   facet_grid(rows = "species2", switch = "y", scales = "free_y", space = "free_y") +
   coord_flip()
 
+#Only ag categories, all species
+plot_summary_ag <-
+  df_crdcount_summ_long %>%
+  filter(status != "Not Warranted", v!="pasture", v!="ag_nopasture", v != "forest", v != "developed", v != "other") %>%
+  ggplot() +
+  geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
+  geom_point(aes(x = esu_dps, y = -0.05, color = status), fill = NA, size = 4, shape = "square", position = "identity") +
+  geom_text(aes(x = esu_dps, y = 1, label = domain), vjust = 0.5, size = 3.5, fontface = "plain") +
+  scale_fill_manual(
+    limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn"),
+    labels = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn"),
+    values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "lightgrey", "purple", "lightgreen", "gold"),
+    name = "Land Use"
+  ) +
+  scale_color_manual(
+    limits = c("Not Warranted", "Species of Concern", "Threatened", "Endangered"),
+    values = c("green", "yellow", "darkorange", "red"),
+    name = "Status"
+  ) +
+  scale_y_continuous(breaks = c(-0.05, 0.5, 1), labels = c("Status", "Land Use", "Domain"), limits = c(-0.05, 1.4), position = "right") +
+  ggthemes::theme_clean() +
+  theme(
+    axis.text.y = element_text(hjust = 1, vjust = 0.5),
+    panel.spacing = unit(0.1, "lines"),
+    axis.line.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.text.x = element_text(size = 12, face = "bold"),
+    axis.title = element_blank(),
+    # panel.background = element_rect(color = "black"),
+    strip.background = element_rect(fill = "lightgrey"),
+    strip.placement = "outside"
+  ) +
+  facet_grid(rows = "species2", switch = "y", scales = "free_y", space = "free_y") +
+  coord_flip()
+plot_summary  #Something funky is going on with this figure; I must have changed the underlying data with my groups
+plot_summary_ag
 
 # df_crdcount_long %>%
 #   ggplot(aes(x = "")) +
@@ -496,11 +676,43 @@ plot(clip2)
 # Treats values as continuous b/c cdl uses number codes... so you can get a
 # picture of the diversity of land use but not super informative
 
-# Nothing past here really works....
+# Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
 
 (df_clip2 <- as.data.frame(clip2, xy = TRUE))
 df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 
-# setValues(clip2, as.factor(updateNamesCDL(values(clip2))))
+# Plot a map with all land use types
+ggplot() + geom_raster(data=df_clip2, aes(x = x, y = y, fill = cdl_west)) + scale_fill_manual(values = rainbow(60))
 
-ggplot(df_clip2) + geom_raster(aes(x = x, y = y, fill = updateNamesCDL(cdl_west)))
+# Create table of counts by land use type (proportion doesn't work because we have all those NAs)
+# This is also used as the substitution matrix to group all land use types into crop categories
+types<- df_clip2  %>%
+  group_by(cdl_west)  %>%
+  count
+
+types<-types %>%
+  mutate(cropgroup=if_else(str_detect(cdl_west, "Barley|Rye|Wheat|Oats|Triticale|Sorghum|Buckwheat|Millet"), "smgrains", 
+                           if_else(str_detect(cdl_west, "Walnuts|Almonds|Pecans|Pistachios"), "nuts" ,
+                                   if_else(str_detect(cdl_west, "Apples  | Apricots|berries|  Cantaloupes|Cherries|Citrus|melons|Nectarines|Oranges|Peaches|Pears|Plums|Pomegranates|Other Tree|Olives"), "fruits",
+                                           if_else(str_detect(cdl_west, "Tomatoes|Asparagus|Broccoli|Cabbage|Carrots|Cauliflower|Cucumbers|Garlic|Gourds|Greens|Lettuce|Onions|Peas|Peppers|Popcorn|Pumpkins|Radish|Squash|Sweet Corn|Sweet Potatoes|Turnips"), "veg",
+                                                   if_else(str_detect(cdl_west,  "Chick Peas|Christmas Trees|Dry Beans|Flaxseed|Herbs|Hops|Lentils|Mint|Misc Vegs|Mustard|Other Crops|Rape|Safflower|Sod/Grass Seed|Sugarbeets|Sunflower|Vetch"), "other_crops",                
+                                                           if_else(str_detect(cdl_west,  "Alfalfa|Other Hay"), "hay",
+                                                                   if_else(str_detect(cdl_west,  "Rice"), "rice",
+                                                                           if_else(str_detect(cdl_west,  "Cotton"), "cotton",
+                                                                                   if_else(str_detect(cdl_west,  "Fallow"), "fallow",
+                                                                                           if_else(str_detect(cdl_west,  "Grapes"), "grapes",
+                                                                                                   if_else(str_detect(cdl_west,  "Pasture"), "pasture",
+                                                                                                           "other"))))))))))))
+types$cropgroup <- if_else(types$cdl_west=="Potatoes", "potatoes", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west=="Corn", "corn", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west=="Open Water", "Open Water", types$cropgroup)
+
+
+# Join types to the land use data frame
+df_clip2_types = left_join(df_clip2, types)
+# Plot crop categories (types)
+ggplot() + geom_raster(data=df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + scale_fill_manual(values = rainbow(12))
+# Create table of cropgroup counts to calculate percentages to each type
+cropgroup.count<- df_clip2_types  %>%
+  group_by(cropgroup)  %>%
+  count
