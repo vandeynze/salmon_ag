@@ -518,6 +518,24 @@ df_crdcount_summ <-
         !contains("summ")
     ) & contains("_pct_")
     ), na.rm = TRUE),
+    
+    
+    v_summ_pct_ag2 = sum(c_across(
+      matches("v_summ_pct_smgrains") |
+        matches("v_summ_pct_nuts") |
+        matches("v_summ_pct_fruit") |
+        matches("v_summ_pct_veg") |
+        matches("v_summ_pct_othercrops") |
+        matches("v_summ_pct_hay") |
+        matches("v_summ_pct_pasture") |
+        matches("v_pct_corn") |
+        matches("v_pct_cotton") |
+        matches("v_pct_grapes") |
+        matches("v_pct_rice") |
+        matches("v_pct_fallow_idle_cropland") |
+        matches("v_pct_potatoes")
+    ), na.rm = TRUE),
+    
     v_summ_count_ag_nopasture = v_summ_count_ag - v_summ_count_pasture,
     v_summ_pct_ag_nopasture = v_summ_pct_ag - v_summ_pct_pasture,
     v_summ_count_other = v_summ_count_total - v_summ_count_ag + v_summ_count_developed + v_summ_count_forest,
