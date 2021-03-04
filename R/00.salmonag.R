@@ -312,7 +312,8 @@ df_crdcount_summ <-
         contains("sorghum") |
         contains("buckwheat") |
         contains("millet") |
-        contains("durum_wheat")
+        contains("durum_wheat") |
+        contains("dbl_crop")
     ) & contains("_count_")
     ), na.rm = TRUE),
     v_summ_pct_smgrains = sum(c_across((
@@ -325,7 +326,8 @@ df_crdcount_summ <-
         contains("sorghum") |
         contains("buckwheat") |
         contains("millet") |
-        contains("durum_wheat")
+        contains("durum_wheat") |
+        contains("dbl_crop")
     )  & contains("_pct_")
     ), na.rm = TRUE),
     v_summ_count_nuts = sum(c_across((
@@ -433,7 +435,8 @@ df_crdcount_summ <-
     ) & contains("_pct_")
     ), na.rm = TRUE),
     v_summ_count_othercrops = sum(c_across((
-      contains("chick_peas") |
+      contains("canola") |
+        contains("chick_peas") |
         contains("christmas_trees") |
         contains("dry_beans") |
         contains("flaxseed") |
@@ -453,7 +456,8 @@ df_crdcount_summ <-
     ) & contains("_count_")
     ), na.rm = TRUE),
     v_summ_pct_othercrops = sum(c_across((
-      contains("chick_peas") |
+      contains("canola") |
+        contains("chick_peas") |
         contains("christmas_trees") |
         contains("dry_beans") |
         contains("flaxseed") |
@@ -488,6 +492,7 @@ df_crdcount_summ <-
                                         contains("_pct_")), na.rm = TRUE),
     v_summ_count_ag = sum(c_across((
       !contains("wetands") &
+        !contains("developed") &
         !contains("forest") &
         !contains("clover_wildflowers") &
         !contains("aquaculture") &
@@ -578,6 +583,7 @@ plot_summary <-
   ) +
   facet_grid(rows = "species2", switch = "y", scales = "free_y", space = "free_y") +
   coord_flip()
+plot_summary  #Something funky is going on with this figure; I must have changed the underlying data with my groups
 
 #Only ag categories, all species
 plot_summary_ag <-
@@ -613,7 +619,6 @@ plot_summary_ag <-
   ) +
   facet_grid(rows = "species2", switch = "y", scales = "free_y", space = "free_y") +
   coord_flip()
-plot_summary  #Something funky is going on with this figure; I must have changed the underlying data with my groups
 plot_summary_ag
 
 # df_crdcount_long %>%
@@ -691,9 +696,9 @@ types<- df_clip2  %>%
   count
 
 types<-types %>%
-  mutate(cropgroup=if_else(str_detect(cdl_west, "Barley|Rye|Wheat|Oats|Triticale|Sorghum|Buckwheat|Millet"), "smgrains", 
+  mutate(cropgroup=if_else(str_detect(cdl_west, "Barley|Rye|Wheat|Oats|Triticale|Sorghum|Buckwheat|Millet|Dbl"), "smgrains", 
                            if_else(str_detect(cdl_west, "Walnuts|Almonds|Pecans|Pistachios"), "nuts" ,
-                                   if_else(str_detect(cdl_west, "Apples  | Apricots|berries|  Cantaloupes|Cherries|Citrus|melons|Nectarines|Oranges|Peaches|Pears|Plums|Pomegranates|Other Tree|Olives"), "fruits",
+                                   if_else(str_detect(cdl_west, "Apples  | Apricots|berries|  Cantaloupes|Cherries|Citrus|Watermelons|Melons|Nectarines|Oranges|Peaches|Pears|Plums|Pomegranates|Other Tree|Olives"), "fruits",
                                            if_else(str_detect(cdl_west, "Tomatoes|Asparagus|Broccoli|Cabbage|Carrots|Cauliflower|Cucumbers|Garlic|Gourds|Greens|Lettuce|Onions|Peas|Peppers|Popcorn|Pumpkins|Radish|Squash|Sweet Corn|Sweet Potatoes|Turnips"), "veg",
                                                    if_else(str_detect(cdl_west,  "Chick Peas|Christmas Trees|Dry Beans|Flaxseed|Herbs|Hops|Lentils|Mint|Misc Vegs|Mustard|Other Crops|Rape|Safflower|Sod/Grass Seed|Sugarbeets|Sunflower|Vetch"), "other_crops",                
                                                            if_else(str_detect(cdl_west,  "Alfalfa|Other Hay"), "hay",
@@ -716,3 +721,9 @@ ggplot() + geom_raster(data=df_clip2_types, aes(x = x, y = y, fill = cropgroup))
 cropgroup.count<- df_clip2_types  %>%
   group_by(cropgroup)  %>%
   count
+
+#Checking to make sure I got all categories
+#v.count<- df_crdcount_long  %>%
+#  group_by(v)  %>%
+#  count
+#write.csv(v.count,"./v-list.csv", row.names = FALSE)
