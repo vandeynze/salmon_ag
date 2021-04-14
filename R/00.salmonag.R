@@ -562,13 +562,13 @@ df_crdcount_summ_long <-
     domain = factor(domain, levels = c( "Puget Sound", "Interior Columbia", "Willamette/Lower Columbia", "Oregon Coast", "Southern Oregon/Northern California Coast", "North-Central California Coast", "Central Valley", "South-Central/Southern California Coast")),
     species2 = factor(species2, levels = c( "Steelhead", "Chinook", "Coho", "Sockeye", "Chum", "Pink"))
   )
-df_crdcount_summ_long %>% print(n=200)
+df_crdcount_summ_long %>% print(n = 200)
 
 # Broad Categories All Species
 plot_summary <-
   df_crdcount_summ_long %>%
   filter(status != "Not Warranted") %>%
-  filter(v != "nuts", v != "smgrains", v != "fruit", v != "hay", v != "potatoes", v != "rice", v != "cotton", v != "fallow", v != "veg", v != "grapes", v != "corn", v != "othercrops") %>% 
+  filter(!(v %in% c("nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "veg", "grapes", "corn", "othercrops"))) %>%  #Drop the specific categories to see the broad categories
 #  filter(v != "forest", v != "developed", v != "other") %>%  #toggle to see just cropland and pasture on the figure
   ggplot() +
   geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
@@ -605,7 +605,8 @@ plot_summary
 #Only ag categories, all species
 plot_summary_ag <-
   df_crdcount_summ_long %>%
-  filter(status != "Not Warranted", v!="pasture", v!="ag_nopasture", v != "forest", v != "developed", v != "other") %>%
+  filter(status != "Not Warranted")  %>%
+  filter(!(v %in% c("pasture", "ag_nopasture", "forest", "developed", "other"))) %>%
   ggplot() +
   geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
   geom_point(aes(x = esu_dps, y = -0.05, color = status), fill = NA, size = 4, shape = "square", position = "identity") +
@@ -725,17 +726,17 @@ types<-types %>%
                                                                                            if_else(str_detect(cdl_west,  "Grapes"), "grapes",
                                                                                                    if_else(str_detect(cdl_west,  "Pasture"), "pasture",
                                                                                                            "other"))))))))))))
-types$cropgroup <- if_else(types$cdl_west=="Potatoes", "potatoes", types$cropgroup)
-types$cropgroup <- if_else(types$cdl_west=="Corn", "corn", types$cropgroup)
-types$cropgroup <- if_else(types$cdl_west=="Open Water", "Open Water", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "Potatoes", "potatoes", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "Corn", "corn", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "Open Water", "Open Water", types$cropgroup)
 
 
 # Join types to the land use data frame
 df_clip2_types = left_join(df_clip2, types)
 # Plot crop categories (types)
-ggplot() + geom_raster(data=df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + scale_fill_manual(values = rainbow(12))
+ggplot() + geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + scale_fill_manual(values = rainbow(12))
 # Create table of cropgroup counts to calculate percentages to each type
-cropgroup.count<- df_clip2_types  %>%
+cropgroup.count <- df_clip2_types  %>%
   group_by(cropgroup)  %>%
   count
 
@@ -743,4 +744,4 @@ cropgroup.count<- df_clip2_types  %>%
 #v.count<- df_crdcount_long  %>%
 #  group_by(v)  %>%
 #  count
-#write.csv(v.count,"./v-list.csv", row.names = FALSE)
+#write.csv(v.count,".output/v-list.csv", row.names = FALSE)
