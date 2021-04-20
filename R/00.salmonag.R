@@ -695,7 +695,7 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 (border <- sf_recoverydomain %>% arrange(area) %>% slice(5)) # Lake Ozette Sockeye
 clip1 <- raster::crop(raster_cdl_merge, extent(border)) # Clip cdl to rectangle extents of the polygon
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
-plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
+#plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
 
 # Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
 
@@ -703,7 +703,7 @@ plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you ca
 df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 
 # Plot a map with all land use types (ok to skip)
-ggplot() + geom_raster(data = df_clip2, aes(x = x, y = y, fill = cdl_west)) + scale_fill_manual(values = rainbow(60))
+#ggplot() + geom_raster(data = df_clip2, aes(x = x, y = y, fill = cdl_west)) + scale_fill_manual(values = rainbow(60))
 
 # Create table of counts by land use type (proportion doesn't work because we have all those NAs)
 # This is also used as the substitution matrix to group all land use types into crop categories
@@ -737,7 +737,7 @@ ggplot() +
   scale_fill_manual(
     limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops", "Open Water", "Pasture", "other"),
     labels = c( "Nuts", "Small grains", "Fruit", "Hay", "Potatoes", "Rice", "Cotton", "Fallow cropland", "Grapes", "Vegetables", "Corn", "Other crops", "Open Water", "Pasture", "other"),
-    values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "grey", "purple", "lightgreen", "gold", "lightblue", "darkblue", "springgreen3", "white"))
+    values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "grey", "purple", "lightgreen", "gold", "lightblue", "darkblue", "springgreen3", "antiquewhite1"))
     # Create table of cropgroup counts to calculate percentages to each type
 cropgroup.count <- df_clip2_types  %>%
   group_by(cropgroup)  %>%
