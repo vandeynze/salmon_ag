@@ -1,0 +1,175 @@
+---
+title: "salmon_agmaps_loop"
+author: "Lisa Pfeiffer"
+date: "4/19/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::knit_meta(class=NULL, clean = TRUE)
+
+# Clear existing environment
+rm(list = ls())
+
+# Load libraries
+library(cdlTools)
+library(raster)
+library(tidyverse)
+library(ggthemes)
+library(janitor)
+library(sf)
+library(stars)
+library(ggspatial)
+library(tmap)
+library(units)
+library(tabularaster)
+library(cowplot)
+library(knitr)
+library(kableExtra)
+library(here)
+library(exactextractr)
+
+# Set ggplot2 themes
+theme_set(theme_clean())
+theme_update(
+  plot.background = element_rect(color = NA),
+  plot.title.position = "plot",
+  plot.caption.position = "plot"
+)
+
+# Set top-level working directory
+wd <- "C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/output"
+ setwd(wd)
+# setwd("./data")
+```
+
+## Agricultural land use in salmon habitat
+
+This document summarizes land cover over the habitat range of listed salmonid populations on the West Coast, with a focus on agriculture. Included are land cover summaries for 30 Distinct Population Segments (DPS).
+
+```{r data-prep, echo=FALSE, message=FALSE, include=FALSE}
+# Get CDL data
+# raster_cdl <-
+#   getCDL(
+#     c("CA", "WA", "OR", "ID"),
+#     2017
+#   )
+# NAvalue(raster_cdl$CA2017) <- 0
+# NAvalue(raster_cdl$OR2017) <- 0
+# NAvalue(raster_cdl$WA2017) <- 0
+# NAvalue(raster_cdl$ID2017) <- 0
+# raster_cdl_merge <- raster::merge(raster_cdl$CA2017, raster_cdl$OR2017, raster_cdl$WA2017, raster_cdl$ID2017, overlap = TRUE)
+# plot(raster_cdl_merge)
+# writeRaster(raster_cdl_merge, "cdl_west.tif", format = "GTiff", overwrite = TRUE) # Saves data for downstream use
+raster_cdl_merge <- raster(paste0(here("data"), "/cdl_west.tif"))
+
+sf_recoverydomain <- st_read(paste0(here("data"), "/recovery_subdomains/subdomains-ver7.shp")) %>% clean_names()
+sf_recoverydomain <-
+  sf_recoverydomain %>%
+  distinct(.keep_all = TRUE) %>%
+  dplyr::filter(`class` == "Accessible") %>%
+  select(-class, -sourcethm) %>%
+  mutate(
+    species2 = case_when(
+      species == "Steelhead" ~ "Steelhead",
+      str_detect(species, "Chinook") ~ "Chinook",
+      str_detect(species, "Chum") ~ "Chum",
+      str_detect(species, "Pink") ~ "Pink",
+      TRUE ~ species
+    ),
+    species3 = case_when(
+      species == "Steelhead" ~ "Trout",
+      TRUE ~ "Salmon"
+    ),
+    domain = case_when(
+      subdomain == "Washington Coast" ~ "Puget Sound",
+      subdomain == "Snake River" ~ "Interior Columbia",
+      subdomain == "Middle Columbia River" ~ "Interior Columbia",
+      subdomain == "Upper Columbia River" ~ "Interior Columbia",
+      subdomain == "Lower Columbia River" ~ "Willamette/Lower Columbia",
+      subdomain == "Upper Willamette River" ~ "Willamette/Lower Columbia",
+      subdomain == "California Central Valley" ~ "Central Valley",
+      subdomain == "North-Central California Coast" ~ "North-Central California Coast",
+      TRUE ~ subdomain
+    ),
+    area = st_area(geometry),
+    area = set_units(area, km^2)
+  ) %>%
+  st_transform(raster_cdl_merge@crs)
+
+df_crdcount <- read_csv(paste0(here("data"), "/data_subdomains_crd.csv"))
+
+# Load states borders and transform to match crs
+states_core <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+states_expand <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+
+
+```
+
+
+```{r lapply, echo=FALSE}
+# List of distinct population segments
+dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
+dps <- dps[1:1]
+
+invisible(lapply(dps,      
+                 function(i) { 
+                   cat("  \n###", i)
+                   cat("  \n**Status:**", df_crdcount %>% filter(esu_dps == i) %>% pull(status))
+                   cat("  \n**Domain:**", df_crdcount %>% filter(esu_dps == i) %>% pull(domain))
+                   cat("  \n")
+
+                    #Plot the agricultural land uses inside each area
+  border <- sf_recoverydomain %>% 
+      arrange(area) %>% 
+      filter(esu_dps == i)
+  
+  clip1 <- raster::crop(raster_cdl_merge, extent(border)) # Clip cdl to rectangle extents of the polygon
+  clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
+  
+
+  df_clip2 <- as.data.frame(clip2, xy = TRUE)
+  df_clip2 <- df_clip2 %>% 
+     drop_na(cdl_west) %>% 
+     mutate(cdl_west = updateNamesCDL(cdl_west))
+   
+  types <- df_clip2  %>%
+    group_by(cdl_west)  %>%
+    count
+  types <- types %>%
+    mutate(cropgroup = if_else(str_detect(cdl_west, "Barley|Rye|Wheat|Oats|Triticale|Sorghum|Buckwheat|Millet|Dbl"), "smgrains",
+                    if_else(str_detect(cdl_west, "Walnuts|Almonds|Pecans|Pistachios"), "nuts" ,
+                    if_else(str_detect(cdl_west, "Apples  | Apricots|berries|  Cantaloupes|Cherries|Citrus|Watermelons|Melons|Nectarines|Oranges|Peaches|Pears|Plums|Pomegranates|Other Tree|Olives"), "fruits",
+                    if_else(str_detect(cdl_west, "Tomatoes|Asparagus|Broccoli|Cabbage|Carrots|Cauliflower|Cucumbers|Garlic|Gourds|Greens|Lettuce|Onions|Peas|Peppers|Popcorn|Pumpkins|Radish|Squash|Sweet Corn|Sweet Potatoes|Turnips"), "veg",
+                    if_else(str_detect(cdl_west,  "Chick Peas|Christmas Trees|Dry Beans|Flaxseed|Herbs|Hops|Lentils|Mint|Misc Vegs|Mustard|Other Crops|Rape|Safflower|Sod/Grass Seed|Sugarbeets|Sunflower|Vetch"), "other_crops",
+                    if_else(str_detect(cdl_west,  "Alfalfa|Other Hay"), "hay",
+                    if_else(str_detect(cdl_west,  "Rice"), "rice",
+                    if_else(str_detect(cdl_west,  "Cotton"), "cotton",
+                    if_else(str_detect(cdl_west,  "Fallow"), "fallow",
+                    if_else(str_detect(cdl_west,  "Grapes"), "grapes",
+                    if_else(str_detect(cdl_west,  "Pasture"), "pasture",
+                    "other")))))))))))) 
+types$cropgroup <- if_else(types$cdl_west == "Potatoes", "potatoes", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "Corn", "corn", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "Open Water", "Open Water", types$cropgroup)
+# Join types to the land use data frame
+df_clip2_types = left_join(df_clip2, types)
+df_clip2_types 
+# Plot crop categories (types)
+p_ag_cover <-
+ggplot() +
+  geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
+  scale_fill_manual(
+    limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops", "Open Water", "Pasture", "other"),
+    labels = c( "Nuts", "Small grains", "Fruit", "Hay", "Potatoes", "Rice", "Cotton", "Fallow cropland", "Grapes", "Vegetables", "Corn", "Other crops", "Open Water", "Pasture", "other"),
+    values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "grey", "purple", "lightgreen", "gold", "lightblue", "darkblue", "springgreen3", "antiquewhite1"))
+plot(p_ag_cover)
+                 }
+))
+```
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -534,8 +534,9 @@ df_crdcount_summ <-
    
     v_summ_count_ag_nopasture = v_summ_count_ag - v_summ_count_pasture,
     v_summ_pct_ag_nopasture = v_summ_pct_ag - v_summ_pct_pasture,
+    v_summ_pct_shrubland = v_pct_shrubland,
     v_summ_count_other = v_summ_count_total - v_summ_count_ag + v_summ_count_developed + v_summ_count_forest,
-    v_summ_pct_other = 1 - v_summ_pct_ag - v_summ_pct_developed - v_summ_pct_forest
+    v_summ_pct_other = 1 - v_summ_pct_ag - v_summ_pct_developed - v_summ_pct_forest - v_summ_pct_shrubland
   )
 
 # Transform for plotting
@@ -551,13 +552,13 @@ df_crdcount_summ_long <-
   df_crdcount_summ %>%
   select(
     esu_dps, status, domain, subdomain, species, species2, species3,
-    v_summ_pct_ag_nopasture, v_summ_pct_pasture, v_summ_pct_forest, v_summ_pct_developed, v_summ_pct_other, 
+    v_summ_pct_ag_nopasture, v_summ_pct_pasture, v_summ_pct_forest, v_summ_pct_developed, v_summ_pct_other, v_summ_pct_shrubland,
     v_summ_pct_nuts, v_summ_pct_smgrains, v_summ_pct_fruit, v_summ_pct_hay, v_summ_pct_potatoes, v_summ_pct_rice, 
     v_summ_pct_cotton, v_summ_pct_fallow, v_summ_pct_grapes, v_summ_pct_veg, v_summ_pct_corn, v_summ_pct_othercrops,
   ) %>%
   pivot_longer(starts_with("v_summ_pct"), names_to = "v", names_prefix = "v_summ_pct_", values_to = "v_summ_pct", values_drop_na = TRUE) %>%
   mutate(
-    v = factor(v, levels = c("pasture", "ag_nopasture",   "forest", "developed", "other", "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops")),
+    v = factor(v, levels = c("pasture", "ag_nopasture", "shrubland", "forest", "developed", "other", "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops")),
     esu_dps = ordered(esu_dps, df_crdcount_summ %>% arrange(-v_summ_pct_ag) %>% pull(esu_dps)),
     domain = factor(domain, levels = c( "Puget Sound", "Interior Columbia", "Willamette/Lower Columbia", "Oregon Coast", "Southern Oregon/Northern California Coast", "North-Central California Coast", "Central Valley", "South-Central/Southern California Coast")),
     species2 = factor(species2, levels = c( "Steelhead", "Chinook", "Coho", "Sockeye", "Chum", "Pink"))
@@ -575,9 +576,9 @@ plot_summary <-
   geom_point(aes(x = esu_dps, y = -0.05, color = status), fill = NA, size = 5, shape = "square", position = "identity") +
   geom_text(aes(x = esu_dps, y = 1.25, label = domain), vjust = 0.5, size = 3.5, fontface = "plain") +
   scale_fill_manual(
-    limits = c("pasture", "ag_nopasture", "forest", "developed", "other"),
-    labels = c("Pasture", "Cropland", "Forest", "Developed", "Other"),
-    values = c("darkgoldenrod", "goldenrod", "darkgreen", "darkgrey", "lightgrey"),
+    limits = c("pasture", "ag_nopasture", "shrubland", "forest", "developed", "other"),
+    labels = c("Pasture", "Cropland", "Shrubland", "Forest", "Developed", "Other"),
+    values = c("darkgoldenrod", "goldenrod", "springgreen3", "darkgreen", "darkgrey", "lightgrey"),
     name = "Land Use"
   ) +
   scale_color_manual(
@@ -606,7 +607,7 @@ plot_summary
 plot_summary_ag <-
   df_crdcount_summ_long %>%
   filter(status != "Not Warranted")  %>%
-  filter(!(v %in% c("pasture", "ag_nopasture", "forest", "developed", "other"))) %>%
+  filter(!(v %in% c("pasture", "ag_nopasture","shrubland", "forest", "developed", "other"))) %>%
   ggplot() +
   geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
   geom_point(aes(x = esu_dps, y = -0.05, color = status), fill = NA, size = 4, shape = "square", position = "identity") +
@@ -694,18 +695,15 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 (border <- sf_recoverydomain %>% arrange(area) %>% slice(5)) # Lake Ozette Sockeye
 clip1 <- raster::crop(raster_cdl_merge, extent(border)) # Clip cdl to rectangle extents of the polygon
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
-plot(clip1)
-plot(clip2)
-# Treats values as continuous b/c cdl uses number codes... so you can get a
-# picture of the diversity of land use but not super informative
+plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
 
 # Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
 
 (df_clip2 <- as.data.frame(clip2, xy = TRUE))
 df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 
-# Plot a map with all land use types
-ggplot() + geom_raster(data=df_clip2, aes(x = x, y = y, fill = cdl_west)) + scale_fill_manual(values = rainbow(60))
+# Plot a map with all land use types (ok to skip)
+ggplot() + geom_raster(data = df_clip2, aes(x = x, y = y, fill = cdl_west)) + scale_fill_manual(values = rainbow(60))
 
 # Create table of counts by land use type (proportion doesn't work because we have all those NAs)
 # This is also used as the substitution matrix to group all land use types into crop categories
@@ -734,8 +732,13 @@ types$cropgroup <- if_else(types$cdl_west == "Open Water", "Open Water", types$c
 # Join types to the land use data frame
 df_clip2_types = left_join(df_clip2, types)
 # Plot crop categories (types)
-ggplot() + geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + scale_fill_manual(values = rainbow(12))
-# Create table of cropgroup counts to calculate percentages to each type
+ggplot() + 
+  geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + 
+  scale_fill_manual(
+    limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops", "Open Water", "Pasture", "other"),
+    labels = c( "Nuts", "Small grains", "Fruit", "Hay", "Potatoes", "Rice", "Cotton", "Fallow cropland", "Grapes", "Vegetables", "Corn", "Other crops", "Open Water", "Pasture", "other"),
+    values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "grey", "purple", "lightgreen", "gold", "lightblue", "darkblue", "springgreen3", "white"))
+    # Create table of cropgroup counts to calculate percentages to each type
 cropgroup.count <- df_clip2_types  %>%
   group_by(cropgroup)  %>%
   count
