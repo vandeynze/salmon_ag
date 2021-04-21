@@ -28,7 +28,7 @@ library(cowplot)
 library(knitr)
 library(kableExtra)
 library(here)
-library(exactextractr)
+
 
 # Set ggplot2 themes
 theme_set(theme_clean())

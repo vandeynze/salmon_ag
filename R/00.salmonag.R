@@ -691,11 +691,18 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
   )
 )
 
+dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
+i = 19
 # Plot raster separately
-(border <- sf_recoverydomain %>% arrange(area) %>% slice(5)) # Lake Ozette Sockeye
+border <- sf_recoverydomain %>% 
+  arrange(area) %>% 
+  slice(i)
 clip1 <- raster::crop(raster_cdl_merge, extent(border)) # Clip cdl to rectangle extents of the polygon
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
 #plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
+
+# Figures -----------------------------------------------------------------
+
 
 # Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
 
@@ -732,17 +739,22 @@ types$cropgroup <- if_else(types$cdl_west == "Open Water", "Open Water", types$c
 # Join types to the land use data frame
 df_clip2_types = left_join(df_clip2, types)
 # Plot crop categories (types)
-ggplot() + 
+#setwd("C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/output/salmonid_ag_maps/")
+fname <- dps[i]
+fname1 <- paste0(fname, ".pdf")
+pdf(file = fname1, width = 6, height = 4.5)
+#p_ag_cover <-
+  ggplot() + 
   geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + 
   scale_fill_manual(
     limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops", "Open Water", "Pasture", "other"),
     labels = c( "Nuts", "Small grains", "Fruit", "Hay", "Potatoes", "Rice", "Cotton", "Fallow cropland", "Grapes", "Vegetables", "Corn", "Other crops", "Open Water", "Pasture", "other"),
     values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "grey", "purple", "lightgreen", "gold", "lightblue", "darkblue", "springgreen3", "antiquewhite1"))
-    # Create table of cropgroup counts to calculate percentages to each type
+dev.off()
+  # Create table of cropgroup counts to calculate percentages to each type
 cropgroup.count <- df_clip2_types  %>%
   group_by(cropgroup)  %>%
   count
-
 #Checking to make sure I got all categories
 #v.count<- df_crdcount_long  %>%
 #  group_by(v)  %>%
