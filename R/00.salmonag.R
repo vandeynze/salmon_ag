@@ -692,7 +692,8 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 )
 
 dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
-i = 19
+area <- sf_recoverydomain %>% distinct(subdomain) %>% arrange(subdomain) %>% pull(subdomain)
+i = 9
 # Plot raster separately
 border <- sf_recoverydomain %>% 
   arrange(area) %>% 
@@ -706,7 +707,7 @@ clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
 
 # Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
 
-(df_clip2 <- as.data.frame(clip2, xy = TRUE))
+df_clip2 <- as.data.frame(clip2, xy = TRUE)
 df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 
 # Plot a map with all land use types (ok to skip)
@@ -743,7 +744,7 @@ df_clip2_types = left_join(df_clip2, types)
 fname <- dps[i]
 fname1 <- paste0(fname, ".pdf")
 pdf(file = fname1, width = 6, height = 4.5)
-#p_ag_cover <-
+p_ag_cover <-
   ggplot() + 
   geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + 
   scale_fill_manual(
