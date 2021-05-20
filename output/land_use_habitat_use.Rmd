@@ -60,11 +60,13 @@ script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
   });
 ```
 ```{r load data, include=FALSE}
-wd <- "C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/" #Braeden--it's telling me not to use a setwd in chunks but I'm not sure what to do instead, could you advise?
- setwd(wd)
+# wd <- "C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/" #Braeden--it's telling me not to use a setwd in chunks but I'm not sure what to do instead, could you advise?
+ # setwd(wd)
+# When we open the Rstudio project before opening the .R/.Rmd (check upper right cube symbol in Rstudio) the wd is automatically set to where the .Rproj file lives
+# To access files further down, use "./" relative directories, or the `here` notation e.g. `here("output/file.csv")`
 
 # Load habitat use recovery domain shape file
-(sf_recoverydomain_use <- st_read("./data-nogit/ESU_hucdata/huc6_esu-withadds-ver5-alb27.shp") %>% clean_names()) %>% names
+(sf_recoverydomain_use <- st_read(here("/data/ESU_hucdata/huc6_esu-withadds-ver5-alb27.shp")) %>% clean_names()) %>% names
 # Key variables are, with * as species code
 # r_*: ESU name
 # sp_*: ESU spawn/rear
@@ -88,7 +90,8 @@ wd <- "C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/" #Braeden--it's tellin
 #raster_cdl_merge <- raster("./data/cdl_west.tif")
   #projectRaster(raster_cdl_merge, crs=sf_recoverydomain_use) #This takes a long time
   #writeRaster(raster_cdl_merge, "./data-nogit/cdl_west_prof.tif", format = "GTiff", overwrite = TRUE) 
-raster_cdl_merge <- raster("./data-nogit/cdl_west_prof.tif")
+raster_cdl_merge <- raster(here("/data/cdl_west_prof.tif"))
+# raster_cdl_merge <- raster(here("/data/cdl_west.tif"))
 
 
 ```
@@ -100,6 +103,10 @@ This document summarizes crop-specific land cover over the habitat range of list
 ```{r extract land cover, eval=FALSE, include=FALSE}
 #This takes a while and is best left overnight to run!
 #This should be a loop or lapply, but some data table manipulation that I'm very slow at is needed. Speed might be significantly improved with lapply
+
+#We include an install check for the compiled data to avoid running again if not needed
+if(!file.exists("./output/land_use_habitat_use.RData")) {
+
 #r_ch
 species <- sf_recoverydomain_use %>%
   tabyl(r_ch) %>% pull(1)
@@ -445,13 +452,15 @@ land_use_habitat_use <- left_join(land_use_habitat_use, linkdata, by = c('land.u
 save(land_use_habitat_use, file = "./output/land_use_habitat_use.RData") #save data for use without running extract code, which is slow
 write.dta(land_use_habitat_use, "./output/land_use_habitat_use.dta") #save data as Stata file for Lisa
 
+}
+
 ```
 
 
 
 ```{r figure, echo=FALSE}
-setwd(wd)
-load("./output/land_use_habitat_use.RData") #load data if not already loaded
+# setwd(wd)
+load(here("/output/land_use_habitat_use.RData")) #load data if not already loaded
 
 #Feel free to format better!
 
@@ -470,17 +479,19 @@ p_cover <-
   geom_col(aes(x = hab_use, y = freq, fill = cropgroup), position = "stack") +
    coord_flip() +
    scale_fill_manual(
+     "Land cover (CDL2018)",
       limits = c( "corn", "cotton", "fallow", "fruits", "grapes","hay","other_crops", "nuts",  "pasture", "potatoes", "rice", "smgrains",  "vegetables"),
       labels = c("corn", "cotton", "fallow", "fruits", "grapes","hay","other crops", "nuts", "pasture", "potatoes", "rice", "small grains",  "vegetables"),
       values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan", "darkgreen", "black", "violet","pink",  "springgreen3")) +
   # Set up the y-axis
-  scale_y_continuous(breaks = c(0, 0.1,  0.2,  0.3, 0.4, 0.5, 0.6, 0.7, 0.8), labels = scales::label_percent()) +
+  scale_y_continuous(breaks = c(0, 0.1,  0.2,  0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1), labels = scales::label_percent(), limits = c(0, 1)) +
   theme(
     legend.position = "bottom",
     legend.box = "horizontal",
   ) +
-  xlab('Habitat Use') + ylab('Percent of habitat use covered by crop') +
-  facet_wrap(~name, ncol = 2) 
+  xlab('Habitat use') + ylab('Percent of habitat use covered by crop') +
+  facet_wrap(~name, ncol = 2) +
+  ggtitle("Agricultural land cover by ESU and habitat use")
 plot(p_cover)
 
 ```
@@ -488,8 +499,8 @@ plot(p_cover)
 The same figure but excluding pasture: 
 
 ```{r figure2, echo=FALSE}
-setwd(wd)
-load("./output/land_use_habitat_use.RData") #load data if not already loaded
+# setwd(wd)
+# load("./output/land_use_habitat_use.RData") #load data if not already loaded
 
 #Feel free to format better!
 
@@ -507,17 +518,19 @@ p_cover_nopasture <-
   geom_col(aes(x = hab_use, y = freq, fill = cropgroup), position = "stack") +
    coord_flip() +
    scale_fill_manual(
+     "Land cover (CDL2018)",
       limits = c( "corn", "cotton", "fallow", "fruits", "grapes","hay","other_crops", "nuts",  "potatoes", "rice", "smgrains",  "vegetables"),
       labels = c("corn", "cotton", "fallow", "fruits", "grapes","hay","other crops", "nuts",  "potatoes", "rice", "small grains",  "vegetables"),
       values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan",  "black", "violet","pink",  "springgreen3")) +
   # Set up the y-axis
-  scale_y_continuous(breaks = c(0, 0.1,  0.2,  0.3, 0.4, 0.5, 0.6, 0.7, 0.8), labels = scales::label_percent()) +
+  scale_y_continuous(breaks = c(0, 0.1,  0.2,  0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1), labels = scales::label_percent(), limits = c(0, 1)) +
   theme(
     legend.position = "bottom",
     legend.box = "horizontal",
   ) +
-  xlab('Habitat Use') + ylab('Percent of habitat use covered by crop') +
-  facet_wrap(~name, ncol = 2) 
+  xlab('Habitat use') + ylab('Percent of habitat use covered by crop') +
+  facet_wrap(~name, ncol = 2) +
+  ggtitle("Agricultural land cover by ESU and habitat use, pasture excluded")
 plot(p_cover_nopasture)
 
 ```
@@ -526,9 +539,21 @@ Notice that in the Upper Willamette River Chinook Salmon figure, a large amount 
 #Please make this table better...I couldn't figure out how to sort it! :/
 
 ```{r detail, echo=FALSE, results = 'asis'}
-UW_chinook <- land_use_habitat_use %>%
-         filter(name == "Upper Willamette River Chinook Salmon") %>%
-         filter(cropgroup == "other_crops") %>%
-         filter(!is.na(hab_use)) 
-kable(UW_chinook, caption = 'List of "other crops" in Upper Willamette River Chinook')
+UW_chinook <- 
+  land_use_habitat_use %>%
+  ungroup() %>%
+  filter(name == "Upper Willamette River Chinook Salmon") %>%
+  filter(cropgroup == "other_crops") %>%
+  filter(!is.na(hab_use)) %>%
+  select(-name, -cropgroup, -land.use, -count) %>%
+  rowwise() %>%
+  arrange(hab_use, -as.numeric(freq)) %>%
+  mutate(freq = scales::percent(as.numeric(freq), 0.11)) %>%
+  mutate(freq = case_when(freq == "0.0%" ~ "< 0.1%", TRUE ~ freq)) %>%
+  mutate(hab_use = case_when(hab_use == "spawn+rearing" ~ "Spawning & rearing", TRUE ~ "Rearing & migration")) %>%
+  select("Habitat use" = hab_use, Crop, "% land cover, CDL2018" = freq)
+          
+kable(UW_chinook, caption = 'List of "other crops" in Upper Willamette River Chinook ESU range') %>%
+  kableExtra::kable_styling() %>%
+  kableExtra::collapse_rows(1, valign = "top")
 ```

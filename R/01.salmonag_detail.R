@@ -23,7 +23,7 @@ library(here)
 # Load data ----
 # Set working directory
 # Load recovery domain shape files
-(sf_recoverydomain <- st_read("./data/ESU_hucdata/huc6_esu-withadds-ver5-alb27.shp") %>% clean_names()) %>% names
+(sf_recoverydomain <- st_read(here("/data/ESU_hucdata/huc6_esu-withadds-ver5-alb27.shp")) %>% clean_names()) %>% names
 
 # Key variables are, with * as species code
 # r_*: ESU name
