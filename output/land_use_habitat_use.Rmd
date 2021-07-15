@@ -136,7 +136,7 @@ sf_recoverydomain_use_r_ch <-
 b <- st_as_sf(sf_recoverydomain_use_r_ch)
 ex <- exact_extract(raster_cdl_merge,b,include_cols = c("r_ch", "hab_use"))
 ex <- do.call(rbind,ex)
-result_r_ch <- ex  %>% rename(name = r_ch) %>% group_by(name, hab_use, spawning, rearing, migration) %>% summarise(
+result_r_ch <- ex  %>% rename(name = r_ch) %>% group_by(name, hab_use) %>% summarise(
   land.use = sort(unique(value)),
   count = table(value),
   freq = table(value) / length(value)
