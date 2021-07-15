@@ -66,7 +66,7 @@ script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 # To access files further down, use "./" relative directories, or the `here` notation e.g. `here("output/file.csv")`
 
 # Load habitat use recovery domain shape file
-(sf_recoverydomain_use <- st_read(here("/data/ESU_hucdata/huc6_esu-withadds-ver5-alb27.shp")) %>% clean_names()) %>% names
+(sf_recoverydomain_use <- st_read(here("./data-nogit/ESU_hucdata/huc6_esu-withadds-ver5-alb27.shp")) %>% clean_names()) %>% names
 # Key variables are, with * as species code
 # r_*: ESU name
 # sp_*: ESU spawn/rear
@@ -90,7 +90,7 @@ script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 #raster_cdl_merge <- raster("./data/cdl_west.tif")
   #projectRaster(raster_cdl_merge, crs=sf_recoverydomain_use) #This takes a long time
   #writeRaster(raster_cdl_merge, "./data-nogit/cdl_west_prof.tif", format = "GTiff", overwrite = TRUE) 
-raster_cdl_merge <- raster(here("/data/cdl_west_prof.tif"))
+raster_cdl_merge <- raster(here("./data-nogit/cdl_west_prof.tif"))
 # raster_cdl_merge <- raster(here("/data/cdl_west.tif"))
 
 
@@ -113,7 +113,7 @@ species <- sf_recoverydomain_use %>%
 
 tibble("hab_use" = sf_recoverydomain_use %>%
          st_drop_geometry() %>%
-         filter(r_ch == species[i]) %>%
+         filter(r_ch == species[1]) %>%
          select(sp_l_chin:mi_l_chin) %>%
          as.matrix() %*% 1:3) %>% tabyl(hab_use)
 
@@ -130,13 +130,13 @@ sf_recoverydomain_use_r_ch <-
   ) %>%
   mutate(
     hab_use = case_when(hab_use == 0 ~ NA_real_, TRUE ~ hab_use),
-    hab_use = factor(hab_use, levels = c(1, 2, 3), labels = c("spawn+rearing", "rearing+migration", "migration")),
+    hab_use = factor(hab_use, levels = c(1, 2, 3), labels = c("spawn+rearing", "rearing+migration", "migration"))
   ) 
 #extract and create summary table
 b <- st_as_sf(sf_recoverydomain_use_r_ch)
 ex <- exact_extract(raster_cdl_merge,b,include_cols = c("r_ch", "hab_use"))
 ex <- do.call(rbind,ex)
-result_r_ch <- ex  %>% rename(name = r_ch) %>% group_by(name, hab_use) %>% summarise(
+result_r_ch <- ex  %>% rename(name = r_ch) %>% group_by(name, hab_use, spawning, rearing, migration) %>% summarise(
   land.use = sort(unique(value)),
   count = table(value),
   freq = table(value) / length(value)
@@ -449,8 +449,14 @@ linkdata$cropgroup <- if_else(str_detect(linkdata$Crop,"Open Water|Water"), "Wat
 
 
 land_use_habitat_use <- left_join(land_use_habitat_use, linkdata, by = c('land.use' = 'MasterCat'))
-save(land_use_habitat_use, file = "./output/land_use_habitat_use.RData") #save data for use without running extract code, which is slow
-write.dta(land_use_habitat_use, "./output/land_use_habitat_use.dta") #save data as Stata file for Lisa
+land_use_habitat_use <- land_use_habitat_use  %>%
+mutate(
+    spawning = case_when(hab_use == "spawn+rearing" ~ 1),
+    rearing = case_when(hab_use == "spawn+rearing" | hab_use == "rearing+migration" ~ 1),
+    migration = case_when(hab_use == "rearing+migration" | hab_use == "migration" ~ 1))
+    
+save(land_use_habitat_use, file = here("./output/land_use_habitat_use.RData")) #save data for use without running extract code, which is slow
+write.dta(land_use_habitat_use, here("./output/land_use_habitat_use.dta")) #save data as Stata file for Lisa
 
 }
 
@@ -460,23 +466,23 @@ write.dta(land_use_habitat_use, "./output/land_use_habitat_use.dta") #save data 
 
 ```{r figure, echo=FALSE}
 # setwd(wd)
-load(here("/output/land_use_habitat_use.RData")) #load data if not already loaded
+load(here("./output/land_use_habitat_use.RData")) #load data if not already loaded
 
-#Feel free to format better!
+land_use_habitat_use_long <- land_use_habitat_use %>% pivot_longer(cols = c("spawning", "rearing", "migration"), names_to = "use", values_to = "code", values_drop_na = TRUE)
 
 # Build land cover bar plot
 p_cover <-
-  land_use_habitat_use %>%
+  land_use_habitat_use_long %>%
   # Isolate just the one species
 #  filter(name == species[2]) %>%
   filter(cropgroup != "Water") %>%
   filter(cropgroup != "other") %>%
   # Exlude pasture if desired
 #  filter(cropgroup != "pasture") %>%  
-  filter(!is.na(hab_use)) %>%
+  filter(!is.na(use)) %>%
   ggplot() +
   # Plot the land cover breakdown
-  geom_col(aes(x = hab_use, y = freq, fill = cropgroup), position = "stack") +
+  geom_col(aes(x = use, y = freq, fill = cropgroup), position = "stack") +
    coord_flip() +
    scale_fill_manual(
      "Land cover (CDL2018)",
@@ -502,20 +508,19 @@ The same figure but excluding pasture:
 # setwd(wd)
 # load("./output/land_use_habitat_use.RData") #load data if not already loaded
 
-#Feel free to format better!
 
 # Build land cover bar plot
 p_cover_nopasture <-
-  land_use_habitat_use %>%
+  land_use_habitat_use_long %>%
   # Isolate just the one species
 #  filter(name == species[2]) %>%
   filter(cropgroup != "Water") %>%
   filter(cropgroup != "other") %>%
   filter(cropgroup != "pasture") %>%  
-  filter(!is.na(hab_use)) %>%
+  filter(!is.na(use)) %>%
   ggplot() +
   # Plot the land cover breakdown
-  geom_col(aes(x = hab_use, y = freq, fill = cropgroup), position = "stack") +
+  geom_col(aes(x = use, y = freq, fill = cropgroup), position = "stack") +
    coord_flip() +
    scale_fill_manual(
      "Land cover (CDL2018)",
@@ -523,7 +528,7 @@ p_cover_nopasture <-
       labels = c("corn", "cotton", "fallow", "fruits", "grapes","hay","other crops", "nuts",  "potatoes", "rice", "small grains",  "vegetables"),
       values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan",  "black", "violet","pink",  "springgreen3")) +
   # Set up the y-axis
-  scale_y_continuous(breaks = c(0, 0.1,  0.2,  0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1), labels = scales::label_percent(), limits = c(0, 1)) +
+  scale_y_continuous(breaks = c(0, 0.1,  0.2,  0.3, 0.4, 0.5, 0.6), labels = scales::label_percent(), limits = c(0, .6)) +
   theme(
     legend.position = "bottom",
     legend.box = "horizontal",
@@ -536,7 +541,7 @@ plot(p_cover_nopasture)
 ```
 
 Notice that in the Upper Willamette River Chinook Salmon figure, a large amount of crop coverage is "other crops". This table lists the frequency of the crops in this category. This confirms that it is the Sod/Grass seed category as Braeden suspected. 
-#Please make this table better...I couldn't figure out how to sort it! :/
+
 
 ```{r detail, echo=FALSE, results = 'asis'}
 UW_chinook <- 
