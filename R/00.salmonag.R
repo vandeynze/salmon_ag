@@ -761,7 +761,7 @@ dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
 area <- sf_recoverydomain %>% distinct(subdomain) %>% arrange(subdomain) %>% pull(subdomain)
 area <- unique(area)
   
-i = 12
+i = 32
 # Plot raster separately
 border <- sf_recoverydomain %>% 
   arrange(area) %>% 
