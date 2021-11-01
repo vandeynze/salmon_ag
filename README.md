@@ -8,4 +8,4 @@ A project examining temporal and spatial interfaces between Pacific salmon and a
 *Optional:* Extract [data.zip](https://figshare.com/s/b43eca3125bb4bf5a924) to top level of repository to load CDL data locally
 
 ## Contributors
-Braeden Van Deynze (project lead, @vandeynze), Lisa Pfeiffer, Robby Fonner
+Braeden Van Deynze (@vandeynze), Lisa Pfeiffer (@lpfeif), Robby Fonner (@robby-fonner)
