@@ -39,7 +39,7 @@ library(tabularaster)
 library(here)
 library(tmap)
 
-setwd("~/Desktop/Salmon_ag_githubrepo")
+setwd("~/Desktop/Github Repo/salmon_ag")
 
 # Set ggplot2 themes
 theme_set(theme_clean())
@@ -52,13 +52,13 @@ theme_update(
 
 ```{r data-prep, echo=FALSE, message=FALSE, include=FALSE}
 #create map of area of study, salmon habitat, Pacific Northwest, Pacific coast
-statedata <- tigris::counties(state = c("CA","WA","ID","OR"), cb = TRUE) %>% 
-  st_as_sf() 
-
-regionmap <- ggplot() +
-  geom_sf(data = statedata) +
-  geom_sf(data = statedata, fill = "lightblue") +
-  theme_void()
+# statedata <- tigris::counties(state = c("CA","WA","ID","OR"), cb = TRUE) %>% 
+#   st_as_sf() 
+# 
+# regionmap <- ggplot() +
+#   geom_sf(data = statedata) +
+#   geom_sf(data = statedata, fill = "lightblue") +
+#   theme_void()
 
 #download data for individual states from https://nassgeodata.gmu.edu/CropScape/
 Washingtontif = raster('Washington.tif')
@@ -77,14 +77,14 @@ Nationaltif = raster('National.tif')
 National <- Nationaltif
 
 #merge state data to create a single object for the region of study. this took a long time but worked
-region_data <- raster::merge(California, Idaho, Washington, Oregon, overlap = TRUE)
+# region_data <- raster::merge(California, Idaho, Washington, Oregon, overlap = TRUE)
 
 #plot to make sure map looks correct. The merge looks wonky. Check in with all about this.
-plot(region_data)
+# plot(region_data)
 
 #write and store raster for downstream use
-writeRaster(region_data, "cdl_west.tif", format = "GTiff", overwrite = TRUE)
-region_data <- raster(paste0(here("data"), "/cdl_west.tif"))
+# writeRaster(region_data, "cdl_west.tif", format = "GTiff", overwrite = TRUE)
+# region_data <- raster(paste0(here("data"), "/cdl_west.tif"))
 
 #Import recovery subdomain shapefile
 sf_recoverydomain <- st_read(paste0(file.path("data"), "/recovery_subdomains/subdomains-ver7.shp")) %>% clean_names()
@@ -122,10 +122,113 @@ sf_recoverydomain <-
     ),
     area = st_area(geometry),
     area = set_units(area, km^2)
-  ) %>%
+  )%>%
   st_transform(CDLwest@crs)
 
+#Find area for each species, group into endangered, threatened, concern.
+df_rd_species <-
+  sf_recoverydomain %>%
+  st_drop_geometry() %>%
+  mutate(
+    area = set_units(area, km^2),
+    area_endangered = area * as.numeric(I(status == "Endangered")),
+    area_threatened = area * as.numeric(I(status == "Threatened")),
+    area_concern = area * as.numeric(I(status == "Species of Concern"))
+  ) %>%
+  group_by(species) %>%
+  summarize(
+    n_domain = n_distinct(subdomain),
+    n_endangered = sum(status == "Endangered"),
+    n_threatened = sum(status == "Threatened"),
+    n_concern = sum(status == "Species of Concern"),
+    area_tot = sum(area),
+    area_endangered = sum(area_endangered),
+    area_threatened = sum(area_threatened),
+    area_concern = sum(area_concern)
+  )
+df_rd_species
 
+#Find further simplify to just species names
+
+df_rd_species2 <-
+  sf_recoverydomain %>%
+  st_drop_geometry() %>%
+  filter(species != "Not Warranted") %>%
+  mutate(
+    area = set_units(area, km^2),
+    area_endangered = area * as.numeric(I(status == "Endangered")),
+    area_threatened = area * as.numeric(I(status == "Threatened")),
+    area_concern = area * as.numeric(I(status == "Species of Concern"))
+  ) %>%
+  group_by(species2) %>%
+  summarize(
+    n_domain = n_distinct(subdomain),
+    n_endangered = sum(status == "Endangered"),
+    n_threatened = sum(status == "Threatened"),
+    n_concern = sum(status == "Species of Concern"),
+    area_tot = sum(area),
+    area_endangered = sum(area_endangered),
+    area_threatened = sum(area_threatened),
+    area_concern = sum(area_concern)
+  )
+df_rd_species2
+
+#group by subdomain and summarize, you're left with subdomain and geometry only
+sf_recoverydomain_merge <-
+  sf_recoverydomain %>%
+  group_by(subdomain) %>%
+   summarize()
+
+#sf_recoverydomain_merge <- st_union(sf_recoverydomain$geometry, sf_recoverydomain$subdomain)
+
+# Compute acreage summaries using CDL
+# Set CRS to match
+sf_recoverydomain <-
+  sf_recoverydomain %>%
+  st_transform(CDLwest@crs)
+
+#Break up full count for memory management
+# Full count 1: 1 - 10
+df_crdcount_1 <-
+  freq(
+    sf = sf_recoverydomain %>% arrange(area) %>% slice(1:10),
+    cdl = CDLwest
+  ) %>%
+  st_drop_geometry()
+
+
+
+
+# Full count 2: 11 - 20
+df_crdcount_2 <-
+  count_cdl_pixels(
+    sf = sf_recoverydomain %>% arrange(area) %>% slice(11:20),
+    cdl = CDLwest
+  ) %>%
+  st_drop_geometry()
+# Full count 3: 21 - 30
+df_crdcount_3 <-
+  count_cdl_pixels(
+    sf = sf_recoverydomain %>% arrange(area) %>% slice(21:30),
+    cdl = CDLwest
+  ) %>%
+  st_drop_geometry()
+# Full count 3: 31 - 40
+df_crdcount_4 <-
+  count_cdl_pixels(
+    sf = sf_recoverydomain %>% arrange(area) %>% slice(31:40),
+    cdl = CDLwest
+  ) %>%
+  st_drop_geometry()
+
+# Combine
+df_crdcount <-
+  bind_rows(df_crdcount_1, df_crdcount_2, df_crdcount_3, df_crdcount_4)
+rm(df_crdcount_1, df_crdcount_2, df_crdcount_3, df_crdcount_4)
+
+# Save
+write_csv(df_crdcount, "data_subdomains_crd.csv")
+df_crdcount <- read_csv(paste0(here("data"), "/data_subdomains_crd.csv"))
 ```
 
 ## R Markdown
