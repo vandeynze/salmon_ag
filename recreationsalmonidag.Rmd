@@ -48,9 +48,51 @@ theme_update(
   plot.title.position = "plot",
   plot.caption.position = "plot"
 )
+
+data("linkdata")
+linkdata
 ```
 
 ```{r data-prep, echo=FALSE, message=FALSE, include=FALSE}
+# Build functions
+# Splitting function based on discussion at https://stackoverflow.com/a/41618326
+# (From above here) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+# The function spatially aggregates the original raster it turns each aggregated
+# cell into a polygon then the extent of each polygon is used to crop the
+# original raster. The function returns a list with all the pieces in case you
+# want to keep them in the memory. it saves and plots each piece
+# The arguments are:
+# raster = raster to be chopped            (raster object)
+# ppside = pieces per side                 (integer)
+# save   = write raster                    (TRUE or FALSE)
+# plot   = do you want to plot the output? (TRUE or FALSE)
+split_raster <- function(raster,ppside=2,save=F,plot=F){
+  h        <- ceiling(ncol(raster)/ppside)
+  v        <- ceiling(nrow(raster)/ppside)
+  agg      <- raster::aggregate(raster,fact=c(h,v))
+  agg[]    <- 1:ncell(agg)
+  agg_poly <- rasterToPolygons(agg)
+  names(agg_poly) <- "polis"
+  r_list <- list()
+  for(i in 1:ncell(agg)){
+    e1          <- extent(agg_poly[agg_poly$polis==i,])
+    r_list[[i]] <- crop(raster,e1)
+  }
+  if(save==T){
+    for(i in 1:length(r_list)){
+      writeRaster(r_list[[i]],filename=paste("SplitRas",i,sep=""),
+                  format="GTiff",datatype="FLT4S",overwrite=TRUE)  
+    }
+  }
+  if(plot==T){
+    par(mfrow=c(ppside,ppside))
+    for(i in 1:length(r_list)){
+      plot(r_list[[i]],axes=F,legend=F,bty="n",box=FALSE)  
+    }
+  }
+  return(r_list)
+}
+
 #create map of area of study, salmon habitat, Pacific Northwest, Pacific coast
 # statedata <- tigris::counties(state = c("CA","WA","ID","OR"), cb = TRUE) %>% 
 #   st_as_sf() 
@@ -61,30 +103,33 @@ theme_update(
 #   theme_void()
 
 #download data for individual states from https://nassgeodata.gmu.edu/CropScape/
-Washingtontif = raster('Washington.tif')
-Washington <- Washingtontif
-Oregontif = raster('Oregon.tif')
-Oregon <- Oregontif
-Idahotif = raster('Idaho.tif')
-Idaho <- Idahotif
-Californiatif = raster('California.tif')
-California <- Californiatif
+# Washingtontif = raster('Washington.tif')
+# Washington <- Washingtontif
+# NAvalue(Washington) <- 0
+# Oregontif = raster('Oregon.tif')
+# Oregon <- Oregontif
+# NAvalue(Oregon) <- 0
+# Idahotif = raster('Idaho.tif')
+# Idaho <- Idahotif
+# NAvalue(Idaho) <- 0
+# Californiatif = raster('California.tif')
+# California <- Californiatif
+# NAvalue(California) <- 0
 CDLtif = raster('cdl_west.tif')
 CDLwest <- CDLtif
 
 #I downloaded an additional file for national cropscape data from https://www.nass.usda.gov/Research_and_Science/Cropland/Release/index.php 
-Nationaltif = raster('National.tif')
-National <- Nationaltif
+# Nationaltif = raster('National.tif')
+# National <- Nationaltif
 
 #merge state data to create a single object for the region of study. this took a long time but worked
-# region_data <- raster::merge(California, Idaho, Washington, Oregon, overlap = TRUE)
+#region_data <- raster::merge(California, Idaho, Washington, Oregon, overlap = TRUE)
 
 #plot to make sure map looks correct. The merge looks wonky. Check in with all about this.
-# plot(region_data)
+#plot(region_data)
 
 #write and store raster for downstream use
-# writeRaster(region_data, "cdl_west.tif", format = "GTiff", overwrite = TRUE)
-# region_data <- raster(paste0(here("data"), "/cdl_west.tif"))
+#writeRaster(region_data, "cdl_west.tif", format = "GTiff", overwrite = TRUE)
 
 #Import recovery subdomain shapefile
 sf_recoverydomain <- st_read(paste0(file.path("data"), "/recovery_subdomains/subdomains-ver7.shp")) %>% clean_names()
@@ -122,8 +167,10 @@ sf_recoverydomain <-
     ),
     area = st_area(geometry),
     area = set_units(area, km^2)
-  )%>%
-  st_transform(CDLwest@crs)
+   ) 
+
+#dplyr::select(sf_recoverydomain, class, sourcethm) %>% #there are multiple packages with select function so you have to specify! Idk why this won't work...
+    #st_transform(CDLwest@crs) #not super sure what this does
 
 #Find area for each species, group into endangered, threatened, concern.
 df_rd_species <-
@@ -148,8 +195,7 @@ df_rd_species <-
   )
 df_rd_species
 
-#Find further simplify to just species names
-
+#Further simplify in additional dataframe to just species names
 df_rd_species2 <-
   sf_recoverydomain %>%
   st_drop_geometry() %>%
@@ -173,32 +219,99 @@ df_rd_species2 <-
   )
 df_rd_species2
 
+# Compute totals for polygons
+count_cdl_pixels <-
+  function(sf, cdl){
+    for (i in 1:nrow(sf)) {
+      # For testing
+      # sf = sf_recoverydomain
+      # cdl = raster_cdl_merge
+      # i = 2
+      # End testing block
+      
+      # Select polygon and reduce size for memory management
+      border <- sf[i,]
+      clip1 <- raster::crop(cdl, extent(border)) # Clip cdl to rectangle extents of the polygon
+      clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
+      clip2_split <- split_raster(clip2) # Final here is a list of four quadrants of the original polygon
+      
+      # Calculate pixel counts and percentages by class over each quadrant
+      ext_long <- tibble()
+      for (j in 1:4) {
+        # j=2 # For testing
+        cn <- cellnumbers(clip2_split[[j]], border) # Generates dummy tibble with cell ids for the split
+        if(nrow(cn) > 0) { # Intended to skip quadrants with no cells
+          ext <- # Extracts each individual cell from the raster then summarizes
+            cn %>% 
+            mutate(v = raster::extract(clip2_split[[j]], cell_)) %>% 
+            group_by(object_, v) %>% 
+            summarize(v_count = n()) %>% 
+            mutate(v_pct = v_count / sum(v_count), v = updateNamesCDL(v)) %>%
+            arrange(-v_count)
+          ext_long <- # Merges it all together
+            ext_long %>%
+            bind_rows(ext)
+        }
+      }
+      ext_summ <- # Summs across the four quadrants
+        ext_long %>%
+        group_by(v) %>%
+        summarize(v_count = sum(v_count)) %>%
+        mutate(v_pct = v_count / sum(v_count)) %>%
+        arrange(-v_count)
+      ext_wide <- # Projects wide for joining with sf
+        ext_summ %>%
+        mutate(v = make_clean_names(v)) %>%
+        pivot_wider(names_from = v, values_from = c(v_count, v_pct))
+      
+      # Output to new sf
+      border <-
+        border %>%
+        bind_cols(ext_wide)
+      if(i>1) {
+        new_sf <-
+          new_sf %>%
+          bind_rows(border)
+      }
+      if(i==1) {
+        new_sf <-
+          border
+      }
+      
+      # For testing
+      # border$area
+      # plot(clip1)
+      # plot(border$geometry, add = TRUE, col = "transparent", border = "red")
+      # plot(clip2)
+      # End testing block
+    }
+    
+    return(new_sf)
+  }
+
 #group by subdomain and summarize, you're left with subdomain and geometry only
 sf_recoverydomain_merge <-
   sf_recoverydomain %>%
   group_by(subdomain) %>%
-   summarize()
+  summarize()
 
 #sf_recoverydomain_merge <- st_union(sf_recoverydomain$geometry, sf_recoverydomain$subdomain)
 
-# Compute acreage summaries using CDL
-# Set CRS to match
 sf_recoverydomain <-
   sf_recoverydomain %>%
   st_transform(CDLwest@crs)
 
+# Compute acreage summaries using CDL
 #Break up full count for memory management
 # Full count 1: 1 - 10
+#it wants to take each bit of area and using the CDL file count pixels per unit area
+
 df_crdcount_1 <-
-  freq(
+  count_cdl_pixels(
     sf = sf_recoverydomain %>% arrange(area) %>% slice(1:10),
     cdl = CDLwest
   ) %>%
   st_drop_geometry()
-
-
-
-
 # Full count 2: 11 - 20
 df_crdcount_2 <-
   count_cdl_pixels(
