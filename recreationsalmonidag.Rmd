@@ -618,7 +618,7 @@ df_crdcount_long <-
   mutate(v_pct = v_count / sum(v_count), v_tot = sum(v_count)) %>%
   ungroup()
 
-
+#transforms columns to rows, cleans up for plotting
 df_crdcount_summ_long <-
   df_crdcount_summ %>%
   dplyr::select(
@@ -683,7 +683,7 @@ plot_summary <-
 plot_summary  
 
 
-#Only ag categories, all species
+#Plots only ag categories, all species
 plot_summary_ag <-
   df_crdcount_summ_long %>%
   filter(status != "Not Warranted")  %>%
@@ -722,39 +722,17 @@ plot_summary_ag
 ```
 
 ```{r}
-# df_crdcount_long %>%
-#   ggplot(aes(x = "")) +
-#   geom_bar(aes(y = v_pct, fill = v), stat = "identity", width = 1) +
-#   facet_wrap(~ esu_dps) +
-#   coord_polar("y", start = 0)
-# Plot maps ====
-# For testing, grab just snake river fall-run chinook
-# sf_test <- sf_recoverydomain %>% filter(esu_dps == "Snake River Fall-run Chinook Salmon")
-# raster_clip_test <- raster::crop(raster_cdl_merge, extent(sf_test)) %>% mask(sf_test) # Mask cdl to only what's within polygon
-# raster_df_clip_test <- raster_clip_test %>% as_tibble(xy = TRUE) %>% mutate(cellvalue = updateNamesCDL(cellvalue) %>% factor)
-# 
-# 
-# ggplot() +
-#   geom_raster(data = raster_df_clip_test, aes(x = x, y = y)) +
-#   coord_sf
-# 
-# ggplot() +
-#   geom_bar(data = raster_cdl_merge, aes())
-# 
-# plot(raster_cdl_merge, bgc = NA)
-# plot(st_geometry(sf_recoverydomain), col = NA, border = "red", bgc = NA, add = TRUE)
-# 
-# ggplot() +
-#   geom_sf(data = sf_recoverydomain, fill = NA, mapping = aes(color = subdomain, linetype = species)) +
-#   coord_sf() +
-#   facet_wrap(~ species2)
-# 
-# ggplot() +
-#   geom_raster(data = raster_cdl$CA2017) +
-#   coord_sf()
+df_crdcount_long %>%
+  ggplot(aes(x = "")) +
+  geom_bar(aes(y = v_pct, fill = v), stat = "identity", width = 1) +
+  facet_wrap(~ esu_dps) +
+  coord_polar("y", start = 0)
+
 states_core <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
 states_expand <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
 land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+
+#Plots sample recovery domain on USA West regional map with recovery domain outlind in red
 (plot_map <-
   ggplot() +
   geom_sf(data = land, fill = "antiquewhite1") +
@@ -781,11 +759,13 @@ border <- sf_recoverydomain %>%
   slice(i)
 clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents of the polygon
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
-#plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
+
+#plots
+plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
 # Figures -----------------------------------------------------------------
 # Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
 df_clip2 <- as.data.frame(clip2, xy = TRUE)
-df_clip2 <- df_clip2 %>% mutate(CDLwest = updateNamesCDL(CDLwest))
+df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 # Plot a map with all land use types (ok to skip)
 #ggplot() + geom_raster(data = df_clip2, aes(x = x, y = y, fill = CDLwest)) + scale_fill_manual(values = rainbow(60))
 # Create table of counts by land use type (proportion doesn't work because we have all those NAs)
