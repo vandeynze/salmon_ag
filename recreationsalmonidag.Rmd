@@ -732,7 +732,7 @@ states_core <- st_as_sf(maps::map("state", regions = c("california", "oregon", "
 states_expand <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
 land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
 
-#Plots sample recovery domain on USA West regional map with recovery domain outlind in red
+#Plots sample recovery domain on USA West regional map with recovery domain outlined in red
 (plot_map <-
   ggplot() +
   geom_sf(data = land, fill = "antiquewhite1") +
@@ -751,7 +751,6 @@ dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
 area <- sf_recoverydomain %>% distinct(subdomain) %>% arrange(subdomain) %>% pull(subdomain)
 area <- unique(area)
 
-i = 12
 i = 32
 # Plot raster separately
 border <- sf_recoverydomain %>% 
@@ -761,38 +760,60 @@ clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents o
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
 
 #plots
-plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
+#plot(clip2) # Treats values as continuous b/c cdl uses number codes... so you can get a picture of the diversity of land use but not super informative
 # Figures -----------------------------------------------------------------
 # Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
-df_clip2 <- as.data.frame(clip2, xy = TRUE)
-df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
+df_clip_pts <- rasterToPoints(clip2, spatial = TRUE)
+df_clip2 <- as.data.frame(df_clip_pts, xy = TRUE)
+#df_clip2 <-subset(df_clip2, cdl_west.isnaA)
+# df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 # Plot a map with all land use types (ok to skip)
-#ggplot() + geom_raster(data = df_clip2, aes(x = x, y = y, fill = CDLwest)) + scale_fill_manual(values = rainbow(60))
+#ggplot() + geom_raster(data = df_clip2, aes(x = x, y = y, fill = cdl_west)) + scale_fill_manual(values = rainbow(60))
+
+#break up renaming into chunks
+df_clip2_1 <-
+  df_clip2 %>% slice(1:30818117) %>% mutate(cdl_west = updateNamesCDL(cdl_west))
+df_clip2_2 <-
+  df_clip2 %>% slice(30818117:61636234) %>% mutate(cdl_west = updateNamesCDL(cdl_west))  
+df_clip2_3 <-
+  df_clip2 %>% slice(61636234:92454351) %>% mutate(cdl_west = updateNamesCDL(cdl_west))  
+df_clip2_4 <-
+  df_clip2 %>% slice(92454351:123272468) %>% mutate(cdl_west = updateNamesCDL(cdl_west))  
+df_clip2_5 <-
+  df_clip2 %>% slice(123272468:154090584) %>% mutate(cdl_west = updateNamesCDL(cdl_west))
+
+# Combine
+df_clip2 <-
+  bind_rows(df_clip2_1, df_clip2_2, df_clip2_3, df_clip2_4, df_clip2_5)
+rm(df_clip2_1, df_clip2_2, df_clip2_3, df_clip2_4, df_clip2_5)
+
 # Create table of counts by land use type (proportion doesn't work because we have all those NAs)
 # This is also used as the substitution matrix to group all land use types into crop categories
 types<- df_clip2  %>%
-  group_by(CDLwest)  %>%
+  group_by(cdl_west)  %>%
   count
+#df_clip2_types <- left_join(df_clip2, types)
+#df_clip2_types<- df_clip2_types %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 types<-types %>%
-  mutate(cropgroup=if_else(str_detect(CDLwest, "Barley|Rye|Wheat|Oats|Triticale|Sorghum|Buckwheat|Millet|Dbl"), "smgrains", 
-                           if_else(str_detect(CDLwest, "Walnuts|Almonds|Pecans|Pistachios"), "nuts" ,
-                                   if_else(str_detect(CDLwest, "Apples  | Apricots|berries|  Cantaloupes|Cherries|Citrus|Watermelons|Melons|Nectarines|Oranges|Peaches|Pears|Plums|Pomegranates|Other Tree|Olives"), "fruits",
-                                           if_else(str_detect(CDLwest, "Tomatoes|Asparagus|Broccoli|Cabbage|Carrots|Cauliflower|Cucumbers|Garlic|Gourds|Greens|Lettuce|Onions|Peas|Peppers|Popcorn|Pumpkins|Radish|Squash|Sweet Corn|Sweet Potatoes|Turnips"), "veg",
-                                                   if_else(str_detect(CDLwest,  "Chick Peas|Christmas Trees|Dry Beans|Flaxseed|Herbs|Hops|Lentils|Mint|Misc Vegs|Mustard|Other Crops|Rape|Safflower|Sod/Grass Seed|Sugarbeets|Sunflower|Vetch"), "other_crops",                
-                                                           if_else(str_detect(CDLwest,  "Alfalfa|Other Hay"), "hay",
-                                                                   if_else(str_detect(CDLwest,  "Rice"), "rice",
-                                                                           if_else(str_detect(CDLwest,  "Cotton"), "cotton",
-                                                                                   if_else(str_detect(CDLwest,  "Fallow"), "fallow",
-                                                                                           if_else(str_detect(CDLwest,  "Grapes"), "grapes",
-                                                                                                   if_else(str_detect(CDLwest,  "Pasture"), "pasture",
-                                                                                                           "other"))))))))))))
-types$cropgroup <- if_else(types$CDLwest == "Potatoes", "potatoes", types$cropgroup)
-types$cropgroup <- if_else(types$CDLwest == "Corn", "corn", types$cropgroup)
-types$cropgroup <- if_else(types$CDLwest == "Open Water", "Open Water", types$cropgroup)
+  mutate(cropgroup=if_else(str_detect(cdl_west, "21|27|22|23|24|28|205|4|39|29|254|241|240|239|238|237|236|235|234|233|232|231|230|228|226|225"), "Small Grains",
+                           if_else(str_detect(cdl_west, "76|75|74|204"), "Nuts" ,
+                                   if_else(str_detect(cdl_west, "68|223|55|221|242|250 209|66|72|48|213|218|212|67|77|220|217|71|211"), "Fruits",
+                                           if_else(str_detect(cdl_west, "54|207|214|243|206|244|50|208|249|219|227|49|53|216|13|229|246|222|12|46|247"), "Vegetables",
+                                                   if_else(str_detect(cdl_west,  "51|70|42|32|57|56|52|14|47|35|44|33|59|41|6|224"), "Other Crops",                
+                                                           if_else(str_detect(cdl_west,  "36|37"), "Hay",
+                                                                   if_else(str_detect(cdl_west,  "3"), "Rice",
+                                                                           if_else(str_detect(cdl_west,  "2"), "Cotton",
+                                                                                   if_else(str_detect(cdl_west,  "61"), "Fallow",
+                                                                                           if_else(str_detect(cdl_west,  "69"), "Grapes",
+                                                                                                   if_else(str_detect(cdl_west,  "62"), "Pasture",
+                                                                                                           "Other"))))))))))))
+types$cropgroup <- if_else(types$cdl_west == "43", "Potatoes", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "1", "Corn", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "111", "Open Water", types$cropgroup)
 # Join types to the land use data frame
-df_clip2_types = left_join(df_clip2, types)
+df_clip2_types <- left_join(df_clip2, types)
 # Plot crop categories (types)
-setwd("C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/output/salmonid_ag_maps/")
+setwd("~/Desktop/Github Repo/salmon_ag/output/salmonid_ag_maps/")
 fname <- area[i]
 fname1 <- paste0(fname, ".pdf")
 pdf(file = fname1, width = 6, height = 4.5)
@@ -809,10 +830,10 @@ cropgroup.count <- df_clip2_types  %>%
   group_by(cropgroup)  %>%
   count
 #Checking to make sure I got all categories
-#v.count<- df_crdcount_long  %>%
-#  group_by(v)  %>%
-#  count
-#write.csv(v.count,".output/v-list.csv", row.names = FALSE)
+v.count<- df_crdcount_long  %>%
+ group_by(v)  %>%
+ count
+write.csv(v.count,"output/v-list.csv", row.names = FALSE)
 ```
 
 ## Including Plots
