@@ -174,8 +174,9 @@ sf_recoverydomain <-
     ),
     area = st_area(geometry),
     area = set_units(area, km^2)
-   )
-
+   ) %>%
+  st_transform(CDLwest@crs)
+               
 # #dplyr::select(sf_recoverydomain, class, sourcethm) %>% #there are multiple packages with select function so you have to specify! Idk why this won't work...
 #     #st_transform(CDLwest@crs) #not super sure what this does
 #
@@ -304,9 +305,7 @@ df_rd_species2
 # 
 # #sf_recoverydomain_merge <- st_union(sf_recoverydomain$geometry, sf_recoverydomain$subdomain)
 
-sf_recoverydomain <-
-  sf_recoverydomain %>%
-  st_transform(CDLwest@crs)
+
 
 # Compute acreage summaries using CDL
 #Break up full count for memory management
@@ -754,7 +753,7 @@ area <- unique(area)
 i = 32
 # Plot raster separately
 border <- sf_recoverydomain %>% 
-  arrange(area) %>% 
+  dplyr::arrange(area) %>% 
   slice(i)
 clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents of the polygon
 clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
@@ -764,36 +763,20 @@ clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
 # Figures -----------------------------------------------------------------
 # Things past here work on Lisa's desktop (slowly), but not Braeden's laptop
 df_clip_pts <- rasterToPoints(clip2, spatial = TRUE)
-df_clip2 <- as.data.frame(df_clip_pts, xy = TRUE)
+df_clip2 <- as.data.frame(df_clip_pts, xy = TRUE) %>% 
+             drop_na(cdl_west)
+#drops NA and removes dataframe to clear up storag
+rm(df_clip_pts)
 #df_clip2 <-subset(df_clip2, cdl_west.isnaA)
 # df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 # Plot a map with all land use types (ok to skip)
 #ggplot() + geom_raster(data = df_clip2, aes(x = x, y = y, fill = cdl_west)) + scale_fill_manual(values = rainbow(60))
-
-#break up renaming into chunks
-df_clip2_1 <-
-  df_clip2 %>% slice(1:30818117) %>% mutate(cdl_west = updateNamesCDL(cdl_west))
-df_clip2_2 <-
-  df_clip2 %>% slice(30818117:61636234) %>% mutate(cdl_west = updateNamesCDL(cdl_west))  
-df_clip2_3 <-
-  df_clip2 %>% slice(61636234:92454351) %>% mutate(cdl_west = updateNamesCDL(cdl_west))  
-df_clip2_4 <-
-  df_clip2 %>% slice(92454351:123272468) %>% mutate(cdl_west = updateNamesCDL(cdl_west))  
-df_clip2_5 <-
-  df_clip2 %>% slice(123272468:154090584) %>% mutate(cdl_west = updateNamesCDL(cdl_west))
-
-# Combine
-df_clip2 <-
-  bind_rows(df_clip2_1, df_clip2_2, df_clip2_3, df_clip2_4, df_clip2_5)
-rm(df_clip2_1, df_clip2_2, df_clip2_3, df_clip2_4, df_clip2_5)
 
 # Create table of counts by land use type (proportion doesn't work because we have all those NAs)
 # This is also used as the substitution matrix to group all land use types into crop categories
 types<- df_clip2  %>%
   group_by(cdl_west)  %>%
   count
-#df_clip2_types <- left_join(df_clip2, types)
-#df_clip2_types<- df_clip2_types %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 types<-types %>%
   mutate(cropgroup=if_else(str_detect(cdl_west, "21|27|22|23|24|28|205|4|39|29|254|241|240|239|238|237|236|235|234|233|232|231|230|228|226|225"), "Small Grains",
                            if_else(str_detect(cdl_west, "76|75|74|204"), "Nuts" ,
