@@ -819,6 +819,167 @@ v.count<- df_crdcount_long  %>%
 write.csv(v.count,"output/v-list.csv", row.names = FALSE)
 ```
 
+```{r species-summs, fig.height=12, fig.width=6, results="asis", echo=FALSE}
+# Load states borders and transform to match crs
+states_core <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+states_expand <- st_as_sf(maps::map("state", regions = c("california", "oregon", "washington", "idaho", "montana", "wyoming", "arizona", "nevada", "utah", "colorado", "new mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+
+# List of distinct population segments
+dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
+
+# Loop profile over all DPS...
+for(i in dps) {
+  # Print species title and some info
+  cat("  \n###", i)
+  cat("  \n**Status:**", df_crdcount %>% filter(esu_dps == i) %>% pull(status))
+  cat("  \n**Domain:**", df_crdcount %>% filter(esu_dps == i) %>% pull(domain))
+  cat("  \n")
+
+  # Build range map
+  p_range <-
+    ggplot() +
+    # Basic landmass polygon
+    geom_sf(data = land, fill = "antiquewhite1") +
+    # State borders polygon
+    geom_sf(data = states_expand, fill = "antiquewhite1") +
+    # Highlight the range
+    geom_sf(data = sf_recoverydomain %>% filter(esu_dps == i), fill = NA, color = "red") +
+    # Set bounding box
+    coord_sf(
+      xlim = st_bbox(states_core)[c(1,3)],
+      ylim = st_bbox(states_core)[c(2,4)]
+    ) +
+    # Some themeing
+    theme_void() +
+    theme(
+      panel.background = element_rect(fill = "aliceblue", color = NA)
+    )
+  
+  # Build land cover bar plot
+  p_cover <-
+    df_crdcount_summ_long %>%
+    # Isolate just the one species
+    filter(esu_dps == i) %>%
+    ggplot() +
+    # Plot the land cover breakdown
+    geom_col(aes(x = esu_dps, y = v_summ_pct, fill = v), position = "stack", width = 0.75) +
+    # Set the color scale for land cover breakdown
+    scale_fill_manual(
+      limits = c("ag_nopasture", "pasture", "shrubland", "forest", "developed", "other"),
+      labels = c("Cropland", "Pasture", "Shrubland", "Forest", "Developed", "Other"),
+      values = c("darkgoldenrod", "goldenrod", "palegreen", "darkgreen", "darkgrey", "lightgrey"),
+      name = ""
+    ) +
+    # Set up the y-axis
+    scale_y_continuous(breaks = c(0, 0.25, 0.5, 0.75, 1), labels = scales::label_percent()) +
+    # guides(
+    #   x = guide_axis(position = "top", order = 0, check.overlap = TRUE),
+    #   y = guide_axis(position = "left")
+    # ) +
+    # Some themeing
+    theme_void() +
+    theme(
+      # axis.text.x = element_text(hjust = 1, vjust = 0.5),
+      panel.spacing = unit(0.1, "lines"),
+      axis.line = element_blank(),
+      # axis.ticks = element_blank(),
+      axis.text.x = element_text(),
+      axis.title = element_blank(),
+      panel.grid.major.x = element_line(linetype = "dashed", color = "black"),
+      legend.position = "bottom",
+      legend.box = "horizontal",
+      legend.background = element_blank(),
+      plot.title.position = "plot",
+      # panel.background = element_rect(color = "black"),
+      strip.background = element_rect(fill = "lightgrey"),
+      strip.placement = "outside"
+    ) +
+    # Flip so it fits under the map
+    coord_flip() +
+    # Add title
+    ggtitle("Land Cover Share")
+  # p_row <- plot_grid(p_range, p_cover, rel_heights = c(0.8, 0.2))
+  
+
+  # Build titles as seperate objects so we can put them in the composite figure
+  p_title <-
+    ggdraw() + 
+    draw_label(
+      "Habitat range and land cover share",
+      fontface = 'bold',
+      x = 0,
+      hjust = 0
+    ) +
+    theme(
+      # add margin on the left of the drawing canvas,
+      # so title is aligned with left edge of first plot
+      plot.margin = margin(0, 0, 0, 0)
+    )
+  p_subtitle <-
+    ggdraw() + 
+    draw_label(
+      i,
+      fontface = 'bold',
+      size = 12,
+      x = 0,
+      hjust = 0
+    ) +
+    theme(
+      # add margin on the left of the drawing canvas,
+      # so title is aligned with left edge of first plot
+      plot.margin = margin(0, 0, 0, 0)
+    )
+  
+  # Plot it all
+  # Some subtitles
+  cat("  \n#### Habitat range and land cover")  
+  cat("  \n")
+  
+  # Plot the composite figure
+  plot_grid(
+    p_range, p_cover,
+    ncol = 1,
+    # rel_heights values control vertical title margins
+    rel_heights = c(0.7, 0.15)
+  ) %>%
+    print
+
+  # Print the table of land cover shares (with finer crop breakdown)
+  df_crdcount_long %>%
+    # Grab just the dps we're interested in
+    filter(esu_dps == i) %>%
+    # Select just the value columns
+    select(v, v_pct) %>% 
+    # Arrange so the largest share is on top
+    arrange(-v_pct) %>%
+    # Drop shares with less than 1% of land cover
+    filter(v_pct >= 0.01) %>%
+    # Clean up so it's pretty
+    mutate(
+      v = make_clean_names(v, "sentence"),
+      v_pct = scales::percent(v_pct, accuracy = 0.1)
+    ) %>%
+    # Give the variables descriptive pretty labels for column headers
+    rename(
+      "Land cover" = v,
+      "%" = v_pct
+    ) %>%
+    # mutate("All other" = )
+    # Transform into html table
+    kable() %>%
+    # Style it
+    kable_styling(bootstrap_options = c("striped", "hover", "condensed"), fixed_thead = T, full_width = F, position = "float_right") %>%
+    # scroll_box(height = "200px") %>%
+    # Add footnote on where the other land covers went
+    footnote("All other land covers < 1%") %>%
+    # Make sure it shows up
+    print
+    # Add one more linebreak so we don't bleed into the next one report
+    cat("  \n")
+}
+```
+
 ## Including Plots
 
 You can also embed plots, for example:
