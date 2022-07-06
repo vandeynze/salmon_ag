@@ -175,9 +175,9 @@ types$cropgroup <- if_else(types$cdl_west == "111", "Open Water", types$cropgrou
              ggplot() +
              geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
              scale_fill_manual(
-                        "Land cover (CDL2021)",
-      limits = c( "corn", "cotton", "fallow", "fruits", "grapes","hay","other_crops", "nuts",  "pasture", "potatoes", "rice", "smgrains",  "vegetables", "Open Water", "other"),
-      labels = c("corn", "cotton", "fallow", "fruits", "grapes","hay","other crops", "nuts", "pasture", "potatoes", "rice", "small grains",  "vegetables", "Open Water", "other"),
+                        "Land Cover (CDL2021)",
+      limits = c( "Corn", "Cotton", "Fallow", "Fruits", "Grapes","Hay","Other Crops", "Nuts",  "Pasture", "Potatoes", "Rice", "Small Grains",  "Vegetables", "Open Water", "Other"),
+      labels = c("Corn", "Cotton", "Fallow", "Fruits", "Grapes","Hay","Other Crops", "Nuts",  "Pasture", "Potatoes", "Rice", "Small Grains",  "Vegetables", "Open Water", "Other"),
       values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan", "darkgreen", "black", "violet","pink",  "springgreen3", "darkblue", "antiquewhite1")) +
   
              ggtitle(i) +
