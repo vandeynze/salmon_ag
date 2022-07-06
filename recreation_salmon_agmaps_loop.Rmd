@@ -48,8 +48,7 @@ This document summarizes land cover over the habitat range of listed salmonid po
 
 ```{r data-prep, echo=FALSE, message=FALSE, include=FALSE}
 # Get CDL data, process outlined on recreationsalmonag.Rmd
-CDLtif = raster('cdl_west.tif')
-CDLwest <- CDLtif
+CDLwest = raster('cdl_west.tif')
 
 #clean up recovery domain names, simplify naming of targeted species to summarize
 sf_recoverydomain <- st_read(here("data/recovery_subdomains/subdomains-ver7.shp")) %>% clean_names()
@@ -168,22 +167,23 @@ types$cropgroup <- if_else(types$cdl_west == "43", "Potatoes", types$cropgroup)
 types$cropgroup <- if_else(types$cdl_west == "1", "Corn", types$cropgroup)
 types$cropgroup <- if_else(types$cdl_west == "111", "Open Water", types$cropgroup)
            
+         
           # Join types to the land use data frame
            df_clip2_types = left_join(df_clip2, types)
            # Plot crop categories (types)
            p_ag_cover <-
              ggplot() +
              geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
-             scale_fill_manual(
-                        "Land Cover (CDL2021)",
-      limits = c( "Corn", "Cotton", "Fallow", "Fruits", "Grapes","Hay","Other Crops", "Nuts",  "Pasture", "Potatoes", "Rice", "Small Grains",  "Vegetables", "Open Water", "Other"),
-      labels = c("Corn", "Cotton", "Fallow", "Fruits", "Grapes","Hay","Other Crops", "Nuts",  "Pasture", "Potatoes", "Rice", "Small Grains",  "Vegetables", "Open Water", "Other"),
-      values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan", "darkgreen", "black", "violet","pink",  "springgreen3", "darkblue", "antiquewhite1")) +
+             scale_fill_manual( "Land Cover (CDL2021)",
+                          limits = c("Small Grains", "Nuts", "Fruits", "Vegetables", "Other Crops", "Hay", "Rice","Cotton","Fallow","Grapes","Pasture", "Other", "Potatoes", "Corn", "Open Water"),
+      labels = c("Small Grains", "Nuts", "Fruits", "Vegetables", "Other Crops", "Hay", "Rice","Cotton","Fallow","Grapes","Pasture", "Other", "Potatoes", "Corn", "Open Water"),
+      values = c("goldenrod", "darkgoldenrod", "darkred", "lightgreen", "purple", "darkgreen", "pink", "tan", "grey", "violet", "springgreen3", "antiquewhite1", "black", "gold", "darkblue")) +
   
              ggtitle(i) +
              theme_map()
            plot(p_ag_cover)
          }
   )
+
 ```
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
