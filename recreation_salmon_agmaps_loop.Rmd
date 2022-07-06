@@ -123,7 +123,7 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 ```{r lapply, echo=FALSE}
 # List of distinct population segments
 dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
-#creat slice of dps
+#create slice of dps
 dps <- dps[1:37] #should be 1:37 but my computer can't hold them all in memory
 
 invisible(
@@ -146,27 +146,28 @@ invisible(
            df_clip2 <- as.data.frame(df_clip_pts, xy = TRUE) %>% drop_na(cdl_west)
            rm(df_clip_pts)
            
-          types<- df_clip2  %>%
-              group_by(cdl_west)  %>%
-              count
-        
+          types<- df_clip2  %>% group_by(cdl_west) %>% count
+  
           types<-types %>%
-            mutate(cropgroup=if_else(str_detect(cdl_west, "21|27|22|23|24|28|205|4|39|29|254|241|240|239|238|237|236|235|234|233|232|231|230|228|226|225"), "Small Grains",
-                           if_else(str_detect(cdl_west, "76|75|74|204"), "Nuts" ,
-                                   if_else(str_detect(cdl_west, "68|223|55|221|242|250 209|66|72|48|213|218|212|67|77|220|217|71|211"), "Fruits",
-                                           if_else(str_detect(cdl_west, "54|207|214|243|206|244|50|208|249|219|227|49|53|216|13|229|246|222|12|46|247"), "Vegetables",
-                                                   if_else(str_detect(cdl_west,  "51|70|42|32|57|56|52|14|47|35|44|33|59|41|6|224"), "Other Crops",                
-                                                           if_else(str_detect(cdl_west,  "36|37"), "Hay",
-                                                                   if_else(str_detect(cdl_west,  "3"), "Rice",
-                                                                           if_else(str_detect(cdl_west,  "2"), "Cotton",
-                                                                                   if_else(str_detect(cdl_west,  "61"), "Fallow",
-                                                                                           if_else(str_detect(cdl_west,  "69"), "Grapes",
-                                                                                                   if_else(str_detect(cdl_west,  "62"), "Pasture",
-                                                                                                           "Other"))))))))))))
-types$cropgroup <- if_else(types$cdl_west == "43", "Potatoes", types$cropgroup)
-types$cropgroup <- if_else(types$cdl_west == "1", "Corn", types$cropgroup)
+    mutate(
+    cropgroup = 
+      case_when(
+        str_detect(cdl_west, "21|27|22|23|24|25|26|28|29|39|205|225|226|227|230|231|232|233|234|235|236|237|238|239|240|241|254"), "smgrains",
+        str_detect(cdl_west, "76|75|74|204"), "nuts" ,
+        str_detect(cdl_west, "68|223|55|221|242|250 209|66|72|48|213|218|212|67|77|220|217|71|211"), "fruits",
+        str_detect(cdl_west, "54|207|214|243|206|244|50|208|249|219|227|49|53|216|13|229|246|222|12|46|247"), "vegetables",
+        str_detect(cdl_west,  "51|70|42|32|57|56|52|14|47|35|44|33|59|41|6|224"), "other_crops",
+        str_detect(cdl_west,  "36|37"), "hay",
+        str_detect(cdl_west,  "3"), "rice",
+        str_detect(cdl_west,  "2"), "cotton",
+        str_detect(cdl_west,  "61"), "fallow",
+        str_detect(cdl_west,  "69"), "grapes",
+        str_detect(cdl_west,  "62"), "pasture",
+        TRUE ~ "other")
+  )
+types$cropgroup <- if_else(types$cdl_west == "43", "potatoes", types$cropgroup)
+types$cropgroup <- if_else(types$cdl_west == "1", "corn", types$cropgroup)
 types$cropgroup <- if_else(types$cdl_west == "111", "Open Water", types$cropgroup)
-           
          
           # Join types to the land use data frame
            df_clip2_types = left_join(df_clip2, types)
@@ -174,16 +175,16 @@ types$cropgroup <- if_else(types$cdl_west == "111", "Open Water", types$cropgrou
            p_ag_cover <-
              ggplot() +
              geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
-             scale_fill_manual( "Land Cover (CDL2021)",
-                          limits = c("Small Grains", "Nuts", "Fruits", "Vegetables", "Other Crops", "Hay", "Rice","Cotton","Fallow","Grapes","Pasture", "Other", "Potatoes", "Corn", "Open Water"),
-      labels = c("Small Grains", "Nuts", "Fruits", "Vegetables", "Other Crops", "Hay", "Rice","Cotton","Fallow","Grapes","Pasture", "Other", "Potatoes", "Corn", "Open Water"),
-      values = c("goldenrod", "darkgoldenrod", "darkred", "lightgreen", "purple", "darkgreen", "pink", "tan", "grey", "violet", "springgreen3", "antiquewhite1", "black", "gold", "darkblue")) +
+             scale_fill_manual(
+                        "Land cover (CDL2021)",
+      limits = c("corn", "cotton", "fallow", "fruits", "grapes","hay","other_crops", "nuts",  "pasture", "potatoes", "rice", "smgrains",  "vegetables", "Open Water", "other"),
+      labels = c("corn", "cotton", "fallow", "fruits", "grapes","hay","other crops", "nuts", "pasture", "potatoes", "rice", "small grains",  "vegetables", "Open Water", "other"),
+      values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan", "darkgreen", "black", "violet","pink",  "springgreen3", "darkblue", "antiquewhite1")) +
   
              ggtitle(i) +
              theme_map()
            plot(p_ag_cover)
          }
   )
-
 ```
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
