@@ -113,7 +113,6 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 # List of distinct population segments
 dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
 dps <- dps[1:1]
-#dps <- dps[1:37] #should be 1:37 but my computer can't hold them all in memory
 
 invisible(
   lapply(dps,      
@@ -125,7 +124,7 @@ invisible(
            
            #Plot the agricultural land uses inside each area
            border <- sf_recoverydomain %>% 
-             arrange(area) %>% 
+             dplyr::arrange(area) %>% 
              filter(esu_dps == i)
            
            clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents of the polygon
@@ -166,11 +165,11 @@ invisible(
            
            p_ag_cover <-
              ggplot() +
-             geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
+             geom_raster(data = df_clip2_types, aes(fill = cropgroup)) +
              scale_fill_manual(
                 "Land cover (CDL2021)",
       limits = c( "corn", "cotton", "fallow", "fruits", "grapes","hay","other_crops", "nuts",  "pasture", "potatoes", "rice", "smgrains",  "vegetables", "Open Water", "other"),
-      labels = c("corn", "cotton", "fallow", "fruits", "grapes","hay","other crops", "nuts", "pasture", "potatoes", "rice", "small grains",  "vegetables", "Open Water", "other"),
+      labels = c("Corn", "Cotton", "Fallow", "Fruits", "Grapes","Hay","Other Crops", "Nuts", "Pasture", "Potatoes", "Rice", "Small Grains",  "Vegetables", "Open Water", "Other"),
       values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan", "darkgreen", "black", "violet","pink",  "springgreen3", "darkblue", "antiquewhite1")) +
   
              ggtitle(i) +
@@ -181,25 +180,3 @@ invisible(
 )
 
 ```
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
