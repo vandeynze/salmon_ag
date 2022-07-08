@@ -112,7 +112,7 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 ```{r lapply, echo=FALSE}
 # List of distinct population segments
 dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
-dps <- dps[1:1]
+dps <- dps[1:37]
 
 invisible(
   lapply(dps,      
