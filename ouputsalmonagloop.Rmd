@@ -107,6 +107,8 @@ states_expand <-
         ), plot = FALSE, fill = TRUE)
   ) %>% st_transform(st_crs(sf_recoverydomain))
 land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALSE, fill = TRUE)) %>% st_transform(st_crs(sf_recoverydomain))
+
+linkdata
 ```
 
 ```{r lapply, echo=FALSE}
@@ -119,10 +121,10 @@ border <- sf_recoverydomain %>%
    slice(i)
  
 clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents of the polygon
- clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
+clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
  
- (df_clip2 <- as.data.frame(clip2, xy = TRUE))
-df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
+df_clip2_pts <- as.data.frame(clip2, xy = TRUE)
+df_clip2 <- df_clip2_pts %>% mutate(cdl_west = updateNamesCDL(cdl_west))
 
            types <- df_clip2  %>%
              group_by(cdl_west)  %>%
