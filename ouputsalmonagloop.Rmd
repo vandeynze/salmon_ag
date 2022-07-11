@@ -116,8 +116,7 @@ sort(dps)
 dps <- dps[1:37]
 
 invisible(
-  lapply(dps,      
-         function(i) { 
+  for (i in dps) { 
            cat("  \n###", i)
            cat("  \n**Status:**", df_crdcount %>% filter(esu_dps == i) %>% pull(status))
            cat("  \n**Domain:**", df_crdcount %>% filter(esu_dps == i) %>% pull(domain))
@@ -180,8 +179,8 @@ invisible(
              ggtitle(i) +
              theme_map()
         plot(p_ag_cover)
+        dev.off()
          }
   )
-)
 
 ```
