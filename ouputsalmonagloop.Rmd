@@ -169,7 +169,7 @@ invisible(
            fname1 <- paste0(fname, ".pdf")
            pdf(file = fname1, width = 6, height = 4.5)
            
-             ggplot() +
+           p_ag_cover <- ggplot() +
              geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
              scale_fill_manual(
                 "Land cover (CDL2021)",
@@ -179,12 +179,7 @@ invisible(
   
              ggtitle(i) +
              theme_map()
-
-           dev.off()
-
-          cropgroup.count <- df_clip2_types  %>%
-          group_by(cropgroup)  %>%
-          count
+        plot(p_ag_cover)
          }
   )
 )
