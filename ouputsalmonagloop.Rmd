@@ -110,38 +110,26 @@ land <- st_as_sf(maps::map("world", regions = c("Canada", "Mexico"), plot = FALS
 ```
 
 ```{r lapply, echo=FALSE}
-# List of distinct population segments
 dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
 sort(dps)
-dps <- dps[1:37]
+i = 4
 
-invisible(
-  for (i in dps) { 
-           cat("  \n###", i)
-           cat("  \n**Status:**", df_crdcount %>% filter(esu_dps == i) %>% pull(status))
-           cat("  \n**Domain:**", df_crdcount %>% filter(esu_dps == i) %>% pull(domain))
-           cat("  \n")
-           
-           #Plot the agricultural land uses inside each area
-          border <- sf_recoverydomain %>% 
-              arrange(esu_dps) %>% 
-              slice(i)
-           
-           clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents of the polygon
-           clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
-           
-           
-           df_clip2 <- as.data.frame(clip2, xy = TRUE)
-           df_clip2 <- df_clip2 %>% 
-             drop_na(cdl_west) %>% 
-             mutate(cdl_west = updateNamesCDL(cdl_west))
-           
+border <- sf_recoverydomain %>% 
+   arrange(esu_dps) %>% 
+   slice(i)
+ 
+clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents of the polygon
+ clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
+ 
+ (df_clip2 <- as.data.frame(clip2, xy = TRUE))
+df_clip2 <- df_clip2 %>% mutate(cdl_west = updateNamesCDL(cdl_west))
+
            types <- df_clip2  %>%
              group_by(cdl_west)  %>%
              count
            types <- types %>%
              mutate(
-               cropgroup = 
+               cropgroup =
                  case_when(
                    str_detect(cdl_west, "Barley|Rye|Wheat|Oats|Triticale|Sorghum|Buckwheat|Millet|Dbl") ~ "smgrains",
                    str_detect(cdl_west, "Walnuts|Almonds|Pecans|Pistachios") ~ "nuts" ,
@@ -159,28 +147,92 @@ invisible(
            types$cropgroup <- if_else(types$cdl_west == "Potatoes", "potatoes", types$cropgroup)
            types$cropgroup <- if_else(types$cdl_west == "Corn", "corn", types$cropgroup)
            types$cropgroup <- if_else(types$cdl_west == "Open Water", "Open Water", types$cropgroup)
-           # Join types to the land use data frame
-           df_clip2_types = left_join(df_clip2, types)
-           df_clip2_types 
            
-           setwd("C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/output/salmonid_ag_maps/")
-           fname <- dps[i]
-           fname1 <- paste0(fname, ".pdf")
-           pdf(file = fname1, width = 6, height = 4.5)
-           
-           p_ag_cover <- ggplot() +
-             geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
-             scale_fill_manual(
-                "Land cover (CDL2021)",
-      limits = c( "corn", "cotton", "fallow", "fruits", "grapes","hay","other_crops", "nuts",  "pasture", "potatoes", "rice", "smgrains",  "vegetables", "Open Water", "other"),
-      labels = c("Corn", "Cotton", "Fallow", "Fruits", "Grapes","Hay","Other Crops", "Nuts", "Pasture", "Potatoes", "Rice", "Small Grains",  "Vegetables", "Open Water", "Other"),
-      values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan", "darkgreen", "black", "violet","pink",  "springgreen3", "darkblue", "antiquewhite1")) +
-  
-             ggtitle(i) +
-             theme_map()
-        plot(p_ag_cover)
-        dev.off()
-         }
-  )
+df_clip2_types = left_join(df_clip2, types)
+setwd("C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/output/salmonid_ag_maps/")
+fname <- dps[i]
+fname1 <- paste0(fname, ".pdf")
+pdf(file = fname1, width = 6, height = 4.5)
+
+ggplot() + 
+   geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + 
+   scale_fill_manual(
+     limits = c( "nuts", "smgrains", "fruit", "hay", "potatoes", "rice", "cotton", "fallow", "grapes", "veg", "corn", "othercrops", "Open Water", "Pasture", "other"),
+     labels = c( "Nuts", "Small grains", "Fruit", "Hay", "Potatoes", "Rice", "Cotton", "Fallow cropland", "Grapes", "Vegetables", "Corn", "Other crops", "Open Water", "Pasture", "other"),
+     values = c( "darkgoldenrod", "goldenrod", "darkred", "darkgreen", "black",  "violet","pink", "grey", "purple", "lightgreen", "gold", "lightblue", "darkblue", "springgreen3", "antiquewhite1"))
+
+dev.off()
+# List of distinct population segments 
+# dps <- df_crdcount %>% distinct(esu_dps) %>% arrange(esu_dps) %>% pull(esu_dps)
+# sort(dps)
+# dps <- dps[1:1]
+# 
+# invisible(
+#   for (i in dps) { 
+#            cat("  \n###", i)
+#            cat("  \n**Status:**", df_crdcount %>% filter(esu_dps == i) %>% pull(status))
+#            cat("  \n**Domain:**", df_crdcount %>% filter(esu_dps == i) %>% pull(domain))
+#            cat("  \n")
+#            
+#            #Plot the agricultural land uses inside each area
+#           border <- sf_recoverydomain %>% 
+#               arrange(esu_dps) %>% 
+#               filter(esu_dps == i)
+#            
+#            clip1 <- raster::crop(CDLwest, extent(border)) # Clip cdl to rectangle extents of the polygon
+#            clip2 <- mask(clip1, border) # Mask cdl to only what's within polygon
+#            
+#            
+#            df_clip2 <- as.data.frame(clip2, xy = TRUE)
+#            df_clip2 <- df_clip2 %>% 
+#              drop_na(cdl_west) %>% 
+#              mutate(cdl_west = updateNamesCDL(cdl_west))
+#            
+#            types <- df_clip2  %>%
+#              group_by(cdl_west)  %>%
+#              count
+#            types <- types %>%
+#              mutate(
+#                cropgroup = 
+#                  case_when(
+#                    str_detect(cdl_west, "Barley|Rye|Wheat|Oats|Triticale|Sorghum|Buckwheat|Millet|Dbl") ~ "smgrains",
+#                    str_detect(cdl_west, "Walnuts|Almonds|Pecans|Pistachios") ~ "nuts" ,
+#                    str_detect(cdl_west, "Apples  | Apricots|berries|  Cantaloupes|Cherries|Citrus|Watermelons|Melons|Nectarines|Oranges|Peaches|Pears|Plums|Pomegranates|Other Tree|Olives") ~ "fruits",
+#                    str_detect(cdl_west, "Tomatoes|Asparagus|Broccoli|Cabbage|Carrots|Cauliflower|Cucumbers|Garlic|Gourds|Greens|Lettuce|Onions|Peas|Peppers|Popcorn|Pumpkins|Radish|Squash|Sweet Corn|Sweet Potatoes|Turnips") ~ "vegetables",
+#                     str_detect(cdl_west, "Chick Peas|Christmas Trees|Dry Beans|Flaxseed|Herbs|Hops|Lentils|Mint|Misc Vegs|Mustard|Other Crops|Rape|Safflower|Sod/Grass Seed|Sugarbeets|Sunflower|Vetch") ~ "other_crops",
+#                    str_detect(cdl_west,  "Alfalfa|Other Hay") ~ "hay",
+#                    str_detect(cdl_west,  "Rice") ~ "rice",
+#                    str_detect(cdl_west,  "Cotton") ~ "cotton",
+#                    str_detect(cdl_west,  "Fallow") ~ "fallow",
+#                    str_detect(cdl_west,  "Grapes") ~ "grapes",
+#                    str_detect(cdl_west,  "Pasture")~ "pasture",
+#                    TRUE ~ "other")
+#              )
+#            types$cropgroup <- if_else(types$cdl_west == "Potatoes", "potatoes", types$cropgroup)
+#            types$cropgroup <- if_else(types$cdl_west == "Corn", "corn", types$cropgroup)
+#            types$cropgroup <- if_else(types$cdl_west == "Open Water", "Open Water", types$cropgroup)
+#            # Join types to the land use data frame
+#            df_clip2_types = left_join(df_clip2, types)
+#            df_clip2_types 
+#            
+#            #setwd("C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/output/salmonid_ag_maps/")
+#            fname <- dps[i]
+#            fname1 <- paste0(fname, ".pdf")
+#            pdf(file = fname1, width = 6, height = 4.5)
+#            
+#            p_ag_cover <- ggplot() +
+#              geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) +
+#              scale_fill_manual(
+#                 "Land cover (CDL2021)",
+#       limits = c( "corn", "cotton", "fallow", "fruits", "grapes","hay","other_crops", "nuts",  "pasture", "potatoes", "rice", "smgrains",  "vegetables", "Open Water", "other"),
+#       labels = c("Corn", "Cotton", "Fallow", "Fruits", "Grapes","Hay","Other Crops", "Nuts", "Pasture", "Potatoes", "Rice", "Small Grains",  "Vegetables", "Open Water", "Other"),
+#       values = c( "darkgoldenrod", "goldenrod", "grey", "darkred", "purple", "lightgreen", "gold", "tan", "darkgreen", "black", "violet","pink",  "springgreen3", "darkblue", "antiquewhite1")) +
+#   
+#              ggtitle(i) +
+#              theme_map()
+#         plot(p_ag_cover)
+#         dev.off()
+#          }
+#   )
 
 ```
