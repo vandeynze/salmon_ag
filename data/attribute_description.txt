@@ -1,0 +1,479 @@
+=========================
+ Attributes of Huc6_esu-withadds-ver4-alb27.shp:
+=========================
+Table Source:
+    z:\volumes\seagate2\gisdata\for_lisa\huc6_esu-withadds-ver4-alb27.dbf
+---------------------------------------------------
+
+SHAPE : 
+     Shape, Shapepoly
+     [ Field_shapepoly, is indexed; Prec. =   8.0 ]
+ 
+OBJECTID : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   9.0 ]
+ 
+HUC_8 : 
+     String, Char
+     [ Field_char; Prec. =   8.0 ]
+ 
+HUC_10 : 
+     String, Char
+     [ Field_char; Prec. =   10.0 ]
+ 
+HUC_12 : 
+     String, Char
+     [ Field_char; Prec. =   12.0 ]
+ 
+ACRES : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   19.11 ]
+ 
+NCONTRB_A : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   19.11 ]
+ 
+HU_10_GNIS : 
+     String, Char
+     [ Field_char; Prec. =   23.0 ]
+ 
+HU_12_GNIS : 
+     String, Char
+     [ Field_char; Prec. =   23.0 ]
+ 
+HU_10_DS : 
+     String, Char
+     [ Field_char; Prec. =   10.0 ]
+ 
+HU_10_NAME : 
+     String, Char
+     [ Field_char; Prec. =   80.0 ]
+ 
+HU_10_MOD : 
+     String, Char
+     [ Field_char; Prec. =   20.0 ]
+ 
+HU_10_TYPE : 
+     String, Char
+     [ Field_char; Prec. =   1.0 ]
+ 
+HU_12_DS : 
+     String, Char
+     [ Field_char; Prec. =   12.0 ]
+ 
+HU_12_NAME : 
+     String, Char
+     [ Field_char; Prec. =   80.0 ]
+ 
+HU_12_MOD : 
+     String, Char
+     [ Field_char; Prec. =   20.0 ]
+ 
+HU_12_TYPE : 
+     String, Char
+     [ Field_char; Prec. =   1.0 ]
+ 
+META_ID : 
+     String, Char
+     [ Field_char; Prec. =   4.0 ]
+ 
+STATES : 
+     String, Char
+     [ Field_char; Prec. =   20.0 ]
+ 
+GLOBALID : 
+     String, Char
+     [ Field_char; Prec. =   38.0 ]
+ 
+SHAPE_LENG : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   19.11 ]
+ 
+SHAPE_AREA : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   19.11 ]
+ 
+X_COORD : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   18.5 ]
+ 
+Y_COORD : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   18.5 ]
+ 
+A_ZONE : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+HUC10_NUM : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RECNO_B : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+ESUCOUNT : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+SUDJJASHIS : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.3 ]
+ 
+SUD2040CO2 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.3 ]
+ 
+SUD2080COM : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.3 ]
+ 
+DDF2040C2 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+DDF2080C2 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+SUD2040Z : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+SOURCETHM : 
+     String, Char
+     [ Field_char; Prec. =   16.0 ]
+ 
+AVE_AVE_1 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   18.4 ]
+ 
+ST_MEAN : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+ST_2040D : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+ST_2040 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+ST_2080D : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+ST_2080 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+SD_AVE_RD : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.4 ]
+ 
+ST_H_VS_40 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+ST_H_VS_80 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+T2040_ZY : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+T2040D_Z : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+REG2040_B : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.3 ]
+ 
+REG2080_B : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.3 ]
+ 
+REGHIST_B : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.3 ]
+ 
+REGIME01B : 
+     String, Char
+     [ Field_char; Prec. =   12.0 ]
+ 
+REGIME02B : 
+     String, Char
+     [ Field_char; Prec. =   12.0 ]
+ 
+REGIME03B : 
+     String, Char
+     [ Field_char; Prec. =   12.0 ]
+ 
+R_CH02_C : 
+     String, Char
+     [ Field_char; Prec. =   55.0 ]
+ 
+R_CH03_C : 
+     String, Char
+     [ Field_char; Prec. =   55.0 ]
+ 
+ATMSRIV : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.3 ]
+ 
+ATMSRISUSE : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CH :  Chinook ESU name
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_CHIN :  Chinook ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_CHIN :  Chinook ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_CHIN :  Chinook ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CH_SP :  Spring Chinook ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_CHSP :  Spring Chinook ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_CHSP :  Spring Chinook ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_CHSP : Spring Chinook ESU migration only 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CH_SP_SU :  Spring/Summer Chinook ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_CHSPS : Spring/Summer Chinook ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_CHSPS : Spring/Summer Chinook ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_CHSPS :Spring/Summer Chinook ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CH_FA : Fall Chinook ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_CHFA : Fall Chinook ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_CHFA : Fall Chinook ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_CHFA : Fall Chinook ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CH_WI : Winter Chinook ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_CHWI : Winter Chinook ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_CHWI : Winter Chinook ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_COHO : Coho ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_COHO : Coho ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_COHO : Coho ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_COHO : Coho ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_STHD : Steelhead ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_STHD : Steelhead ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_STHD :Steelhead ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_STHD :Steelhead ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CHUM : Chum ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_CHUP : Chum ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_CHUP : Chum ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_CHUP :Chum ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CHUM_SU : Summer Chum ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_CHUM :Summer Chum ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_CHUM : Summer Chum ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_CHUM : Summer Chum ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CH_SU_FA : Summer/Fall Chinook ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+R_SOCK : Sockeye ESU 
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_SOCK :Sockeye ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_SOCK : Sockeye ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_SOCK : Sockeye ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_PINK_OY : Odd Year Pink ESU
+     String, Char
+     [ Field_char; Prec. =   55.0 ]
+ 
+R_PINK_EY : Even Year Pink ESU
+     String, Char
+     [ Field_char; Prec. =   111.0 ]
+ 
+SP_L_PINK :  Pink ESU spawn/rear
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+RE_L_PINK : Pink ESU rear/migrate
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+MI_L_PINK : Pink ESU migration only
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+R_CHIN_GEN : General Chinook ESU name
+     String, Char
+     [ Field_char; Prec. =   55.0 ]
+ 
+NO_ESU : Number of ESUs in HUC
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+GENNAME : 
+     String, Char
+     [ Field_char; Prec. =   55.0 ]
+ 
+ESUSPCOUNT : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+GRIDCODE : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+CHIA500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+CHIB500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+CHUA500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+CHUB500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+COHO500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+LATEA500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+LATEB500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+PINK500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+SOCK500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+STHD500 : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.0 ]
+ 
+SP_VULN : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   16.0 ]
+ 
+SUDJJAS_B : 
+     Number, Decimal
+     [ Field_decimal; Prec. =   15.3 ]
+

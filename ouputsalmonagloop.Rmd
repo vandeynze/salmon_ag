@@ -154,7 +154,7 @@ df_clip2_types = left_join(df_clip2, types)
 setwd("C:/Users/Lisa.Pfeiffer/Documents/GitHub/salmon_ag/output/salmonid_ag_maps/")
 fname <- dps[i]
 fname1 <- paste0(fname, ".pdf")
-pdf(file = fname1, width = 6, height = 4.5)
+pdf(file = fname1)
 
 ggplot() + 
    geom_raster(data = df_clip2_types, aes(x = x, y = y, fill = cropgroup)) + 
