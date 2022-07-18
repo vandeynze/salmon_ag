@@ -1,0 +1,1702 @@
+"","name","hab_use","land.use","count","freq"
+"1","California Central Valley Steelhead","spawn+rearing",1,6714,0.000599574939410693
+"2","California Central Valley Steelhead","spawn+rearing",2,1472,0.000131452831518103
+"3","California Central Valley Steelhead","spawn+rearing",3,187549,0.0167485374309705
+"4","California Central Valley Steelhead","spawn+rearing",4,70,6.25115367273585e-06
+"5","California Central Valley Steelhead","spawn+rearing",5,2,1.78604390649596e-07
+"6","California Central Valley Steelhead","spawn+rearing",6,5581,0.000498395552107697
+"7","California Central Valley Steelhead","spawn+rearing",12,97,8.6623129465054e-06
+"8","California Central Valley Steelhead","spawn+rearing",13,258,2.30399663937979e-05
+"9","California Central Valley Steelhead","spawn+rearing",14,10,8.93021953247979e-07
+"10","California Central Valley Steelhead","spawn+rearing",21,2354,0.000210217367794574
+"11","California Central Valley Steelhead","spawn+rearing",22,25,2.23255488311995e-06
+"12","California Central Valley Steelhead","spawn+rearing",23,38,3.39348342234232e-06
+"13","California Central Valley Steelhead","spawn+rearing",24,28422,0.00253814699552141
+"14","California Central Valley Steelhead","spawn+rearing",27,1066,9.51961402162346e-05
+"15","California Central Valley Steelhead","spawn+rearing",28,8273,0.000738797061922053
+"16","California Central Valley Steelhead","spawn+rearing",31,8,7.14417562598383e-07
+"17","California Central Valley Steelhead","spawn+rearing",33,500,4.46510976623989e-05
+"18","California Central Valley Steelhead","spawn+rearing",36,52836,0.00471837079218102
+"19","California Central Valley Steelhead","spawn+rearing",37,56027,0.00500333409746245
+"20","California Central Valley Steelhead","spawn+rearing",39,248,2.21469444405499e-05
+"21","California Central Valley Steelhead","spawn+rearing",42,482,4.30436581465526e-05
+"22","California Central Valley Steelhead","spawn+rearing",43,44,3.92929659429111e-06
+"23","California Central Valley Steelhead","spawn+rearing",44,261,2.33078729797723e-05
+"24","California Central Valley Steelhead","spawn+rearing",46,11,9.82324148572777e-07
+"25","California Central Valley Steelhead","spawn+rearing",47,24,2.14325268779515e-06
+"26","California Central Valley Steelhead","spawn+rearing",48,119,1.06269612436509e-05
+"27","California Central Valley Steelhead","spawn+rearing",49,154,1.37525380800189e-05
+"28","California Central Valley Steelhead","spawn+rearing",50,133,1.18771919781981e-05
+"29","California Central Valley Steelhead","spawn+rearing",51,52,4.64371415688949e-06
+"30","California Central Valley Steelhead","spawn+rearing",53,402,3.58994825205688e-05
+"31","California Central Valley Steelhead","spawn+rearing",54,5212,0.000465443042032847
+"32","California Central Valley Steelhead","spawn+rearing",57,403,3.59887847158936e-05
+"33","California Central Valley Steelhead","spawn+rearing",58,6921,0.000618060493842926
+"34","California Central Valley Steelhead","spawn+rearing",59,62,5.53673611013747e-06
+"35","California Central Valley Steelhead","spawn+rearing",61,200731,0.017925718969742
+"36","California Central Valley Steelhead","spawn+rearing",66,8525,0.000761301215143902
+"37","California Central Valley Steelhead","spawn+rearing",67,7047,0.000629312570453851
+"38","California Central Valley Steelhead","spawn+rearing",68,1757,0.00015690395718567
+"39","California Central Valley Steelhead","spawn+rearing",69,96603,0.00862685997496145
+"40","California Central Valley Steelhead","spawn+rearing",71,3497,0.000312289777050818
+"41","California Central Valley Steelhead","spawn+rearing",72,1332,0.000118950524172631
+"42","California Central Valley Steelhead","spawn+rearing",74,2475,0.000221022933428875
+"43","California Central Valley Steelhead","spawn+rearing",75,302687,0.0270306135962771
+"44","California Central Valley Steelhead","spawn+rearing",76,407866,0.036423329198344
+"45","California Central Valley Steelhead","spawn+rearing",77,606,5.41171303668275e-05
+"46","California Central Valley Steelhead","spawn+rearing",92,101,9.01952172780459e-06
+"47","California Central Valley Steelhead","spawn+rearing",111,106372,0.0094992531210894
+"48","California Central Valley Steelhead","spawn+rearing",121,502318,0.0448581001511618
+"49","California Central Valley Steelhead","spawn+rearing",122,251310,0.022442534707075
+"50","California Central Valley Steelhead","spawn+rearing",123,254076,0.0226895445793434
+"51","California Central Valley Steelhead","spawn+rearing",124,87038,0.00777268447667976
+"52","California Central Valley Steelhead","spawn+rearing",131,71919,0.00642252458556414
+"53","California Central Valley Steelhead","spawn+rearing",141,46205,0.00412620793498229
+"54","California Central Valley Steelhead","spawn+rearing",142,2468840,0.220472831905674
+"55","California Central Valley Steelhead","spawn+rearing",143,54844,0.00489768960039322
+"56","California Central Valley Steelhead","spawn+rearing",152,3590310,0.320622564896575
+"57","California Central Valley Steelhead","spawn+rearing",176,2094968,0.187085241535201
+"58","California Central Valley Steelhead","spawn+rearing",190,117202,0.010466395896457
+"59","California Central Valley Steelhead","spawn+rearing",195,67527,0.00603030934369763
+"60","California Central Valley Steelhead","spawn+rearing",204,5124,0.000457584448844264
+"61","California Central Valley Steelhead","spawn+rearing",205,3805,0.000339794853210856
+"62","California Central Valley Steelhead","spawn+rearing",206,105,9.37673050910378e-06
+"63","California Central Valley Steelhead","spawn+rearing",207,1,8.93021953247979e-08
+"64","California Central Valley Steelhead","spawn+rearing",208,270,2.41115927376954e-05
+"65","California Central Valley Steelhead","spawn+rearing",209,131,1.16985875875485e-05
+"66","California Central Valley Steelhead","spawn+rearing",211,23723,0.00211851597969018
+"67","California Central Valley Steelhead","spawn+rearing",212,312,2.78622849413369e-05
+"68","California Central Valley Steelhead","spawn+rearing",213,41,3.66139000831671e-06
+"69","California Central Valley Steelhead","spawn+rearing",214,2,1.78604390649596e-07
+"70","California Central Valley Steelhead","spawn+rearing",216,474,4.23292405839542e-05
+"71","California Central Valley Steelhead","spawn+rearing",217,632,5.64389874452723e-05
+"72","California Central Valley Steelhead","spawn+rearing",218,14,1.25023073454717e-06
+"73","California Central Valley Steelhead","spawn+rearing",219,11,9.82324148572777e-07
+"74","California Central Valley Steelhead","spawn+rearing",220,42005,0.00375113871461814
+"75","California Central Valley Steelhead","spawn+rearing",221,119,1.06269612436509e-05
+"76","California Central Valley Steelhead","spawn+rearing",222,168,1.5002768814566e-05
+"77","California Central Valley Steelhead","spawn+rearing",224,12,1.07162634389757e-06
+"78","California Central Valley Steelhead","spawn+rearing",225,5136,0.000458656075188162
+"79","California Central Valley Steelhead","spawn+rearing",226,3014,0.000269156816708941
+"80","California Central Valley Steelhead","spawn+rearing",227,255,2.27720598078235e-05
+"81","California Central Valley Steelhead","spawn+rearing",228,368,3.28632078795256e-05
+"82","California Central Valley Steelhead","spawn+rearing",229,10,8.93021953247979e-07
+"83","California Central Valley Steelhead","spawn+rearing",236,80,7.14417562598383e-06
+"84","California Central Valley Steelhead","spawn+rearing",237,2,1.78604390649596e-07
+"85","California Central Valley Steelhead","spawn+rearing",238,14,1.25023073454717e-06
+"86","California Central Valley Steelhead","spawn+rearing",242,19,1.69674171117116e-06
+"87","California Central Valley Steelhead","spawn+rearing",243,8,7.14417562598383e-07
+"88","California Central Valley Steelhead","spawn+rearing",244,92,8.21580196988141e-06
+"89","California Central Valley Steelhead","rearing+migration",1,324677,0.0297142879107545
+"90","California Central Valley Steelhead","rearing+migration",2,7212,0.000660038882989438
+"91","California Central Valley Steelhead","rearing+migration",3,781770,0.0715472265050822
+"92","California Central Valley Steelhead","rearing+migration",4,1375,0.000125839359970948
+"93","California Central Valley Steelhead","rearing+migration",5,13,1.18975394881624e-06
+"94","California Central Valley Steelhead","rearing+migration",6,125562,0.0114913757939434
+"95","California Central Valley Steelhead","rearing+migration",12,12402,0.00113502526717069
+"96","California Central Valley Steelhead","rearing+migration",13,2550,0.000233374813037031
+"97","California Central Valley Steelhead","rearing+migration",21,34816,0.00318634411399893
+"98","California Central Valley Steelhead","rearing+migration",22,407,3.72484505514006e-05
+"99","California Central Valley Steelhead","rearing+migration",23,1452,0.000132886364129321
+"100","California Central Valley Steelhead","rearing+migration",24,363291,0.0332482232168769
+"101","California Central Valley Steelhead","rearing+migration",27,11000,0.00100671487976758
+"102","California Central Valley Steelhead","rearing+migration",28,90813,0.0083111634887576
+"103","California Central Valley Steelhead","rearing+migration",29,11,1.00671487976758e-06
+"104","California Central Valley Steelhead","rearing+migration",31,96,8.78587531433528e-06
+"105","California Central Valley Steelhead","rearing+migration",33,34452,0.00315303100343207
+"106","California Central Valley Steelhead","rearing+migration",36,687114,0.0628843534451476
+"107","California Central Valley Steelhead","rearing+migration",37,304279,0.0278474724455273
+"108","California Central Valley Steelhead","rearing+migration",39,6,5.49117207145955e-07
+"109","California Central Valley Steelhead","rearing+migration",42,23852,0.00218292393747422
+"110","California Central Valley Steelhead","rearing+migration",43,2,1.83039069048652e-07
+"111","California Central Valley Steelhead","rearing+migration",44,10725,0.000981547007773395
+"112","California Central Valley Steelhead","rearing+migration",46,761,6.9646365773012e-05
+"113","California Central Valley Steelhead","rearing+migration",47,1774,0.000162355654246154
+"114","California Central Valley Steelhead","rearing+migration",48,9311,0.000852138385955998
+"115","California Central Valley Steelhead","rearing+migration",49,4407,0.000403326588648704
+"116","California Central Valley Steelhead","rearing+migration",50,13404,0.00122672784076406
+"117","California Central Valley Steelhead","rearing+migration",51,485,4.4386974244298e-05
+"118","California Central Valley Steelhead","rearing+migration",53,7527,0.000688867536364601
+"119","California Central Valley Steelhead","rearing+migration",54,223828,0.0204846343735108
+"120","California Central Valley Steelhead","rearing+migration",57,3492,0.000319586214558946
+"121","California Central Valley Steelhead","rearing+migration",58,136365,0.0124800613254097
+"122","California Central Valley Steelhead","rearing+migration",59,38,3.47774231192438e-06
+"123","California Central Valley Steelhead","rearing+migration",61,809728,0.0741059296513133
+"124","California Central Valley Steelhead","rearing+migration",66,90928,0.0083216882352279
+"125","California Central Valley Steelhead","rearing+migration",67,14704,0.00134570323564569
+"126","California Central Valley Steelhead","rearing+migration",68,12417,0.00113639806018855
+"127","California Central Valley Steelhead","rearing+migration",69,320657,0.0293463793819668
+"128","California Central Valley Steelhead","rearing+migration",71,5634,0.000515621057510052
+"129","California Central Valley Steelhead","rearing+migration",72,2615,0.000239323582781112
+"130","California Central Valley Steelhead","rearing+migration",74,1183,0.000108267609342277
+"131","California Central Valley Steelhead","rearing+migration",75,1239765,0.113462715719551
+"132","California Central Valley Steelhead","rearing+migration",76,716735,0.0655952535772927
+"133","California Central Valley Steelhead","rearing+migration",77,24653,0.00225623108462821
+"134","California Central Valley Steelhead","rearing+migration",92,61,5.58269160598388e-06
+"135","California Central Valley Steelhead","rearing+migration",111,329801,0.0301832340056572
+"136","California Central Valley Steelhead","rearing+migration",121,353955,0.0323937968425578
+"137","California Central Valley Steelhead","rearing+migration",122,394924,0.0361432606524849
+"138","California Central Valley Steelhead","rearing+migration",123,583491,0.0534008247191334
+"139","California Central Valley Steelhead","rearing+migration",124,201413,0.018433224007148
+"140","California Central Valley Steelhead","rearing+migration",131,36530,0.00334320859617362
+"141","California Central Valley Steelhead","rearing+migration",141,1657,0.000151647868706808
+"142","California Central Valley Steelhead","rearing+migration",142,37149,0.00339985918804418
+"143","California Central Valley Steelhead","rearing+migration",143,5834,0.000533924964414917
+"144","California Central Valley Steelhead","rearing+migration",152,431273,0.0394699042129096
+"145","California Central Valley Steelhead","rearing+migration",176,1286081,0.11770153448058
+"146","California Central Valley Steelhead","rearing+migration",190,83715,0.00766155783270394
+"147","California Central Valley Steelhead","rearing+migration",195,296310,0.027118153274903
+"148","California Central Valley Steelhead","rearing+migration",204,15786,0.00144472737200101
+"149","California Central Valley Steelhead","rearing+migration",205,95773,0.00876510037999826
+"150","California Central Valley Steelhead","rearing+migration",206,3525,0.000322606359198249
+"151","California Central Valley Steelhead","rearing+migration",207,7,6.40636741670281e-07
+"152","California Central Valley Steelhead","rearing+migration",208,8863,0.0008111376344891
+"153","California Central Valley Steelhead","rearing+migration",209,6955,0.000636518362616686
+"154","California Central Valley Steelhead","rearing+migration",211,52884,0.00483991906378445
+"155","California Central Valley Steelhead","rearing+migration",212,470,4.30141812264332e-05
+"156","California Central Valley Steelhead","rearing+migration",213,1365,0.000124924164625705
+"157","California Central Valley Steelhead","rearing+migration",214,134,1.22636176262597e-05
+"158","California Central Valley Steelhead","rearing+migration",216,620,5.6742111405082e-05
+"159","California Central Valley Steelhead","rearing+migration",217,696,6.36975960289308e-05
+"160","California Central Valley Steelhead","rearing+migration",218,11,1.00671487976758e-06
+"161","California Central Valley Steelhead","rearing+migration",219,6,5.49117207145955e-07
+"162","California Central Valley Steelhead","rearing+migration",220,84763,0.00775747030488543
+"163","California Central Valley Steelhead","rearing+migration",221,617,5.6467552801509e-05
+"164","California Central Valley Steelhead","rearing+migration",222,3563,0.000326084101510173
+"165","California Central Valley Steelhead","rearing+migration",224,5380,0.000492375095740873
+"166","California Central Valley Steelhead","rearing+migration",225,72737,0.00665685638269589
+"167","California Central Valley Steelhead","rearing+migration",226,61025,0.00558497959434699
+"168","California Central Valley Steelhead","rearing+migration",227,820,7.50460183099472e-05
+"169","California Central Valley Steelhead","rearing+migration",228,7343,0.000672027942012125
+"170","California Central Valley Steelhead","rearing+migration",229,1744,0.000159610068210424
+"171","California Central Valley Steelhead","rearing+migration",236,937,8.57538038492933e-05
+"172","California Central Valley Steelhead","rearing+migration",237,9,8.23675810718933e-07
+"173","California Central Valley Steelhead","rearing+migration",238,3,2.74558603572978e-07
+"174","California Central Valley Steelhead","rearing+migration",242,8,7.32156276194607e-07
+"175","California Central Valley Steelhead","rearing+migration",243,101,9.24347298695691e-06
+"176","California Central Valley Steelhead","rearing+migration",244,2,1.83039069048652e-07
+"177","California Central Valley Steelhead",NA,1,231443,0.00560440431117039
+"178","California Central Valley Steelhead",NA,2,337143,0.00816393532178947
+"179","California Central Valley Steelhead",NA,3,721919,0.0174813062219027
+"180","California Central Valley Steelhead",NA,4,13977,0.000338453783684227
+"181","California Central Valley Steelhead",NA,5,4,9.68602085380918e-08
+"182","California Central Valley Steelhead",NA,6,109240,0.00264525229517529
+"183","California Central Valley Steelhead",NA,12,7403,0.000179264030951873
+"184","California Central Valley Steelhead",NA,13,748,1.81128589966232e-05
+"185","California Central Valley Steelhead",NA,14,8,1.93720417076184e-07
+"186","California Central Valley Steelhead",NA,21,76114,0.00184310447816708
+"187","California Central Valley Steelhead",NA,22,8745,0.000211760630916403
+"188","California Central Valley Steelhead",NA,23,11244,0.000272274046200576
+"189","California Central Valley Steelhead",NA,24,949996,0.0230042026675883
+"190","California Central Valley Steelhead",NA,27,11767,0.000284938518466931
+"191","California Central Valley Steelhead",NA,28,121013,0.00293033610395503
+"192","California Central Valley Steelhead",NA,29,3,7.26451564035688e-08
+"193","California Central Valley Steelhead",NA,31,245,5.93268777295812e-06
+"194","California Central Valley Steelhead",NA,33,52099,0.00126158000115651
+"195","California Central Valley Steelhead",NA,36,938946,0.0227366263415018
+"196","California Central Valley Steelhead",NA,37,249724,0.00604707967924161
+"197","California Central Valley Steelhead",NA,39,234,5.66632219947837e-06
+"198","California Central Valley Steelhead",NA,42,11296,0.000273533228911571
+"199","California Central Valley Steelhead",NA,43,270,6.53806407632119e-06
+"200","California Central Valley Steelhead",NA,44,2645,6.40488128958132e-05
+"201","California Central Valley Steelhead",NA,46,1319,3.19396537654358e-05
+"202","California Central Valley Steelhead",NA,47,981,2.3754966143967e-05
+"203","California Central Valley Steelhead",NA,48,9800,0.000237307510918325
+"204","California Central Valley Steelhead",NA,49,64711,0.00156698023867711
+"205","California Central Valley Steelhead",NA,50,4872,0.000117975733999396
+"206","California Central Valley Steelhead",NA,51,13859,0.000335596407532353
+"207","California Central Valley Steelhead",NA,53,2555,6.18694582037061e-05
+"208","California Central Valley Steelhead",NA,54,724955,0.0175548231201831
+"209","California Central Valley Steelhead",NA,57,11485,0.000278109873764996
+"210","California Central Valley Steelhead",NA,58,61477,0.00148866876007407
+"211","California Central Valley Steelhead",NA,59,1363,3.30051160593548e-05
+"212","California Central Valley Steelhead",NA,61,1898411,0.0459701213377518
+"213","California Central Valley Steelhead",NA,66,69338,0.00167902328490355
+"214","California Central Valley Steelhead",NA,67,24991,0.000605158367893863
+"215","California Central Valley Steelhead",NA,68,8054,0.000195028029891448
+"216","California Central Valley Steelhead",NA,69,1614029,0.0390837963816319
+"217","California Central Valley Steelhead",NA,70,1,2.42150521345229e-08
+"218","California Central Valley Steelhead",NA,71,60906,0.00147484196530525
+"219","California Central Valley Steelhead",NA,72,152802,0.00370010839625937
+"220","California Central Valley Steelhead",NA,74,4283,0.000103713068292162
+"221","California Central Valley Steelhead",NA,75,4267471,0.103337032747565
+"222","California Central Valley Steelhead",NA,76,791256,0.0191603052917541
+"223","California Central Valley Steelhead",NA,77,5573,0.000134950485545696
+"224","California Central Valley Steelhead",NA,92,42,1.01703218964996e-06
+"225","California Central Valley Steelhead",NA,111,290100,0.00702478662422511
+"226","California Central Valley Steelhead",NA,121,1231191,0.0298133542525554
+"227","California Central Valley Steelhead",NA,122,790971,0.0191534040018957
+"228","California Central Valley Steelhead",NA,123,951974,0.0230521000407103
+"229","California Central Valley Steelhead",NA,124,316757,0.00767028726897508
+"230","California Central Valley Steelhead",NA,131,94137,0.00227953236278759
+"231","California Central Valley Steelhead",NA,141,147050,0.0035608234163816
+"232","California Central Valley Steelhead",NA,142,3001448,0.0726802197990596
+"233","California Central Valley Steelhead",NA,143,566684,0.0137222826038
+"234","California Central Valley Steelhead",NA,152,5728844,0.138724256130549
+"235","California Central Valley Steelhead",NA,176,11728669,0.284010331303563
+"236","California Central Valley Steelhead",NA,190,55450,0.0013427246408593
+"237","California Central Valley Steelhead",NA,195,669774,0.016218612328348
+"238","California Central Valley Steelhead",NA,204,1153895,0.0279416275827654
+"239","California Central Valley Steelhead",NA,205,75332,0.00182416830739788
+"240","California Central Valley Steelhead",NA,206,5039,0.000122019647705861
+"241","California Central Valley Steelhead",NA,207,1585,3.83808576332189e-05
+"242","California Central Valley Steelhead",NA,208,72950,0.00176648805321345
+"243","California Central Valley Steelhead",NA,209,18525,0.000448583840792038
+"244","California Central Valley Steelhead",NA,211,85048,0.00205944175393691
+"245","California Central Valley Steelhead",NA,212,9036,0.000218807211087549
+"246","California Central Valley Steelhead",NA,213,7900,0.000191298911862731
+"247","California Central Valley Steelhead",NA,214,2644,6.40245978436787e-05
+"248","California Central Valley Steelhead",NA,216,4792,0.000116038529828634
+"249","California Central Valley Steelhead",NA,217,51545,0.00124816486227399
+"250","California Central Valley Steelhead",NA,218,18800,0.000455242980129031
+"251","California Central Valley Steelhead",NA,219,93,2.25199984851063e-06
+"252","California Central Valley Steelhead",NA,220,77288,0.00187153294937301
+"253","California Central Valley Steelhead",NA,221,662,1.60303645130542e-05
+"254","California Central Valley Steelhead",NA,222,1387,3.35862773105833e-05
+"255","California Central Valley Steelhead",NA,224,201,4.86722547903911e-06
+"256","California Central Valley Steelhead",NA,225,308446,0.00746903597068506
+"257","California Central Valley Steelhead",NA,226,97158,0.00235268603528598
+"258","California Central Valley Steelhead",NA,227,11123,0.000269344024892299
+"259","California Central Valley Steelhead",NA,228,49960,0.00120978400464077
+"260","California Central Valley Steelhead",NA,229,2340,5.66632219947837e-05
+"261","California Central Valley Steelhead",NA,236,11015,0.00026672879926177
+"262","California Central Valley Steelhead",NA,237,4341,0.000105117541315964
+"263","California Central Valley Steelhead",NA,238,401,9.7102359059437e-06
+"264","California Central Valley Steelhead",NA,242,1287,3.1164772097131e-05
+"265","California Central Valley Steelhead",NA,243,14,3.39010729883321e-07
+"266","California Central Valley Steelhead",NA,244,12,2.90580625614275e-07
+"267","Central California Coast Steelhead","spawn+rearing",0,630924,0.0738244698975179
+"268","Central California Coast Steelhead","spawn+rearing",1,664,7.76946954180723e-05
+"269","Central California Coast Steelhead","spawn+rearing",2,27,3.15927225344571e-06
+"270","Central California Coast Steelhead","spawn+rearing",3,949,0.000111042569204444
+"271","Central California Coast Steelhead","spawn+rearing",4,166,1.94236738545181e-05
+"272","Central California Coast Steelhead","spawn+rearing",6,1080,0.000126370890137829
+"273","Central California Coast Steelhead","spawn+rearing",12,29,3.39329242036762e-06
+"274","Central California Coast Steelhead","spawn+rearing",13,29,3.39329242036762e-06
+"275","Central California Coast Steelhead","spawn+rearing",14,16,1.87216133537524e-06
+"276","Central California Coast Steelhead","spawn+rearing",21,887,0.000103787944029865
+"277","Central California Coast Steelhead","spawn+rearing",23,28,3.27628233690667e-06
+"278","Central California Coast Steelhead","spawn+rearing",24,11151,0.00130477944067308
+"279","Central California Coast Steelhead","spawn+rearing",27,5832,0.000682402806744274
+"280","Central California Coast Steelhead","spawn+rearing",28,28113,0.00328950447633775
+"281","Central California Coast Steelhead","spawn+rearing",29,9,1.05309075114857e-06
+"282","Central California Coast Steelhead","spawn+rearing",33,436,5.10163963889752e-05
+"283","Central California Coast Steelhead","spawn+rearing",36,4787,0.000560127269527579
+"284","Central California Coast Steelhead","spawn+rearing",37,42712,0.0049977346847842
+"285","Central California Coast Steelhead","spawn+rearing",39,4,4.68040333843809e-07
+"286","Central California Coast Steelhead","spawn+rearing",42,162,1.89556335206743e-05
+"287","Central California Coast Steelhead","spawn+rearing",43,4,4.68040333843809e-07
+"288","Central California Coast Steelhead","spawn+rearing",44,78,9.12678650995428e-06
+"289","Central California Coast Steelhead","spawn+rearing",47,3,3.51030250382857e-07
+"290","Central California Coast Steelhead","spawn+rearing",48,66,7.72266550842285e-06
+"291","Central California Coast Steelhead","spawn+rearing",49,29,3.39329242036762e-06
+"292","Central California Coast Steelhead","spawn+rearing",50,85,9.94585709418095e-06
+"293","Central California Coast Steelhead","spawn+rearing",51,13,1.52113108499238e-06
+"294","Central California Coast Steelhead","spawn+rearing",53,16,1.87216133537524e-06
+"295","Central California Coast Steelhead","spawn+rearing",54,929,0.000108702367535225
+"296","Central California Coast Steelhead","spawn+rearing",57,25,2.92525208652381e-06
+"297","Central California Coast Steelhead","spawn+rearing",58,685,8.01519071707523e-05
+"298","Central California Coast Steelhead","spawn+rearing",59,2,2.34020166921905e-07
+"299","Central California Coast Steelhead","spawn+rearing",61,7878,0.000921805437505382
+"300","Central California Coast Steelhead","spawn+rearing",66,2507,0.000293344279236607
+"301","Central California Coast Steelhead","spawn+rearing",67,32,3.74432267075047e-06
+"302","Central California Coast Steelhead","spawn+rearing",68,5937,0.000694688865507674
+"303","Central California Coast Steelhead","spawn+rearing",69,326362,0.0381876448584833
+"304","Central California Coast Steelhead","spawn+rearing",71,808,9.45441474364495e-05
+"305","Central California Coast Steelhead","spawn+rearing",72,31,3.62731258728952e-06
+"306","Central California Coast Steelhead","spawn+rearing",74,260,3.04226216998476e-05
+"307","Central California Coast Steelhead","spawn+rearing",75,16885,0.00197571525923818
+"308","Central California Coast Steelhead","spawn+rearing",76,6896,0.000806901535546727
+"309","Central California Coast Steelhead","spawn+rearing",77,4954,0.000579667953465558
+"310","Central California Coast Steelhead","spawn+rearing",111,240121,0.0280965782507273
+"311","Central California Coast Steelhead","spawn+rearing",112,2,2.34020166921905e-07
+"312","Central California Coast Steelhead","spawn+rearing",121,455553,0.0533042945508872
+"313","Central California Coast Steelhead","spawn+rearing",122,266207,0.0311489032878897
+"314","Central California Coast Steelhead","spawn+rearing",123,314915,0.0368482304331058
+"315","Central California Coast Steelhead","spawn+rearing",124,120462,0.0140952686738732
+"316","Central California Coast Steelhead","spawn+rearing",131,15599,0.0018252402919074
+"317","Central California Coast Steelhead","spawn+rearing",141,28270,0.00330787505944112
+"318","Central California Coast Steelhead","spawn+rearing",142,2293006,0.268304823436464
+"319","Central California Coast Steelhead","spawn+rearing",143,780643,0.0913431025832082
+"320","Central California Coast Steelhead","spawn+rearing",152,1908766,0.223344868967428
+"321","Central California Coast Steelhead","spawn+rearing",176,757925,0.0886848675071423
+"322","Central California Coast Steelhead","spawn+rearing",190,28188,0.00329828023259732
+"323","Central California Coast Steelhead","spawn+rearing",195,220905,0.0258481124869417
+"324","Central California Coast Steelhead","spawn+rearing",204,588,6.880192907504e-05
+"325","Central California Coast Steelhead","spawn+rearing",205,1751,0.000204884656140128
+"326","Central California Coast Steelhead","spawn+rearing",206,26,3.04226216998476e-06
+"327","Central California Coast Steelhead","spawn+rearing",208,46,5.38246383920381e-06
+"328","Central California Coast Steelhead","spawn+rearing",209,40,4.68040333843809e-06
+"329","Central California Coast Steelhead","spawn+rearing",211,2835,0.0003317235866118
+"330","Central California Coast Steelhead","spawn+rearing",212,98,1.14669881791733e-05
+"331","Central California Coast Steelhead","spawn+rearing",213,257,3.00715914494647e-05
+"332","Central California Coast Steelhead","spawn+rearing",216,65,7.6056554249619e-06
+"333","Central California Coast Steelhead","spawn+rearing",220,3896,0.00045587128516387
+"334","Central California Coast Steelhead","spawn+rearing",221,2993,0.00035021117979863
+"335","Central California Coast Steelhead","spawn+rearing",222,234,2.73803595298628e-05
+"336","Central California Coast Steelhead","spawn+rearing",224,2,2.34020166921905e-07
+"337","Central California Coast Steelhead","spawn+rearing",225,182,2.12958351898933e-05
+"338","Central California Coast Steelhead","spawn+rearing",226,98,1.14669881791733e-05
+"339","Central California Coast Steelhead","spawn+rearing",227,86,1.00628671776419e-05
+"340","Central California Coast Steelhead","spawn+rearing",228,13,1.52113108499238e-06
+"341","Central California Coast Steelhead","spawn+rearing",229,2,2.34020166921905e-07
+"342","Central California Coast Steelhead","spawn+rearing",236,2,2.34020166921905e-07
+"343","Central California Coast Steelhead","spawn+rearing",244,6,7.02060500765714e-07
+"344","Central California Coast Steelhead","rearing+migration",0,521400,0.401531580374085
+"345","Central California Coast Steelhead","rearing+migration",1,33,2.54133911629168e-05
+"346","Central California Coast Steelhead","rearing+migration",3,36,2.77236994504547e-05
+"347","Central California Coast Steelhead","rearing+migration",6,15,1.15515414376894e-05
+"348","Central California Coast Steelhead","rearing+migration",12,2,1.54020552502526e-06
+"349","Central California Coast Steelhead","rearing+migration",21,44,3.38845215505557e-05
+"350","Central California Coast Steelhead","rearing+migration",24,1145,0.000881767663076961
+"351","Central California Coast Steelhead","rearing+migration",27,370,0.000284938022129673
+"352","Central California Coast Steelhead","rearing+migration",28,5986,0.0046098351364006
+"353","Central California Coast Steelhead","rearing+migration",33,13,1.00113359126642e-05
+"354","Central California Coast Steelhead","rearing+migration",36,186,0.000143239113827349
+"355","Central California Coast Steelhead","rearing+migration",37,3525,0.00271461223785702
+"356","Central California Coast Steelhead","rearing+migration",42,2,1.54020552502526e-06
+"357","Central California Coast Steelhead","rearing+migration",43,1,7.7010276251263e-07
+"358","Central California Coast Steelhead","rearing+migration",44,1,7.7010276251263e-07
+"359","Central California Coast Steelhead","rearing+migration",48,1,7.7010276251263e-07
+"360","Central California Coast Steelhead","rearing+migration",49,2,1.54020552502526e-06
+"361","Central California Coast Steelhead","rearing+migration",54,30,2.31030828753789e-05
+"362","Central California Coast Steelhead","rearing+migration",58,29,2.23329801128663e-05
+"363","Central California Coast Steelhead","rearing+migration",61,239,0.000184054560240518
+"364","Central California Coast Steelhead","rearing+migration",66,8,6.16082210010104e-06
+"365","Central California Coast Steelhead","rearing+migration",67,2,1.54020552502526e-06
+"366","Central California Coast Steelhead","rearing+migration",69,2981,0.00229567633505015
+"367","Central California Coast Steelhead","rearing+migration",74,5,3.85051381256315e-06
+"368","Central California Coast Steelhead","rearing+migration",75,207,0.000159411271840114
+"369","Central California Coast Steelhead","rearing+migration",76,144,0.000110894797801819
+"370","Central California Coast Steelhead","rearing+migration",111,151042,0.116317861455433
+"371","Central California Coast Steelhead","rearing+migration",121,39664,0.0305453559723009
+"372","Central California Coast Steelhead","rearing+migration",122,52310,0.0402840755070357
+"373","Central California Coast Steelhead","rearing+migration",123,135043,0.103996987357993
+"374","Central California Coast Steelhead","rearing+migration",124,49587,0.0381870856847138
+"375","Central California Coast Steelhead","rearing+migration",131,1087,0.000837101702851228
+"376","Central California Coast Steelhead","rearing+migration",141,2517,0.00193834865324429
+"377","Central California Coast Steelhead","rearing+migration",142,73502,0.0566040932502033
+"378","Central California Coast Steelhead","rearing+migration",143,54660,0.0420938169989403
+"379","Central California Coast Steelhead","rearing+migration",152,104564,0.0805250252593706
+"380","Central California Coast Steelhead","rearing+migration",176,72616,0.0559217822026171
+"381","Central California Coast Steelhead","rearing+migration",190,1703,0.00131148500455901
+"382","Central California Coast Steelhead","rearing+migration",195,23347,0.0179795891963824
+"383","Central California Coast Steelhead","rearing+migration",204,15,1.15515414376894e-05
+"384","Central California Coast Steelhead","rearing+migration",205,166,0.000127837058577097
+"385","Central California Coast Steelhead","rearing+migration",208,2,1.54020552502526e-06
+"386","Central California Coast Steelhead","rearing+migration",211,82,6.31484265260356e-05
+"387","Central California Coast Steelhead","rearing+migration",213,1,7.7010276251263e-07
+"388","Central California Coast Steelhead","rearing+migration",216,1,7.7010276251263e-07
+"389","Central California Coast Steelhead","rearing+migration",220,167,0.000128607161339609
+"390","Central California Coast Steelhead","rearing+migration",221,12,9.24123315015156e-06
+"391","Central California Coast Steelhead","rearing+migration",222,2,1.54020552502526e-06
+"392","Central California Coast Steelhead","rearing+migration",225,1,7.7010276251263e-07
+"393","Central California Coast Steelhead","rearing+migration",226,2,1.54020552502526e-06
+"394","Central California Coast Steelhead","rearing+migration",227,25,1.92525690628157e-05
+"395","Central California Coast Steelhead","rearing+migration",242,3,2.31030828753789e-06
+"396","Central California Coast Steelhead",NA,0,27519,0.00455926673988488
+"397","Central California Coast Steelhead",NA,1,162,2.68396821055035e-05
+"398","Central California Coast Steelhead",NA,2,73,1.209442465248e-05
+"399","Central California Coast Steelhead",NA,3,613,0.000101560031670825
+"400","Central California Coast Steelhead",NA,4,11,1.82244755037369e-06
+"401","Central California Coast Steelhead",NA,6,3455,0.000572414207867374
+"402","Central California Coast Steelhead",NA,12,54,8.94656070183449e-06
+"403","Central California Coast Steelhead",NA,13,44,7.28979020149477e-06
+"404","Central California Coast Steelhead",NA,14,8,1.32541640027178e-06
+"405","Central California Coast Steelhead",NA,21,16156,0.00267667842034885
+"406","Central California Coast Steelhead",NA,23,1,1.65677050033972e-07
+"407","Central California Coast Steelhead",NA,24,20361,0.00337335041574171
+"408","Central California Coast Steelhead",NA,27,10037,0.00166290055119098
+"409","Central California Coast Steelhead",NA,28,5604,0.00092845418839038
+"410","Central California Coast Steelhead",NA,29,2,3.31354100067944e-07
+"411","Central California Coast Steelhead",NA,33,775,0.000128399713776328
+"412","Central California Coast Steelhead",NA,36,5815,0.000963412045947548
+"413","Central California Coast Steelhead",NA,37,27738,0.00459555001384232
+"414","Central California Coast Steelhead",NA,39,1,1.65677050033972e-07
+"415","Central California Coast Steelhead",NA,42,254,4.20819707086289e-05
+"416","Central California Coast Steelhead",NA,43,1,1.65677050033972e-07
+"417","Central California Coast Steelhead",NA,44,7,1.1597393502378e-06
+"418","Central California Coast Steelhead",NA,48,70,1.1597393502378e-05
+"419","Central California Coast Steelhead",NA,49,1,1.65677050033972e-07
+"420","Central California Coast Steelhead",NA,50,17,2.81650985057753e-06
+"421","Central California Coast Steelhead",NA,51,1,1.65677050033972e-07
+"422","Central California Coast Steelhead",NA,53,23,3.81057215078136e-06
+"423","Central California Coast Steelhead",NA,54,949,0.000157227520482239
+"424","Central California Coast Steelhead",NA,57,29,4.80463445098519e-06
+"425","Central California Coast Steelhead",NA,58,2418,0.000400607106982144
+"426","Central California Coast Steelhead",NA,59,1,1.65677050033972e-07
+"427","Central California Coast Steelhead",NA,61,6911,0.00114499409278478
+"428","Central California Coast Steelhead",NA,66,229,3.79400444577796e-05
+"429","Central California Coast Steelhead",NA,67,48,7.95249840163066e-06
+"430","Central California Coast Steelhead",NA,68,1433,0.000237415212698682
+"431","Central California Coast Steelhead",NA,69,42065,0.00696920510967904
+"432","Central California Coast Steelhead",NA,71,58,9.60926890197038e-06
+"433","Central California Coast Steelhead",NA,72,28,4.63895740095122e-06
+"434","Central California Coast Steelhead",NA,74,93,1.54079656531594e-05
+"435","Central California Coast Steelhead",NA,75,10731,0.00177788042391455
+"436","Central California Coast Steelhead",NA,76,5056,0.000837663164971763
+"437","Central California Coast Steelhead",NA,77,394,6.5276757713385e-05
+"438","Central California Coast Steelhead",NA,92,15,2.48515575050958e-06
+"439","Central California Coast Steelhead",NA,111,100220,0.0166041539544047
+"440","Central California Coast Steelhead",NA,121,485190,0.0803848479059829
+"441","Central California Coast Steelhead",NA,122,553462,0.0916959514659023
+"442","Central California Coast Steelhead",NA,123,938599,0.155504313484836
+"443","Central California Coast Steelhead",NA,124,381268,0.0631673575123525
+"444","Central California Coast Steelhead",NA,131,5944,0.00098478438540193
+"445","Central California Coast Steelhead",NA,141,10337,0.00171260366620117
+"446","Central California Coast Steelhead",NA,142,479591,0.0794572221028427
+"447","Central California Coast Steelhead",NA,143,609551,0.100988611525258
+"448","Central California Coast Steelhead",NA,152,1060223,0.175654619018168
+"449","Central California Coast Steelhead",NA,176,903222,0.149643156485784
+"450","Central California Coast Steelhead",NA,190,7779,0.00128880177221427
+"451","Central California Coast Steelhead",NA,195,300343,0.0497599422383533
+"452","Central California Coast Steelhead",NA,204,364,6.03064462123658e-05
+"453","Central California Coast Steelhead",NA,205,7274,0.00120513486194711
+"454","Central California Coast Steelhead",NA,206,28,4.63895740095122e-06
+"455","Central California Coast Steelhead",NA,208,32,5.30166560108711e-06
+"456","Central California Coast Steelhead",NA,209,33,5.46734265112108e-06
+"457","Central California Coast Steelhead",NA,211,1333,0.000220847507695285
+"458","Central California Coast Steelhead",NA,212,27,4.47328035091725e-06
+"459","Central California Coast Steelhead",NA,213,74,1.22601017025139e-05
+"460","Central California Coast Steelhead",NA,214,3,4.97031150101916e-07
+"461","Central California Coast Steelhead",NA,216,23,3.81057215078136e-06
+"462","Central California Coast Steelhead",NA,218,1,1.65677050033972e-07
+"463","Central California Coast Steelhead",NA,219,4,6.62708200135888e-07
+"464","Central California Coast Steelhead",NA,220,1299,0.00021521448799413
+"465","Central California Coast Steelhead",NA,221,157,2.60112968553336e-05
+"466","Central California Coast Steelhead",NA,222,42,6.95843610142683e-06
+"467","Central California Coast Steelhead",NA,224,20,3.31354100067944e-06
+"468","Central California Coast Steelhead",NA,225,43,7.1241131514608e-06
+"469","Central California Coast Steelhead",NA,226,12,1.98812460040767e-06
+"470","Central California Coast Steelhead",NA,227,48,7.95249840163066e-06
+"471","Central California Coast Steelhead",NA,228,15,2.48515575050958e-06
+"472","Central California Coast Steelhead",NA,229,5,8.2838525016986e-07
+"473","Central California Coast Steelhead",NA,236,4,6.62708200135888e-07
+"474","Central California Coast Steelhead",NA,242,3,4.97031150101916e-07
+"475","Central California Coast Steelhead",NA,244,5,8.2838525016986e-07
+"476","Klamath Mountains Province Steelhead",NA,0,11103,0.000293873744819923
+"477","Klamath Mountains Province Steelhead",NA,1,1556,4.11841436494461e-05
+"478","Klamath Mountains Province Steelhead",NA,3,1,2.64679586436029e-08
+"479","Klamath Mountains Province Steelhead",NA,12,215,5.69061110837462e-06
+"480","Klamath Mountains Province Steelhead",NA,14,253,6.69639353683153e-06
+"481","Klamath Mountains Province Steelhead",NA,21,3015,7.98008953104627e-05
+"482","Klamath Mountains Province Steelhead",NA,23,2344,6.20408950606051e-05
+"483","Klamath Mountains Province Steelhead",NA,24,7175,0.000189907603267851
+"484","Klamath Mountains Province Steelhead",NA,27,961,2.54357082565024e-05
+"485","Klamath Mountains Province Steelhead",NA,28,899,2.3794694820599e-05
+"486","Klamath Mountains Province Steelhead",NA,36,253820,0.00671809726291928
+"487","Klamath Mountains Province Steelhead",NA,37,152179,0.00402786747842484
+"488","Klamath Mountains Province Steelhead",NA,39,1,2.64679586436029e-08
+"489","Klamath Mountains Province Steelhead",NA,41,3,7.94038759308086e-08
+"490","Klamath Mountains Province Steelhead",NA,42,108,2.85853953350911e-06
+"491","Klamath Mountains Province Steelhead",NA,43,1110,2.93794340943992e-05
+"492","Klamath Mountains Province Steelhead",NA,44,74,1.95862893962661e-06
+"493","Klamath Mountains Province Steelhead",NA,49,5,1.32339793218014e-07
+"494","Klamath Mountains Province Steelhead",NA,53,9,2.38211627792426e-07
+"495","Klamath Mountains Province Steelhead",NA,56,100,2.64679586436029e-06
+"496","Klamath Mountains Province Steelhead",NA,57,17,4.49955296941249e-07
+"497","Klamath Mountains Province Steelhead",NA,58,156,4.12900154840205e-06
+"498","Klamath Mountains Province Steelhead",NA,59,754,1.99568408172766e-05
+"499","Klamath Mountains Province Steelhead",NA,61,6758,0.000178870464513468
+"500","Klamath Mountains Province Steelhead",NA,66,1071,2.83471837072987e-05
+"501","Klamath Mountains Province Steelhead",NA,67,98,2.59385994707308e-06
+"502","Klamath Mountains Province Steelhead",NA,68,526,1.39221462465351e-05
+"503","Klamath Mountains Province Steelhead",NA,69,14273,0.000377777173720144
+"504","Klamath Mountains Province Steelhead",NA,70,331,8.76089431103255e-06
+"505","Klamath Mountains Province Steelhead",NA,71,605,1.60131149793797e-05
+"506","Klamath Mountains Province Steelhead",NA,75,158,4.18193746568925e-06
+"507","Klamath Mountains Province Steelhead",NA,76,434,1.14870940513236e-05
+"508","Klamath Mountains Province Steelhead",NA,77,22676,0.000600187430202339
+"509","Klamath Mountains Province Steelhead",NA,111,126610,0.00335110824386656
+"510","Klamath Mountains Province Steelhead",NA,112,2593,6.86314167628623e-05
+"511","Klamath Mountains Province Steelhead",NA,121,1494594,0.039558852180977
+"512","Klamath Mountains Province Steelhead",NA,122,304252,0.00805292935323346
+"513","Klamath Mountains Province Steelhead",NA,123,168583,0.0044620478720145
+"514","Klamath Mountains Province Steelhead",NA,124,55881,0.00147905599696317
+"515","Klamath Mountains Province Steelhead",NA,131,125300,0.00331643521804344
+"516","Klamath Mountains Province Steelhead",NA,141,43559,0.0011529178105567
+"517","Klamath Mountains Province Steelhead",NA,142,23378464,0.618780218302959
+"518","Klamath Mountains Province Steelhead",NA,143,524129,0.0138726246959129
+"519","Klamath Mountains Province Steelhead",NA,152,7962904,0.21076181375498
+"520","Klamath Mountains Province Steelhead",NA,176,2986688,0.079051534465345
+"521","Klamath Mountains Province Steelhead",NA,190,34949,0.000925028686635277
+"522","Klamath Mountains Province Steelhead",NA,195,84679,0.00224128026998165
+"523","Klamath Mountains Province Steelhead",NA,204,52,1.37633384946735e-06
+"524","Klamath Mountains Province Steelhead",NA,205,5192,0.000137421641277586
+"525","Klamath Mountains Province Steelhead",NA,208,79,2.09096873284463e-06
+"526","Klamath Mountains Province Steelhead",NA,209,36,9.52846511169704e-07
+"527","Klamath Mountains Province Steelhead",NA,220,26,6.88166924733675e-07
+"528","Klamath Mountains Province Steelhead",NA,222,6,1.58807751861617e-07
+"529","Klamath Mountains Province Steelhead",NA,224,6,1.58807751861617e-07
+"530","Klamath Mountains Province Steelhead",NA,225,3,7.94038759308086e-08
+"531","Klamath Mountains Province Steelhead",NA,228,11,2.91147545079632e-07
+"532","Klamath Mountains Province Steelhead",NA,242,114,3.01734728537073e-06
+"533","Klamath Mountains Province Steelhead",NA,244,1,2.64679586436029e-08
+"534","Klamath Mountains Province Steelhead",NA,246,20,5.29359172872057e-07
+"535","Klamath Mountains Province Steelhead",NA,247,12,3.17615503723235e-07
+"536","Middle Columbia River Steelhead","spawn+rearing",1,190,1.37805443953293e-05
+"537","Middle Columbia River Steelhead","spawn+rearing",6,17,1.23299607747683e-06
+"538","Middle Columbia River Steelhead","spawn+rearing",12,15,1.08793771542073e-06
+"539","Middle Columbia River Steelhead","spawn+rearing",14,238,1.72619450846756e-05
+"540","Middle Columbia River Steelhead","spawn+rearing",21,2309,0.000167469878993765
+"541","Middle Columbia River Steelhead","spawn+rearing",23,1835,0.00013309104718647
+"542","Middle Columbia River Steelhead","spawn+rearing",24,13350,0.000968264566724453
+"543","Middle Columbia River Steelhead","spawn+rearing",27,52,3.77151741345854e-06
+"544","Middle Columbia River Steelhead","spawn+rearing",28,335,2.42972756443964e-05
+"545","Middle Columbia River Steelhead","spawn+rearing",31,23,1.66817116364513e-06
+"546","Middle Columbia River Steelhead","spawn+rearing",35,2,1.45058362056098e-07
+"547","Middle Columbia River Steelhead","spawn+rearing",36,100999,0.00732537475465191
+"548","Middle Columbia River Steelhead","spawn+rearing",37,112611,0.00816758360474962
+"549","Middle Columbia River Steelhead","spawn+rearing",41,12,8.70350172336587e-07
+"550","Middle Columbia River Steelhead","spawn+rearing",42,97,7.03533055972075e-06
+"551","Middle Columbia River Steelhead","spawn+rearing",43,409,2.9664435040472e-05
+"552","Middle Columbia River Steelhead","spawn+rearing",44,190,1.37805443953293e-05
+"553","Middle Columbia River Steelhead","spawn+rearing",47,1,7.25291810280489e-08
+"554","Middle Columbia River Steelhead","spawn+rearing",48,29,2.10334624981342e-06
+"555","Middle Columbia River Steelhead","spawn+rearing",49,616,4.46779755132781e-05
+"556","Middle Columbia River Steelhead","spawn+rearing",51,5,3.62645905140245e-07
+"557","Middle Columbia River Steelhead","spawn+rearing",52,2,1.45058362056098e-07
+"558","Middle Columbia River Steelhead","spawn+rearing",53,128,9.28373517159026e-06
+"559","Middle Columbia River Steelhead","spawn+rearing",55,5,3.62645905140245e-07
+"560","Middle Columbia River Steelhead","spawn+rearing",56,36,2.61105051700976e-06
+"561","Middle Columbia River Steelhead","spawn+rearing",57,127,9.21120599056221e-06
+"562","Middle Columbia River Steelhead","spawn+rearing",58,8,5.80233448224391e-07
+"563","Middle Columbia River Steelhead","spawn+rearing",59,40875,0.0029646302745215
+"564","Middle Columbia River Steelhead","spawn+rearing",61,47190,0.00342265205271363
+"565","Middle Columbia River Steelhead","spawn+rearing",66,670,4.85945512887928e-05
+"566","Middle Columbia River Steelhead","spawn+rearing",67,8,5.80233448224391e-07
+"567","Middle Columbia River Steelhead","spawn+rearing",68,1050,7.61556400794514e-05
+"568","Middle Columbia River Steelhead","spawn+rearing",69,87,6.31003874944026e-06
+"569","Middle Columbia River Steelhead","spawn+rearing",70,12,8.70350172336587e-07
+"570","Middle Columbia River Steelhead","spawn+rearing",71,43,3.1187547842061e-06
+"571","Middle Columbia River Steelhead","spawn+rearing",76,1,7.25291810280489e-08
+"572","Middle Columbia River Steelhead","spawn+rearing",77,161,1.16771981455159e-05
+"573","Middle Columbia River Steelhead","spawn+rearing",111,17094,0.00123981382049347
+"574","Middle Columbia River Steelhead","spawn+rearing",112,5449,0.000395211507421839
+"575","Middle Columbia River Steelhead","spawn+rearing",121,146417,0.0106195050985838
+"576","Middle Columbia River Steelhead","spawn+rearing",122,57635,0.0041802193485516
+"577","Middle Columbia River Steelhead","spawn+rearing",123,17838,0.00129377553117834
+"578","Middle Columbia River Steelhead","spawn+rearing",124,3090,0.000224115169376671
+"579","Middle Columbia River Steelhead","spawn+rearing",131,34871,0.00252916507162909
+"580","Middle Columbia River Steelhead","spawn+rearing",141,98,7.10785974074879e-06
+"581","Middle Columbia River Steelhead","spawn+rearing",142,5338296,0.387182236965309
+"582","Middle Columbia River Steelhead","spawn+rearing",143,77,5.58474693915977e-06
+"583","Middle Columbia River Steelhead","spawn+rearing",152,4699430,0.340845809198644
+"584","Middle Columbia River Steelhead","spawn+rearing",176,3027715,0.219597689336339
+"585","Middle Columbia River Steelhead","spawn+rearing",190,24523,0.00177863310635084
+"586","Middle Columbia River Steelhead","spawn+rearing",195,80385,0.00583025821693971
+"587","Middle Columbia River Steelhead","spawn+rearing",205,5072,0.000367868006174264
+"588","Middle Columbia River Steelhead","spawn+rearing",206,5677,0.000411748160696234
+"589","Middle Columbia River Steelhead","spawn+rearing",208,11,7.97820991308538e-07
+"590","Middle Columbia River Steelhead","spawn+rearing",222,1,7.25291810280489e-08
+"591","Middle Columbia River Steelhead","spawn+rearing",224,18,1.30552525850488e-06
+"592","Middle Columbia River Steelhead","spawn+rearing",228,89,6.45509711149635e-06
+"593","Middle Columbia River Steelhead","spawn+rearing",242,26,1.88575870672927e-06
+"594","Middle Columbia River Steelhead","spawn+rearing",246,1,7.25291810280489e-08
+"595","Middle Columbia River Steelhead","spawn+rearing",247,3,2.17587543084147e-07
+"596","Middle Columbia River Steelhead","rearing+migration",1,34,7.22924356597323e-05
+"597","Middle Columbia River Steelhead","rearing+migration",12,2,4.25249621527837e-06
+"598","Middle Columbia River Steelhead","rearing+migration",14,301,0.000640000680399394
+"599","Middle Columbia River Steelhead","rearing+migration",21,255,0.000542193267447992
+"600","Middle Columbia River Steelhead","rearing+migration",23,659,0.00140119750293422
+"601","Middle Columbia River Steelhead","rearing+migration",24,3148,0.00669342904284815
+"602","Middle Columbia River Steelhead","rearing+migration",27,2,4.25249621527837e-06
+"603","Middle Columbia River Steelhead","rearing+migration",28,21,4.46512102604229e-05
+"604","Middle Columbia River Steelhead","rearing+migration",36,11347,0.0241265372773818
+"605","Middle Columbia River Steelhead","rearing+migration",37,12047,0.0256149109527293
+"606","Middle Columbia River Steelhead","rearing+migration",42,23,4.89037064757012e-05
+"607","Middle Columbia River Steelhead","rearing+migration",43,719,0.00152877238939257
+"608","Middle Columbia River Steelhead","rearing+migration",44,150,0.000318937216145878
+"609","Middle Columbia River Steelhead","rearing+migration",48,6,1.27574886458351e-05
+"610","Middle Columbia River Steelhead","rearing+migration",49,10,2.12624810763918e-05
+"611","Middle Columbia River Steelhead","rearing+migration",53,16,3.4019969722227e-05
+"612","Middle Columbia River Steelhead","rearing+migration",57,26,5.52824507986188e-05
+"613","Middle Columbia River Steelhead","rearing+migration",58,1,2.12624810763918e-06
+"614","Middle Columbia River Steelhead","rearing+migration",59,7128,0.0151558965112521
+"615","Middle Columbia River Steelhead","rearing+migration",61,8679,0.0184537073262005
+"616","Middle Columbia River Steelhead","rearing+migration",66,22,4.67774583680621e-05
+"617","Middle Columbia River Steelhead","rearing+migration",67,1,2.12624810763918e-06
+"618","Middle Columbia River Steelhead","rearing+migration",68,2,4.25249621527837e-06
+"619","Middle Columbia River Steelhead","rearing+migration",69,2,4.25249621527837e-06
+"620","Middle Columbia River Steelhead","rearing+migration",71,1,2.12624810763918e-06
+"621","Middle Columbia River Steelhead","rearing+migration",77,39,8.29236761979282e-05
+"622","Middle Columbia River Steelhead","rearing+migration",111,3990,0.00848372994948035
+"623","Middle Columbia River Steelhead","rearing+migration",121,13598,0.0289127217676776
+"624","Middle Columbia River Steelhead","rearing+migration",122,10537,0.0224042763101941
+"625","Middle Columbia River Steelhead","rearing+migration",123,2984,0.00634472435319533
+"626","Middle Columbia River Steelhead","rearing+migration",124,409,0.000869635476024426
+"627","Middle Columbia River Steelhead","rearing+migration",131,28,5.95349470138972e-05
+"628","Middle Columbia River Steelhead","rearing+migration",141,16,3.4019969722227e-05
+"629","Middle Columbia River Steelhead","rearing+migration",142,103202,0.219433057204579
+"630","Middle Columbia River Steelhead","rearing+migration",143,3,6.37874432291755e-06
+"631","Middle Columbia River Steelhead","rearing+migration",152,213184,0.453282076578952
+"632","Middle Columbia River Steelhead","rearing+migration",176,72588,0.154340097637313
+"633","Middle Columbia River Steelhead","rearing+migration",190,2330,0.0049541580907993
+"634","Middle Columbia River Steelhead","rearing+migration",195,821,0.00174564969637177
+"635","Middle Columbia River Steelhead","rearing+migration",205,870,0.00184983585364609
+"636","Middle Columbia River Steelhead","rearing+migration",206,1098,0.00233462042218782
+"637","Middle Columbia River Steelhead","rearing+migration",208,2,4.25249621527837e-06
+"638","Middle Columbia River Steelhead","rearing+migration",209,1,2.12624810763918e-06
+"639","Middle Columbia River Steelhead","rearing+migration",228,9,1.91362329687527e-05
+"640","Middle Columbia River Steelhead","rearing+migration",247,1,2.12624810763918e-06
+"641","Middle Columbia River Steelhead","migration",1,5,3.56592685570834e-05
+"642","Middle Columbia River Steelhead","migration",14,892,0.00636161351058367
+"643","Middle Columbia River Steelhead","migration",21,262,0.00186854567239117
+"644","Middle Columbia River Steelhead","migration",23,225,0.00160466708506875
+"645","Middle Columbia River Steelhead","migration",24,1927,0.0137430821018999
+"646","Middle Columbia River Steelhead","migration",36,7002,0.0499372396873395
+"647","Middle Columbia River Steelhead","migration",37,2703,0.0192774005819593
+"648","Middle Columbia River Steelhead","migration",43,33,0.00023535117247675
+"649","Middle Columbia River Steelhead","migration",44,20,0.000142637074228333
+"650","Middle Columbia River Steelhead","migration",49,1,7.13185371141667e-06
+"651","Middle Columbia River Steelhead","migration",53,11,7.84503908255834e-05
+"652","Middle Columbia River Steelhead","migration",57,49,0.000349460831859417
+"653","Middle Columbia River Steelhead","migration",59,3462,0.0246904775489245
+"654","Middle Columbia River Steelhead","migration",61,4698,0.0335054487362355
+"655","Middle Columbia River Steelhead","migration",66,1,7.13185371141667e-06
+"656","Middle Columbia River Steelhead","migration",77,17,0.000121241513094083
+"657","Middle Columbia River Steelhead","migration",111,6834,0.0487390882638215
+"658","Middle Columbia River Steelhead","migration",121,3906,0.0278570205967935
+"659","Middle Columbia River Steelhead","migration",122,2572,0.0183431277457637
+"660","Middle Columbia River Steelhead","migration",123,781,0.00556997774861642
+"661","Middle Columbia River Steelhead","migration",124,95,0.000677526102584584
+"662","Middle Columbia River Steelhead","migration",131,25,0.000178296342785417
+"663","Middle Columbia River Steelhead","migration",142,1516,0.0108118902265077
+"664","Middle Columbia River Steelhead","migration",152,83619,0.596358475494951
+"665","Middle Columbia River Steelhead","migration",176,17386,0.12399440862669
+"666","Middle Columbia River Steelhead","migration",190,1084,0.00773092942317567
+"667","Middle Columbia River Steelhead","migration",195,69,0.00049209790608775
+"668","Middle Columbia River Steelhead","migration",205,279,0.00198978718548525
+"669","Middle Columbia River Steelhead","migration",206,741,0.00528470360015975
+"670","Middle Columbia River Steelhead","migration",247,1,7.13185371141667e-06
+"671","Middle Columbia River Steelhead",NA,1,234,1.74484335407808e-05
+"672","Middle Columbia River Steelhead",NA,6,542,4.04147477739453e-05
+"673","Middle Columbia River Steelhead",NA,12,56,4.17569349693899e-06
+"674","Middle Columbia River Steelhead",NA,14,1288,9.60409504295968e-05
+"675","Middle Columbia River Steelhead",NA,21,1066,7.94873083524458e-05
+"676","Middle Columbia River Steelhead",NA,23,1271,9.47733291894546e-05
+"677","Middle Columbia River Steelhead",NA,24,7576,0.000564911677371604
+"678","Middle Columbia River Steelhead",NA,27,445,3.31818501096045e-05
+"679","Middle Columbia River Steelhead",NA,28,374,2.78876672831283e-05
+"680","Middle Columbia River Steelhead",NA,31,26,1.93871483786453e-06
+"681","Middle Columbia River Steelhead",NA,36,112743,0.00840678949866773
+"682","Middle Columbia River Steelhead",NA,37,75895,0.00565918317768187
+"683","Middle Columbia River Steelhead",NA,41,28,2.0878467484695e-06
+"684","Middle Columbia River Steelhead",NA,42,2351,0.000175304560916135
+"685","Middle Columbia River Steelhead",NA,43,1273,9.49224611000596e-05
+"686","Middle Columbia River Steelhead",NA,44,805,6.0025594018498e-05
+"687","Middle Columbia River Steelhead",NA,47,2,1.49131910604964e-07
+"688","Middle Columbia River Steelhead",NA,48,2,1.49131910604964e-07
+"689","Middle Columbia River Steelhead",NA,49,98,7.30746361964324e-06
+"690","Middle Columbia River Steelhead",NA,51,2,1.49131910604964e-07
+"691","Middle Columbia River Steelhead",NA,53,165,1.23033826249095e-05
+"692","Middle Columbia River Steelhead",NA,55,2,1.49131910604964e-07
+"693","Middle Columbia River Steelhead",NA,56,24,1.78958292725957e-06
+"694","Middle Columbia River Steelhead",NA,57,53,3.95199563103155e-06
+"695","Middle Columbia River Steelhead",NA,58,2,1.49131910604964e-07
+"696","Middle Columbia River Steelhead",NA,59,17688,0.0013189226173903
+"697","Middle Columbia River Steelhead",NA,61,27873,0.00207837687214608
+"698","Middle Columbia River Steelhead",NA,66,304,2.26680504119545e-05
+"699","Middle Columbia River Steelhead",NA,67,2,1.49131910604964e-07
+"700","Middle Columbia River Steelhead",NA,68,1260,9.39531036811273e-05
+"701","Middle Columbia River Steelhead",NA,69,136,1.01409699211376e-05
+"702","Middle Columbia River Steelhead",NA,70,3,2.23697865907446e-07
+"703","Middle Columbia River Steelhead",NA,71,15,1.11848932953723e-06
+"704","Middle Columbia River Steelhead",NA,77,360,2.68437439088935e-05
+"705","Middle Columbia River Steelhead",NA,111,31623,0.00235799920453039
+"706","Middle Columbia River Steelhead",NA,112,5048,0.000376408942366929
+"707","Middle Columbia River Steelhead",NA,121,108410,0.00808369521434208
+"708","Middle Columbia River Steelhead",NA,122,44585,0.00332452311716116
+"709","Middle Columbia River Steelhead",NA,123,11750,0.000876149974804164
+"710","Middle Columbia River Steelhead",NA,124,1946,0.00014510534901863
+"711","Middle Columbia River Steelhead",NA,131,31079,0.00231743532484584
+"712","Middle Columbia River Steelhead",NA,141,107,7.97855721736558e-06
+"713","Middle Columbia River Steelhead",NA,142,3062680,0.228371659985806
+"714","Middle Columbia River Steelhead",NA,143,80,5.96527642419856e-06
+"715","Middle Columbia River Steelhead",NA,152,8846449,0.659643920719687
+"716","Middle Columbia River Steelhead",NA,176,885880,0.0660564884833628
+"717","Middle Columbia River Steelhead",NA,190,16212,0.00120886326736384
+"718","Middle Columbia River Steelhead",NA,195,103515,0.00771869486313643
+"719","Middle Columbia River Steelhead",NA,205,5527,0.000412126034956818
+"720","Middle Columbia River Steelhead",NA,206,1990,0.000148386251051939
+"721","Middle Columbia River Steelhead",NA,208,29,2.16241270377198e-06
+"722","Middle Columbia River Steelhead",NA,222,1,7.4565955302482e-08
+"723","Middle Columbia River Steelhead",NA,224,1,7.4565955302482e-08
+"724","Middle Columbia River Steelhead",NA,228,47,3.50459989921665e-06
+"725","Middle Columbia River Steelhead",NA,242,8,5.96527642419856e-07
+"726","Middle Columbia River Steelhead",NA,247,15,1.11848932953723e-06
+"727","Northern California Steelhead","spawn+rearing",0,93583,0.00535506496055501
+"728","Northern California Steelhead","spawn+rearing",3,5,2.86113127413901e-07
+"729","Northern California Steelhead","spawn+rearing",14,3,1.7166787644834e-07
+"730","Northern California Steelhead","spawn+rearing",21,66,3.77669328186349e-06
+"731","Northern California Steelhead","spawn+rearing",23,10,5.72226254827801e-07
+"732","Northern California Steelhead","spawn+rearing",24,704,4.02847283398772e-05
+"733","Northern California Steelhead","spawn+rearing",27,18,1.03000725869004e-06
+"734","Northern California Steelhead","spawn+rearing",28,4,2.28890501931121e-07
+"735","Northern California Steelhead","spawn+rearing",36,1114,6.37460047878171e-05
+"736","Northern California Steelhead","spawn+rearing",37,19396,0.001109890043864
+"737","Northern California Steelhead","spawn+rearing",57,136,7.7822770656581e-06
+"738","Northern California Steelhead","spawn+rearing",58,10,5.72226254827801e-07
+"739","Northern California Steelhead","spawn+rearing",61,363,2.07718130502492e-05
+"740","Northern California Steelhead","spawn+rearing",68,471,2.69518566023894e-05
+"741","Northern California Steelhead","spawn+rearing",69,4653,0.000266256876371376
+"742","Northern California Steelhead","spawn+rearing",71,1,5.72226254827801e-08
+"743","Northern California Steelhead","spawn+rearing",74,3,1.7166787644834e-07
+"744","Northern California Steelhead","spawn+rearing",75,268,1.53356636293851e-05
+"745","Northern California Steelhead","spawn+rearing",76,983,5.62498408495729e-05
+"746","Northern California Steelhead","spawn+rearing",77,170,9.72784633207262e-06
+"747","Northern California Steelhead","spawn+rearing",111,71606,0.00409748332031995
+"748","Northern California Steelhead","spawn+rearing",112,8,4.57781003862241e-07
+"749","Northern California Steelhead","spawn+rearing",121,783178,0.0448155013803528
+"750","Northern California Steelhead","spawn+rearing",122,104481,0.00597867713306635
+"751","Northern California Steelhead","spawn+rearing",123,64267,0.00367752647190183
+"752","Northern California Steelhead","spawn+rearing",124,13042,0.000746297481546419
+"753","Northern California Steelhead","spawn+rearing",131,55828,0.00319462473545265
+"754","Northern California Steelhead","spawn+rearing",141,81357,0.00465546114140254
+"755","Northern California Steelhead","spawn+rearing",142,11471086,0.656405658058762
+"756","Northern California Steelhead","spawn+rearing",143,551515,0.0315591362931355
+"757","Northern California Steelhead","spawn+rearing",152,3219083,0.184204380906984
+"758","Northern California Steelhead","spawn+rearing",176,824806,0.04719756483395
+"759","Northern California Steelhead","spawn+rearing",190,39400,0.00225457144402154
+"760","Northern California Steelhead","spawn+rearing",195,73691,0.00421679249445155
+"761","Northern California Steelhead","spawn+rearing",204,93,5.32170416989855e-06
+"762","Northern California Steelhead","spawn+rearing",205,33,1.88834664093174e-06
+"763","Northern California Steelhead","spawn+rearing",208,1,5.72226254827801e-08
+"764","Northern California Steelhead","spawn+rearing",211,68,3.89113853282905e-06
+"765","Northern California Steelhead","spawn+rearing",213,9,5.15003629345021e-07
+"766","Northern California Steelhead","spawn+rearing",220,18,1.03000725869004e-06
+"767","Northern California Steelhead","spawn+rearing",225,48,2.74668602317345e-06
+"768","Northern California Steelhead","spawn+rearing",227,26,1.48778826255228e-06
+"769","Northern California Steelhead","rearing+migration",0,157,0.0017387259679277
+"770","Northern California Steelhead","rearing+migration",27,10,0.00011074687693807
+"771","Northern California Steelhead","rearing+migration",36,1,1.1074687693807e-05
+"772","Northern California Steelhead","rearing+migration",37,275,0.00304553911579693
+"773","Northern California Steelhead","rearing+migration",111,158,0.00174980065562151
+"774","Northern California Steelhead","rearing+migration",121,3199,0.0354279259324887
+"775","Northern California Steelhead","rearing+migration",122,290,0.00321165943120404
+"776","Northern California Steelhead","rearing+migration",123,116,0.00128466377248162
+"777","Northern California Steelhead","rearing+migration",124,21,0.000232568441569948
+"778","Northern California Steelhead","rearing+migration",131,60,0.000664481261628422
+"779","Northern California Steelhead","rearing+migration",141,860,0.00952423141667405
+"780","Northern California Steelhead","rearing+migration",142,42593,0.471704172942323
+"781","Northern California Steelhead","rearing+migration",143,4859,0.0538119075042084
+"782","Northern California Steelhead","rearing+migration",152,29147,0.322793922211394
+"783","Northern California Steelhead","rearing+migration",176,7316,0.0810224151678923
+"784","Northern California Steelhead","rearing+migration",190,309,0.00342207849738637
+"785","Northern California Steelhead","rearing+migration",195,925,0.0102440861167715
+"786","Northern California Steelhead",NA,0,629,0.000444695503767893
+"787","Northern California Steelhead",NA,24,18,1.27257854814341e-05
+"788","Northern California Steelhead",NA,36,27,1.90886782221512e-05
+"789","Northern California Steelhead",NA,37,140,9.89783315222655e-05
+"790","Northern California Steelhead",NA,57,1,7.06988082301897e-07
+"791","Northern California Steelhead",NA,58,1,7.06988082301897e-07
+"792","Northern California Steelhead",NA,61,21,1.48467497283398e-05
+"793","Northern California Steelhead",NA,75,3,2.12096424690569e-06
+"794","Northern California Steelhead",NA,76,133,9.40294149461523e-05
+"795","Northern California Steelhead",NA,111,1529,0.0010809847778396
+"796","Northern California Steelhead",NA,121,55102,0.0389564573109991
+"797","Northern California Steelhead",NA,122,4250,0.00300469934978306
+"798","Northern California Steelhead",NA,123,1572,0.00111138526537858
+"799","Northern California Steelhead",NA,124,275,0.000194421722633022
+"800","Northern California Steelhead",NA,131,2066,0.00146063737803572
+"801","Northern California Steelhead",NA,141,5274,0.0037286551460602
+"802","Northern California Steelhead",NA,142,782744,0.553390679493316
+"803","Northern California Steelhead",NA,143,44606,0.0315359103991584
+"804","Northern California Steelhead",NA,152,392116,0.27722133887989
+"805","Northern California Steelhead",NA,176,114653,0.0810583046001594
+"806","Northern California Steelhead",NA,190,1027,0.000726076760524048
+"807","Northern California Steelhead",NA,195,8264,0.00584254951214287
+"808","Oregon Coast Steelhead",NA,0,83103,0.00340501930895845
+"809","Oregon Coast Steelhead",NA,1,1682,6.89173974184821e-05
+"810","Oregon Coast Steelhead",NA,12,124,5.08071181919844e-06
+"811","Oregon Coast Steelhead",NA,14,145,5.94115494986915e-06
+"812","Oregon Coast Steelhead",NA,21,64,2.622302874425e-06
+"813","Oregon Coast Steelhead",NA,23,193,7.9078821056879e-06
+"814","Oregon Coast Steelhead",NA,24,435,1.78234648496074e-05
+"815","Oregon Coast Steelhead",NA,27,95,3.89248082922461e-06
+"816","Oregon Coast Steelhead",NA,28,102,4.17929520611485e-06
+"817","Oregon Coast Steelhead",NA,31,6,2.45840894477344e-07
+"818","Oregon Coast Steelhead",NA,36,1337,5.47815459860348e-05
+"819","Oregon Coast Steelhead",NA,37,94266,0.00386240629313355
+"820","Oregon Coast Steelhead",NA,39,13,5.32655271367579e-07
+"821","Oregon Coast Steelhead",NA,41,15,6.1460223619336e-07
+"822","Oregon Coast Steelhead",NA,42,117,4.79389744230821e-06
+"823","Oregon Coast Steelhead",NA,43,3,1.22920447238672e-07
+"824","Oregon Coast Steelhead",NA,44,166,6.80159808053985e-06
+"825","Oregon Coast Steelhead",NA,49,6,2.45840894477344e-07
+"826","Oregon Coast Steelhead",NA,53,4,1.63893929651563e-07
+"827","Oregon Coast Steelhead",NA,56,493,2.01999268295551e-05
+"828","Oregon Coast Steelhead",NA,57,127,5.20363226643712e-06
+"829","Oregon Coast Steelhead",NA,58,711,2.91321459955653e-05
+"830","Oregon Coast Steelhead",NA,59,5338,0.00021871644912001
+"831","Oregon Coast Steelhead",NA,61,1219,4.99466750613137e-05
+"832","Oregon Coast Steelhead",NA,66,513,2.10193964778129e-05
+"833","Oregon Coast Steelhead",NA,67,34,1.39309840203828e-06
+"834","Oregon Coast Steelhead",NA,68,10,4.09734824128907e-07
+"835","Oregon Coast Steelhead",NA,69,340,1.39309840203828e-05
+"836","Oregon Coast Steelhead",NA,70,1118,4.58083533376118e-05
+"837","Oregon Coast Steelhead",NA,71,5069,0.000207694582350943
+"838","Oregon Coast Steelhead",NA,76,23,9.42390095496486e-07
+"839","Oregon Coast Steelhead",NA,77,40,1.63893929651563e-06
+"840","Oregon Coast Steelhead",NA,111,153245,0.00627898131236343
+"841","Oregon Coast Steelhead",NA,112,4,1.63893929651563e-07
+"842","Oregon Coast Steelhead",NA,121,875040,0.0358534360505759
+"843","Oregon Coast Steelhead",NA,122,170101,0.00696963033191512
+"844","Oregon Coast Steelhead",NA,123,90916,0.00372514512705037
+"845","Oregon Coast Steelhead",NA,124,32747,0.00134175862857493
+"846","Oregon Coast Steelhead",NA,131,90638,0.00371375449893959
+"847","Oregon Coast Steelhead",NA,141,52465,0.00214967375479231
+"848","Oregon Coast Steelhead",NA,142,16375643,0.670967120460276
+"849","Oregon Coast Steelhead",NA,143,2381692,0.0975862152749224
+"850","Oregon Coast Steelhead",NA,152,1715456,0.0702882062460878
+"851","Oregon Coast Steelhead",NA,176,1794683,0.0735344123372139
+"852","Oregon Coast Steelhead",NA,190,88818,0.00363918276094812
+"853","Oregon Coast Steelhead",NA,195,386774,0.0158474776867634
+"854","Oregon Coast Steelhead",NA,205,55,2.25354153270899e-06
+"855","Oregon Coast Steelhead",NA,208,47,1.92575367340586e-06
+"856","Oregon Coast Steelhead",NA,214,2,8.19469648257814e-08
+"857","Oregon Coast Steelhead",NA,219,2,8.19469648257814e-08
+"858","Oregon Coast Steelhead",NA,220,82,3.35982555785704e-06
+"859","Oregon Coast Steelhead",NA,222,158,6.47381022123673e-06
+"860","Oregon Coast Steelhead",NA,224,19,7.78496165844923e-07
+"861","Oregon Coast Steelhead",NA,225,18,7.37522683432032e-07
+"862","Oregon Coast Steelhead",NA,229,1,4.09734824128907e-08
+"863","Oregon Coast Steelhead",NA,242,290,1.18823098997383e-05
+"864","Oregon Coast Steelhead",NA,244,4,1.63893929651563e-07
+"865","Oregon Coast Steelhead",NA,246,107,4.3841626181793e-06
+"866","Oregon Coast Steelhead",NA,247,111,4.54805654783087e-06
+"867","Puget Sound Steelhead","spawn+rearing",1,167,0.000369141535938249
+"868","Puget Sound Steelhead","spawn+rearing",6,1,2.21042835891167e-06
+"869","Puget Sound Steelhead","spawn+rearing",21,3,6.63128507673502e-06
+"870","Puget Sound Steelhead","spawn+rearing",23,41,9.06275627153786e-05
+"871","Puget Sound Steelhead","spawn+rearing",28,1,2.21042835891167e-06
+"872","Puget Sound Steelhead","spawn+rearing",36,11,2.43147119480284e-05
+"873","Puget Sound Steelhead","spawn+rearing",37,656,0.00145004100344606
+"874","Puget Sound Steelhead","spawn+rearing",42,1,2.21042835891167e-06
+"875","Puget Sound Steelhead","spawn+rearing",43,1,2.21042835891167e-06
+"876","Puget Sound Steelhead","spawn+rearing",44,1,2.21042835891167e-06
+"877","Puget Sound Steelhead","spawn+rearing",47,1,2.21042835891167e-06
+"878","Puget Sound Steelhead","spawn+rearing",53,1,2.21042835891167e-06
+"879","Puget Sound Steelhead","spawn+rearing",55,18,3.97877104604101e-05
+"880","Puget Sound Steelhead","spawn+rearing",58,1,2.21042835891167e-06
+"881","Puget Sound Steelhead","spawn+rearing",59,15,3.31564253836751e-05
+"882","Puget Sound Steelhead","spawn+rearing",61,82,0.000181255125430757
+"883","Puget Sound Steelhead","spawn+rearing",67,17,3.75772821014984e-05
+"884","Puget Sound Steelhead","spawn+rearing",69,2,4.42085671782335e-06
+"885","Puget Sound Steelhead","spawn+rearing",70,294,0.000649865937520032
+"886","Puget Sound Steelhead","spawn+rearing",111,7945,0.0175618533115532
+"887","Puget Sound Steelhead","spawn+rearing",121,14844,0.0328115985596849
+"888","Puget Sound Steelhead","spawn+rearing",122,13849,0.0306122223425678
+"889","Puget Sound Steelhead","spawn+rearing",123,2749,0.00607646755864819
+"890","Puget Sound Steelhead","spawn+rearing",124,487,0.00107647861078999
+"891","Puget Sound Steelhead","spawn+rearing",131,1208,0.0026701974575653
+"892","Puget Sound Steelhead","spawn+rearing",141,4654,0.0102873335823749
+"893","Puget Sound Steelhead","spawn+rearing",142,278278,0.615113582861223
+"894","Puget Sound Steelhead","spawn+rearing",143,34505,0.0762708305242473
+"895","Puget Sound Steelhead","spawn+rearing",152,38001,0.0839984880670025
+"896","Puget Sound Steelhead","spawn+rearing",176,41762,0.0923119091248693
+"897","Puget Sound Steelhead","spawn+rearing",190,9456,0.0209018105618688
+"898","Puget Sound Steelhead","spawn+rearing",195,3268,0.00722367987692335
+"899","Puget Sound Steelhead","spawn+rearing",219,4,8.84171343564669e-06
+"900","Puget Sound Steelhead","spawn+rearing",229,2,4.42085671782335e-06
+"901","Puget Sound Steelhead","spawn+rearing",242,63,0.000139256986611435
+"902","Puget Sound Steelhead","spawn+rearing",250,12,2.65251403069401e-05
+"903","Puget Sound Steelhead","migration",1,30,0.000193777169173928
+"904","Puget Sound Steelhead","migration",21,2,1.29184779449285e-05
+"905","Puget Sound Steelhead","migration",23,1,6.45923897246426e-06
+"906","Puget Sound Steelhead","migration",24,1,6.45923897246426e-06
+"907","Puget Sound Steelhead","migration",36,1,6.45923897246426e-06
+"908","Puget Sound Steelhead","migration",37,188,0.00121433692682328
+"909","Puget Sound Steelhead","migration",42,1,6.45923897246426e-06
+"910","Puget Sound Steelhead","migration",44,7,4.52146728072499e-05
+"911","Puget Sound Steelhead","migration",55,7,4.52146728072499e-05
+"912","Puget Sound Steelhead","migration",58,4,2.58369558898571e-05
+"913","Puget Sound Steelhead","migration",59,4,2.58369558898571e-05
+"914","Puget Sound Steelhead","migration",67,1,6.45923897246426e-06
+"915","Puget Sound Steelhead","migration",68,1,6.45923897246426e-06
+"916","Puget Sound Steelhead","migration",69,2,1.29184779449285e-05
+"917","Puget Sound Steelhead","migration",70,256,0.00165356517695085
+"918","Puget Sound Steelhead","migration",77,1,6.45923897246426e-06
+"919","Puget Sound Steelhead","migration",111,333,0.0021509265778306
+"920","Puget Sound Steelhead","migration",121,15075,0.0973730275098988
+"921","Puget Sound Steelhead","migration",122,14824,0.0957517585278103
+"922","Puget Sound Steelhead","migration",123,1799,0.0116201709114632
+"923","Puget Sound Steelhead","migration",124,179,0.0011562037760711
+"924","Puget Sound Steelhead","migration",131,316,0.00204111951529871
+"925","Puget Sound Steelhead","migration",141,3591,0.0231951271501192
+"926","Puget Sound Steelhead","migration",142,25000,0.161480974311607
+"927","Puget Sound Steelhead","migration",143,29127,0.188138253550967
+"928","Puget Sound Steelhead","migration",152,11726,0.075741036191116
+"929","Puget Sound Steelhead","migration",176,44240,0.285756732141819
+"930","Puget Sound Steelhead","migration",190,5787,0.0373796159336507
+"931","Puget Sound Steelhead","migration",195,2198,0.0141974072614765
+"932","Puget Sound Steelhead","migration",242,104,0.000671760853136283
+"933","Puget Sound Steelhead","migration",250,11,7.10516286971069e-05
+"934","Puget Sound Steelhead",NA,27,1,8.81764233879145e-06
+"935","Puget Sound Steelhead",NA,59,1,8.81764233879145e-06
+"936","Puget Sound Steelhead",NA,111,1145,0.0100962004779162
+"937","Puget Sound Steelhead",NA,112,5099,0.0449611582854976
+"938","Puget Sound Steelhead",NA,121,345,0.00304208660688305
+"939","Puget Sound Steelhead",NA,122,10,8.81764233879145e-05
+"940","Puget Sound Steelhead",NA,123,5,4.40882116939573e-05
+"941","Puget Sound Steelhead",NA,124,4,3.52705693551658e-05
+"942","Puget Sound Steelhead",NA,131,22252,0.196210177322787
+"943","Puget Sound Steelhead",NA,141,2,1.76352846775829e-05
+"944","Puget Sound Steelhead",NA,142,74663,0.658351629941186
+"945","Puget Sound Steelhead",NA,143,6,5.29058540327487e-05
+"946","Puget Sound Steelhead",NA,152,9632,0.0849315310072393
+"947","Puget Sound Steelhead",NA,176,181,0.00159599326332125
+"948","Puget Sound Steelhead",NA,190,45,0.000396793905245615
+"949","Puget Sound Steelhead",NA,195,18,0.000158717562098246
+"950","Snake River Basin Steelhead","spawn+rearing",0,242,4.30208990905702e-05
+"951","Snake River Basin Steelhead","spawn+rearing",1,145,2.57769849922838e-05
+"952","Snake River Basin Steelhead","spawn+rearing",4,16,2.8443569646658e-06
+"953","Snake River Basin Steelhead","spawn+rearing",6,1,1.77772310291612e-07
+"954","Snake River Basin Steelhead","spawn+rearing",21,1426,0.000253503314475839
+"955","Snake River Basin Steelhead","spawn+rearing",23,284,5.04873361228179e-05
+"956","Snake River Basin Steelhead","spawn+rearing",24,148,2.63103019231586e-05
+"957","Snake River Basin Steelhead","spawn+rearing",27,2,3.55544620583225e-07
+"958","Snake River Basin Steelhead","spawn+rearing",28,42,7.46643703224772e-06
+"959","Snake River Basin Steelhead","spawn+rearing",33,11,1.95549541320774e-06
+"960","Snake River Basin Steelhead","spawn+rearing",35,11,1.95549541320774e-06
+"961","Snake River Basin Steelhead","spawn+rearing",36,29960,0.00532605841633671
+"962","Snake River Basin Steelhead","spawn+rearing",37,6515,0.00115818660154985
+"963","Snake River Basin Steelhead","spawn+rearing",41,6,1.06663386174967e-06
+"964","Snake River Basin Steelhead","spawn+rearing",42,15,2.66658465437419e-06
+"965","Snake River Basin Steelhead","spawn+rearing",43,80,1.4221784823329e-05
+"966","Snake River Basin Steelhead","spawn+rearing",44,7,1.24440617204129e-06
+"967","Snake River Basin Steelhead","spawn+rearing",53,5,8.88861551458062e-07
+"968","Snake River Basin Steelhead","spawn+rearing",58,1,1.77772310291612e-07
+"969","Snake River Basin Steelhead","spawn+rearing",59,3,5.33316930874837e-07
+"970","Snake River Basin Steelhead","spawn+rearing",61,229,4.07098590567792e-05
+"971","Snake River Basin Steelhead","spawn+rearing",67,3,5.33316930874837e-07
+"972","Snake River Basin Steelhead","spawn+rearing",68,4,7.11089241166449e-07
+"973","Snake River Basin Steelhead","spawn+rearing",111,6378,0.0011338317950399
+"974","Snake River Basin Steelhead","spawn+rearing",112,996,0.000177061221050446
+"975","Snake River Basin Steelhead","spawn+rearing",121,7087,0.00125987236303666
+"976","Snake River Basin Steelhead","spawn+rearing",122,4051,0.000720155628991322
+"977","Snake River Basin Steelhead","spawn+rearing",123,2120,0.000376877297818218
+"978","Snake River Basin Steelhead","spawn+rearing",124,199,3.53766897480309e-05
+"979","Snake River Basin Steelhead","spawn+rearing",131,2075,0.000368877543855096
+"980","Snake River Basin Steelhead","spawn+rearing",141,95,1.68883694777032e-05
+"981","Snake River Basin Steelhead","spawn+rearing",142,1947303,0.346176553147788
+"982","Snake River Basin Steelhead","spawn+rearing",143,28,4.97762468816515e-06
+"983","Snake River Basin Steelhead","spawn+rearing",152,3111873,0.553204852544091
+"984","Snake River Basin Steelhead","spawn+rearing",176,453360,0.0805948545938054
+"985","Snake River Basin Steelhead","spawn+rearing",190,9543,0.00169648115711286
+"986","Snake River Basin Steelhead","spawn+rearing",195,40499,0.00719960079450001
+"987","Snake River Basin Steelhead","spawn+rearing",205,409,7.27088749092695e-05
+"988","Snake River Basin Steelhead","spawn+rearing",228,1,1.77772310291612e-07
+"989","Snake River Basin Steelhead","rearing+migration",23,1,7.98887947976417e-06
+"990","Snake River Basin Steelhead","rearing+migration",36,2,1.59777589595283e-05
+"991","Snake River Basin Steelhead","rearing+migration",37,1,7.98887947976417e-06
+"992","Snake River Basin Steelhead","rearing+migration",111,12,9.586655375717e-05
+"993","Snake River Basin Steelhead","rearing+migration",121,73,0.000583188202022784
+"994","Snake River Basin Steelhead","rearing+migration",122,38,0.000303577420231038
+"995","Snake River Basin Steelhead","rearing+migration",123,38,0.000303577420231038
+"996","Snake River Basin Steelhead","rearing+migration",124,3,2.39666384392925e-05
+"997","Snake River Basin Steelhead","rearing+migration",131,11,8.78776742774059e-05
+"998","Snake River Basin Steelhead","rearing+migration",141,5,3.99443973988208e-05
+"999","Snake River Basin Steelhead","rearing+migration",142,35407,0.28286225574001
+"1000","Snake River Basin Steelhead","rearing+migration",152,89258,0.71307140460479
+"1001","Snake River Basin Steelhead","rearing+migration",176,132,0.00105453209132887
+"1002","Snake River Basin Steelhead","rearing+migration",190,59,0.000471343889306086
+"1003","Snake River Basin Steelhead","rearing+migration",195,134,0.0010705098502884
+"1004","Snake River Basin Steelhead",NA,0,1859,0.000624785324569086
+"1005","Snake River Basin Steelhead",NA,1,205,6.88977899605501e-05
+"1006","Snake River Basin Steelhead",NA,4,67,2.25178142797896e-05
+"1007","Snake River Basin Steelhead",NA,21,696,0.000233916399085575
+"1008","Snake River Basin Steelhead",NA,22,1,3.36086780295366e-07
+"1009","Snake River Basin Steelhead",NA,23,3371,0.00113294853637568
+"1010","Snake River Basin Steelhead",NA,24,124,4.16747607566254e-05
+"1011","Snake River Basin Steelhead",NA,27,3,1.0082603408861e-06
+"1012","Snake River Basin Steelhead",NA,28,19,6.38564882561196e-06
+"1013","Snake River Basin Steelhead",NA,29,3,1.0082603408861e-06
+"1014","Snake River Basin Steelhead",NA,33,4,1.34434712118147e-06
+"1015","Snake River Basin Steelhead",NA,36,53044,0.0178273871739874
+"1016","Snake River Basin Steelhead",NA,37,10089,0.00339077952639995
+"1017","Snake River Basin Steelhead",NA,41,9,3.0247810226583e-06
+"1018","Snake River Basin Steelhead",NA,42,66,2.21817274994942e-05
+"1019","Snake River Basin Steelhead",NA,43,442,0.000148550356890552
+"1020","Snake River Basin Steelhead",NA,44,14,4.70521492413513e-06
+"1021","Snake River Basin Steelhead",NA,49,4,1.34434712118147e-06
+"1022","Snake River Basin Steelhead",NA,53,2,6.72173560590733e-07
+"1023","Snake River Basin Steelhead",NA,59,4,1.34434712118147e-06
+"1024","Snake River Basin Steelhead",NA,61,223,7.49473520058667e-05
+"1025","Snake River Basin Steelhead",NA,67,2,6.72173560590733e-07
+"1026","Snake River Basin Steelhead",NA,70,5,1.68043390147683e-06
+"1027","Snake River Basin Steelhead",NA,111,804,0.000270213771357475
+"1028","Snake River Basin Steelhead",NA,112,7365,0.00247527913687537
+"1029","Snake River Basin Steelhead",NA,121,5327,0.00179033427863342
+"1030","Snake River Basin Steelhead",NA,122,4197,0.00141055621689965
+"1031","Snake River Basin Steelhead",NA,123,5551,0.00186561771741958
+"1032","Snake River Basin Steelhead",NA,124,957,0.000321635048742666
+"1033","Snake River Basin Steelhead",NA,131,2879,0.00096759384047036
+"1034","Snake River Basin Steelhead",NA,141,48,1.61321654541776e-05
+"1035","Snake River Basin Steelhead",NA,142,629690,0.211630484684189
+"1036","Snake River Basin Steelhead",NA,143,5,1.68043390147683e-06
+"1037","Snake River Basin Steelhead",NA,152,2143056,0.720252791032667
+"1038","Snake River Basin Steelhead",NA,176,95054,0.0319463928141958
+"1039","Snake River Basin Steelhead",NA,190,649,0.000218120320411693
+"1040","Snake River Basin Steelhead",NA,195,8813,0.00296193279474307
+"1041","Snake River Basin Steelhead",NA,205,737,0.000247695957077685
+"1042","Snake River Basin Steelhead",NA,228,30,1.0082603408861e-05
+"1043","Snake River Basin Steelhead",NA,242,4,1.34434712118147e-06
+"1044","South-central California Coast Steelhead","spawn+rearing",0,4276,0.000624875510798465
+"1045","South-central California Coast Steelhead","spawn+rearing",1,10190,0.00148912101380645
+"1046","South-central California Coast Steelhead","spawn+rearing",2,1317,0.000192460488241716
+"1047","South-central California Coast Steelhead","spawn+rearing",3,3253,0.000475378867312303
+"1048","South-central California Coast Steelhead","spawn+rearing",4,68,9.9372157938016e-06
+"1049","South-central California Coast Steelhead","spawn+rearing",6,470,6.86836973983346e-05
+"1050","South-central California Coast Steelhead","spawn+rearing",12,1525,0.000222856677728639
+"1051","South-central California Coast Steelhead","spawn+rearing",13,38,5.55315000241854e-06
+"1052","South-central California Coast Steelhead","spawn+rearing",14,1,1.46135526379435e-07
+"1053","South-central California Coast Steelhead","spawn+rearing",21,7970,0.0011647001452441
+"1054","South-central California Coast Steelhead","spawn+rearing",22,36,5.26087894965967e-06
+"1055","South-central California Coast Steelhead","spawn+rearing",23,155,2.26510065888125e-05
+"1056","South-central California Coast Steelhead","spawn+rearing",24,20443,0.0029874485657748
+"1057","South-central California Coast Steelhead","spawn+rearing",27,414,6.05001079210862e-05
+"1058","South-central California Coast Steelhead","spawn+rearing",28,11967,0.0017488038441827
+"1059","South-central California Coast Steelhead","spawn+rearing",31,1,1.46135526379435e-07
+"1060","South-central California Coast Steelhead","spawn+rearing",33,1608,0.000234985926418132
+"1061","South-central California Coast Steelhead","spawn+rearing",36,16698,0.00244017101948381
+"1062","South-central California Coast Steelhead","spawn+rearing",37,13065,0.00190926065214732
+"1063","South-central California Coast Steelhead","spawn+rearing",42,3308,0.000483416321263172
+"1064","South-central California Coast Steelhead","spawn+rearing",43,22,3.21498158034758e-06
+"1065","South-central California Coast Steelhead","spawn+rearing",44,244,3.56570684365822e-05
+"1066","South-central California Coast Steelhead","spawn+rearing",47,286,4.17947605445185e-05
+"1067","South-central California Coast Steelhead","spawn+rearing",48,545,7.96438618767923e-05
+"1068","South-central California Coast Steelhead","spawn+rearing",49,3081,0.00045024355677504
+"1069","South-central California Coast Steelhead","spawn+rearing",50,745,0.000108870967152679
+"1070","South-central California Coast Steelhead","spawn+rearing",51,60,8.76813158276612e-06
+"1071","South-central California Coast Steelhead","spawn+rearing",53,172,2.51353105372629e-05
+"1072","South-central California Coast Steelhead","spawn+rearing",54,14848,0.00216982029568186
+"1073","South-central California Coast Steelhead","spawn+rearing",57,265,3.87259144905504e-05
+"1074","South-central California Coast Steelhead","spawn+rearing",58,235,3.43418486991673e-05
+"1075","South-central California Coast Steelhead","spawn+rearing",61,33917,0.00495647864821131
+"1076","South-central California Coast Steelhead","spawn+rearing",66,6434,0.000940235976725287
+"1077","South-central California Coast Steelhead","spawn+rearing",67,262,3.82875079114121e-05
+"1078","South-central California Coast Steelhead","spawn+rearing",68,8008,0.00117025329524652
+"1079","South-central California Coast Steelhead","spawn+rearing",69,48337,0.00706375293860277
+"1080","South-central California Coast Steelhead","spawn+rearing",71,807,0.000117931369788204
+"1081","South-central California Coast Steelhead","spawn+rearing",72,2187,0.000319598396191825
+"1082","South-central California Coast Steelhead","spawn+rearing",74,79,1.15447065839754e-05
+"1083","South-central California Coast Steelhead","spawn+rearing",75,43920,0.0064182723185848
+"1084","South-central California Coast Steelhead","spawn+rearing",76,13691,0.00200074149166085
+"1085","South-central California Coast Steelhead","spawn+rearing",111,20018,0.00292534096706354
+"1086","South-central California Coast Steelhead","spawn+rearing",121,241251,0.0352553418745652
+"1087","South-central California Coast Steelhead","spawn+rearing",122,117426,0.0171601103206316
+"1088","South-central California Coast Steelhead","spawn+rearing",123,105878,0.0154725372620019
+"1089","South-central California Coast Steelhead","spawn+rearing",124,28345,0.0041422114952251
+"1090","South-central California Coast Steelhead","spawn+rearing",131,7948,0.00116148516366375
+"1091","South-central California Coast Steelhead","spawn+rearing",141,1353,0.000197721367191376
+"1092","South-central California Coast Steelhead","spawn+rearing",142,1139166,0.166472623043556
+"1093","South-central California Coast Steelhead","spawn+rearing",143,781933,0.114268190548451
+"1094","South-central California Coast Steelhead","spawn+rearing",152,2699574,0.394503667490238
+"1095","South-central California Coast Steelhead","spawn+rearing",176,1333102,0.194813562487478
+"1096","South-central California Coast Steelhead","spawn+rearing",190,23654,0.00345668974097916
+"1097","South-central California Coast Steelhead","spawn+rearing",195,41036,0.00599681746050651
+"1098","South-central California Coast Steelhead","spawn+rearing",204,3567,0.000521265422595446
+"1099","South-central California Coast Steelhead","spawn+rearing",205,1153,0.000168494261915489
+"1100","South-central California Coast Steelhead","spawn+rearing",206,286,4.17947605445185e-05
+"1101","South-central California Coast Steelhead","spawn+rearing",208,434,6.34228184486749e-05
+"1102","South-central California Coast Steelhead","spawn+rearing",209,612,8.94349421442144e-05
+"1103","South-central California Coast Steelhead","spawn+rearing",211,1595,0.000233086164575199
+"1104","South-central California Coast Steelhead","spawn+rearing",212,170,2.4843039484504e-05
+"1105","South-central California Coast Steelhead","spawn+rearing",213,92,1.34444684269081e-05
+"1106","South-central California Coast Steelhead","spawn+rearing",214,59,8.62199605638669e-06
+"1107","South-central California Coast Steelhead","spawn+rearing",215,4756,0.000695020563460594
+"1108","South-central California Coast Steelhead","spawn+rearing",216,102,1.49058236907024e-05
+"1109","South-central California Coast Steelhead","spawn+rearing",217,100,1.46135526379435e-05
+"1110","South-central California Coast Steelhead","spawn+rearing",218,10,1.46135526379435e-06
+"1111","South-central California Coast Steelhead","spawn+rearing",220,750,0.000109601644784577
+"1112","South-central California Coast Steelhead","spawn+rearing",221,3182,0.000465003244939363
+"1113","South-central California Coast Steelhead","spawn+rearing",222,103,1.50519592170818e-05
+"1114","South-central California Coast Steelhead","spawn+rearing",225,2121,0.000309953451450782
+"1115","South-central California Coast Steelhead","spawn+rearing",226,1429,0.000208827667196213
+"1116","South-central California Coast Steelhead","spawn+rearing",227,6445,0.000941843467515461
+"1117","South-central California Coast Steelhead","spawn+rearing",228,102,1.49058236907024e-05
+"1118","South-central California Coast Steelhead","spawn+rearing",229,21,3.06884605396814e-06
+"1119","South-central California Coast Steelhead","spawn+rearing",236,146,2.13357868513976e-05
+"1120","South-central California Coast Steelhead","spawn+rearing",237,6,8.76813158276612e-07
+"1121","South-central California Coast Steelhead","spawn+rearing",242,88,1.28599263213903e-05
+"1122","South-central California Coast Steelhead","spawn+rearing",243,2,2.92271052758871e-07
+"1123","South-central California Coast Steelhead","rearing+migration",0,3758,0.00418461757739817
+"1124","South-central California Coast Steelhead","rearing+migration",1,4282,0.00476810337052127
+"1125","South-central California Coast Steelhead","rearing+migration",2,155,0.00017259598842382
+"1126","South-central California Coast Steelhead","rearing+migration",3,1128,0.00125605338672303
+"1127","South-central California Coast Steelhead","rearing+migration",4,32,3.56327201907241e-05
+"1128","South-central California Coast Steelhead","rearing+migration",6,287,0.000319580959210557
+"1129","South-central California Coast Steelhead","rearing+migration",12,1124,0.00125159929669919
+"1130","South-central California Coast Steelhead","rearing+migration",13,49,5.45626027920463e-05
+"1131","South-central California Coast Steelhead","rearing+migration",21,606,0.000674794638611838
+"1132","South-central California Coast Steelhead","rearing+migration",22,18,2.00434051072823e-05
+"1133","South-central California Coast Steelhead","rearing+migration",23,40,4.45409002384052e-05
+"1134","South-central California Coast Steelhead","rearing+migration",24,6978,0.00777016004658978
+"1135","South-central California Coast Steelhead","rearing+migration",27,203,0.000226045068709906
+"1136","South-central California Coast Steelhead","rearing+migration",28,4966,0.005529752764598
+"1137","South-central California Coast Steelhead","rearing+migration",31,1,1.11352250596013e-06
+"1138","South-central California Coast Steelhead","rearing+migration",33,675,0.000751627691523087
+"1139","South-central California Coast Steelhead","rearing+migration",36,9333,0.0103925055481259
+"1140","South-central California Coast Steelhead","rearing+migration",37,5128,0.00571014341056354
+"1141","South-central California Coast Steelhead","rearing+migration",42,757,0.000842936537011818
+"1142","South-central California Coast Steelhead","rearing+migration",44,263,0.000292856419067514
+"1143","South-central California Coast Steelhead","rearing+migration",47,151,0.00016814189839998
+"1144","South-central California Coast Steelhead","rearing+migration",48,210,0.000233839726251627
+"1145","South-central California Coast Steelhead","rearing+migration",49,702,0.000781692799184011
+"1146","South-central California Coast Steelhead","rearing+migration",50,824,0.000917542544911147
+"1147","South-central California Coast Steelhead","rearing+migration",51,71,7.90600979231692e-05
+"1148","South-central California Coast Steelhead","rearing+migration",53,325,0.000361894814437042
+"1149","South-central California Coast Steelhead","rearing+migration",54,2863,0.00318801493456385
+"1150","South-central California Coast Steelhead","rearing+migration",57,168,0.000187071781001302
+"1151","South-central California Coast Steelhead","rearing+migration",58,43,4.78814677562856e-05
+"1152","South-central California Coast Steelhead","rearing+migration",61,4888,0.00544289800913311
+"1153","South-central California Coast Steelhead","rearing+migration",66,1525,0.0016981218215892
+"1154","South-central California Coast Steelhead","rearing+migration",67,282,0.000314013346680756
+"1155","South-central California Coast Steelhead","rearing+migration",69,552,0.000614664423289991
+"1156","South-central California Coast Steelhead","rearing+migration",70,1,1.11352250596013e-06
+"1157","South-central California Coast Steelhead","rearing+migration",71,139,0.000154779628328458
+"1158","South-central California Coast Steelhead","rearing+migration",72,662,0.000737151898945606
+"1159","South-central California Coast Steelhead","rearing+migration",74,25,2.78380626490032e-05
+"1160","South-central California Coast Steelhead","rearing+migration",75,4856,0.00540726528894239
+"1161","South-central California Coast Steelhead","rearing+migration",76,1635,0.00182060929724481
+"1162","South-central California Coast Steelhead","rearing+migration",111,7043,0.00784253900947719
+"1163","South-central California Coast Steelhead","rearing+migration",121,48884,0.054433434181355
+"1164","South-central California Coast Steelhead","rearing+migration",122,38273,0.042617846870612
+"1165","South-central California Coast Steelhead","rearing+migration",123,37137,0.0413528853038413
+"1166","South-central California Coast Steelhead","rearing+migration",124,11023,0.0122743585831985
+"1167","South-central California Coast Steelhead","rearing+migration",131,8087,0.00900505650569956
+"1168","South-central California Coast Steelhead","rearing+migration",141,298,0.000331829706776118
+"1169","South-central California Coast Steelhead","rearing+migration",142,126389,0.140736996005795
+"1170","South-central California Coast Steelhead","rearing+migration",143,50024,0.0557028498381495
+"1171","South-central California Coast Steelhead","rearing+migration",152,282033,0.314050092923453
+"1172","South-central California Coast Steelhead","rearing+migration",176,171841,0.191348820946695
+"1173","South-central California Coast Steelhead","rearing+migration",190,10257,0.011421400343633
+"1174","South-central California Coast Steelhead","rearing+migration",195,26832,0.0298780358799222
+"1175","South-central California Coast Steelhead","rearing+migration",204,599,0.000666999981070117
+"1176","South-central California Coast Steelhead","rearing+migration",205,782,0.000870774599660821
+"1177","South-central California Coast Steelhead","rearing+migration",206,1009,0.00112354420851377
+"1178","South-central California Coast Steelhead","rearing+migration",208,252,0.000280607671501953
+"1179","South-central California Coast Steelhead","rearing+migration",209,390,0.00043427377732445
+"1180","South-central California Coast Steelhead","rearing+migration",211,237,0.000263904833912551
+"1181","South-central California Coast Steelhead","rearing+migration",212,20,2.22704501192026e-05
+"1182","South-central California Coast Steelhead","rearing+migration",213,19,2.11569276132425e-05
+"1183","South-central California Coast Steelhead","rearing+migration",214,6,6.68113503576077e-06
+"1184","South-central California Coast Steelhead","rearing+migration",215,3851,0.00428817517045246
+"1185","South-central California Coast Steelhead","rearing+migration",216,71,7.90600979231692e-05
+"1186","South-central California Coast Steelhead","rearing+migration",218,1,1.11352250596013e-06
+"1187","South-central California Coast Steelhead","rearing+migration",219,3,3.34056751788039e-06
+"1188","South-central California Coast Steelhead","rearing+migration",220,158,0.0001759365559417
+"1189","South-central California Coast Steelhead","rearing+migration",221,2365,0.00263348072659571
+"1190","South-central California Coast Steelhead","rearing+migration",222,112,0.000124714520667534
+"1191","South-central California Coast Steelhead","rearing+migration",225,902,0.00100439730037604
+"1192","South-central California Coast Steelhead","rearing+migration",226,778,0.000866320509636981
+"1193","South-central California Coast Steelhead","rearing+migration",227,8409,0.00936361075261873
+"1194","South-central California Coast Steelhead","rearing+migration",228,114,0.000126941565679455
+"1195","South-central California Coast Steelhead","rearing+migration",229,47,5.23355577801261e-05
+"1196","South-central California Coast Steelhead","rearing+migration",236,90,0.000100217025536412
+"1197","South-central California Coast Steelhead","rearing+migration",237,4,4.45409002384052e-06
+"1198","South-central California Coast Steelhead","rearing+migration",242,6,6.68113503576077e-06
+"1199","South-central California Coast Steelhead",NA,0,1917,0.000184514773309596
+"1200","South-central California Coast Steelhead",NA,1,15190,0.00146206541813916
+"1201","South-central California Coast Steelhead",NA,2,6242,0.000600803972351852
+"1202","South-central California Coast Steelhead",NA,3,3064,0.000294915631413982
+"1203","South-central California Coast Steelhead",NA,4,301,2.89718032165824e-05
+"1204","South-central California Coast Steelhead",NA,6,841,8.09477956981589e-05
+"1205","South-central California Coast Steelhead",NA,12,3130,0.000301268252717286
+"1206","South-central California Coast Steelhead",NA,13,82,7.89265071016531e-06
+"1207","South-central California Coast Steelhead",NA,14,8,7.70014703430762e-07
+"1208","South-central California Coast Steelhead",NA,21,54858,0.00528018332510059
+"1209","South-central California Coast Steelhead",NA,22,65,6.25636946537494e-06
+"1210","South-central California Coast Steelhead",NA,23,1229,0.000118293508814551
+"1211","South-central California Coast Steelhead",NA,24,33772,0.00325061707053296
+"1212","South-central California Coast Steelhead",NA,27,2836,0.000272970212366205
+"1213","South-central California Coast Steelhead",NA,28,20923,0.00201387720498523
+"1214","South-central California Coast Steelhead",NA,31,6,5.77511027573072e-07
+"1215","South-central California Coast Steelhead",NA,33,2007,0.000193177438723192
+"1216","South-central California Coast Steelhead",NA,36,37120,0.00357286822391874
+"1217","South-central California Coast Steelhead",NA,37,37747,0.00363321812630012
+"1218","South-central California Coast Steelhead",NA,42,2985,0.000287311736217603
+"1219","South-central California Coast Steelhead",NA,43,257,2.47367223477132e-05
+"1220","South-central California Coast Steelhead",NA,44,811,7.80602405602935e-05
+"1221","South-central California Coast Steelhead",NA,46,5,4.81259189644226e-07
+"1222","South-central California Coast Steelhead",NA,47,315,3.03193289475863e-05
+"1223","South-central California Coast Steelhead",NA,48,1252,0.000120507301086914
+"1224","South-central California Coast Steelhead",NA,49,5558,0.000534967715208522
+"1225","South-central California Coast Steelhead",NA,50,1727,0.000166226924103116
+"1226","South-central California Coast Steelhead",NA,51,479,4.61046303679169e-05
+"1227","South-central California Coast Steelhead",NA,53,974,9.37492901426953e-05
+"1228","South-central California Coast Steelhead",NA,54,21301,0.00205026039972233
+"1229","South-central California Coast Steelhead",NA,57,1245,0.000119833538221412
+"1230","South-central California Coast Steelhead",NA,58,511,4.91846891816399e-05
+"1231","South-central California Coast Steelhead",NA,59,202,1.94428712616267e-05
+"1232","South-central California Coast Steelhead",NA,61,221074,0.0212787788182815
+"1233","South-central California Coast Steelhead",NA,66,5295,0.000509653481833236
+"1234","South-central California Coast Steelhead",NA,67,903,8.69154096497473e-05
+"1235","South-central California Coast Steelhead",NA,68,1867,0.000179702181413154
+"1236","South-central California Coast Steelhead",NA,69,386716,0.0372221257564913
+"1237","South-central California Coast Steelhead",NA,71,1303,0.000125416144821285
+"1238","South-central California Coast Steelhead",NA,72,4122,0.0003967500759427
+"1239","South-central California Coast Steelhead",NA,74,71,6.83388049294801e-06
+"1240","South-central California Coast Steelhead",NA,75,56289,0.00541791970517677
+"1241","South-central California Coast Steelhead",NA,76,15850,0.0015255916311722
+"1242","South-central California Coast Steelhead",NA,111,35650,0.00343137802216333
+"1243","South-central California Coast Steelhead",NA,121,296610,0.0285492576480748
+"1244","South-central California Coast Steelhead",NA,122,116295,0.0111936074919351
+"1245","South-central California Coast Steelhead",NA,123,102092,0.00982654263783167
+"1246","South-central California Coast Steelhead",NA,124,26231,0.00252478196071154
+"1247","South-central California Coast Steelhead",NA,131,30633,0.00294848255127432
+"1248","South-central California Coast Steelhead",NA,141,1022,9.83693783632798e-05
+"1249","South-central California Coast Steelhead",NA,142,270554,0.0260413197590008
+"1250","South-central California Coast Steelhead",NA,143,419818,0.040408254095612
+"1251","South-central California Coast Steelhead",NA,152,3280512,0.315755309347632
+"1252","South-central California Coast Steelhead",NA,176,4596615,0.442432642001299
+"1253","South-central California Coast Steelhead",NA,190,61835,0.00595173239833015
+"1254","South-central California Coast Steelhead",NA,195,103387,0.00995118876794952
+"1255","South-central California Coast Steelhead",NA,204,21780,0.00209636503009025
+"1256","South-central California Coast Steelhead",NA,205,3030,0.000291643068924401
+"1257","South-central California Coast Steelhead",NA,206,3128,0.000301075749041428
+"1258","South-central California Coast Steelhead",NA,207,71,6.83388049294801e-06
+"1259","South-central California Coast Steelhead",NA,208,3066,0.00029510813508984
+"1260","South-central California Coast Steelhead",NA,209,3695,0.000355650541147083
+"1261","South-central California Coast Steelhead",NA,211,2435,0.000234373225356738
+"1262","South-central California Coast Steelhead",NA,212,289,2.78167811614363e-05
+"1263","South-central California Coast Steelhead",NA,213,560,5.39010292401533e-05
+"1264","South-central California Coast Steelhead",NA,214,639,6.15049244365321e-05
+"1265","South-central California Coast Steelhead",NA,215,1187,0.000114250931621539
+"1266","South-central California Coast Steelhead",NA,216,181,1.7421582665121e-05
+"1267","South-central California Coast Steelhead",NA,217,163,1.56890495824018e-05
+"1268","South-central California Coast Steelhead",NA,218,30,2.88755513786536e-06
+"1269","South-central California Coast Steelhead",NA,219,18,1.73253308271921e-06
+"1270","South-central California Coast Steelhead",NA,220,2133,0.000205305170302227
+"1271","South-central California Coast Steelhead",NA,221,9664,0.000930177761744361
+"1272","South-central California Coast Steelhead",NA,222,258,2.48329741856421e-05
+"1273","South-central California Coast Steelhead",NA,224,1,9.62518379288453e-08
+"1274","South-central California Coast Steelhead",NA,225,9619,0.000925846429037562
+"1275","South-central California Coast Steelhead",NA,226,7924,0.00076269956374817
+"1276","South-central California Coast Steelhead",NA,227,24223,0.00233150827015042
+"1277","South-central California Coast Steelhead",NA,228,727,6.99750861742705e-05
+"1278","South-central California Coast Steelhead",NA,229,89,8.56641357566723e-06
+"1279","South-central California Coast Steelhead",NA,236,560,5.39010292401533e-05
+"1280","South-central California Coast Steelhead",NA,237,98,9.43268011702683e-06
+"1281","South-central California Coast Steelhead",NA,238,25,2.40629594822113e-06
+"1282","South-central California Coast Steelhead",NA,242,109,1.04914503342441e-05
+"1283","South-central California Coast Steelhead",NA,243,6,5.77511027573072e-07
+"1284","Southern California Steelhead","spawn+rearing",0,3260,0.000621138485873958
+"1285","Southern California Steelhead","spawn+rearing",1,126,2.40071930123064e-05
+"1286","Southern California Steelhead","spawn+rearing",2,275,5.2396651415748e-05
+"1287","Southern California Steelhead","spawn+rearing",3,21,4.00119883538439e-06
+"1288","Southern California Steelhead","spawn+rearing",4,48,9.14559733802147e-06
+"1289","Southern California Steelhead","spawn+rearing",21,277,5.27777179714989e-05
+"1290","Southern California Steelhead","spawn+rearing",22,5,9.52666389377236e-07
+"1291","Southern California Steelhead","spawn+rearing",24,1357,0.000258553658076982
+"1292","Southern California Steelhead","spawn+rearing",27,223,4.24889209662247e-05
+"1293","Southern California Steelhead","spawn+rearing",28,602,0.000114701033281019
+"1294","Southern California Steelhead","spawn+rearing",33,72,1.37183960070322e-05
+"1295","Southern California Steelhead","spawn+rearing",36,1901,0.000362203761241225
+"1296","Southern California Steelhead","spawn+rearing",37,975,0.000185769945928561
+"1297","Southern California Steelhead","spawn+rearing",42,2290,0.000436321206334774
+"1298","Southern California Steelhead","spawn+rearing",43,314,5.98274492528904e-05
+"1299","Southern California Steelhead","spawn+rearing",44,42,8.00239767076878e-06
+"1300","Southern California Steelhead","spawn+rearing",48,3,5.71599833626342e-07
+"1301","Southern California Steelhead","spawn+rearing",49,45,8.57399750439513e-06
+"1302","Southern California Steelhead","spawn+rearing",51,17,3.2390657238826e-06
+"1303","Southern California Steelhead","spawn+rearing",53,4,7.62133111501789e-07
+"1304","Southern California Steelhead","spawn+rearing",54,617,0.000117559032449151
+"1305","Southern California Steelhead","spawn+rearing",57,9,1.71479950087903e-06
+"1306","Southern California Steelhead","spawn+rearing",58,57,1.08603968389005e-05
+"1307","Southern California Steelhead","spawn+rearing",61,3307,0.000630093549934104
+"1308","Southern California Steelhead","spawn+rearing",66,6,1.14319966725268e-06
+"1309","Southern California Steelhead","spawn+rearing",67,70,1.33373294512813e-05
+"1310","Southern California Steelhead","spawn+rearing",68,165,3.14379908494488e-05
+"1311","Southern California Steelhead","spawn+rearing",69,8667,0.0016513519193465
+"1312","Southern California Steelhead","spawn+rearing",71,320,6.09706489201431e-05
+"1313","Southern California Steelhead","spawn+rearing",72,60544,0.0115356467756911
+"1314","Southern California Steelhead","spawn+rearing",74,117,2.22923935114273e-05
+"1315","Southern California Steelhead","spawn+rearing",75,2342,0.000446228936784297
+"1316","Southern California Steelhead","spawn+rearing",76,1630,0.000310569242936979
+"1317","Southern California Steelhead","spawn+rearing",77,7,1.33373294512813e-06
+"1318","Southern California Steelhead","spawn+rearing",111,11203,0.00213454431203864
+"1319","Southern California Steelhead","spawn+rearing",121,198453,0.0378119005942161
+"1320","Southern California Steelhead","spawn+rearing",122,109852,0.0209304616411736
+"1321","Southern California Steelhead","spawn+rearing",123,91017,0.0173417673523896
+"1322","Southern California Steelhead","spawn+rearing",124,14919,0.0028425659726238
+"1323","Southern California Steelhead","spawn+rearing",131,8640,0.00164620752084386
+"1324","Southern California Steelhead","spawn+rearing",141,482,9.18370399359656e-05
+"1325","Southern California Steelhead","spawn+rearing",142,619047,0.117949054068962
+"1326","Southern California Steelhead","spawn+rearing",143,230911,0.0439962297274974
+"1327","Southern California Steelhead","spawn+rearing",152,3279826,0.624915998641117
+"1328","Southern California Steelhead","spawn+rearing",176,488647,0.0931035146340037
+"1329","Southern California Steelhead","spawn+rearing",190,10611,0.00202174861153637
+"1330","Southern California Steelhead","spawn+rearing",195,19328,0.00368262719477664
+"1331","Southern California Steelhead","spawn+rearing",204,1180,0.000224829267893028
+"1332","Southern California Steelhead","spawn+rearing",205,441,8.40251755430722e-05
+"1333","Southern California Steelhead","spawn+rearing",206,249,4.74427861909864e-05
+"1334","Southern California Steelhead","spawn+rearing",208,63,1.20035965061532e-05
+"1335","Southern California Steelhead","spawn+rearing",209,12,2.28639933450537e-06
+"1336","Southern California Steelhead","spawn+rearing",211,1017,0.00019377234359933
+"1337","Southern California Steelhead","spawn+rearing",212,92,1.75290615645411e-05
+"1338","Southern California Steelhead","spawn+rearing",213,137,2.61030590689363e-05
+"1339","Southern California Steelhead","spawn+rearing",215,71457,0.0136149364371458
+"1340","Southern California Steelhead","spawn+rearing",216,5,9.52666389377236e-07
+"1341","Southern California Steelhead","spawn+rearing",217,27,5.14439850263708e-06
+"1342","Southern California Steelhead","spawn+rearing",218,115,2.19113269556764e-05
+"1343","Southern California Steelhead","spawn+rearing",219,1,1.90533277875447e-07
+"1344","Southern California Steelhead","spawn+rearing",220,345,6.57339808670293e-05
+"1345","Southern California Steelhead","spawn+rearing",221,1,1.90533277875447e-07
+"1346","Southern California Steelhead","spawn+rearing",225,250,4.76333194688618e-05
+"1347","Southern California Steelhead","spawn+rearing",226,76,1.4480529118534e-05
+"1348","Southern California Steelhead","spawn+rearing",227,23,4.38226539113529e-06
+"1349","Southern California Steelhead","spawn+rearing",228,203,3.86782554087158e-05
+"1350","Southern California Steelhead","spawn+rearing",236,3,5.71599833626342e-07
+"1351","Southern California Steelhead","spawn+rearing",242,79,1.50521289521603e-05
+"1352","Southern California Steelhead","rearing+migration",1,145,0.00029337498583707
+"1353","Southern California Steelhead","rearing+migration",2,143,0.000289328434308282
+"1354","Southern California Steelhead","rearing+migration",3,15,3.03491364659038e-05
+"1355","Southern California Steelhead","rearing+migration",4,21,4.24887910522653e-05
+"1356","Southern California Steelhead","rearing+migration",21,122,0.000246839643256017
+"1357","Southern California Steelhead","rearing+migration",22,8,1.61862061151487e-05
+"1358","Southern California Steelhead","rearing+migration",23,8,1.61862061151487e-05
+"1359","Southern California Steelhead","rearing+migration",24,261,0.000528074974506725
+"1360","Southern California Steelhead","rearing+migration",27,13,2.63025849371166e-05
+"1361","Southern California Steelhead","rearing+migration",28,216,0.000437027565109014
+"1362","Southern California Steelhead","rearing+migration",33,13,2.63025849371166e-05
+"1363","Southern California Steelhead","rearing+migration",36,629,0.00127264045580356
+"1364","Southern California Steelhead","rearing+migration",37,1245,0.00251897832667001
+"1365","Southern California Steelhead","rearing+migration",42,277,0.000560447386737023
+"1366","Southern California Steelhead","rearing+migration",44,1,2.02327576439358e-06
+"1367","Southern California Steelhead","rearing+migration",49,65,0.000131512924685583
+"1368","Southern California Steelhead","rearing+migration",51,6,1.21396545863615e-05
+"1369","Southern California Steelhead","rearing+migration",53,1,2.02327576439358e-06
+"1370","Southern California Steelhead","rearing+migration",54,324,0.000655541347663521
+"1371","Southern California Steelhead","rearing+migration",57,19,3.84422395234781e-05
+"1372","Southern California Steelhead","rearing+migration",58,2,4.04655152878717e-06
+"1373","Southern California Steelhead","rearing+migration",61,1534,0.00310370502257976
+"1374","Southern California Steelhead","rearing+migration",67,27,5.46284456386268e-05
+"1375","Southern California Steelhead","rearing+migration",69,129,0.000261002573606772
+"1376","Southern California Steelhead","rearing+migration",71,87,0.000176024991502242
+"1377","Southern California Steelhead","rearing+migration",72,1221,0.00247041970832457
+"1378","Southern California Steelhead","rearing+migration",74,5,1.01163788219679e-05
+"1379","Southern California Steelhead","rearing+migration",75,346,0.00070005341448018
+"1380","Southern California Steelhead","rearing+migration",76,45,9.10474093977113e-05
+"1381","Southern California Steelhead","rearing+migration",111,1822,0.00368640844272511
+"1382","Southern California Steelhead","rearing+migration",121,31948,0.0646396141208462
+"1383","Southern California Steelhead","rearing+migration",122,49579,0.100311989122869
+"1384","Southern California Steelhead","rearing+migration",123,61530,0.124492157783137
+"1385","Southern California Steelhead","rearing+migration",124,10926,0.0221063110017643
+"1386","Southern California Steelhead","rearing+migration",131,2276,0.0046049756397598
+"1387","Southern California Steelhead","rearing+migration",141,15,3.03491364659038e-05
+"1388","Southern California Steelhead","rearing+migration",142,18454,0.0373375309561192
+"1389","Southern California Steelhead","rearing+migration",143,11596,0.023461905763908
+"1390","Southern California Steelhead","rearing+migration",152,255868,0.517691523283857
+"1391","Southern California Steelhead","rearing+migration",176,29508,0.0597028212557259
+"1392","Southern California Steelhead","rearing+migration",190,2987,0.00604352470824363
+"1393","Southern California Steelhead","rearing+migration",195,9488,0.0191968404525663
+"1394","Southern California Steelhead","rearing+migration",204,224,0.000453213771224163
+"1395","Southern California Steelhead","rearing+migration",205,36,7.2837927518169e-05
+"1396","Southern California Steelhead","rearing+migration",206,15,3.03491364659038e-05
+"1397","Southern California Steelhead","rearing+migration",208,36,7.2837927518169e-05
+"1398","Southern California Steelhead","rearing+migration",209,3,6.06982729318075e-06
+"1399","Southern California Steelhead","rearing+migration",212,15,3.03491364659038e-05
+"1400","Southern California Steelhead","rearing+migration",213,20,4.04655152878717e-05
+"1401","Southern California Steelhead","rearing+migration",215,448,0.000906427542448326
+"1402","Southern California Steelhead","rearing+migration",216,2,4.04655152878717e-06
+"1403","Southern California Steelhead","rearing+migration",218,1,2.02327576439358e-06
+"1404","Southern California Steelhead","rearing+migration",220,16,3.23724122302973e-05
+"1405","Southern California Steelhead","rearing+migration",225,82,0.000165908612680274
+"1406","Southern California Steelhead","rearing+migration",226,91,0.000184118094559816
+"1407","Southern California Steelhead","rearing+migration",227,124,0.000250886194784804
+"1408","Southern California Steelhead","rearing+migration",228,61,0.000123419821628009
+"1409","Southern California Steelhead","rearing+migration",236,2,4.04655152878717e-06
+"1410","Southern California Steelhead","rearing+migration",242,147,0.000297421537365857
+"1411","Southern California Steelhead",NA,0,12027,0.001161395884485
+"1412","Southern California Steelhead",NA,1,2052,0.000198152852329194
+"1413","Southern California Steelhead",NA,2,1848,0.000178453445957286
+"1414","Southern California Steelhead",NA,3,108,1.04290974910102e-05
+"1415","Southern California Steelhead",NA,4,516,4.98279102348266e-05
+"1416","Southern California Steelhead",NA,6,3,2.89697152528062e-07
+"1417","Southern California Steelhead",NA,21,2369,0.000228764184779659
+"1418","Southern California Steelhead",NA,22,45,4.34545728792092e-06
+"1419","Southern California Steelhead",NA,23,135,1.30363718637628e-05
+"1420","Southern California Steelhead",NA,24,5554,0.000536325995046951
+"1421","Southern California Steelhead",NA,27,275,2.65555723150723e-05
+"1422","Southern California Steelhead",NA,28,3197,0.000308720598877404
+"1423","Southern California Steelhead",NA,31,2,1.93131435018708e-07
+"1424","Southern California Steelhead",NA,33,437,4.21992185515876e-05
+"1425","Southern California Steelhead",NA,36,11762,0.00113580596934502
+"1426","Southern California Steelhead",NA,37,11195,0.00108105320751722
+"1427","Southern California Steelhead",NA,42,2456,0.000237165402202973
+"1428","Southern California Steelhead",NA,43,370,3.57293154784609e-05
+"1429","Southern California Steelhead",NA,44,137,1.32295032987815e-05
+"1430","Southern California Steelhead",NA,48,50,4.82828587546769e-06
+"1431","Southern California Steelhead",NA,49,748,7.22311566969967e-05
+"1432","Southern California Steelhead",NA,51,97,9.36687459840732e-06
+"1433","Southern California Steelhead",NA,53,14,1.35192004513095e-06
+"1434","Southern California Steelhead",NA,54,4466,0.000431262494396774
+"1435","Southern California Steelhead",NA,57,259,2.50105208349226e-05
+"1436","Southern California Steelhead",NA,58,70,6.75960022565477e-06
+"1437","Southern California Steelhead",NA,61,60870,0.00587795522479437
+"1438","Southern California Steelhead",NA,66,63,6.08364020308929e-06
+"1439","Southern California Steelhead",NA,67,350,3.37980011282738e-05
+"1440","Southern California Steelhead",NA,68,50,4.82828587546769e-06
+"1441","Southern California Steelhead",NA,69,70150,0.00677408508328117
+"1442","Southern California Steelhead",NA,71,885,8.54606599957781e-05
+"1443","Southern California Steelhead",NA,72,62801,0.00606442362530493
+"1444","Southern California Steelhead",NA,74,179,1.72852634341743e-05
+"1445","Southern California Steelhead",NA,75,11540,0.00111436838005794
+"1446","Southern California Steelhead",NA,76,2231,0.000215438115763368
+"1447","Southern California Steelhead",NA,111,42539,0.0041078090571304
+"1448","Southern California Steelhead",NA,112,2,1.93131435018708e-07
+"1449","Southern California Steelhead",NA,121,541805,0.0523197885751555
+"1450","Southern California Steelhead",NA,122,845581,0.0816541359772769
+"1451","Southern California Steelhead",NA,123,2014132,0.19449610173855
+"1452","Southern California Steelhead",NA,124,893120,0.0862447736219541
+"1453","Southern California Steelhead",NA,131,26416,0.00255087999372709
+"1454","Southern California Steelhead",NA,141,154,1.48711204964405e-05
+"1455","Southern California Steelhead",NA,142,199820,0.0192957616727191
+"1456","Southern California Steelhead",NA,143,124642,0.0120361441618009
+"1457","Southern California Steelhead",NA,152,4214329,0.406959703705478
+"1458","Southern California Steelhead",NA,176,985224,0.0951388624674356
+"1459","Southern California Steelhead",NA,190,30762,0.00297055460202274
+"1460","Southern California Steelhead",NA,195,79224,0.00765032240396105
+"1461","Southern California Steelhead",NA,204,7022,0.000678084468350683
+"1462","Southern California Steelhead",NA,205,1432,0.000138282107473395
+"1463","Southern California Steelhead",NA,206,587,5.66840761779907e-05
+"1464","Southern California Steelhead",NA,208,732,7.0686105216847e-05
+"1465","Southern California Steelhead",NA,209,144,1.3905463321347e-05
+"1466","Southern California Steelhead",NA,211,849,8.19842941654414e-05
+"1467","Southern California Steelhead",NA,212,280,2.70384009026191e-05
+"1468","Southern California Steelhead",NA,213,235,2.26929436146982e-05
+"1469","Southern California Steelhead",NA,214,21,2.02788006769643e-06
+"1470","Southern California Steelhead",NA,215,71961,0.00694896559769061
+"1471","Southern California Steelhead",NA,216,26,2.5107086552432e-06
+"1472","Southern California Steelhead",NA,217,10,9.65657175093538e-07
+"1473","Southern California Steelhead",NA,218,16,1.54505148014966e-06
+"1474","Southern California Steelhead",NA,219,15,1.44848576264031e-06
+"1475","Southern California Steelhead",NA,220,363,3.50533554558954e-05
+"1476","Southern California Steelhead",NA,221,353,3.40876982808019e-05
+"1477","Southern California Steelhead",NA,222,6,5.79394305056123e-07
+"1478","Southern California Steelhead",NA,225,1601,0.000154601713732475
+"1479","Southern California Steelhead",NA,226,644,6.21883220760239e-05
+"1480","Southern California Steelhead",NA,227,443,4.27786128566438e-05
+"1481","Southern California Steelhead",NA,228,957,9.24133916564516e-05
+"1482","Southern California Steelhead",NA,236,266,2.56864808574881e-05
+"1483","Southern California Steelhead",NA,237,40,3.86262870037415e-06
+"1484","Southern California Steelhead",NA,238,10,9.65657175093538e-07
+"1485","Southern California Steelhead",NA,242,565,5.45596303927849e-05
+"1486","Southern California Steelhead",NA,247,3,2.89697152528062e-07
+"1487","Southwest Washington Steelhead",NA,0,265228,0.32462932273218
+"1488","Southwest Washington Steelhead",NA,1,4432,0.00542460508825999
+"1489","Southwest Washington Steelhead",NA,12,1,1.22396324193592e-06
+"1490","Southwest Washington Steelhead",NA,21,557,0.000681747525758306
+"1491","Southwest Washington Steelhead",NA,23,3,3.67188972580775e-06
+"1492","Southwest Washington Steelhead",NA,27,1,1.22396324193592e-06
+"1493","Southwest Washington Steelhead",NA,36,18,2.20313383548465e-05
+"1494","Southwest Washington Steelhead",NA,37,1023,0.00125211439650044
+"1495","Southwest Washington Steelhead",NA,42,82,0.000100364985838745
+"1496","Southwest Washington Steelhead",NA,43,155,0.000189714302500067
+"1497","Southwest Washington Steelhead",NA,44,19,2.32553015967824e-05
+"1498","Southwest Washington Steelhead",NA,55,83,0.000101588949080681
+"1499","Southwest Washington Steelhead",NA,58,2,2.44792648387184e-06
+"1500","Southwest Washington Steelhead",NA,59,35,4.28387134677571e-05
+"1501","Southwest Washington Steelhead",NA,61,5,6.11981620967959e-06
+"1502","Southwest Washington Steelhead",NA,66,1,1.22396324193592e-06
+"1503","Southwest Washington Steelhead",NA,68,14,1.71354853871029e-05
+"1504","Southwest Washington Steelhead",NA,69,3,3.67188972580775e-06
+"1505","Southwest Washington Steelhead",NA,70,1282,0.00156912087616185
+"1506","Southwest Washington Steelhead",NA,71,2,2.44792648387184e-06
+"1507","Southwest Washington Steelhead",NA,111,15561,0.0190460920077648
+"1508","Southwest Washington Steelhead",NA,121,32599,0.039899977723869
+"1509","Southwest Washington Steelhead",NA,122,28829,0.0352856363017706
+"1510","Southwest Washington Steelhead",NA,123,15297,0.0187229657118937
+"1511","Southwest Washington Steelhead",NA,124,6393,0.00782479700569633
+"1512","Southwest Washington Steelhead",NA,131,1351,0.00165357433985543
+"1513","Southwest Washington Steelhead",NA,141,13637,0.0166911867302801
+"1514","Southwest Washington Steelhead",NA,142,266730,0.326467715521567
+"1515","Southwest Washington Steelhead",NA,143,26082,0.0319234092761726
+"1516","Southwest Washington Steelhead",NA,152,28048,0.0343297210098186
+"1517","Southwest Washington Steelhead",NA,176,37543,0.0459512519920002
+"1518","Southwest Washington Steelhead",NA,190,44721,0.0547368601426162
+"1519","Southwest Washington Steelhead",NA,195,27001,0.0330482314955117
+"1520","Southwest Washington Steelhead",NA,219,2,2.44792648387184e-06
+"1521","Southwest Washington Steelhead",NA,221,1,1.22396324193592e-06
+"1522","Southwest Washington Steelhead",NA,242,199,0.000243568685145248
+"1523","Southwest Washington Steelhead",NA,243,3,3.67188972580775e-06
+"1524","Southwest Washington Steelhead",NA,250,75,9.17972431451939e-05
+"1525","Upper Columbia River Steelhead",NA,61,12,0.000257168574000257
+"1526","Upper Columbia River Steelhead",NA,111,2,4.28614290000429e-05
+"1527","Upper Columbia River Steelhead",NA,121,563,0.0120654922635121
+"1528","Upper Columbia River Steelhead",NA,122,282,0.00604346148900604
+"1529","Upper Columbia River Steelhead",NA,123,100,0.00214307145000214
+"1530","Upper Columbia River Steelhead",NA,124,2,4.28614290000429e-05
+"1531","Upper Columbia River Steelhead",NA,152,32540,0.697355449830697
+"1532","Upper Columbia River Steelhead",NA,176,13161,0.282049633534782
+"1533","Upper Willamette River Steelhead","spawn+rearing",1,7466,0.00203056453828183
+"1534","Upper Willamette River Steelhead","spawn+rearing",12,2834,0.000770776841881957
+"1535","Upper Willamette River Steelhead","spawn+rearing",14,2600,0.000707134717322897
+"1536","Upper Willamette River Steelhead","spawn+rearing",21,76,2.06700917371308e-05
+"1537","Upper Willamette River Steelhead","spawn+rearing",23,2916,0.000793078782966757
+"1538","Upper Willamette River Steelhead","spawn+rearing",24,9907,0.00269445524789151
+"1539","Upper Willamette River Steelhead","spawn+rearing",27,58,1.57745436941262e-05
+"1540","Upper Willamette River Steelhead","spawn+rearing",28,1325,0.000360366730943399
+"1541","Upper Willamette River Steelhead","spawn+rearing",31,582,0.000158289386723818
+"1542","Upper Willamette River Steelhead","spawn+rearing",35,22,5.98344760811682e-06
+"1543","Upper Willamette River Steelhead","spawn+rearing",36,766,0.000208332766718977
+"1544","Upper Willamette River Steelhead","spawn+rearing",37,10610,0.00288565359645997
+"1545","Upper Willamette River Steelhead","spawn+rearing",39,247,6.71777981456752e-05
+"1546","Upper Willamette River Steelhead","spawn+rearing",41,44,1.19668952162336e-05
+"1547","Upper Willamette River Steelhead","spawn+rearing",42,2557,0.000695439796997941
+"1548","Upper Willamette River Steelhead","spawn+rearing",43,22,5.98344760811682e-06
+"1549","Upper Willamette River Steelhead","spawn+rearing",44,4195,0.00114093466891137
+"1550","Upper Willamette River Steelhead","spawn+rearing",49,83,2.25739159760771e-05
+"1551","Upper Willamette River Steelhead","spawn+rearing",53,223,6.06504007550023e-05
+"1552","Upper Willamette River Steelhead","spawn+rearing",56,857,0.000233082481825278
+"1553","Upper Willamette River Steelhead","spawn+rearing",57,359,9.76389859688154e-05
+"1554","Upper Willamette River Steelhead","spawn+rearing",58,8329,0.00226527886945477
+"1555","Upper Willamette River Steelhead","spawn+rearing",59,194935,0.0530174254312842
+"1556","Upper Willamette River Steelhead","spawn+rearing",61,1220,0.000331809367359205
+"1557","Upper Willamette River Steelhead","spawn+rearing",66,517,0.000140611018790745
+"1558","Upper Willamette River Steelhead","spawn+rearing",68,11,2.99172380405841e-06
+"1559","Upper Willamette River Steelhead","spawn+rearing",69,281,7.64249444491285e-05
+"1560","Upper Willamette River Steelhead","spawn+rearing",70,1892,0.000514576494298046
+"1561","Upper Willamette River Steelhead","spawn+rearing",71,21363,0.00581019960237271
+"1562","Upper Willamette River Steelhead","spawn+rearing",76,30,8.15924673834112e-06
+"1563","Upper Willamette River Steelhead","spawn+rearing",77,17,4.62357315172663e-06
+"1564","Upper Willamette River Steelhead","spawn+rearing",111,15372,0.00418079802872599
+"1565","Upper Willamette River Steelhead","spawn+rearing",121,79709,0.0216788466088811
+"1566","Upper Willamette River Steelhead","spawn+rearing",122,44352,0.0120626303779635
+"1567","Upper Willamette River Steelhead","spawn+rearing",123,22740,0.00618470902766257
+"1568","Upper Willamette River Steelhead","spawn+rearing",124,6916,0.00188097834807891
+"1569","Upper Willamette River Steelhead","spawn+rearing",131,621,0.000168896407483661
+"1570","Upper Willamette River Steelhead","spawn+rearing",141,4155,0.00113005567326024
+"1571","Upper Willamette River Steelhead","spawn+rearing",142,2270376,0.617485265760265
+"1572","Upper Willamette River Steelhead","spawn+rearing",143,89492,0.0243395769702541
+"1573","Upper Willamette River Steelhead","spawn+rearing",152,277798,0.0755540808472562
+"1574","Upper Willamette River Steelhead","spawn+rearing",176,549059,0.149330261830228
+"1575","Upper Willamette River Steelhead","spawn+rearing",190,19403,0.00527712881546776
+"1576","Upper Willamette River Steelhead","spawn+rearing",195,13884,0.00377609939050427
+"1577","Upper Willamette River Steelhead","spawn+rearing",205,444,0.000120756851727449
+"1578","Upper Willamette River Steelhead","spawn+rearing",208,66,1.79503428243505e-05
+"1579","Upper Willamette River Steelhead","spawn+rearing",214,7,1.90382423894626e-06
+"1580","Upper Willamette River Steelhead","spawn+rearing",219,4,1.08789956511215e-06
+"1581","Upper Willamette River Steelhead","spawn+rearing",220,33,8.97517141217523e-06
+"1582","Upper Willamette River Steelhead","spawn+rearing",221,11,2.99172380405841e-06
+"1583","Upper Willamette River Steelhead","spawn+rearing",222,1022,0.000277958338886154
+"1584","Upper Willamette River Steelhead","spawn+rearing",224,417,0.000113413529662942
+"1585","Upper Willamette River Steelhead","spawn+rearing",225,2,5.43949782556074e-07
+"1586","Upper Willamette River Steelhead","spawn+rearing",229,74,2.01261419545748e-05
+"1587","Upper Willamette River Steelhead","spawn+rearing",242,554,0.000150674089768033
+"1588","Upper Willamette River Steelhead","spawn+rearing",243,2,5.43949782556074e-07
+"1589","Upper Willamette River Steelhead","spawn+rearing",244,73,1.98541670632967e-05
+"1590","Upper Willamette River Steelhead","spawn+rearing",246,2404,0.000653827638632401
+"1591","Upper Willamette River Steelhead","spawn+rearing",247,1476,0.000401434939526383
+"1592","Upper Willamette River Steelhead","rearing+migration",1,7177,0.00626252701734607
+"1593","Upper Willamette River Steelhead","rearing+migration",12,3229,0.00281756997896203
+"1594","Upper Willamette River Steelhead","rearing+migration",14,2691,0.0023481204129411
+"1595","Upper Willamette River Steelhead","rearing+migration",21,99,8.63857008105422e-05
+"1596","Upper Willamette River Steelhead","rearing+migration",23,1827,0.00159420884223092
+"1597","Upper Willamette River Steelhead","rearing+migration",24,6216,0.00542397491149829
+"1598","Upper Willamette River Steelhead","rearing+migration",27,27,2.35597365846933e-05
+"1599","Upper Willamette River Steelhead","rearing+migration",28,2342,0.00204358900301303
+"1600","Upper Willamette River Steelhead","rearing+migration",31,150,0.000130887425470518
+"1601","Upper Willamette River Steelhead","rearing+migration",36,201,0.000175389150130495
+"1602","Upper Willamette River Steelhead","rearing+migration",37,6508,0.00567876909974756
+"1603","Upper Willamette River Steelhead","rearing+migration",39,167,0.000145721333690511
+"1604","Upper Willamette River Steelhead","rearing+migration",41,84,7.32969582634904e-05
+"1605","Upper Willamette River Steelhead","rearing+migration",42,1767,0.00154185387204271
+"1606","Upper Willamette River Steelhead","rearing+migration",43,3,2.61774850941037e-06
+"1607","Upper Willamette River Steelhead","rearing+migration",44,5697,0.00497110441937029
+"1608","Upper Willamette River Steelhead","rearing+migration",49,160,0.00013961325383522
+"1609","Upper Willamette River Steelhead","rearing+migration",53,216,0.000188477892677547
+"1610","Upper Willamette River Steelhead","rearing+migration",56,1129,0.000985146022374769
+"1611","Upper Willamette River Steelhead","rearing+migration",57,183,0.000159682659074033
+"1612","Upper Willamette River Steelhead","rearing+migration",58,9853,0.00859755868774012
+"1613","Upper Willamette River Steelhead","rearing+migration",59,237407,0.207157273457863
+"1614","Upper Willamette River Steelhead","rearing+migration",61,251,0.000219018291954001
+"1615","Upper Willamette River Steelhead","rearing+migration",66,325,0.00028358942185279
+"1616","Upper Willamette River Steelhead","rearing+migration",69,596,0.000520059370536193
+"1617","Upper Willamette River Steelhead","rearing+migration",70,763,0.000665780704226704
+"1618","Upper Willamette River Steelhead","rearing+migration",71,26780,0.0233677683606699
+"1619","Upper Willamette River Steelhead","rearing+migration",76,30,2.61774850941037e-05
+"1620","Upper Willamette River Steelhead","rearing+migration",77,1,8.72582836470123e-07
+"1621","Upper Willamette River Steelhead","rearing+migration",111,9715,0.00847714225630725
+"1622","Upper Willamette River Steelhead","rearing+migration",121,35813,0.0312498091225045
+"1623","Upper Willamette River Steelhead","rearing+migration",122,43815,0.0382322169799384
+"1624","Upper Willamette River Steelhead","rearing+migration",123,33628,0.0293432156248173
+"1625","Upper Willamette River Steelhead","rearing+migration",124,13887,0.0121175578500606
+"1626","Upper Willamette River Steelhead","rearing+migration",131,399,0.000348160551751579
+"1627","Upper Willamette River Steelhead","rearing+migration",141,2209,0.0019275354857625
+"1628","Upper Willamette River Steelhead","rearing+migration",142,200015,0.174529656036572
+"1629","Upper Willamette River Steelhead","rearing+migration",143,36005,0.0314173450271068
+"1630","Upper Willamette River Steelhead","rearing+migration",152,15736,0.0137309635146939
+"1631","Upper Willamette River Steelhead","rearing+migration",176,382217,0.333515994007101
+"1632","Upper Willamette River Steelhead","rearing+migration",190,24643,0.0215030588391332
+"1633","Upper Willamette River Steelhead","rearing+migration",195,21657,0.0188975264894335
+"1634","Upper Willamette River Steelhead","rearing+migration",205,98,8.55131179740721e-05
+"1635","Upper Willamette River Steelhead","rearing+migration",206,6,5.23549701882074e-06
+"1636","Upper Willamette River Steelhead","rearing+migration",208,282,0.000246068359884575
+"1637","Upper Willamette River Steelhead","rearing+migration",214,7,6.10807985529086e-06
+"1638","Upper Willamette River Steelhead","rearing+migration",219,1,8.72582836470123e-07
+"1639","Upper Willamette River Steelhead","rearing+migration",220,25,2.18145709117531e-05
+"1640","Upper Willamette River Steelhead","rearing+migration",221,5,4.36291418235062e-06
+"1641","Upper Willamette River Steelhead","rearing+migration",222,643,0.000561070763850289
+"1642","Upper Willamette River Steelhead","rearing+migration",224,216,0.000188477892677547
+"1643","Upper Willamette River Steelhead","rearing+migration",225,1,8.72582836470123e-07
+"1644","Upper Willamette River Steelhead","rearing+migration",229,93,8.11502037917215e-05
+"1645","Upper Willamette River Steelhead","rearing+migration",242,718,0.000626514476585548
+"1646","Upper Willamette River Steelhead","rearing+migration",243,1,8.72582836470123e-07
+"1647","Upper Willamette River Steelhead","rearing+migration",244,314,0.000273991010651619
+"1648","Upper Willamette River Steelhead","rearing+migration",246,6468,0.00564386578628876
+"1649","Upper Willamette River Steelhead","rearing+migration",247,1527,0.00133243399128988
+"1650","Upper Willamette River Steelhead",NA,1,35,0.000107264569593253
+"1651","Upper Willamette River Steelhead",NA,12,80,0.000245176159070292
+"1652","Upper Willamette River Steelhead",NA,14,12,3.67764238605438e-05
+"1653","Upper Willamette River Steelhead",NA,21,6,1.83882119302719e-05
+"1654","Upper Willamette River Steelhead",NA,23,167,0.000511805232059235
+"1655","Upper Willamette River Steelhead",NA,24,1222,0.00374506582979871
+"1656","Upper Willamette River Steelhead",NA,27,2,6.1294039767573e-06
+"1657","Upper Willamette River Steelhead",NA,28,240,0.000735528477210876
+"1658","Upper Willamette River Steelhead",NA,31,49,0.000150170397430554
+"1659","Upper Willamette River Steelhead",NA,36,4,1.22588079535146e-05
+"1660","Upper Willamette River Steelhead",NA,37,756,0.00231691470321426
+"1661","Upper Willamette River Steelhead",NA,39,6,1.83882119302719e-05
+"1662","Upper Willamette River Steelhead",NA,41,25,7.66175497094662e-05
+"1663","Upper Willamette River Steelhead",NA,42,109,0.000334052516733273
+"1664","Upper Willamette River Steelhead",NA,43,1,3.06470198837865e-06
+"1665","Upper Willamette River Steelhead",NA,44,1031,0.00315970775001839
+"1666","Upper Willamette River Steelhead",NA,49,4,1.22588079535146e-05
+"1667","Upper Willamette River Steelhead",NA,53,395,0.00121055728540957
+"1668","Upper Willamette River Steelhead",NA,56,19,5.82293377791944e-05
+"1669","Upper Willamette River Steelhead",NA,57,50,0.000153235099418932
+"1670","Upper Willamette River Steelhead",NA,58,1460,0.00447446490303283
+"1671","Upper Willamette River Steelhead",NA,59,40148,0.123041655429426
+"1672","Upper Willamette River Steelhead",NA,61,47,0.000144040993453797
+"1673","Upper Willamette River Steelhead",NA,66,86,0.000263564371000564
+"1674","Upper Willamette River Steelhead",NA,69,39,0.000119523377546767
+"1675","Upper Willamette River Steelhead",NA,70,224,0.000686493245396818
+"1676","Upper Willamette River Steelhead",NA,71,4815,0.0147565400740432
+"1677","Upper Willamette River Steelhead",NA,76,9,2.75823178954079e-05
+"1678","Upper Willamette River Steelhead",NA,77,1,3.06470198837865e-06
+"1679","Upper Willamette River Steelhead",NA,111,382,0.00117071615956064
+"1680","Upper Willamette River Steelhead",NA,121,6960,0.0213303258391154
+"1681","Upper Willamette River Steelhead",NA,122,7323,0.0224428126608969
+"1682","Upper Willamette River Steelhead",NA,123,6270,0.0192156814671341
+"1683","Upper Willamette River Steelhead",NA,124,2881,0.00882940642851889
+"1684","Upper Willamette River Steelhead",NA,131,61,0.000186946821291098
+"1685","Upper Willamette River Steelhead",NA,141,628,0.00192463284870179
+"1686","Upper Willamette River Steelhead",NA,142,145686,0.446484173878932
+"1687","Upper Willamette River Steelhead",NA,143,4715,0.0144500698752053
+"1688","Upper Willamette River Steelhead",NA,152,18515,0.0567429573148307
+"1689","Upper Willamette River Steelhead",NA,176,76484,0.234400666879153
+"1690","Upper Willamette River Steelhead",NA,190,1625,0.00498014073111531
+"1691","Upper Willamette River Steelhead",NA,195,2176,0.00666879152671194
+"1692","Upper Willamette River Steelhead",NA,205,12,3.67764238605438e-05
+"1693","Upper Willamette River Steelhead",NA,208,24,7.35528477210876e-05
+"1694","Upper Willamette River Steelhead",NA,220,46,0.000140976291465418
+"1695","Upper Willamette River Steelhead",NA,221,2,6.1294039767573e-06
+"1696","Upper Willamette River Steelhead",NA,222,21,6.43587417559516e-05
+"1697","Upper Willamette River Steelhead",NA,224,48,0.000147105695442175
+"1698","Upper Willamette River Steelhead",NA,242,22,6.74234437443303e-05
+"1699","Upper Willamette River Steelhead",NA,244,1,3.06470198837865e-06
+"1700","Upper Willamette River Steelhead",NA,246,1293,0.00396265967097359
+"1701","Upper Willamette River Steelhead",NA,247,79,0.000242111457081913

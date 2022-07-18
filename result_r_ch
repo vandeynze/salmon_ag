@@ -1,0 +1,971 @@
+"","name","hab_use","land.use","count","freq"
+"1","California Coastal Chinook Salmon","spawn+rearing",0,77625,0.00476126131071743
+"2","California Coastal Chinook Salmon","spawn+rearing",1,37,2.26945788723407e-06
+"3","California Coastal Chinook Salmon","spawn+rearing",2,3,1.84010098964925e-07
+"4","California Coastal Chinook Salmon","spawn+rearing",3,258,1.58248685109835e-05
+"5","California Coastal Chinook Salmon","spawn+rearing",4,2,1.2267339930995e-07
+"6","California Coastal Chinook Salmon","spawn+rearing",6,64,3.9255487779184e-06
+"7","California Coastal Chinook Salmon","spawn+rearing",13,1,6.13366996549749e-08
+"8","California Coastal Chinook Salmon","spawn+rearing",14,1,6.13366996549749e-08
+"9","California Coastal Chinook Salmon","spawn+rearing",21,77,4.72292587343307e-06
+"10","California Coastal Chinook Salmon","spawn+rearing",23,18,1.10406059378955e-06
+"11","California Coastal Chinook Salmon","spawn+rearing",24,1166,7.15185917977008e-05
+"12","California Coastal Chinook Salmon","spawn+rearing",27,5539,0.000339743979388906
+"13","California Coastal Chinook Salmon","spawn+rearing",28,678,4.1586282366073e-05
+"14","California Coastal Chinook Salmon","spawn+rearing",33,3,1.84010098964925e-07
+"15","California Coastal Chinook Salmon","spawn+rearing",36,1951,0.000119667901026856
+"16","California Coastal Chinook Salmon","spawn+rearing",37,23675,0.00145214636433153
+"17","California Coastal Chinook Salmon","spawn+rearing",42,5,3.06683498274875e-07
+"18","California Coastal Chinook Salmon","spawn+rearing",43,3,1.84010098964925e-07
+"19","California Coastal Chinook Salmon","spawn+rearing",49,1,6.13366996549749e-08
+"20","California Coastal Chinook Salmon","spawn+rearing",54,36,2.2081211875791e-06
+"21","California Coastal Chinook Salmon","spawn+rearing",57,59,3.61886527964352e-06
+"22","California Coastal Chinook Salmon","spawn+rearing",58,27,1.65609089068432e-06
+"23","California Coastal Chinook Salmon","spawn+rearing",59,1,6.13366996549749e-08
+"24","California Coastal Chinook Salmon","spawn+rearing",61,888,5.44669892936177e-05
+"25","California Coastal Chinook Salmon","spawn+rearing",66,22,1.34940739240945e-06
+"26","California Coastal Chinook Salmon","spawn+rearing",67,7,4.29356897584825e-07
+"27","California Coastal Chinook Salmon","spawn+rearing",68,1030,6.31768006446242e-05
+"28","California Coastal Chinook Salmon","spawn+rearing",69,150976,0.0092603695671095
+"29","California Coastal Chinook Salmon","spawn+rearing",71,5,3.06683498274875e-07
+"30","California Coastal Chinook Salmon","spawn+rearing",74,90,5.52030296894774e-06
+"31","California Coastal Chinook Salmon","spawn+rearing",75,3621,0.000222100189450664
+"32","California Coastal Chinook Salmon","spawn+rearing",76,2796,0.00017149741223531
+"33","California Coastal Chinook Salmon","spawn+rearing",77,5183,0.000317908114311735
+"34","California Coastal Chinook Salmon","spawn+rearing",111,78533,0.00481695503400415
+"35","California Coastal Chinook Salmon","spawn+rearing",112,5,3.06683498274875e-07
+"36","California Coastal Chinook Salmon","spawn+rearing",121,743569,0.0456080684257501
+"37","California Coastal Chinook Salmon","spawn+rearing",122,158193,0.00970303652851945
+"38","California Coastal Chinook Salmon","spawn+rearing",123,128379,0.00787434416500603
+"39","California Coastal Chinook Salmon","spawn+rearing",124,31186,0.00191284631544005
+"40","California Coastal Chinook Salmon","spawn+rearing",131,50088,0.00307223261231838
+"41","California Coastal Chinook Salmon","spawn+rearing",141,74735,0.00458399824871455
+"42","California Coastal Chinook Salmon","spawn+rearing",142,9655340,0.592226689646666
+"43","California Coastal Chinook Salmon","spawn+rearing",143,651411,0.0399554008589469
+"44","California Coastal Chinook Salmon","spawn+rearing",152,3348878,0.205409124067153
+"45","California Coastal Chinook Salmon","spawn+rearing",176,999301,0.0612938253019161
+"46","California Coastal Chinook Salmon","spawn+rearing",190,34843,0.00213715462607829
+"47","California Coastal Chinook Salmon","spawn+rearing",195,71118,0.00436214340606251
+"48","California Coastal Chinook Salmon","spawn+rearing",204,131,8.03510765480172e-06
+"49","California Coastal Chinook Salmon","spawn+rearing",205,92,5.64297636825769e-06
+"50","California Coastal Chinook Salmon","spawn+rearing",208,4,2.453467986199e-07
+"51","California Coastal Chinook Salmon","spawn+rearing",209,3,1.84010098964925e-07
+"52","California Coastal Chinook Salmon","spawn+rearing",211,753,4.61865348401961e-05
+"53","California Coastal Chinook Salmon","spawn+rearing",212,11,6.74703696204724e-07
+"54","California Coastal Chinook Salmon","spawn+rearing",213,52,3.1895083820587e-06
+"55","California Coastal Chinook Salmon","spawn+rearing",220,864,5.29949085018983e-05
+"56","California Coastal Chinook Salmon","spawn+rearing",222,5,3.06683498274875e-07
+"57","California Coastal Chinook Salmon","spawn+rearing",225,62,3.80287537860845e-06
+"58","California Coastal Chinook Salmon","spawn+rearing",226,12,7.36040395859699e-07
+"59","California Coastal Chinook Salmon","spawn+rearing",227,32,1.9627743889592e-06
+"60","California Coastal Chinook Salmon","spawn+rearing",228,1,6.13366996549749e-08
+"61","California Coastal Chinook Salmon","spawn+rearing",244,4,2.453467986199e-07
+"62","California Coastal Chinook Salmon","rearing+migration",0,1557,0.00358104735860383
+"63","California Coastal Chinook Salmon","rearing+migration",3,257,0.000591091310957729
+"64","California Coastal Chinook Salmon","rearing+migration",24,30,6.899898571491e-05
+"65","California Coastal Chinook Salmon","rearing+migration",27,5,1.1499830952485e-05
+"66","California Coastal Chinook Salmon","rearing+migration",28,2,4.599932380994e-06
+"67","California Coastal Chinook Salmon","rearing+migration",36,8,1.8399729523976e-05
+"68","California Coastal Chinook Salmon","rearing+migration",37,76,0.000174797430477772
+"69","California Coastal Chinook Salmon","rearing+migration",57,2,4.599932380994e-06
+"70","California Coastal Chinook Salmon","rearing+migration",61,27,6.2099087143419e-05
+"71","California Coastal Chinook Salmon","rearing+migration",69,1733,0.0039858414081313
+"72","California Coastal Chinook Salmon","rearing+migration",74,1,2.299966190497e-06
+"73","California Coastal Chinook Salmon","rearing+migration",75,18,4.1399391428946e-05
+"74","California Coastal Chinook Salmon","rearing+migration",76,143,0.000328895165241071
+"75","California Coastal Chinook Salmon","rearing+migration",111,2701,0.0062122086805324
+"76","California Coastal Chinook Salmon","rearing+migration",112,1,2.299966190497e-06
+"77","California Coastal Chinook Salmon","rearing+migration",121,34589,0.0795535305631007
+"78","California Coastal Chinook Salmon","rearing+migration",122,8884,0.0204328996363753
+"79","California Coastal Chinook Salmon","rearing+migration",123,3436,0.00790268383054769
+"80","California Coastal Chinook Salmon","rearing+migration",124,643,0.00147887826048957
+"81","California Coastal Chinook Salmon","rearing+migration",131,1485,0.00341544979288804
+"82","California Coastal Chinook Salmon","rearing+migration",141,1772,0.00407554008956068
+"83","California Coastal Chinook Salmon","rearing+migration",142,251141,0.577615809047607
+"84","California Coastal Chinook Salmon","rearing+migration",143,21326,0.049049078978539
+"85","California Coastal Chinook Salmon","rearing+migration",152,29059,0.0668347175296523
+"86","California Coastal Chinook Salmon","rearing+migration",176,58199,0.133855732320735
+"87","California Coastal Chinook Salmon","rearing+migration",190,7726,0.0177695387877798
+"88","California Coastal Chinook Salmon","rearing+migration",195,9959,0.0229053632911596
+"89","California Coastal Chinook Salmon","rearing+migration",204,1,2.299966190497e-06
+"90","California Coastal Chinook Salmon","rearing+migration",205,4,9.199864761988e-06
+"91","California Coastal Chinook Salmon","rearing+migration",220,4,9.199864761988e-06
+"92","California Coastal Chinook Salmon",NA,0,15411,0.00257332025772944
+"93","California Coastal Chinook Salmon",NA,1,10,1.66979447000807e-06
+"94","California Coastal Chinook Salmon",NA,2,7,1.16885612900565e-06
+"95","California Coastal Chinook Salmon",NA,3,65,1.08536640550525e-05
+"96","California Coastal Chinook Salmon",NA,6,36,6.01126009202905e-06
+"97","California Coastal Chinook Salmon",NA,14,4,6.67917788003228e-07
+"98","California Coastal Chinook Salmon",NA,21,24,4.00750672801937e-06
+"99","California Coastal Chinook Salmon",NA,24,610,0.000101857462670492
+"100","California Coastal Chinook Salmon",NA,27,4309,0.000719514437126477
+"101","California Coastal Chinook Salmon",NA,28,484,8.08180523483906e-05
+"102","California Coastal Chinook Salmon",NA,36,548,9.15047369564422e-05
+"103","California Coastal Chinook Salmon",NA,37,6691,0.0011172594798824
+"104","California Coastal Chinook Salmon",NA,42,1,1.66979447000807e-07
+"105","California Coastal Chinook Salmon",NA,43,1,1.66979447000807e-07
+"106","California Coastal Chinook Salmon",NA,44,1,1.66979447000807e-07
+"107","California Coastal Chinook Salmon",NA,49,1,1.66979447000807e-07
+"108","California Coastal Chinook Salmon",NA,50,4,6.67917788003228e-07
+"109","California Coastal Chinook Salmon",NA,54,1,1.66979447000807e-07
+"110","California Coastal Chinook Salmon",NA,57,79,1.31913763130638e-05
+"111","California Coastal Chinook Salmon",NA,58,9,1.50281502300726e-06
+"112","California Coastal Chinook Salmon",NA,61,235,3.92401700451897e-05
+"113","California Coastal Chinook Salmon",NA,66,16,2.67167115201291e-06
+"114","California Coastal Chinook Salmon",NA,68,5700,0.0009517828479046
+"115","California Coastal Chinook Salmon",NA,69,27240,0.00454852013630198
+"116","California Coastal Chinook Salmon",NA,71,2,3.33958894001614e-07
+"117","California Coastal Chinook Salmon",NA,74,41,6.84615732703309e-06
+"118","California Coastal Chinook Salmon",NA,75,520,8.68293124404197e-05
+"119","California Coastal Chinook Salmon",NA,76,403,6.72927171413252e-05
+"120","California Coastal Chinook Salmon",NA,77,104,1.73658624880839e-05
+"121","California Coastal Chinook Salmon",NA,111,10891,0.00181857315728579
+"122","California Coastal Chinook Salmon",NA,112,4,6.67917788003228e-07
+"123","California Coastal Chinook Salmon",NA,121,259019,0.043250849382702
+"124","California Coastal Chinook Salmon",NA,122,47762,0.00797527234765254
+"125","California Coastal Chinook Salmon",NA,123,44313,0.00739936023494676
+"126","California Coastal Chinook Salmon",NA,124,16712,0.00279056051827749
+"127","California Coastal Chinook Salmon",NA,131,10390,0.00173491645433838
+"128","California Coastal Chinook Salmon",NA,141,27485,0.00458943010081718
+"129","California Coastal Chinook Salmon",NA,142,3469924,0.579405990654828
+"130","California Coastal Chinook Salmon",NA,143,197706,0.0330128385487415
+"131","California Coastal Chinook Salmon",NA,152,1499157,0.250328406827389
+"132","California Coastal Chinook Salmon",NA,176,320873,0.0535791960974899
+"133","California Coastal Chinook Salmon",NA,190,10344,0.00172723539977635
+"134","California Coastal Chinook Salmon",NA,195,10835,0.00180922230825374
+"135","California Coastal Chinook Salmon",NA,204,64,1.06866846080516e-05
+"136","California Coastal Chinook Salmon",NA,205,27,4.50844506902179e-06
+"137","California Coastal Chinook Salmon",NA,209,9,1.50281502300726e-06
+"138","California Coastal Chinook Salmon",NA,211,472,7.88142989843809e-05
+"139","California Coastal Chinook Salmon",NA,212,1,1.66979447000807e-07
+"140","California Coastal Chinook Salmon",NA,213,13,2.17073281101049e-06
+"141","California Coastal Chinook Salmon",NA,218,1,1.66979447000807e-07
+"142","California Coastal Chinook Salmon",NA,220,191,3.18930743771541e-05
+"143","California Coastal Chinook Salmon",NA,225,7,1.16885612900565e-06
+"144","California Coastal Chinook Salmon",NA,227,3,5.00938341002421e-07
+"145","California Coastal Chinook Salmon",NA,244,1,1.66979447000807e-07
+"146","Lower Columbia River Chinook Salmon","spawn+rearing",0,40087,0.00407707665253974
+"147","Lower Columbia River Chinook Salmon","spawn+rearing",1,1972,0.00020056365302488
+"148","Lower Columbia River Chinook Salmon","spawn+rearing",6,1,1.01705706402069e-07
+"149","Lower Columbia River Chinook Salmon","spawn+rearing",12,29,2.94946548566e-06
+"150","Lower Columbia River Chinook Salmon","spawn+rearing",14,23,2.33923124724759e-06
+"151","Lower Columbia River Chinook Salmon","spawn+rearing",21,629,6.39728893269015e-05
+"152","Lower Columbia River Chinook Salmon","spawn+rearing",23,504,5.12596760266428e-05
+"153","Lower Columbia River Chinook Salmon","spawn+rearing",24,620,6.30575379692828e-05
+"154","Lower Columbia River Chinook Salmon","spawn+rearing",27,10,1.01705706402069e-06
+"155","Lower Columbia River Chinook Salmon","spawn+rearing",28,134,1.36285646578773e-05
+"156","Lower Columbia River Chinook Salmon","spawn+rearing",31,1,1.01705706402069e-07
+"157","Lower Columbia River Chinook Salmon","spawn+rearing",36,2515,0.000255789851601204
+"158","Lower Columbia River Chinook Salmon","spawn+rearing",37,9808,0.000997529568391494
+"159","Lower Columbia River Chinook Salmon","spawn+rearing",39,3,3.05117119206207e-07
+"160","Lower Columbia River Chinook Salmon","spawn+rearing",41,3,3.05117119206207e-07
+"161","Lower Columbia River Chinook Salmon","spawn+rearing",42,91,9.25521928258829e-06
+"162","Lower Columbia River Chinook Salmon","spawn+rearing",43,18,1.83070271523724e-06
+"163","Lower Columbia River Chinook Salmon","spawn+rearing",44,65,6.61087091613449e-06
+"164","Lower Columbia River Chinook Salmon","spawn+rearing",47,29,2.94946548566e-06
+"165","Lower Columbia River Chinook Salmon","spawn+rearing",49,1,1.01705706402069e-07
+"166","Lower Columbia River Chinook Salmon","spawn+rearing",53,31,3.15287689846414e-06
+"167","Lower Columbia River Chinook Salmon","spawn+rearing",55,780,7.93304509936139e-05
+"168","Lower Columbia River Chinook Salmon","spawn+rearing",56,43,4.37334537528897e-06
+"169","Lower Columbia River Chinook Salmon","spawn+rearing",57,20,2.03411412804138e-06
+"170","Lower Columbia River Chinook Salmon","spawn+rearing",58,493,5.01409132562201e-05
+"171","Lower Columbia River Chinook Salmon","spawn+rearing",59,1989,0.000202292650033715
+"172","Lower Columbia River Chinook Salmon","spawn+rearing",61,518,5.26835559162718e-05
+"173","Lower Columbia River Chinook Salmon","spawn+rearing",66,19220,0.00195478367704777
+"174","Lower Columbia River Chinook Salmon","spawn+rearing",67,48,4.88187390729932e-06
+"175","Lower Columbia River Chinook Salmon","spawn+rearing",68,2524,0.000256705202958822
+"176","Lower Columbia River Chinook Salmon","spawn+rearing",69,2590,0.000263417779581359
+"177","Lower Columbia River Chinook Salmon","spawn+rearing",70,16604,0.00168872154909996
+"178","Lower Columbia River Chinook Salmon","spawn+rearing",71,755,7.67878083335622e-05
+"179","Lower Columbia River Chinook Salmon","spawn+rearing",76,551,5.60398442275401e-05
+"180","Lower Columbia River Chinook Salmon","spawn+rearing",77,48208,0.00490302869423095
+"181","Lower Columbia River Chinook Salmon","spawn+rearing",111,333371,0.0339057330489642
+"182","Lower Columbia River Chinook Salmon","spawn+rearing",112,13660,0.00138929994945226
+"183","Lower Columbia River Chinook Salmon","spawn+rearing",121,397023,0.0403795046728687
+"184","Lower Columbia River Chinook Salmon","spawn+rearing",122,201965,0.0205409929934939
+"185","Lower Columbia River Chinook Salmon","spawn+rearing",123,108784,0.0110639535652427
+"186","Lower Columbia River Chinook Salmon","spawn+rearing",124,38696,0.00393560401493447
+"187","Lower Columbia River Chinook Salmon","spawn+rearing",131,53621,0.00545356168298535
+"188","Lower Columbia River Chinook Salmon","spawn+rearing",141,198382,0.0201765814474553
+"189","Lower Columbia River Chinook Salmon","spawn+rearing",142,6193832,0.62994805889574
+"190","Lower Columbia River Chinook Salmon","spawn+rearing",143,458472,0.0466292186255694
+"191","Lower Columbia River Chinook Salmon","spawn+rearing",152,722614,0.0734939673260248
+"192","Lower Columbia River Chinook Salmon","spawn+rearing",176,646366,0.0657391106242798
+"193","Lower Columbia River Chinook Salmon","spawn+rearing",190,130929,0.0133162264335165
+"194","Lower Columbia River Chinook Salmon","spawn+rearing",195,180657,0.0183738478014786
+"195","Lower Columbia River Chinook Salmon","spawn+rearing",205,53,5.39040243930966e-06
+"196","Lower Columbia River Chinook Salmon","spawn+rearing",208,21,2.13581983444345e-06
+"197","Lower Columbia River Chinook Salmon","spawn+rearing",214,4,4.06822825608276e-07
+"198","Lower Columbia River Chinook Salmon","spawn+rearing",219,31,3.15287689846414e-06
+"199","Lower Columbia River Chinook Salmon","spawn+rearing",220,11,1.11876277042276e-06
+"200","Lower Columbia River Chinook Salmon","spawn+rearing",221,2,2.03411412804138e-07
+"201","Lower Columbia River Chinook Salmon","spawn+rearing",222,10,1.01705706402069e-06
+"202","Lower Columbia River Chinook Salmon","spawn+rearing",224,7,7.11939944814484e-07
+"203","Lower Columbia River Chinook Salmon","spawn+rearing",228,32,3.25458260486621e-06
+"204","Lower Columbia River Chinook Salmon","spawn+rearing",229,47,4.78016820089725e-06
+"205","Lower Columbia River Chinook Salmon","spawn+rearing",242,2704,0.000275012230111195
+"206","Lower Columbia River Chinook Salmon","spawn+rearing",243,4,4.06822825608276e-07
+"207","Lower Columbia River Chinook Salmon","spawn+rearing",244,2,2.03411412804138e-07
+"208","Lower Columbia River Chinook Salmon","spawn+rearing",246,10,1.01705706402069e-06
+"209","Lower Columbia River Chinook Salmon","spawn+rearing",247,1,1.01705706402069e-07
+"210","Lower Columbia River Chinook Salmon","spawn+rearing",250,62,6.30575379692828e-06
+"211","Lower Columbia River Chinook Salmon","rearing+migration",0,426766,0.291661028439899
+"212","Lower Columbia River Chinook Salmon","rearing+migration",1,12264,0.00838148037282006
+"213","Lower Columbia River Chinook Salmon","rearing+migration",12,1295,0.000885030747129972
+"214","Lower Columbia River Chinook Salmon","rearing+migration",14,952,0.000650617197890141
+"215","Lower Columbia River Chinook Salmon","rearing+migration",21,120,8.20105711626229e-05
+"216","Lower Columbia River Chinook Salmon","rearing+migration",23,2659,0.00181721757267845
+"217","Lower Columbia River Chinook Salmon","rearing+migration",24,1385,0.000946538675501939
+"218","Lower Columbia River Chinook Salmon","rearing+migration",28,319,0.000218011435007306
+"219","Lower Columbia River Chinook Salmon","rearing+migration",31,1,6.83421426355191e-07
+"220","Lower Columbia River Chinook Salmon","rearing+migration",36,896,0.000612345598014251
+"221","Lower Columbia River Chinook Salmon","rearing+migration",37,2333,0.00159442218768666
+"222","Lower Columbia River Chinook Salmon","rearing+migration",39,378,0.000258333299162262
+"223","Lower Columbia River Chinook Salmon","rearing+migration",41,57,3.89550213022459e-05
+"224","Lower Columbia River Chinook Salmon","rearing+migration",42,617,0.000421671020061153
+"225","Lower Columbia River Chinook Salmon","rearing+migration",43,420,0.00028703699906918
+"226","Lower Columbia River Chinook Salmon","rearing+migration",44,985,0.000673170104959863
+"227","Lower Columbia River Chinook Salmon","rearing+migration",49,11,7.5176356899071e-06
+"228","Lower Columbia River Chinook Salmon","rearing+migration",53,16,1.0934742821683e-05
+"229","Lower Columbia River Chinook Salmon","rearing+migration",55,1,6.83421426355191e-07
+"230","Lower Columbia River Chinook Salmon","rearing+migration",56,313,0.000213910906449175
+"231","Lower Columbia River Chinook Salmon","rearing+migration",57,122,8.33774140153332e-05
+"232","Lower Columbia River Chinook Salmon","rearing+migration",58,4503,0.00307744668287742
+"233","Lower Columbia River Chinook Salmon","rearing+migration",59,13157,0.00899177570655524
+"234","Lower Columbia River Chinook Salmon","rearing+migration",61,902,0.000616446126572382
+"235","Lower Columbia River Chinook Salmon","rearing+migration",66,55,3.75881784495355e-05
+"236","Lower Columbia River Chinook Salmon","rearing+migration",67,5,3.41710713177595e-06
+"237","Lower Columbia River Chinook Salmon","rearing+migration",69,102,6.97089854882294e-05
+"238","Lower Columbia River Chinook Salmon","rearing+migration",70,47,3.2120807038694e-05
+"239","Lower Columbia River Chinook Salmon","rearing+migration",71,5316,0.00363306830250419
+"240","Lower Columbia River Chinook Salmon","rearing+migration",76,21,1.4351849953459e-05
+"241","Lower Columbia River Chinook Salmon","rearing+migration",77,1,6.83421426355191e-07
+"242","Lower Columbia River Chinook Salmon","rearing+migration",111,120103,0.0820809635695375
+"243","Lower Columbia River Chinook Salmon","rearing+migration",121,59968,0.0409834160956681
+"244","Lower Columbia River Chinook Salmon","rearing+migration",122,123624,0.0844872904117341
+"245","Lower Columbia River Chinook Salmon","rearing+migration",123,159605,0.10907747675342
+"246","Lower Columbia River Chinook Salmon","rearing+migration",124,97242,0.0664572663416314
+"247","Lower Columbia River Chinook Salmon","rearing+migration",131,1790,0.00122332435317579
+"248","Lower Columbia River Chinook Salmon","rearing+migration",141,13193,0.00901637887790403
+"249","Lower Columbia River Chinook Salmon","rearing+migration",142,117695,0.0804352847748741
+"250","Lower Columbia River Chinook Salmon","rearing+migration",143,71449,0.048829777491652
+"251","Lower Columbia River Chinook Salmon","rearing+migration",152,19455,0.0132959638497402
+"252","Lower Columbia River Chinook Salmon","rearing+migration",176,61287,0.0418848489570306
+"253","Lower Columbia River Chinook Salmon","rearing+migration",190,43780,0.0299201900458302
+"254","Lower Columbia River Chinook Salmon","rearing+migration",195,97142,0.0663889241989959
+"255","Lower Columbia River Chinook Salmon","rearing+migration",205,2,1.36684285271038e-06
+"256","Lower Columbia River Chinook Salmon","rearing+migration",206,6,4.10052855813114e-06
+"257","Lower Columbia River Chinook Salmon","rearing+migration",208,59,4.03218641549562e-05
+"258","Lower Columbia River Chinook Salmon","rearing+migration",214,9,6.15079283719671e-06
+"259","Lower Columbia River Chinook Salmon","rearing+migration",219,30,2.05026427906557e-05
+"260","Lower Columbia River Chinook Salmon","rearing+migration",220,1,6.83421426355191e-07
+"261","Lower Columbia River Chinook Salmon","rearing+migration",221,101,6.90255640618742e-05
+"262","Lower Columbia River Chinook Salmon","rearing+migration",222,269,0.000183840363689546
+"263","Lower Columbia River Chinook Salmon","rearing+migration",224,124,8.47442568680436e-05
+"264","Lower Columbia River Chinook Salmon","rearing+migration",228,2,1.36684285271038e-06
+"265","Lower Columbia River Chinook Salmon","rearing+migration",229,2,1.36684285271038e-06
+"266","Lower Columbia River Chinook Salmon","rearing+migration",242,109,7.44929354727158e-05
+"267","Lower Columbia River Chinook Salmon","rearing+migration",243,9,6.15079283719671e-06
+"268","Lower Columbia River Chinook Salmon","rearing+migration",244,48,3.28042284650491e-05
+"269","Lower Columbia River Chinook Salmon","rearing+migration",246,78,5.33068712557049e-05
+"270","Lower Columbia River Chinook Salmon","rearing+migration",247,14,9.56789996897267e-06
+"271","Lower Columbia River Chinook Salmon","rearing+migration",250,11,7.5176356899071e-06
+"272","Lower Columbia River Chinook Salmon","migration",0,1126,0.000243052497612646
+"273","Lower Columbia River Chinook Salmon","migration",1,6319,0.00136398644086528
+"274","Lower Columbia River Chinook Salmon","migration",6,2,4.31709587233829e-07
+"275","Lower Columbia River Chinook Salmon","migration",12,40,8.63419174467659e-06
+"276","Lower Columbia River Chinook Salmon","migration",21,502,0.000108359106395691
+"277","Lower Columbia River Chinook Salmon","migration",23,1521,0.000328315141091327
+"278","Lower Columbia River Chinook Salmon","migration",24,30,6.47564380850744e-06
+"279","Lower Columbia River Chinook Salmon","migration",27,17,3.66953149148755e-06
+"280","Lower Columbia River Chinook Salmon","migration",28,2,4.31709587233829e-07
+"281","Lower Columbia River Chinook Salmon","migration",36,1006,0.000217149922378616
+"282","Lower Columbia River Chinook Salmon","migration",37,6141,0.00132556428760147
+"283","Lower Columbia River Chinook Salmon","migration",42,13,2.80611231701989e-06
+"284","Lower Columbia River Chinook Salmon","migration",43,15,3.23782190425372e-06
+"285","Lower Columbia River Chinook Salmon","migration",44,22,4.74880545957212e-06
+"286","Lower Columbia River Chinook Salmon","migration",47,3,6.47564380850744e-07
+"287","Lower Columbia River Chinook Salmon","migration",53,4,8.63419174467659e-07
+"288","Lower Columbia River Chinook Salmon","migration",55,1984,0.000428255910535959
+"289","Lower Columbia River Chinook Salmon","migration",57,3,6.47564380850744e-07
+"290","Lower Columbia River Chinook Salmon","migration",58,66,1.42464163787164e-05
+"291","Lower Columbia River Chinook Salmon","migration",59,321,6.92893887510296e-05
+"292","Lower Columbia River Chinook Salmon","migration",61,573,0.000123684796742492
+"293","Lower Columbia River Chinook Salmon","migration",66,27,5.8280794276567e-06
+"294","Lower Columbia River Chinook Salmon","migration",67,114,2.46074464723283e-05
+"295","Lower Columbia River Chinook Salmon","migration",68,131,2.82769779638158e-05
+"296","Lower Columbia River Chinook Salmon","migration",69,452,9.75663667148455e-05
+"297","Lower Columbia River Chinook Salmon","migration",70,10305,0.00222438364822231
+"298","Lower Columbia River Chinook Salmon","migration",71,42,9.06590133191042e-06
+"299","Lower Columbia River Chinook Salmon","migration",76,34,7.3390629829751e-06
+"300","Lower Columbia River Chinook Salmon","migration",77,110,2.37440272978606e-05
+"301","Lower Columbia River Chinook Salmon","migration",111,56249,0.0121416162861578
+"302","Lower Columbia River Chinook Salmon","migration",112,13750,0.00296800341223258
+"303","Lower Columbia River Chinook Salmon","migration",121,240344,0.0518794045170637
+"304","Lower Columbia River Chinook Salmon","migration",122,179543,0.0387552172103617
+"305","Lower Columbia River Chinook Salmon","migration",123,107471,0.0231981305248034
+"306","Lower Columbia River Chinook Salmon","migration",124,33376,0.00720436959175815
+"307","Lower Columbia River Chinook Salmon","migration",131,35766,0.00772026254850257
+"308","Lower Columbia River Chinook Salmon","migration",141,100447,0.0216819664544382
+"309","Lower Columbia River Chinook Salmon","migration",142,2758673,0.595472791071555
+"310","Lower Columbia River Chinook Salmon","migration",143,164055,0.0354120581668229
+"311","Lower Columbia River Chinook Salmon","migration",152,360136,0.0777370819540212
+"312","Lower Columbia River Chinook Salmon","migration",176,372304,0.0803636030827518
+"313","Lower Columbia River Chinook Salmon","migration",190,102273,0.0220761173075827
+"314","Lower Columbia River Chinook Salmon","migration",195,74972,0.0161830655870473
+"315","Lower Columbia River Chinook Salmon","migration",219,54,1.16561588553134e-05
+"316","Lower Columbia River Chinook Salmon","migration",221,8,1.72683834893532e-06
+"317","Lower Columbia River Chinook Salmon","migration",229,84,1.81318026638208e-05
+"318","Lower Columbia River Chinook Salmon","migration",242,1918,0.000414009494157242
+"319","Lower Columbia River Chinook Salmon","migration",243,1,2.15854793616915e-07
+"320","Lower Columbia River Chinook Salmon","migration",250,395,8.52626434786813e-05
+"321","Lower Columbia River Chinook Salmon",NA,0,231,6.67594748601447e-05
+"322","Lower Columbia River Chinook Salmon",NA,1,493,0.00014247801344611
+"323","Lower Columbia River Chinook Salmon",NA,12,15,4.33503083507433e-06
+"324","Lower Columbia River Chinook Salmon",NA,14,39,1.12710801711933e-05
+"325","Lower Columbia River Chinook Salmon",NA,21,17,4.91303494641757e-06
+"326","Lower Columbia River Chinook Salmon",NA,23,57,1.64731171732825e-05
+"327","Lower Columbia River Chinook Salmon",NA,24,295,8.52556064231285e-05
+"328","Lower Columbia River Chinook Salmon",NA,27,1,2.89002055671622e-07
+"329","Lower Columbia River Chinook Salmon",NA,28,16,4.62403289074595e-06
+"330","Lower Columbia River Chinook Salmon",NA,36,263,7.60075406416366e-05
+"331","Lower Columbia River Chinook Salmon",NA,37,1923,0.000555750953056529
+"332","Lower Columbia River Chinook Salmon",NA,39,8,2.31201644537298e-06
+"333","Lower Columbia River Chinook Salmon",NA,41,2,5.78004111343244e-07
+"334","Lower Columbia River Chinook Salmon",NA,42,33,9.53706783716353e-06
+"335","Lower Columbia River Chinook Salmon",NA,43,4,1.15600822268649e-06
+"336","Lower Columbia River Chinook Salmon",NA,44,28,8.09205755880542e-06
+"337","Lower Columbia River Chinook Salmon",NA,49,1,2.89002055671622e-07
+"338","Lower Columbia River Chinook Salmon",NA,53,10,2.89002055671622e-06
+"339","Lower Columbia River Chinook Salmon",NA,55,51,1.47391048392527e-05
+"340","Lower Columbia River Chinook Salmon",NA,56,58,1.67621192289541e-05
+"341","Lower Columbia River Chinook Salmon",NA,57,5,1.44501027835811e-06
+"342","Lower Columbia River Chinook Salmon",NA,58,490,0.000141611007279095
+"343","Lower Columbia River Chinook Salmon",NA,59,1384,0.000399978845049525
+"344","Lower Columbia River Chinook Salmon",NA,61,147,4.24833021837284e-05
+"345","Lower Columbia River Chinook Salmon",NA,66,2823,0.000815852803160989
+"346","Lower Columbia River Chinook Salmon",NA,67,3,8.67006167014866e-07
+"347","Lower Columbia River Chinook Salmon",NA,68,480,0.000138720986722379
+"348","Lower Columbia River Chinook Salmon",NA,69,214,6.18464399137271e-05
+"349","Lower Columbia River Chinook Salmon",NA,70,767,0.000221664576700134
+"350","Lower Columbia River Chinook Salmon",NA,71,1066,0.000308076191345949
+"351","Lower Columbia River Chinook Salmon",NA,76,20,5.78004111343244e-06
+"352","Lower Columbia River Chinook Salmon",NA,77,9278,0.00268136107252131
+"353","Lower Columbia River Chinook Salmon",NA,111,14687,0.00424457319164911
+"354","Lower Columbia River Chinook Salmon",NA,112,4011,0.00115918724529888
+"355","Lower Columbia River Chinook Salmon",NA,121,120465,0.0348146326364819
+"356","Lower Columbia River Chinook Salmon",NA,122,75015,0.0216794892062067
+"357","Lower Columbia River Chinook Salmon",NA,123,59382,0.0171615200698923
+"358","Lower Columbia River Chinook Salmon",NA,124,17034,0.00492286101631041
+"359","Lower Columbia River Chinook Salmon",NA,131,17576,0.00507950013048443
+"360","Lower Columbia River Chinook Salmon",NA,141,35553,0.0102748900852932
+"361","Lower Columbia River Chinook Salmon",NA,142,2446659,0.707089480527475
+"362","Lower Columbia River Chinook Salmon",NA,143,174773,0.0505097562758964
+"363","Lower Columbia River Chinook Salmon",NA,152,244495,0.0706595576014332
+"364","Lower Columbia River Chinook Salmon",NA,176,177832,0.0513938135641959
+"365","Lower Columbia River Chinook Salmon",NA,190,23215,0.0067091827224167
+"366","Lower Columbia River Chinook Salmon",NA,195,28958,0.00836892152813883
+"367","Lower Columbia River Chinook Salmon",NA,205,17,4.91303494641757e-06
+"368","Lower Columbia River Chinook Salmon",NA,208,23,6.64704728044731e-06
+"369","Lower Columbia River Chinook Salmon",NA,219,4,1.15600822268649e-06
+"370","Lower Columbia River Chinook Salmon",NA,220,14,4.04602877940271e-06
+"371","Lower Columbia River Chinook Salmon",NA,221,1,2.89002055671622e-07
+"372","Lower Columbia River Chinook Salmon",NA,224,14,4.04602877940271e-06
+"373","Lower Columbia River Chinook Salmon",NA,228,33,9.53706783716353e-06
+"374","Lower Columbia River Chinook Salmon",NA,229,18,5.2020370020892e-06
+"375","Lower Columbia River Chinook Salmon",NA,242,159,4.59513268517879e-05
+"376","Lower Columbia River Chinook Salmon",NA,246,19,5.49103905776082e-06
+"377","Lower Columbia River Chinook Salmon",NA,247,3,8.67006167014866e-07
+"378","Lower Columbia River Chinook Salmon",NA,250,1,2.89002055671622e-07
+"379","Oregon Coast Chinook Salmon",NA,0,150480,0.00476576599031195
+"380","Oregon Coast Chinook Salmon",NA,1,7932,0.000251209834098581
+"381","Oregon Coast Chinook Salmon",NA,12,158,5.00392760811595e-06
+"382","Oregon Coast Chinook Salmon",NA,14,148,4.68722332912127e-06
+"383","Oregon Coast Chinook Salmon",NA,21,134,4.24383733852872e-06
+"384","Oregon Coast Chinook Salmon",NA,23,233,7.37920970057606e-06
+"385","Oregon Coast Chinook Salmon",NA,24,614,1.94456427302734e-05
+"386","Oregon Coast Chinook Salmon",NA,27,100,3.16704278994681e-06
+"387","Oregon Coast Chinook Salmon",NA,28,362,1.14646948996074e-05
+"388","Oregon Coast Chinook Salmon",NA,31,6,1.90022567396808e-07
+"389","Oregon Coast Chinook Salmon",NA,36,1398,4.42752582034563e-05
+"390","Oregon Coast Chinook Salmon",NA,37,125908,0.00398756023596622
+"391","Oregon Coast Chinook Salmon",NA,39,13,4.11715562693085e-07
+"392","Oregon Coast Chinook Salmon",NA,41,16,5.06726846391489e-07
+"393","Oregon Coast Chinook Salmon",NA,42,134,4.24383733852872e-06
+"394","Oregon Coast Chinook Salmon",NA,43,4,1.26681711597872e-07
+"395","Oregon Coast Chinook Salmon",NA,44,174,5.51065445450744e-06
+"396","Oregon Coast Chinook Salmon",NA,49,7,2.21692995296276e-07
+"397","Oregon Coast Chinook Salmon",NA,53,5,1.5835213949734e-07
+"398","Oregon Coast Chinook Salmon",NA,56,520,1.64686225077234e-05
+"399","Oregon Coast Chinook Salmon",NA,57,129,4.08548519903138e-06
+"400","Oregon Coast Chinook Salmon",NA,58,887,2.80916695468282e-05
+"401","Oregon Coast Chinook Salmon",NA,59,6086,0.000192746224196163
+"402","Oregon Coast Chinook Salmon",NA,61,1515,4.79806982676941e-05
+"403","Oregon Coast Chinook Salmon",NA,66,527,1.66903155030197e-05
+"404","Oregon Coast Chinook Salmon",NA,67,35,1.10846497648138e-06
+"405","Oregon Coast Chinook Salmon",NA,68,10,3.16704278994681e-07
+"406","Oregon Coast Chinook Salmon",NA,69,388,1.22881260249936e-05
+"407","Oregon Coast Chinook Salmon",NA,70,1261,3.99364095812292e-05
+"408","Oregon Coast Chinook Salmon",NA,71,5348,0.000169373448406355
+"409","Oregon Coast Chinook Salmon",NA,76,53,1.67853267867181e-06
+"410","Oregon Coast Chinook Salmon",NA,77,41,1.29848754387819e-06
+"411","Oregon Coast Chinook Salmon",NA,111,177125,0.00560962454169328
+"412","Oregon Coast Chinook Salmon",NA,112,5,1.5835213949734e-07
+"413","Oregon Coast Chinook Salmon",NA,121,1178265,0.0373161567289667
+"414","Oregon Coast Chinook Salmon",NA,122,232036,0.00734867940808097
+"415","Oregon Coast Chinook Salmon",NA,123,119252,0.00377676186786736
+"416","Oregon Coast Chinook Salmon",NA,124,41195,0.00130466327731859
+"417","Oregon Coast Chinook Salmon",NA,131,102279,0.00323921969512969
+"418","Oregon Coast Chinook Salmon",NA,141,152998,0.00484551212776281
+"419","Oregon Coast Chinook Salmon",NA,142,20619839,0.653039124348139
+"420","Oregon Coast Chinook Salmon",NA,143,3616599,0.114539237870788
+"421","Oregon Coast Chinook Salmon",NA,152,2295783,0.0727084299743245
+"422","Oregon Coast Chinook Salmon",NA,176,2087407,0.0661090728903449
+"423","Oregon Coast Chinook Salmon",NA,190,135073,0.00427781970766485
+"424","Oregon Coast Chinook Salmon",NA,195,511438,0.0161974603040481
+"425","Oregon Coast Chinook Salmon",NA,205,70,2.21692995296276e-06
+"426","Oregon Coast Chinook Salmon",NA,208,53,1.67853267867181e-06
+"427","Oregon Coast Chinook Salmon",NA,214,2,6.33408557989361e-08
+"428","Oregon Coast Chinook Salmon",NA,219,2,6.33408557989361e-08
+"429","Oregon Coast Chinook Salmon",NA,220,86,2.72365679935425e-06
+"430","Oregon Coast Chinook Salmon",NA,221,4,1.26681711597872e-07
+"431","Oregon Coast Chinook Salmon",NA,222,298,9.43778751404148e-06
+"432","Oregon Coast Chinook Salmon",NA,224,86,2.72365679935425e-06
+"433","Oregon Coast Chinook Salmon",NA,225,18,5.70067702190425e-07
+"434","Oregon Coast Chinook Salmon",NA,229,18,5.70067702190425e-07
+"435","Oregon Coast Chinook Salmon",NA,242,382,1.20981034575968e-05
+"436","Oregon Coast Chinook Salmon",NA,244,7,2.21692995296276e-07
+"437","Oregon Coast Chinook Salmon",NA,246,140,4.43385990592553e-06
+"438","Oregon Coast Chinook Salmon",NA,247,111,3.51541749684095e-06
+"439","Puget Sound Chinook Salmon","spawn+rearing",0,8115,0.000465136087126208
+"440","Puget Sound Chinook Salmon","spawn+rearing",1,82504,0.00472896952954537
+"441","Puget Sound Chinook Salmon","spawn+rearing",6,19,1.08904321076993e-06
+"442","Puget Sound Chinook Salmon","spawn+rearing",12,123,7.05012183814216e-06
+"443","Puget Sound Chinook Salmon","spawn+rearing",21,5775,0.000331011818010333
+"444","Puget Sound Chinook Salmon","spawn+rearing",23,762,4.36763645582465e-05
+"445","Puget Sound Chinook Salmon","spawn+rearing",24,1377,7.89269737489573e-05
+"446","Puget Sound Chinook Salmon","spawn+rearing",27,2674,0.000153268502399936
+"447","Puget Sound Chinook Salmon","spawn+rearing",28,33,1.89149610291619e-06
+"448","Puget Sound Chinook Salmon","spawn+rearing",36,3792,0.000217350097644187
+"449","Puget Sound Chinook Salmon","spawn+rearing",37,141415,0.00810563398163311
+"450","Puget Sound Chinook Salmon","spawn+rearing",42,1355,7.76659763470132e-05
+"451","Puget Sound Chinook Salmon","spawn+rearing",43,17840,0.00102255425684924
+"452","Puget Sound Chinook Salmon","spawn+rearing",44,496,2.84297596074676e-05
+"453","Puget Sound Chinook Salmon","spawn+rearing",47,163,9.34284438713148e-06
+"454","Puget Sound Chinook Salmon","spawn+rearing",53,289,1.65649204164478e-05
+"455","Puget Sound Chinook Salmon","spawn+rearing",55,38324,0.00219665747418667
+"456","Puget Sound Chinook Salmon","spawn+rearing",57,26,1.49026965684306e-06
+"457","Puget Sound Chinook Salmon","spawn+rearing",58,535,3.06651640927321e-05
+"458","Puget Sound Chinook Salmon","spawn+rearing",59,8920,0.000511277128424618
+"459","Puget Sound Chinook Salmon","spawn+rearing",61,320,1.83417803919146e-05
+"460","Puget Sound Chinook Salmon","spawn+rearing",66,6,3.43908382348398e-07
+"461","Puget Sound Chinook Salmon","spawn+rearing",67,21,1.20367933821939e-06
+"462","Puget Sound Chinook Salmon","spawn+rearing",68,1322,7.5774480244097e-05
+"463","Puget Sound Chinook Salmon","spawn+rearing",69,396,2.26979532349943e-05
+"464","Puget Sound Chinook Salmon","spawn+rearing",70,11358,0.000651018567785517
+"465","Puget Sound Chinook Salmon","spawn+rearing",71,3411,0.000195511915365064
+"466","Puget Sound Chinook Salmon","spawn+rearing",76,20,1.14636127449466e-06
+"467","Puget Sound Chinook Salmon","spawn+rearing",77,45,2.57931286761298e-06
+"468","Puget Sound Chinook Salmon","spawn+rearing",111,315642,0.0180919882702022
+"469","Puget Sound Chinook Salmon","spawn+rearing",112,95134,0.00545289667438875
+"470","Puget Sound Chinook Salmon","spawn+rearing",121,860441,0.049318812069373
+"471","Puget Sound Chinook Salmon","spawn+rearing",122,960769,0.055069418766748
+"472","Puget Sound Chinook Salmon","spawn+rearing",123,643397,0.036878270246302
+"473","Puget Sound Chinook Salmon","spawn+rearing",124,226975,0.0130097675139213
+"474","Puget Sound Chinook Salmon","spawn+rearing",131,364345,0.0208835499277878
+"475","Puget Sound Chinook Salmon","spawn+rearing",141,362173,0.0207590550933777
+"476","Puget Sound Chinook Salmon","spawn+rearing",142,9344618,0.535615410007287
+"477","Puget Sound Chinook Salmon","spawn+rearing",143,1537743,0.0881404512662621
+"478","Puget Sound Chinook Salmon","spawn+rearing",152,1046872,0.0600046760076387
+"479","Puget Sound Chinook Salmon","spawn+rearing",176,867956,0.0497495573182643
+"480","Puget Sound Chinook Salmon","spawn+rearing",190,267058,0.0153072474621997
+"481","Puget Sound Chinook Salmon","spawn+rearing",195,163214,0.00935511045276857
+"482","Puget Sound Chinook Salmon","spawn+rearing",206,9,5.15862573522597e-07
+"483","Puget Sound Chinook Salmon","spawn+rearing",214,44,2.52199480388825e-06
+"484","Puget Sound Chinook Salmon","spawn+rearing",219,4055,0.000232424748403792
+"485","Puget Sound Chinook Salmon","spawn+rearing",221,108,6.19035088227116e-06
+"486","Puget Sound Chinook Salmon","spawn+rearing",222,192,1.10050682351487e-05
+"487","Puget Sound Chinook Salmon","spawn+rearing",229,1763,0.000101051746346704
+"488","Puget Sound Chinook Salmon","spawn+rearing",242,51428,0.00294775338123557
+"489","Puget Sound Chinook Salmon","spawn+rearing",243,604,3.46201104897387e-05
+"490","Puget Sound Chinook Salmon","spawn+rearing",250,531,3.04358918378332e-05
+"491","Puget Sound Chinook Salmon","rearing+migration",0,766,0.000554502692161243
+"492","Puget Sound Chinook Salmon","rearing+migration",1,32756,0.0237118670815061
+"493","Puget Sound Chinook Salmon","rearing+migration",6,1,7.23893853996401e-07
+"494","Puget Sound Chinook Salmon","rearing+migration",12,19,1.37539832259316e-05
+"495","Puget Sound Chinook Salmon","rearing+migration",21,14237,0.0103060767993468
+"496","Puget Sound Chinook Salmon","rearing+migration",23,682,0.000493695608425545
+"497","Puget Sound Chinook Salmon","rearing+migration",24,432,0.000312722144926445
+"498","Puget Sound Chinook Salmon","rearing+migration",27,1133,0.000820171736577922
+"499","Puget Sound Chinook Salmon","rearing+migration",36,1170,0.000846955809175789
+"500","Puget Sound Chinook Salmon","rearing+migration",37,24201,0.0175189551605669
+"501","Puget Sound Chinook Salmon","rearing+migration",42,3091,0.00223755590270287
+"502","Puget Sound Chinook Salmon","rearing+migration",43,21767,0.0157569975199397
+"503","Puget Sound Chinook Salmon","rearing+migration",44,1592,0.00115243901556227
+"504","Puget Sound Chinook Salmon","rearing+migration",47,8,5.79115083197121e-06
+"505","Puget Sound Chinook Salmon","rearing+migration",53,59,4.27097373857876e-05
+"506","Puget Sound Chinook Salmon","rearing+migration",55,1172,0.000848403596883782
+"507","Puget Sound Chinook Salmon","rearing+migration",57,5,3.619469269982e-06
+"508","Puget Sound Chinook Salmon","rearing+migration",58,44,3.18513295758416e-05
+"509","Puget Sound Chinook Salmon","rearing+migration",59,5281,0.00382288344295499
+"510","Puget Sound Chinook Salmon","rearing+migration",61,93,6.73221284216653e-05
+"511","Puget Sound Chinook Salmon","rearing+migration",68,112,8.10761116475969e-05
+"512","Puget Sound Chinook Salmon","rearing+migration",69,33,2.38884971818812e-05
+"513","Puget Sound Chinook Salmon","rearing+migration",70,1082,0.000783253150024106
+"514","Puget Sound Chinook Salmon","rearing+migration",71,1145,0.000828858462825879
+"515","Puget Sound Chinook Salmon","rearing+migration",77,25,1.809734634991e-05
+"516","Puget Sound Chinook Salmon","rearing+migration",111,39284,0.0284374461603946
+"517","Puget Sound Chinook Salmon","rearing+migration",121,89195,0.064567712307209
+"518","Puget Sound Chinook Salmon","rearing+migration",122,125124,0.0905764945874457
+"519","Puget Sound Chinook Salmon","rearing+migration",123,113496,0.0821590568531755
+"520","Puget Sound Chinook Salmon","rearing+migration",124,64078,0.0463856703763814
+"521","Puget Sound Chinook Salmon","rearing+migration",131,3007,0.00217674881896718
+"522","Puget Sound Chinook Salmon","rearing+migration",141,34974,0.0253174636496701
+"523","Puget Sound Chinook Salmon","rearing+migration",142,416268,0.301333846815374
+"524","Puget Sound Chinook Salmon","rearing+migration",143,156154,0.113038920876954
+"525","Puget Sound Chinook Salmon","rearing+migration",152,54324,0.0393248097245005
+"526","Puget Sound Chinook Salmon","rearing+migration",176,106471,0.0770737025288508
+"527","Puget Sound Chinook Salmon","rearing+migration",190,25046,0.0181306454671939
+"528","Puget Sound Chinook Salmon","rearing+migration",195,25140,0.0181986914894695
+"529","Puget Sound Chinook Salmon","rearing+migration",206,5,3.619469269982e-06
+"530","Puget Sound Chinook Salmon","rearing+migration",214,368,0.000266392938270676
+"531","Puget Sound Chinook Salmon","rearing+migration",219,7089,0.00513168353098049
+"532","Puget Sound Chinook Salmon","rearing+migration",221,27,1.95451340579028e-05
+"533","Puget Sound Chinook Salmon","rearing+migration",222,499,0.000361223033144204
+"534","Puget Sound Chinook Salmon","rearing+migration",229,2297,0.00166278418262973
+"535","Puget Sound Chinook Salmon","rearing+migration",242,7491,0.00542268886028704
+"536","Puget Sound Chinook Salmon","rearing+migration",243,151,0.000109307971953457
+"537","Puget Sound Chinook Salmon","rearing+migration",250,24,1.73734524959136e-05
+"538","Puget Sound Chinook Salmon","migration",0,4378,0.000946191363637248
+"539","Puget Sound Chinook Salmon","migration",1,18110,0.00391400767370273
+"540","Puget Sound Chinook Salmon","migration",6,1,2.16124112297224e-07
+"541","Puget Sound Chinook Salmon","migration",12,4,8.64496449188897e-07
+"542","Puget Sound Chinook Salmon","migration",21,8464,0.00182927448648371
+"543","Puget Sound Chinook Salmon","migration",23,265,5.72728897587644e-05
+"544","Puget Sound Chinook Salmon","migration",24,214,4.6250560031606e-05
+"545","Puget Sound Chinook Salmon","migration",27,605,0.000130755087939821
+"546","Puget Sound Chinook Salmon","migration",28,8,1.72899289837779e-06
+"547","Puget Sound Chinook Salmon","migration",36,1260,0.000272316381494503
+"548","Puget Sound Chinook Salmon","migration",37,32361,0.00699399239805047
+"549","Puget Sound Chinook Salmon","migration",42,1646,0.000355740288841231
+"550","Puget Sound Chinook Salmon","migration",43,14782,0.00319474662797757
+"551","Puget Sound Chinook Salmon","migration",44,568,0.000122758495784823
+"552","Puget Sound Chinook Salmon","migration",47,1,2.16124112297224e-07
+"553","Puget Sound Chinook Salmon","migration",53,14,3.02573757216114e-06
+"554","Puget Sound Chinook Salmon","migration",55,8222,0.00177697245130778
+"555","Puget Sound Chinook Salmon","migration",57,3,6.48372336891673e-07
+"556","Puget Sound Chinook Salmon","migration",58,47,1.01578332779695e-05
+"557","Puget Sound Chinook Salmon","migration",59,3675,0.000794256112692299
+"558","Puget Sound Chinook Salmon","migration",61,92,1.98834183313446e-05
+"559","Puget Sound Chinook Salmon","migration",66,3,6.48372336891673e-07
+"560","Puget Sound Chinook Salmon","migration",68,234,5.05730422775505e-05
+"561","Puget Sound Chinook Salmon","migration",69,41,8.8610886041862e-06
+"562","Puget Sound Chinook Salmon","migration",70,5505,0.00118976323819622
+"563","Puget Sound Chinook Salmon","migration",71,1120,0.000242059005772891
+"564","Puget Sound Chinook Salmon","migration",76,30,6.48372336891673e-06
+"565","Puget Sound Chinook Salmon","migration",77,20,4.32248224594449e-06
+"566","Puget Sound Chinook Salmon","migration",111,63086,0.0136344057483827
+"567","Puget Sound Chinook Salmon","migration",112,21391,0.00462311088614992
+"568","Puget Sound Chinook Salmon","migration",121,235709,0.0509423983854664
+"569","Puget Sound Chinook Salmon","migration",122,247802,0.0535559872754768
+"570","Puget Sound Chinook Salmon","migration",123,140800,0.0304302750114492
+"571","Puget Sound Chinook Salmon","migration",124,55575,0.0120110975409182
+"572","Puget Sound Chinook Salmon","migration",131,108208,0.023386357943458
+"573","Puget Sound Chinook Salmon","migration",141,102919,0.022243277513518
+"574","Puget Sound Chinook Salmon","migration",142,2583859,0.558434232676194
+"575","Puget Sound Chinook Salmon","migration",143,327492,0.0707789177844426
+"576","Puget Sound Chinook Salmon","migration",152,292792,0.0632794110877289
+"577","Puget Sound Chinook Salmon","migration",176,221424,0.0478550654413006
+"578","Puget Sound Chinook Salmon","migration",190,66057,0.0142765104860177
+"579","Puget Sound Chinook Salmon","migration",195,36521,0.00789306870520693
+"580","Puget Sound Chinook Salmon","migration",206,11,2.37736523526947e-06
+"581","Puget Sound Chinook Salmon","migration",214,246,5.31665316251172e-05
+"582","Puget Sound Chinook Salmon","migration",219,3563,0.00077005021211501
+"583","Puget Sound Chinook Salmon","migration",221,12,2.59348934756669e-06
+"584","Puget Sound Chinook Salmon","migration",222,187,4.04152089995809e-05
+"585","Puget Sound Chinook Salmon","migration",229,1573,0.000339963228643534
+"586","Puget Sound Chinook Salmon","migration",242,15929,0.00344264098478249
+"587","Puget Sound Chinook Salmon","migration",243,50,1.08062056148612e-05
+"588","Puget Sound Chinook Salmon","migration",250,92,1.98834183313446e-05
+"589","Puget Sound Chinook Salmon",NA,0,1169,0.000253852135582665
+"590","Puget Sound Chinook Salmon",NA,1,4601,0.000999122049457519
+"591","Puget Sound Chinook Salmon",NA,12,2,4.34306476617048e-07
+"592","Puget Sound Chinook Salmon",NA,21,350,7.60036334079834e-05
+"593","Puget Sound Chinook Salmon",NA,23,6,1.30291942985114e-06
+"594","Puget Sound Chinook Salmon",NA,24,4,8.68612953234096e-07
+"595","Puget Sound Chinook Salmon",NA,27,11,2.38868562139376e-06
+"596","Puget Sound Chinook Salmon",NA,28,12,2.60583885970229e-06
+"597","Puget Sound Chinook Salmon",NA,36,185,4.01733490870769e-05
+"598","Puget Sound Chinook Salmon",NA,37,4279,0.000929198706722174
+"599","Puget Sound Chinook Salmon",NA,42,10,2.17153238308524e-06
+"600","Puget Sound Chinook Salmon",NA,43,68,1.47664202049796e-05
+"601","Puget Sound Chinook Salmon",NA,47,8,1.73722590646819e-06
+"602","Puget Sound Chinook Salmon",NA,53,359,7.79580125527601e-05
+"603","Puget Sound Chinook Salmon",NA,55,143,3.10529130781189e-05
+"604","Puget Sound Chinook Salmon",NA,57,1,2.17153238308524e-07
+"605","Puget Sound Chinook Salmon",NA,58,8,1.73722590646819e-06
+"606","Puget Sound Chinook Salmon",NA,59,347,7.53521736930578e-05
+"607","Puget Sound Chinook Salmon",NA,61,293,6.36258988243975e-05
+"608","Puget Sound Chinook Salmon",NA,68,86,1.86751784945331e-05
+"609","Puget Sound Chinook Salmon",NA,69,4,8.68612953234096e-07
+"610","Puget Sound Chinook Salmon",NA,70,338,7.33977945482811e-05
+"611","Puget Sound Chinook Salmon",NA,71,5,1.08576619154262e-06
+"612","Puget Sound Chinook Salmon",NA,77,4,8.68612953234096e-07
+"613","Puget Sound Chinook Salmon",NA,111,54058,0.0117388697564822
+"614","Puget Sound Chinook Salmon",NA,112,57535,0.0124939115660809
+"615","Puget Sound Chinook Salmon",NA,121,88677,0.019256497713485
+"616","Puget Sound Chinook Salmon",NA,122,71002,0.0154183142263818
+"617","Puget Sound Chinook Salmon",NA,123,48023,0.0104283499632902
+"618","Puget Sound Chinook Salmon",NA,124,20043,0.00435240235541775
+"619","Puget Sound Chinook Salmon",NA,131,375163,0.0814678603435408
+"620","Puget Sound Chinook Salmon",NA,141,20962,0.00455196618142328
+"621","Puget Sound Chinook Salmon",NA,142,3257233,0.707318693875388
+"622","Puget Sound Chinook Salmon",NA,143,98354,0.0213578896005966
+"623","Puget Sound Chinook Salmon",NA,152,402645,0.0874356656387356
+"624","Puget Sound Chinook Salmon",NA,176,73765,0.0160183086238283
+"625","Puget Sound Chinook Salmon",NA,190,13418,0.00291376215162377
+"626","Puget Sound Chinook Salmon",NA,195,10903,0.00236762175727784
+"627","Puget Sound Chinook Salmon",NA,214,4,8.68612953234096e-07
+"628","Puget Sound Chinook Salmon",NA,219,132,2.86642274567252e-05
+"629","Puget Sound Chinook Salmon",NA,221,4,8.68612953234096e-07
+"630","Puget Sound Chinook Salmon",NA,229,58,1.25948878218944e-05
+"631","Puget Sound Chinook Salmon",NA,242,752,0.00016329923520801
+"632","Puget Sound Chinook Salmon",NA,243,3,6.51459714925572e-07
+"633","Puget Sound Chinook Salmon",NA,250,16,3.47445181293638e-06
+"634","Southern OR & Northern CA Coastal Chinook Salmon",NA,0,11274,0.000592720359329226
+"635","Southern OR & Northern CA Coastal Chinook Salmon",NA,1,1564,8.22258862862258e-05
+"636","Southern OR & Northern CA Coastal Chinook Salmon",NA,3,1,5.25740960909372e-08
+"637","Southern OR & Northern CA Coastal Chinook Salmon",NA,12,213,1.11982824673696e-05
+"638","Southern OR & Northern CA Coastal Chinook Salmon",NA,14,15,7.88611441364058e-07
+"639","Southern OR & Northern CA Coastal Chinook Salmon",NA,21,1410,7.41294754882215e-05
+"640","Southern OR & Northern CA Coastal Chinook Salmon",NA,23,290,1.52464878663718e-05
+"641","Southern OR & Northern CA Coastal Chinook Salmon",NA,24,2185,0.000114874399958698
+"642","Southern OR & Northern CA Coastal Chinook Salmon",NA,27,12,6.30889153091246e-07
+"643","Southern OR & Northern CA Coastal Chinook Salmon",NA,28,887,4.66332232326613e-05
+"644","Southern OR & Northern CA Coastal Chinook Salmon",NA,36,5900,0.00031018716693653
+"645","Southern OR & Northern CA Coastal Chinook Salmon",NA,37,30412,0.00159888341031758
+"646","Southern OR & Northern CA Coastal Chinook Salmon",NA,39,1,5.25740960909372e-08
+"647","Southern OR & Northern CA Coastal Chinook Salmon",NA,41,3,1.57722288272812e-07
+"648","Southern OR & Northern CA Coastal Chinook Salmon",NA,42,108,5.67800237782122e-06
+"649","Southern OR & Northern CA Coastal Chinook Salmon",NA,43,3,1.57722288272812e-07
+"650","Southern OR & Northern CA Coastal Chinook Salmon",NA,44,74,3.89048311072935e-06
+"651","Southern OR & Northern CA Coastal Chinook Salmon",NA,49,2,1.05148192181874e-07
+"652","Southern OR & Northern CA Coastal Chinook Salmon",NA,53,9,4.73166864818435e-07
+"653","Southern OR & Northern CA Coastal Chinook Salmon",NA,56,99,5.20483551300278e-06
+"654","Southern OR & Northern CA Coastal Chinook Salmon",NA,57,5,2.62870480454686e-07
+"655","Southern OR & Northern CA Coastal Chinook Salmon",NA,58,103,5.41513189736653e-06
+"656","Southern OR & Northern CA Coastal Chinook Salmon",NA,59,737,3.87471088190207e-05
+"657","Southern OR & Northern CA Coastal Chinook Salmon",NA,61,3001,0.000157774862368903
+"658","Southern OR & Northern CA Coastal Chinook Salmon",NA,66,1042,5.47822081267566e-05
+"659","Southern OR & Northern CA Coastal Chinook Salmon",NA,67,98,5.15226141691185e-06
+"660","Southern OR & Northern CA Coastal Chinook Salmon",NA,68,521,2.73911040633783e-05
+"661","Southern OR & Northern CA Coastal Chinook Salmon",NA,69,13928,0.000732252010354573
+"662","Southern OR & Northern CA Coastal Chinook Salmon",NA,70,327,1.71917294217365e-05
+"663","Southern OR & Northern CA Coastal Chinook Salmon",NA,71,577,3.03352534444708e-05
+"664","Southern OR & Northern CA Coastal Chinook Salmon",NA,75,9,4.73166864818435e-07
+"665","Southern OR & Northern CA Coastal Chinook Salmon",NA,76,421,2.21336944542846e-05
+"666","Southern OR & Northern CA Coastal Chinook Salmon",NA,77,22667,0.00119169703609327
+"667","Southern OR & Northern CA Coastal Chinook Salmon",NA,111,84934,0.00446532827738766
+"668","Southern OR & Northern CA Coastal Chinook Salmon",NA,112,3,1.57722288272812e-07
+"669","Southern OR & Northern CA Coastal Chinook Salmon",NA,121,709414,0.0372967998042561
+"670","Southern OR & Northern CA Coastal Chinook Salmon",NA,122,198976,0.0104609833437903
+"671","Southern OR & Northern CA Coastal Chinook Salmon",NA,123,109939,0.00577994355014155
+"672","Southern OR & Northern CA Coastal Chinook Salmon",NA,124,42429,0.00223066632304237
+"673","Southern OR & Northern CA Coastal Chinook Salmon",NA,131,32599,0.00171386295846846
+"674","Southern OR & Northern CA Coastal Chinook Salmon",NA,141,24609,0.00129379593070187
+"675","Southern OR & Northern CA Coastal Chinook Salmon",NA,142,12266580,0.644904355627169
+"676","Southern OR & Northern CA Coastal Chinook Salmon",NA,143,448731,0.0235916267129823
+"677","Southern OR & Northern CA Coastal Chinook Salmon",NA,152,2948694,0.15502492169877
+"678","Southern OR & Northern CA Coastal Chinook Salmon",NA,176,1965166,0.103316826118643
+"679","Southern OR & Northern CA Coastal Chinook Salmon",NA,190,28021,0.00147317874656415
+"680","Southern OR & Northern CA Coastal Chinook Salmon",NA,195,62200,0.00327010877685629
+"681","Southern OR & Northern CA Coastal Chinook Salmon",NA,204,47,2.47098251627405e-06
+"682","Southern OR & Northern CA Coastal Chinook Salmon",NA,205,280,1.47207469054624e-05
+"683","Southern OR & Northern CA Coastal Chinook Salmon",NA,208,78,4.1007794950931e-06
+"684","Southern OR & Northern CA Coastal Chinook Salmon",NA,220,15,7.88611441364058e-07
+"685","Southern OR & Northern CA Coastal Chinook Salmon",NA,222,6,3.15444576545623e-07
+"686","Southern OR & Northern CA Coastal Chinook Salmon",NA,224,6,3.15444576545623e-07
+"687","Southern OR & Northern CA Coastal Chinook Salmon",NA,225,3,1.57722288272812e-07
+"688","Southern OR & Northern CA Coastal Chinook Salmon",NA,228,11,5.78315057000309e-07
+"689","Southern OR & Northern CA Coastal Chinook Salmon",NA,242,113,5.9408728582759e-06
+"690","Southern OR & Northern CA Coastal Chinook Salmon",NA,244,1,5.25740960909372e-08
+"691","Southern OR & Northern CA Coastal Chinook Salmon",NA,246,9,4.73166864818435e-07
+"692","Southern OR & Northern CA Coastal Chinook Salmon",NA,247,12,6.30889153091246e-07
+"693","Upper Klamath-Trinity Rivers Chinook Salmon",NA,1,7,3.74845309373221e-07
+"694","Upper Klamath-Trinity Rivers Chinook Salmon",NA,14,238,1.27447405186895e-05
+"695","Upper Klamath-Trinity Rivers Chinook Salmon",NA,21,1605,8.59466745062886e-05
+"696","Upper Klamath-Trinity Rivers Chinook Salmon",NA,23,2047,0.000109615478326712
+"697","Upper Klamath-Trinity Rivers Chinook Salmon",NA,24,4990,0.000267211156253196
+"698","Upper Klamath-Trinity Rivers Chinook Salmon",NA,27,949,5.08183140850267e-05
+"699","Upper Klamath-Trinity Rivers Chinook Salmon",NA,28,12,6.42591958925522e-07
+"700","Upper Klamath-Trinity Rivers Chinook Salmon",NA,36,247927,0.0132763247167107
+"701","Upper Klamath-Trinity Rivers Chinook Salmon",NA,37,121609,0.00651208046108115
+"702","Upper Klamath-Trinity Rivers Chinook Salmon",NA,43,1107,5.92791082108794e-05
+"703","Upper Klamath-Trinity Rivers Chinook Salmon",NA,49,3,1.60647989731381e-07
+"704","Upper Klamath-Trinity Rivers Chinook Salmon",NA,57,12,6.42591958925522e-07
+"705","Upper Klamath-Trinity Rivers Chinook Salmon",NA,58,54,2.89166381516485e-06
+"706","Upper Klamath-Trinity Rivers Chinook Salmon",NA,59,3,1.60647989731381e-07
+"707","Upper Klamath-Trinity Rivers Chinook Salmon",NA,61,3611,0.000193366630306672
+"708","Upper Klamath-Trinity Rivers Chinook Salmon",NA,66,29,1.55293056740334e-06
+"709","Upper Klamath-Trinity Rivers Chinook Salmon",NA,68,5,2.67746649552301e-07
+"710","Upper Klamath-Trinity Rivers Chinook Salmon",NA,69,344,1.84209694891983e-05
+"711","Upper Klamath-Trinity Rivers Chinook Salmon",NA,71,15,8.03239948656902e-07
+"712","Upper Klamath-Trinity Rivers Chinook Salmon",NA,75,149,7.97885015665856e-06
+"713","Upper Klamath-Trinity Rivers Chinook Salmon",NA,76,22,1.17808525803012e-06
+"714","Upper Klamath-Trinity Rivers Chinook Salmon",NA,77,9,4.81943969194141e-07
+"715","Upper Klamath-Trinity Rivers Chinook Salmon",NA,111,41194,0.0022059110963315
+"716","Upper Klamath-Trinity Rivers Chinook Salmon",NA,112,2590,0.000138692764468092
+"717","Upper Klamath-Trinity Rivers Chinook Salmon",NA,121,783366,0.0419487243746375
+"718","Upper Klamath-Trinity Rivers Chinook Salmon",NA,122,106063,0.00567960257829314
+"719","Upper Klamath-Trinity Rivers Chinook Salmon",NA,123,59067,0.00316299826982115
+"720","Upper Klamath-Trinity Rivers Chinook Salmon",NA,124,13511,0.000723504996420227
+"721","Upper Klamath-Trinity Rivers Chinook Salmon",NA,131,91960,0.00492439637856592
+"722","Upper Klamath-Trinity Rivers Chinook Salmon",NA,141,18996,0.0010172230709791
+"723","Upper Klamath-Trinity Rivers Chinook Salmon",NA,142,10967666,0.587311164981737
+"724","Upper Klamath-Trinity Rivers Chinook Salmon",NA,143,60851,0.00325853027438141
+"725","Upper Klamath-Trinity Rivers Chinook Salmon",NA,152,5100541,0.273130552730828
+"726","Upper Klamath-Trinity Rivers Chinook Salmon",NA,176,1014882,0.0543462510381876
+"727","Upper Klamath-Trinity Rivers Chinook Salmon",NA,190,6488,0.000347428052459066
+"728","Upper Klamath-Trinity Rivers Chinook Salmon",NA,195,17482,0.000936149385494665
+"729","Upper Klamath-Trinity Rivers Chinook Salmon",NA,204,6,3.21295979462761e-07
+"730","Upper Klamath-Trinity Rivers Chinook Salmon",NA,205,4912,0.00026303430852018
+"731","Upper Klamath-Trinity Rivers Chinook Salmon",NA,208,1,5.35493299104602e-08
+"732","Upper Klamath-Trinity Rivers Chinook Salmon",NA,209,36,1.92777587677657e-06
+"733","Upper Klamath-Trinity Rivers Chinook Salmon",NA,220,11,5.89042629015062e-07
+"734","Upper Willamette River Chinook Salmon","spawn+rearing",1,25505,0.00199489984554681
+"735","Upper Willamette River Chinook Salmon","spawn+rearing",4,2,1.56432060031116e-07
+"736","Upper Willamette River Chinook Salmon","spawn+rearing",12,11490,0.000898702184878761
+"737","Upper Willamette River Chinook Salmon","spawn+rearing",14,9610,0.000751656048449512
+"738","Upper Willamette River Chinook Salmon","spawn+rearing",21,337,2.6358802115243e-05
+"739","Upper Willamette River Chinook Salmon","spawn+rearing",23,8694,0.000680010164955261
+"740","Upper Willamette River Chinook Salmon","spawn+rearing",24,24260,0.00189752088817744
+"741","Upper Willamette River Chinook Salmon","spawn+rearing",27,105,8.21268315163359e-06
+"742","Upper Willamette River Chinook Salmon","spawn+rearing",28,3098,0.000242313260988199
+"743","Upper Willamette River Chinook Salmon","spawn+rearing",31,681,5.3265116440595e-05
+"744","Upper Willamette River Chinook Salmon","spawn+rearing",35,23,1.79896869035783e-06
+"745","Upper Willamette River Chinook Salmon","spawn+rearing",36,1937,0.000151504450140136
+"746","Upper Willamette River Chinook Salmon","spawn+rearing",37,30335,0.00237268327052195
+"747","Upper Willamette River Chinook Salmon","spawn+rearing",39,795,6.21817438623686e-05
+"748","Upper Willamette River Chinook Salmon","spawn+rearing",41,658,5.14661477502371e-05
+"749","Upper Willamette River Chinook Salmon","spawn+rearing",42,9766,0.000763857749131939
+"750","Upper Willamette River Chinook Salmon","spawn+rearing",43,87,6.80479461135354e-06
+"751","Upper Willamette River Chinook Salmon","spawn+rearing",44,8414,0.000658109676550905
+"752","Upper Willamette River Chinook Salmon","spawn+rearing",47,2,1.56432060031116e-07
+"753","Upper Willamette River Chinook Salmon","spawn+rearing",49,310,2.4246969304823e-05
+"754","Upper Willamette River Chinook Salmon","spawn+rearing",53,1129,8.83058978875649e-05
+"755","Upper Willamette River Chinook Salmon","spawn+rearing",56,24909,0.00194828309165753
+"756","Upper Willamette River Chinook Salmon","spawn+rearing",57,1333,0.000104261968010739
+"757","Upper Willamette River Chinook Salmon","spawn+rearing",58,20032,0.00156682351327166
+"758","Upper Willamette River Chinook Salmon","spawn+rearing",59,490652,0.0383768515591935
+"759","Upper Willamette River Chinook Salmon","spawn+rearing",61,1951,0.000152599474560354
+"760","Upper Willamette River Chinook Salmon","spawn+rearing",66,4279,0.000334686392436572
+"761","Upper Willamette River Chinook Salmon","spawn+rearing",67,28,2.19004884043562e-06
+"762","Upper Willamette River Chinook Salmon","spawn+rearing",68,70,5.47512210108906e-06
+"763","Upper Willamette River Chinook Salmon","spawn+rearing",69,2782,0.000217596995503282
+"764","Upper Willamette River Chinook Salmon","spawn+rearing",70,5316,0.000415796415562706
+"765","Upper Willamette River Chinook Salmon","spawn+rearing",71,140146,0.0109616637425604
+"766","Upper Willamette River Chinook Salmon","spawn+rearing",76,250,1.95540075038895e-05
+"767","Upper Willamette River Chinook Salmon","spawn+rearing",77,199,1.5564989973096e-05
+"768","Upper Willamette River Chinook Salmon","spawn+rearing",111,132257,0.0103446174817676
+"769","Upper Willamette River Chinook Salmon","spawn+rearing",112,38,2.9722091405912e-06
+"770","Upper Willamette River Chinook Salmon","spawn+rearing",121,247559,0.0193630821746215
+"771","Upper Willamette River Chinook Salmon","spawn+rearing",122,277152,0.0216777291508719
+"772","Upper Willamette River Chinook Salmon","spawn+rearing",123,224195,0.017535642849338
+"773","Upper Willamette River Chinook Salmon","spawn+rearing",124,87056,0.00680917470903441
+"774","Upper Willamette River Chinook Salmon","spawn+rearing",131,41494,0.00324549594946556
+"775","Upper Willamette River Chinook Salmon","spawn+rearing",141,11399,0.000891584526147345
+"776","Upper Willamette River Chinook Salmon","spawn+rearing",142,8632231,0.67517883899723
+"777","Upper Willamette River Chinook Salmon","spawn+rearing",143,149109,0.0116627140195898
+"778","Upper Willamette River Chinook Salmon","spawn+rearing",152,719580,0.0562826908785952
+"779","Upper Willamette River Chinook Salmon","spawn+rearing",176,1270978,0.0994108533971138
+"780","Upper Willamette River Chinook Salmon","spawn+rearing",190,80256,0.00627730570492862
+"781","Upper Willamette River Chinook Salmon","spawn+rearing",195,61414,0.00480355926737548
+"782","Upper Willamette River Chinook Salmon","spawn+rearing",205,206,1.61125021832049e-05
+"783","Upper Willamette River Chinook Salmon","spawn+rearing",206,6,4.69296180093348e-07
+"784","Upper Willamette River Chinook Salmon","spawn+rearing",208,1455,0.000113804323672637
+"785","Upper Willamette River Chinook Salmon","spawn+rearing",214,71,5.55333813110461e-06
+"786","Upper Willamette River Chinook Salmon","spawn+rearing",219,12,9.38592360186695e-07
+"787","Upper Willamette River Chinook Salmon","spawn+rearing",220,282,2.20569204643873e-05
+"788","Upper Willamette River Chinook Salmon","spawn+rearing",221,19,1.4861045702956e-06
+"789","Upper Willamette River Chinook Salmon","spawn+rearing",222,5308,0.000415170687322582
+"790","Upper Willamette River Chinook Salmon","spawn+rearing",224,744,5.81927263315751e-05
+"791","Upper Willamette River Chinook Salmon","spawn+rearing",225,24,1.87718472037339e-06
+"792","Upper Willamette River Chinook Salmon","spawn+rearing",228,73,5.70977019113573e-06
+"793","Upper Willamette River Chinook Salmon","spawn+rearing",229,1111,8.68980093472849e-05
+"794","Upper Willamette River Chinook Salmon","spawn+rearing",242,5368,0.000419863649123515
+"795","Upper Willamette River Chinook Salmon","spawn+rearing",243,3,2.34648090046674e-07
+"796","Upper Willamette River Chinook Salmon","spawn+rearing",244,1131,8.8462329947596e-05
+"797","Upper Willamette River Chinook Salmon","spawn+rearing",246,3718,0.000290807199597844
+"798","Upper Willamette River Chinook Salmon","spawn+rearing",247,1669,0.000130542554095966
+"799","Upper Willamette River Chinook Salmon","rearing+migration",1,24003,0.00543789521760643
+"800","Upper Willamette River Chinook Salmon","rearing+migration",4,5,1.13275324284598e-06
+"801","Upper Willamette River Chinook Salmon","rearing+migration",12,5916,0.00134027363693537
+"802","Upper Willamette River Chinook Salmon","rearing+migration",14,4317,0.000978019149873222
+"803","Upper Willamette River Chinook Salmon","rearing+migration",21,1117,0.000253057074451793
+"804","Upper Willamette River Chinook Salmon","rearing+migration",23,8626,0.00195422589455789
+"805","Upper Willamette River Chinook Salmon","rearing+migration",24,30710,0.00695737041756003
+"806","Upper Willamette River Chinook Salmon","rearing+migration",27,479,0.000108517760664645
+"807","Upper Willamette River Chinook Salmon","rearing+migration",28,7201,0.00163139122034679
+"808","Upper Willamette River Chinook Salmon","rearing+migration",31,539,0.000122110799578797
+"809","Upper Willamette River Chinook Salmon","rearing+migration",36,4428,0.0010031662718644
+"810","Upper Willamette River Chinook Salmon","rearing+migration",37,45315,0.0102661426399131
+"811","Upper Willamette River Chinook Salmon","rearing+migration",39,654,0.000148164124164255
+"812","Upper Willamette River Chinook Salmon","rearing+migration",41,320,7.2496207542143e-05
+"813","Upper Willamette River Chinook Salmon","rearing+migration",42,8550,0.00193700804526663
+"814","Upper Willamette River Chinook Salmon","rearing+migration",43,686,0.000155413744918469
+"815","Upper Willamette River Chinook Salmon","rearing+migration",44,10843,0.0024564886824358
+"816","Upper Willamette River Chinook Salmon","rearing+migration",47,4,9.06202594276787e-07
+"817","Upper Willamette River Chinook Salmon","rearing+migration",49,1037,0.000234933022566257
+"818","Upper Willamette River Chinook Salmon","rearing+migration",53,1179,0.000267103214663083
+"819","Upper Willamette River Chinook Salmon","rearing+migration",56,11587,0.00262504236497128
+"820","Upper Willamette River Chinook Salmon","rearing+migration",57,880,0.000199364570740893
+"821","Upper Willamette River Chinook Salmon","rearing+migration",58,31928,0.00723330910751731
+"822","Upper Willamette River Chinook Salmon","rearing+migration",59,671879,0.152214623210023
+"823","Upper Willamette River Chinook Salmon","rearing+migration",61,1769,0.000400768097318909
+"824","Upper Willamette River Chinook Salmon","rearing+migration",66,6047,0.00136995177189793
+"825","Upper Willamette River Chinook Salmon","rearing+migration",68,2,4.53101297138393e-07
+"826","Upper Willamette River Chinook Salmon","rearing+migration",69,7722,0.00174942410825134
+"827","Upper Willamette River Chinook Salmon","rearing+migration",70,2356,0.000533753328029028
+"828","Upper Willamette River Chinook Salmon","rearing+migration",71,165541,0.0375034209147934
+"829","Upper Willamette River Chinook Salmon","rearing+migration",76,224,5.07473452795001e-05
+"830","Upper Willamette River Chinook Salmon","rearing+migration",77,11,2.49205713426116e-06
+"831","Upper Willamette River Chinook Salmon","rearing+migration",111,24679,0.00559104345603921
+"832","Upper Willamette River Chinook Salmon","rearing+migration",121,146903,0.0332809699267607
+"833","Upper Willamette River Chinook Salmon","rearing+migration",122,154797,0.0350693607465659
+"834","Upper Willamette River Chinook Salmon","rearing+migration",123,97642,0.0221208584275935
+"835","Upper Willamette River Chinook Salmon","rearing+migration",124,32740,0.0074172682341555
+"836","Upper Willamette River Chinook Salmon","rearing+migration",131,1289,0.000292023786005695
+"837","Upper Willamette River Chinook Salmon","rearing+migration",141,11960,0.00270954575688759
+"838","Upper Willamette River Chinook Salmon","rearing+migration",142,1317700,0.29852578961963
+"839","Upper Willamette River Chinook Salmon","rearing+migration",143,144716,0.0327855036583399
+"840","Upper Willamette River Chinook Salmon","rearing+migration",152,149561,0.0338831415506576
+"841","Upper Willamette River Chinook Salmon","rearing+migration",176,1117588,0.253190286233151
+"842","Upper Willamette River Chinook Salmon","rearing+migration",190,68125,0.0154337629337765
+"843","Upper Willamette River Chinook Salmon","rearing+migration",195,49588,0.0112341935612493
+"844","Upper Willamette River Chinook Salmon","rearing+migration",205,684,0.000154960643621331
+"845","Upper Willamette River Chinook Salmon","rearing+migration",206,1,2.26550648569197e-07
+"846","Upper Willamette River Chinook Salmon","rearing+migration",208,1587,0.000359535879279315
+"847","Upper Willamette River Chinook Salmon","rearing+migration",214,126,2.85453817197188e-05
+"848","Upper Willamette River Chinook Salmon","rearing+migration",219,68,1.54054441027054e-05
+"849","Upper Willamette River Chinook Salmon","rearing+migration",220,837,0.000189622892852418
+"850","Upper Willamette River Chinook Salmon","rearing+migration",221,38,8.60892464562948e-06
+"851","Upper Willamette River Chinook Salmon","rearing+migration",222,3158,0.000715446948181523
+"852","Upper Willamette River Chinook Salmon","rearing+migration",224,1569,0.00035545796760507
+"853","Upper Willamette River Chinook Salmon","rearing+migration",225,48,1.08744311313214e-05
+"854","Upper Willamette River Chinook Salmon","rearing+migration",228,8,1.81240518855357e-06
+"855","Upper Willamette River Chinook Salmon","rearing+migration",229,528,0.000119618742444536
+"856","Upper Willamette River Chinook Salmon","rearing+migration",242,10337,0.00234185405425979
+"857","Upper Willamette River Chinook Salmon","rearing+migration",243,47,1.06478804827522e-05
+"858","Upper Willamette River Chinook Salmon","rearing+migration",244,2725,0.000617350517351061
+"859","Upper Willamette River Chinook Salmon","rearing+migration",246,15537,0.00351991742681961
+"860","Upper Willamette River Chinook Salmon","rearing+migration",247,3563,0.000807199960852048
+"861","Upper Willamette River Chinook Salmon",NA,1,4129,0.00159650277348375
+"862","Upper Willamette River Chinook Salmon",NA,12,2171,0.000839430254597534
+"863","Upper Willamette River Chinook Salmon",NA,14,623,0.000240886710554704
+"864","Upper Willamette River Chinook Salmon",NA,21,84,3.24791070410838e-05
+"865","Upper Willamette River Chinook Salmon",NA,23,2616,0.00101149219070804
+"866","Upper Willamette River Chinook Salmon",NA,24,10433,0.00403398242570984
+"867","Upper Willamette River Chinook Salmon",NA,27,25,9.66640090508445e-06
+"868","Upper Willamette River Chinook Salmon",NA,28,2110,0.000815844236389127
+"869","Upper Willamette River Chinook Salmon",NA,31,282,0.000109037002209353
+"870","Upper Willamette River Chinook Salmon",NA,36,562,0.000217300692346298
+"871","Upper Willamette River Chinook Salmon",NA,37,7857,0.00303795647644994
+"872","Upper Willamette River Chinook Salmon",NA,39,365,0.000141129453214233
+"873","Upper Willamette River Chinook Salmon",NA,41,47,1.81728337015588e-05
+"874","Upper Willamette River Chinook Salmon",NA,42,2660,0.00102850505630099
+"875","Upper Willamette River Chinook Salmon",NA,43,41,1.58528974843385e-05
+"876","Upper Willamette River Chinook Salmon",NA,44,6561,0.00253685025353036
+"877","Upper Willamette River Chinook Salmon",NA,47,1,3.86656036203378e-07
+"878","Upper Willamette River Chinook Salmon",NA,49,226,8.73842641819634e-05
+"879","Upper Willamette River Chinook Salmon",NA,53,859,0.000332137535098702
+"880","Upper Willamette River Chinook Salmon",NA,56,9173,0.00354679582009359
+"881","Upper Willamette River Chinook Salmon",NA,57,229,8.85442322905736e-05
+"882","Upper Willamette River Chinook Salmon",NA,58,10209,0.00394737147360029
+"883","Upper Willamette River Chinook Salmon",NA,59,295321,0.114187647267618
+"884","Upper Willamette River Chinook Salmon",NA,61,870,0.000336390751496939
+"885","Upper Willamette River Chinook Salmon",NA,66,749,0.00028960537111633
+"886","Upper Willamette River Chinook Salmon",NA,67,1,3.86656036203378e-07
+"887","Upper Willamette River Chinook Salmon",NA,68,3,1.15996810861013e-06
+"888","Upper Willamette River Chinook Salmon",NA,69,1460,0.000564517812856932
+"889","Upper Willamette River Chinook Salmon",NA,70,2631,0.00101729203125109
+"890","Upper Willamette River Chinook Salmon",NA,71,64477,0.0249304212462852
+"891","Upper Willamette River Chinook Salmon",NA,76,74,2.861254667905e-05
+"892","Upper Willamette River Chinook Salmon",NA,77,10,3.86656036203378e-06
+"893","Upper Willamette River Chinook Salmon",NA,111,5378,0.00207943616270177
+"894","Upper Willamette River Chinook Salmon",NA,121,56099,0.0216910169749733
+"895","Upper Willamette River Chinook Salmon",NA,122,64436,0.0249145683488009
+"896","Upper Willamette River Chinook Salmon",NA,123,41842,0.0161784618668217
+"897","Upper Willamette River Chinook Salmon",NA,124,13275,0.00513285888059984
+"898","Upper Willamette River Chinook Salmon",NA,131,525,0.000202994419006773
+"899","Upper Willamette River Chinook Salmon",NA,141,2206,0.000852963215864652
+"900","Upper Willamette River Chinook Salmon",NA,142,1243628,0.480856272991535
+"901","Upper Willamette River Chinook Salmon",NA,143,34853,0.0134761228297963
+"902","Upper Willamette River Chinook Salmon",NA,152,114753,0.0443699401224462
+"903","Upper Willamette River Chinook Salmon",NA,176,540896,0.209140703358262
+"904","Upper Willamette River Chinook Salmon",NA,190,16909,0.00653796691616292
+"905","Upper Willamette River Chinook Salmon",NA,195,14081,0.00544450364577977
+"906","Upper Willamette River Chinook Salmon",NA,205,83,3.20924510048804e-05
+"907","Upper Willamette River Chinook Salmon",NA,208,518,0.00020028782675335
+"908","Upper Willamette River Chinook Salmon",NA,214,455,0.000175928496472537
+"909","Upper Willamette River Chinook Salmon",NA,219,655,0.000253259703713213
+"910","Upper Willamette River Chinook Salmon",NA,220,88,3.40257311858973e-05
+"911","Upper Willamette River Chinook Salmon",NA,221,37,1.4306273339525e-05
+"912","Upper Willamette River Chinook Salmon",NA,222,2541,0.000982492987992783
+"913","Upper Willamette River Chinook Salmon",NA,224,270,0.000104397129774912
+"914","Upper Willamette River Chinook Salmon",NA,225,2,7.73312072406756e-07
+"915","Upper Willamette River Chinook Salmon",NA,228,2,7.73312072406756e-07
+"916","Upper Willamette River Chinook Salmon",NA,229,936,0.000361910049886362
+"917","Upper Willamette River Chinook Salmon",NA,242,2110,0.000815844236389127
+"918","Upper Willamette River Chinook Salmon",NA,243,38,1.46929293757284e-05
+"919","Upper Willamette River Chinook Salmon",NA,244,146,5.64517812856932e-05
+"920","Upper Willamette River Chinook Salmon",NA,246,1756,0.000678967999573132
+"921","Upper Willamette River Chinook Salmon",NA,247,901,0.000348377088619244
+"922","Washington Coast Chinook Salmon",NA,0,650431,0.0341319661326699
+"923","Washington Coast Chinook Salmon",NA,1,8662,0.000454546432505811
+"924","Washington Coast Chinook Salmon",NA,12,2,1.04951843109169e-07
+"925","Washington Coast Chinook Salmon",NA,21,1212,6.36008169241564e-05
+"926","Washington Coast Chinook Salmon",NA,23,35,1.83665725441046e-06
+"927","Washington Coast Chinook Salmon",NA,24,70,3.67331450882091e-06
+"928","Washington Coast Chinook Salmon",NA,27,3,1.57427764663753e-07
+"929","Washington Coast Chinook Salmon",NA,28,45,2.3614164699563e-06
+"930","Washington Coast Chinook Salmon",NA,36,224,1.17546064282269e-05
+"931","Washington Coast Chinook Salmon",NA,37,10302,0.000540606943855329
+"932","Washington Coast Chinook Salmon",NA,42,181,9.49814180137979e-06
+"933","Washington Coast Chinook Salmon",NA,43,404,2.12002723080521e-05
+"934","Washington Coast Chinook Salmon",NA,44,32,1.6792294897467e-06
+"935","Washington Coast Chinook Salmon",NA,47,2,1.04951843109169e-07
+"936","Washington Coast Chinook Salmon",NA,53,3,1.57427764663753e-07
+"937","Washington Coast Chinook Salmon",NA,55,565,2.96488956783402e-05
+"938","Washington Coast Chinook Salmon",NA,57,3,1.57427764663753e-07
+"939","Washington Coast Chinook Salmon",NA,58,55,2.88617568550215e-06
+"940","Washington Coast Chinook Salmon",NA,59,122,6.40206242965931e-06
+"941","Washington Coast Chinook Salmon",NA,61,162,8.50109929184269e-06
+"942","Washington Coast Chinook Salmon",NA,66,3,1.57427764663753e-07
+"943","Washington Coast Chinook Salmon",NA,68,369,1.93636150536417e-05
+"944","Washington Coast Chinook Salmon",NA,69,117,6.13968282188638e-06
+"945","Washington Coast Chinook Salmon",NA,70,18366,0.000963772775271499
+"946","Washington Coast Chinook Salmon",NA,71,157,8.23871968406976e-06
+"947","Washington Coast Chinook Salmon",NA,76,38,1.99408501907421e-06
+"948","Washington Coast Chinook Salmon",NA,77,10,5.24759215545845e-07
+"949","Washington Coast Chinook Salmon",NA,111,192180,0.01008482260436
+"950","Washington Coast Chinook Salmon",NA,112,23080,0.00121114426947981
+"951","Washington Coast Chinook Salmon",NA,121,603329,0.0316602452756059
+"952","Washington Coast Chinook Salmon",NA,122,266527,0.0139862499441787
+"953","Washington Coast Chinook Salmon",NA,123,94412,0.00495435670581143
+"954","Washington Coast Chinook Salmon",NA,124,28699,0.00150600647269502
+"955","Washington Coast Chinook Salmon",NA,131,129056,0.00677233253214846
+"956","Washington Coast Chinook Salmon",NA,141,211535,0.011100494066049
+"957","Washington Coast Chinook Salmon",NA,142,13631797,0.71534111002002
+"958","Washington Coast Chinook Salmon",NA,143,327667,0.017194627788026
+"959","Washington Coast Chinook Salmon",NA,152,1308384,0.0686586561472735
+"960","Washington Coast Chinook Salmon",NA,176,859284,0.0450917197771096
+"961","Washington Coast Chinook Salmon",NA,190,432974,0.0227207096591747
+"962","Washington Coast Chinook Salmon",NA,195,242493,0.0127250436455359
+"963","Washington Coast Chinook Salmon",NA,214,1,5.24759215545845e-08
+"964","Washington Coast Chinook Salmon",NA,219,75,3.93569411659384e-06
+"965","Washington Coast Chinook Salmon",NA,221,2,1.04951843109169e-07
+"966","Washington Coast Chinook Salmon",NA,222,1,5.24759215545845e-08
+"967","Washington Coast Chinook Salmon",NA,229,8,4.19807372436676e-07
+"968","Washington Coast Chinook Salmon",NA,242,4268,0.000223967233194967
+"969","Washington Coast Chinook Salmon",NA,243,14,7.34662901764183e-07
+"970","Washington Coast Chinook Salmon",NA,250,8998,0.000472178342148151
