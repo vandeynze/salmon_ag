@@ -66,6 +66,8 @@ script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 # Load habitat use recovery domain shape file
 (sf_recoverydomain_use <- st_read(here("data/huc6_esu-withadds-ver5-alb27.shp")) %>% clean_names()) %>% names
 
+
+
 # sf_recoverydomain <- st_read(here("data/recovery_subdomains/subdomains-ver7.shp"))
 # Key variables are, with * as species code
 # r_*: ESU name

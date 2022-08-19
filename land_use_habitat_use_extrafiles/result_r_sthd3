@@ -1,0 +1,1172 @@
+"","name","hab_use","land.use","count","freq"
+"1","Lower Columbia River Steelhead","spawn+rearing",1,1200,0.000223854828651254
+"2","Lower Columbia River Steelhead","spawn+rearing",6,1,1.86545690542712e-07
+"3","Lower Columbia River Steelhead","spawn+rearing",12,8,1.49236552434169e-06
+"4","Lower Columbia River Steelhead","spawn+rearing",21,316,5.89484382114969e-05
+"5","Lower Columbia River Steelhead","spawn+rearing",23,454,8.46917435063911e-05
+"6","Lower Columbia River Steelhead","spawn+rearing",24,65,1.21254698852763e-05
+"7","Lower Columbia River Steelhead","spawn+rearing",27,7,1.30581983379898e-06
+"8","Lower Columbia River Steelhead","spawn+rearing",28,2,3.73091381085424e-07
+"9","Lower Columbia River Steelhead","spawn+rearing",36,538,0.000100361581511979
+"10","Lower Columbia River Steelhead","spawn+rearing",37,3065,0.000571762541513412
+"11","Lower Columbia River Steelhead","spawn+rearing",42,25,4.66364226356779e-06
+"12","Lower Columbia River Steelhead","spawn+rearing",43,10,1.86545690542712e-06
+"13","Lower Columbia River Steelhead","spawn+rearing",44,45,8.39455607442203e-06
+"14","Lower Columbia River Steelhead","spawn+rearing",47,28,5.22327933519593e-06
+"15","Lower Columbia River Steelhead","spawn+rearing",53,19,3.54436812031152e-06
+"16","Lower Columbia River Steelhead","spawn+rearing",55,748,0.000139536176525948
+"17","Lower Columbia River Steelhead","spawn+rearing",58,135,2.51836682232661e-05
+"18","Lower Columbia River Steelhead","spawn+rearing",59,100,1.86545690542712e-05
+"19","Lower Columbia River Steelhead","spawn+rearing",61,15,2.79818535814068e-06
+"20","Lower Columbia River Steelhead","spawn+rearing",66,5,9.32728452713559e-07
+"21","Lower Columbia River Steelhead","spawn+rearing",67,19,3.54436812031152e-06
+"22","Lower Columbia River Steelhead","spawn+rearing",68,132,2.4624031151638e-05
+"23","Lower Columbia River Steelhead","spawn+rearing",69,413,7.704337019414e-05
+"24","Lower Columbia River Steelhead","spawn+rearing",70,12869,0.00240065649159416
+"25","Lower Columbia River Steelhead","spawn+rearing",71,40,7.46182762170847e-06
+"26","Lower Columbia River Steelhead","spawn+rearing",76,73,1.3617835409618e-05
+"27","Lower Columbia River Steelhead","spawn+rearing",77,18,3.35782242976881e-06
+"28","Lower Columbia River Steelhead","spawn+rearing",111,50957,0.00950580875298496
+"29","Lower Columbia River Steelhead","spawn+rearing",112,115,2.14527544124119e-05
+"30","Lower Columbia River Steelhead","spawn+rearing",121,222322,0.0414732110128368
+"31","Lower Columbia River Steelhead","spawn+rearing",122,100403,0.0187297469675599
+"32","Lower Columbia River Steelhead","spawn+rearing",123,31925,0.00595547117057607
+"33","Lower Columbia River Steelhead","spawn+rearing",124,9138,0.0017046545201793
+"34","Lower Columbia River Steelhead","spawn+rearing",131,24985,0.00466084407820965
+"35","Lower Columbia River Steelhead","spawn+rearing",141,138786,0.0258899302076608
+"36","Lower Columbia River Steelhead","spawn+rearing",142,3588469,0.669413427596114
+"37","Lower Columbia River Steelhead","spawn+rearing",143,213351,0.0397997096229781
+"38","Lower Columbia River Steelhead","spawn+rearing",152,396164,0.0739026869481629
+"39","Lower Columbia River Steelhead","spawn+rearing",176,427004,0.0796557560445001
+"40","Lower Columbia River Steelhead","spawn+rearing",190,98005,0.0182824104016385
+"41","Lower Columbia River Steelhead","spawn+rearing",195,36837,0.00687178360252187
+"42","Lower Columbia River Steelhead","spawn+rearing",214,4,7.46182762170847e-07
+"43","Lower Columbia River Steelhead","spawn+rearing",219,27,5.03673364465322e-06
+"44","Lower Columbia River Steelhead","spawn+rearing",229,47,8.76764745550745e-06
+"45","Lower Columbia River Steelhead","spawn+rearing",242,1672,0.000311904394587414
+"46","Lower Columbia River Steelhead","spawn+rearing",243,4,7.46182762170847e-07
+"47","Lower Columbia River Steelhead","spawn+rearing",250,52,9.70037590822101e-06
+"48","Lower Columbia River Steelhead","migration",0,35002,0.0122914868407838
+"49","Lower Columbia River Steelhead","migration",1,768,0.000269694928681845
+"50","Lower Columbia River Steelhead","migration",12,38,1.33442803254038e-05
+"51","Lower Columbia River Steelhead","migration",14,3,1.05349581516346e-06
+"52","Lower Columbia River Steelhead","migration",21,45,1.58024372274519e-05
+"53","Lower Columbia River Steelhead","migration",23,198,6.95307238007882e-05
+"54","Lower Columbia River Steelhead","migration",24,38,1.33442803254038e-05
+"55","Lower Columbia River Steelhead","migration",27,14,4.91631380409613e-06
+"56","Lower Columbia River Steelhead","migration",28,4,1.40466108688461e-06
+"57","Lower Columbia River Steelhead","migration",36,561,0.000197003717435566
+"58","Lower Columbia River Steelhead","migration",37,2434,0.000854736271369285
+"59","Lower Columbia River Steelhead","migration",42,3,1.05349581516346e-06
+"60","Lower Columbia River Steelhead","migration",43,7,2.45815690204807e-06
+"61","Lower Columbia River Steelhead","migration",44,8,2.80932217376922e-06
+"62","Lower Columbia River Steelhead","migration",47,3,1.05349581516346e-06
+"63","Lower Columbia River Steelhead","migration",53,3,1.05349581516346e-06
+"64","Lower Columbia River Steelhead","migration",55,929,0.00032623253742895
+"65","Lower Columbia River Steelhead","migration",57,3,1.05349581516346e-06
+"66","Lower Columbia River Steelhead","migration",58,20,7.02330543442305e-06
+"67","Lower Columbia River Steelhead","migration",59,308,0.000108158903690115
+"68","Lower Columbia River Steelhead","migration",61,5,1.75582635860576e-06
+"69","Lower Columbia River Steelhead","migration",66,18,6.32097489098074e-06
+"70","Lower Columbia River Steelhead","migration",67,101,3.54676924438364e-05
+"71","Lower Columbia River Steelhead","migration",68,60,2.10699163032691e-05
+"72","Lower Columbia River Steelhead","migration",69,69,2.42304037487595e-05
+"73","Lower Columbia River Steelhead","migration",70,4014,0.00140957740068871
+"74","Lower Columbia River Steelhead","migration",71,18,6.32097489098074e-06
+"75","Lower Columbia River Steelhead","migration",76,5,1.75582635860576e-06
+"76","Lower Columbia River Steelhead","migration",77,33,1.1588453966798e-05
+"77","Lower Columbia River Steelhead","migration",111,180224,0.0632884099306729
+"78","Lower Columbia River Steelhead","migration",112,773,0.000271450755040451
+"79","Lower Columbia River Steelhead","migration",121,87070,0.0305759602087607
+"80","Lower Columbia River Steelhead","migration",122,37478,0.0131609720535653
+"81","Lower Columbia River Steelhead","migration",123,11745,0.00412443611636493
+"82","Lower Columbia River Steelhead","migration",124,4407,0.00154758535247512
+"83","Lower Columbia River Steelhead","migration",131,14629,0.00513719676000874
+"84","Lower Columbia River Steelhead","migration",141,39777,0.0139683010132523
+"85","Lower Columbia River Steelhead","migration",142,1962754,0.689251041731779
+"86","Lower Columbia River Steelhead","migration",143,82938,0.0291249453060089
+"87","Lower Columbia River Steelhead","migration",152,167707,0.0588928742245393
+"88","Lower Columbia River Steelhead","migration",176,120811,0.0424246276419041
+"89","Lower Columbia River Steelhead","migration",190,49987,0.0175536984375252
+"90","Lower Columbia River Steelhead","migration",195,41662,0.0146302475504466
+"91","Lower Columbia River Steelhead","migration",205,1,3.51165271721152e-07
+"92","Lower Columbia River Steelhead","migration",219,41,1.43977761405672e-05
+"93","Lower Columbia River Steelhead","migration",221,4,1.40466108688461e-06
+"94","Lower Columbia River Steelhead","migration",229,30,1.05349581516346e-05
+"95","Lower Columbia River Steelhead","migration",242,887,0.000311483596016662
+"96","Lower Columbia River Steelhead","migration",250,25,8.77913179302881e-06
+"97","Lower Columbia River Steelhead",NA,1,2,1.13217587219999e-05
+"98","Lower Columbia River Steelhead",NA,36,1,5.66087936099994e-06
+"99","Lower Columbia River Steelhead",NA,37,19,0.000107556707858999
+"100","Lower Columbia River Steelhead",NA,55,3,1.69826380829998e-05
+"101","Lower Columbia River Steelhead",NA,57,1,5.66087936099994e-06
+"102","Lower Columbia River Steelhead",NA,58,2,1.13217587219999e-05
+"103","Lower Columbia River Steelhead",NA,59,1,5.66087936099994e-06
+"104","Lower Columbia River Steelhead",NA,69,2,1.13217587219999e-05
+"105","Lower Columbia River Steelhead",NA,70,107,0.000605714091626993
+"106","Lower Columbia River Steelhead",NA,71,2,1.13217587219999e-05
+"107","Lower Columbia River Steelhead",NA,77,2,1.13217587219999e-05
+"108","Lower Columbia River Steelhead",NA,111,836,0.00473249514579595
+"109","Lower Columbia River Steelhead",NA,121,3797,0.0214943589337168
+"110","Lower Columbia River Steelhead",NA,122,1581,0.0089498502697409
+"111","Lower Columbia River Steelhead",NA,123,167,0.00094536685328699
+"112","Lower Columbia River Steelhead",NA,124,21,0.000118878466580999
+"113","Lower Columbia River Steelhead",NA,131,318,0.00180015963679798
+"114","Lower Columbia River Steelhead",NA,141,2405,0.0136144148632048
+"115","Lower Columbia River Steelhead",NA,142,141813,0.802786284821484
+"116","Lower Columbia River Steelhead",NA,143,4569,0.0258645578004087
+"117","Lower Columbia River Steelhead",NA,152,9268,0.0524650299177474
+"118","Lower Columbia River Steelhead",NA,176,9254,0.0523857776066934
+"119","Lower Columbia River Steelhead",NA,190,982,0.00555898353250194
+"120","Lower Columbia River Steelhead",NA,195,1490,0.00843471024788991
+"121","Lower Columbia River Steelhead",NA,242,8,4.52870348879995e-05
+"122","Middle Columbia River Steelhead","spawn+rearing",1,66689,0.00536680864364492
+"123","Middle Columbia River Steelhead","spawn+rearing",4,11,8.8522687519822e-07
+"124","Middle Columbia River Steelhead","spawn+rearing",5,778,6.26096826276559e-05
+"125","Middle Columbia River Steelhead","spawn+rearing",6,272,2.18892463685378e-05
+"126","Middle Columbia River Steelhead","spawn+rearing",12,1968,0.000158375135490009
+"127","Middle Columbia River Steelhead","spawn+rearing",13,1,8.04751704725655e-08
+"128","Middle Columbia River Steelhead","spawn+rearing",14,13979,0.00112496240803599
+"129","Middle Columbia River Steelhead","spawn+rearing",21,35954,0.00289340427917062
+"130","Middle Columbia River Steelhead","spawn+rearing",23,104189,0.00838462753636613
+"131","Middle Columbia River Steelhead","spawn+rearing",24,547164,0.0440331161764508
+"132","Middle Columbia River Steelhead","spawn+rearing",27,21,1.68997857992388e-06
+"133","Middle Columbia River Steelhead","spawn+rearing",28,3407,0.000274178905800031
+"134","Middle Columbia River Steelhead","spawn+rearing",31,12290,0.00098903984510783
+"135","Middle Columbia River Steelhead","spawn+rearing",32,1,8.04751704725655e-08
+"136","Middle Columbia River Steelhead","spawn+rearing",33,766,6.16439805819852e-05
+"137","Middle Columbia River Steelhead","spawn+rearing",35,1184,9.52826018395175e-05
+"138","Middle Columbia River Steelhead","spawn+rearing",36,265103,0.0213342091177885
+"139","Middle Columbia River Steelhead","spawn+rearing",37,71935,0.005788981387944
+"140","Middle Columbia River Steelhead","spawn+rearing",39,12,9.65702045670786e-07
+"141","Middle Columbia River Steelhead","spawn+rearing",41,54,4.34565920551854e-06
+"142","Middle Columbia River Steelhead","spawn+rearing",42,2527,0.000203360755784173
+"143","Middle Columbia River Steelhead","spawn+rearing",43,5845,0.000470377371412145
+"144","Middle Columbia River Steelhead","spawn+rearing",44,1458,0.000117332798549
+"145","Middle Columbia River Steelhead","spawn+rearing",47,23,1.85092892086901e-06
+"146","Middle Columbia River Steelhead","spawn+rearing",48,2502,0.000201348876522359
+"147","Middle Columbia River Steelhead","spawn+rearing",49,2995,0.000241023135565334
+"148","Middle Columbia River Steelhead","spawn+rearing",51,48709,0.00391986507854819
+"149","Middle Columbia River Steelhead","spawn+rearing",52,44,3.54090750079288e-06
+"150","Middle Columbia River Steelhead","spawn+rearing",53,77828,0.00626322156753883
+"151","Middle Columbia River Steelhead","spawn+rearing",55,34,2.73615579606723e-06
+"152","Middle Columbia River Steelhead","spawn+rearing",56,84898,0.00683218102277987
+"153","Middle Columbia River Steelhead","spawn+rearing",57,304,2.44644518236599e-05
+"154","Middle Columbia River Steelhead","spawn+rearing",58,22,1.77045375039644e-06
+"155","Middle Columbia River Steelhead","spawn+rearing",59,10578,0.000851266353258798
+"156","Middle Columbia River Steelhead","spawn+rearing",61,212520,0.0171025832288296
+"157","Middle Columbia River Steelhead","spawn+rearing",66,28012,0.0022542704752775
+"158","Middle Columbia River Steelhead","spawn+rearing",67,1336,0.000107514827751348
+"159","Middle Columbia River Steelhead","spawn+rearing",68,187848,0.0151170998229305
+"160","Middle Columbia River Steelhead","spawn+rearing",69,50587,0.00407099744869567
+"161","Middle Columbia River Steelhead","spawn+rearing",70,213,1.71412113106564e-05
+"162","Middle Columbia River Steelhead","spawn+rearing",71,27,2.17282960275927e-06
+"163","Middle Columbia River Steelhead","spawn+rearing",76,1,8.04751704725655e-08
+"164","Middle Columbia River Steelhead","spawn+rearing",77,11623,0.000935362906402629
+"165","Middle Columbia River Steelhead","spawn+rearing",111,17977,0.00144670213958531
+"166","Middle Columbia River Steelhead","spawn+rearing",112,41,3.29948198937519e-06
+"167","Middle Columbia River Steelhead","spawn+rearing",121,350615,0.0282158018952385
+"168","Middle Columbia River Steelhead","spawn+rearing",122,209872,0.0168894849774183
+"169","Middle Columbia River Steelhead","spawn+rearing",123,84949,0.00683628525647397
+"170","Middle Columbia River Steelhead","spawn+rearing",124,17023,0.00136992882695448
+"171","Middle Columbia River Steelhead","spawn+rearing",131,17417,0.00140163604412067
+"172","Middle Columbia River Steelhead","spawn+rearing",141,3418,0.000275064132675229
+"173","Middle Columbia River Steelhead","spawn+rearing",142,4377703,0.352296395203261
+"174","Middle Columbia River Steelhead","spawn+rearing",143,1838,0.000147913363328575
+"175","Middle Columbia River Steelhead","spawn+rearing",152,2881863,0.231918416203579
+"176","Middle Columbia River Steelhead","spawn+rearing",176,2503022,0.201431122146582
+"177","Middle Columbia River Steelhead","spawn+rearing",190,43175,0.00347451548515302
+"178","Middle Columbia River Steelhead","spawn+rearing",195,52119,0.00419428540985964
+"179","Middle Columbia River Steelhead","spawn+rearing",205,3894,0.00031337031382017
+"180","Middle Columbia River Steelhead","spawn+rearing",206,99,7.96704187678398e-06
+"181","Middle Columbia River Steelhead","spawn+rearing",207,878,7.06571996749125e-05
+"182","Middle Columbia River Steelhead","spawn+rearing",208,19,1.52902823897874e-06
+"183","Middle Columbia River Steelhead","spawn+rearing",209,10,8.04751704725655e-07
+"184","Middle Columbia River Steelhead","spawn+rearing",214,2,1.60950340945131e-07
+"185","Middle Columbia River Steelhead","spawn+rearing",216,1,8.04751704725655e-08
+"186","Middle Columbia River Steelhead","spawn+rearing",220,82,6.59896397875037e-06
+"187","Middle Columbia River Steelhead","spawn+rearing",221,10,8.04751704725655e-07
+"188","Middle Columbia River Steelhead","spawn+rearing",222,868,6.98524479701868e-05
+"189","Middle Columbia River Steelhead","spawn+rearing",223,332,2.67177565968917e-05
+"190","Middle Columbia River Steelhead","spawn+rearing",228,968,7.78999650174434e-05
+"191","Middle Columbia River Steelhead","spawn+rearing",229,377,3.03391392681572e-05
+"192","Middle Columbia River Steelhead","spawn+rearing",237,92,7.40371568347603e-06
+"193","Middle Columbia River Steelhead","spawn+rearing",242,1622,0.000130530726506501
+"194","Middle Columbia River Steelhead","spawn+rearing",246,184,1.48074313669521e-05
+"195","Middle Columbia River Steelhead","spawn+rearing",247,1,8.04751704725655e-08
+"196","Middle Columbia River Steelhead","spawn+rearing",250,10,8.04751704725655e-07
+"197","Middle Columbia River Steelhead","rearing+migration",1,11263,0.00697388153503411
+"198","Middle Columbia River Steelhead","rearing+migration",5,26,1.60988120315091e-05
+"199","Middle Columbia River Steelhead","rearing+migration",6,738,0.000456958587663604
+"200","Middle Columbia River Steelhead","rearing+migration",11,2,1.23837015626993e-06
+"201","Middle Columbia River Steelhead","rearing+migration",12,9194,0.00569278760837287
+"202","Middle Columbia River Steelhead","rearing+migration",14,1465,0.000907106139467724
+"203","Middle Columbia River Steelhead","rearing+migration",21,7319,0.00453181558686981
+"204","Middle Columbia River Steelhead","rearing+migration",23,23630,0.0146313433963292
+"205","Middle Columbia River Steelhead","rearing+migration",24,113974,0.0705710000953545
+"206","Middle Columbia River Steelhead","rearing+migration",27,27,1.67179971096441e-05
+"207","Middle Columbia River Steelhead","rearing+migration",28,1801,0.00111515232572107
+"208","Middle Columbia River Steelhead","rearing+migration",31,2311,0.0014309367155699
+"209","Middle Columbia River Steelhead","rearing+migration",33,152,9.41161318765147e-05
+"210","Middle Columbia River Steelhead","rearing+migration",35,9,5.57266570321469e-06
+"211","Middle Columbia River Steelhead","rearing+migration",36,76351,0.0472753999006827
+"212","Middle Columbia River Steelhead","rearing+migration",37,63262,0.0391708864129742
+"213","Middle Columbia River Steelhead","rearing+migration",39,5,3.09592539067483e-06
+"214","Middle Columbia River Steelhead","rearing+migration",41,15,9.28777617202448e-06
+"215","Middle Columbia River Steelhead","rearing+migration",42,4465,0.00276466137387262
+"216","Middle Columbia River Steelhead","rearing+migration",43,20954,0.0129744041272401
+"217","Middle Columbia River Steelhead","rearing+migration",44,60,3.71511046880979e-05
+"218","Middle Columbia River Steelhead","rearing+migration",47,5,3.09592539067483e-06
+"219","Middle Columbia River Steelhead","rearing+migration",48,142,8.7924281095165e-05
+"220","Middle Columbia River Steelhead","rearing+migration",49,5243,0.00324638736466162
+"221","Middle Columbia River Steelhead","rearing+migration",51,5380,0.00333121572036611
+"222","Middle Columbia River Steelhead","rearing+migration",52,24,1.48604418752392e-05
+"223","Middle Columbia River Steelhead","rearing+migration",53,16434,0.01017568757407
+"224","Middle Columbia River Steelhead","rearing+migration",55,1,6.19185078134965e-07
+"225","Middle Columbia River Steelhead","rearing+migration",56,17549,0.0108660789361905
+"226","Middle Columbia River Steelhead","rearing+migration",57,32,1.98139225003189e-05
+"227","Middle Columbia River Steelhead","rearing+migration",58,5,3.09592539067483e-06
+"228","Middle Columbia River Steelhead","rearing+migration",59,5265,0.00326000943638059
+"229","Middle Columbia River Steelhead","rearing+migration",61,106229,0.0657754116651992
+"230","Middle Columbia River Steelhead","rearing+migration",66,4756,0.00294484423160989
+"231","Middle Columbia River Steelhead","rearing+migration",67,38,2.35290329691287e-05
+"232","Middle Columbia River Steelhead","rearing+migration",68,33712,0.0208739673540859
+"233","Middle Columbia River Steelhead","rearing+migration",69,12050,0.00746118019152633
+"234","Middle Columbia River Steelhead","rearing+migration",70,35,2.16714777347238e-05
+"235","Middle Columbia River Steelhead","rearing+migration",71,8,4.95348062507972e-06
+"236","Middle Columbia River Steelhead","rearing+migration",76,3,1.8575552344049e-06
+"237","Middle Columbia River Steelhead","rearing+migration",77,1419,0.000878623625873515
+"238","Middle Columbia River Steelhead","rearing+migration",111,66047,0.04089531685558
+"239","Middle Columbia River Steelhead","rearing+migration",121,53321,0.0330155675512345
+"240","Middle Columbia River Steelhead","rearing+migration",122,39450,0.0244268513324244
+"241","Middle Columbia River Steelhead","rearing+migration",123,29757,0.0184250903700622
+"242","Middle Columbia River Steelhead","rearing+migration",124,8393,0.00519682036078676
+"243","Middle Columbia River Steelhead","rearing+migration",131,118,7.30638392199259e-05
+"244","Middle Columbia River Steelhead","rearing+migration",141,119,7.36830242980608e-05
+"245","Middle Columbia River Steelhead","rearing+migration",142,50557,0.0313041399952694
+"246","Middle Columbia River Steelhead","rearing+migration",143,73,4.52005107038524e-05
+"247","Middle Columbia River Steelhead","rearing+migration",152,346223,0.214376115307122
+"248","Middle Columbia River Steelhead","rearing+migration",176,456949,0.282936002268694
+"249","Middle Columbia River Steelhead","rearing+migration",190,6082,0.00376588364521686
+"250","Middle Columbia River Steelhead","rearing+migration",195,7870,0.00487298656492217
+"251","Middle Columbia River Steelhead","rearing+migration",205,593,0.000367176751334034
+"252","Middle Columbia River Steelhead","rearing+migration",206,56,3.4674364375558e-05
+"253","Middle Columbia River Steelhead","rearing+migration",207,26,1.60988120315091e-05
+"254","Middle Columbia River Steelhead","rearing+migration",208,810,0.000501539913289322
+"255","Middle Columbia River Steelhead","rearing+migration",209,1,6.19185078134965e-07
+"256","Middle Columbia River Steelhead","rearing+migration",214,2,1.23837015626993e-06
+"257","Middle Columbia River Steelhead","rearing+migration",216,1,6.19185078134965e-07
+"258","Middle Columbia River Steelhead","rearing+migration",219,1,6.19185078134965e-07
+"259","Middle Columbia River Steelhead","rearing+migration",220,1,6.19185078134965e-07
+"260","Middle Columbia River Steelhead","rearing+migration",221,4,2.47674031253986e-06
+"261","Middle Columbia River Steelhead","rearing+migration",222,53,3.28168091411531e-05
+"262","Middle Columbia River Steelhead","rearing+migration",223,14,8.66859109388951e-06
+"263","Middle Columbia River Steelhead","rearing+migration",228,2579,0.00159687831651007
+"264","Middle Columbia River Steelhead","rearing+migration",229,2,1.23837015626993e-06
+"265","Middle Columbia River Steelhead","rearing+migration",237,16,9.90696125015944e-06
+"266","Middle Columbia River Steelhead","rearing+migration",242,546,0.000338075052661691
+"267","Middle Columbia River Steelhead","rearing+migration",246,9,5.57266570321469e-06
+"268","Middle Columbia River Steelhead","migration",1,194328,0.0278790113343486
+"269","Middle Columbia River Steelhead","migration",4,2,2.86927373660497e-07
+"270","Middle Columbia River Steelhead","migration",5,540,7.74703908883343e-05
+"271","Middle Columbia River Steelhead","migration",6,1035,0.000148484915869307
+"272","Middle Columbia River Steelhead","migration",12,36929,0.00529797049095426
+"273","Middle Columbia River Steelhead","migration",14,11997,0.00172113385090249
+"274","Middle Columbia River Steelhead","migration",21,12605,0.00180835977249529
+"275","Middle Columbia River Steelhead","migration",23,54423,0.00780772422836263
+"276","Middle Columbia River Steelhead","migration",24,369566,0.0530193008871077
+"277","Middle Columbia River Steelhead","migration",27,70,1.00424580781174e-05
+"278","Middle Columbia River Steelhead","migration",28,482,6.91494970521799e-05
+"279","Middle Columbia River Steelhead","migration",30,9,1.29117318147224e-06
+"280","Middle Columbia River Steelhead","migration",31,8616,0.00123608312572942
+"281","Middle Columbia River Steelhead","migration",33,1005,0.0001441810052644
+"282","Middle Columbia River Steelhead","migration",35,411,5.89635752872322e-05
+"283","Middle Columbia River Steelhead","migration",36,261421,0.0375044204748505
+"284","Middle Columbia River Steelhead","migration",37,65003,0.00932557003502666
+"285","Middle Columbia River Steelhead","migration",39,120,1.72156424196298e-05
+"286","Middle Columbia River Steelhead","migration",41,64,9.18167595713592e-06
+"287","Middle Columbia River Steelhead","migration",42,12220,0.00175312625306564
+"288","Middle Columbia River Steelhead","migration",43,98162,0.0140826824266309
+"289","Middle Columbia River Steelhead","migration",44,779,0.000111758212040764
+"290","Middle Columbia River Steelhead","migration",47,564,8.09135193722603e-05
+"291","Middle Columbia River Steelhead","migration",48,2043,0.000293096312194198
+"292","Middle Columbia River Steelhead","migration",49,25402,0.00364426457286198
+"293","Middle Columbia River Steelhead","migration",50,1,1.43463686830249e-07
+"294","Middle Columbia River Steelhead","migration",51,1200,0.000172156424196298
+"295","Middle Columbia River Steelhead","migration",52,5,7.17318434151244e-07
+"296","Middle Columbia River Steelhead","migration",53,14762,0.00211781094498813
+"297","Middle Columbia River Steelhead","migration",55,12,1.72156424196298e-06
+"298","Middle Columbia River Steelhead","migration",56,110923,0.0159134225342717
+"299","Middle Columbia River Steelhead","migration",57,692,9.92768712865321e-05
+"300","Middle Columbia River Steelhead","migration",58,8,1.14770949464199e-06
+"301","Middle Columbia River Steelhead","migration",59,29624,0.00424996825865929
+"302","Middle Columbia River Steelhead","migration",61,403786,0.0579286282504388
+"303","Middle Columbia River Steelhead","migration",66,64923,0.00931409294008024
+"304","Middle Columbia River Steelhead","migration",67,681,9.76987707313994e-05
+"305","Middle Columbia River Steelhead","migration",68,187874,0.0269530966995462
+"306","Middle Columbia River Steelhead","migration",69,202353,0.0290303074211613
+"307","Middle Columbia River Steelhead","migration",70,75,1.07597765122687e-05
+"308","Middle Columbia River Steelhead","migration",71,47,6.74279328102169e-06
+"309","Middle Columbia River Steelhead","migration",75,1,1.43463686830249e-07
+"310","Middle Columbia River Steelhead","migration",76,4,5.73854747320995e-07
+"311","Middle Columbia River Steelhead","migration",77,10131,0.00145343061127725
+"312","Middle Columbia River Steelhead","migration",111,231852,0.0332623427189668
+"313","Middle Columbia River Steelhead","migration",112,1212,0.000173877988438261
+"314","Middle Columbia River Steelhead","migration",121,204065,0.0292759172530147
+"315","Middle Columbia River Steelhead","migration",122,201586,0.0289202707733625
+"316","Middle Columbia River Steelhead","migration",123,134884,0.0193509559344113
+"317","Middle Columbia River Steelhead","migration",124,25044,0.00359290457297675
+"318","Middle Columbia River Steelhead","migration",131,15399,0.002209197313499
+"319","Middle Columbia River Steelhead","migration",141,553,7.93354188171276e-05
+"320","Middle Columbia River Steelhead","migration",142,1160574,0.166500224879329
+"321","Middle Columbia River Steelhead","migration",143,413,5.92505026608927e-05
+"322","Middle Columbia River Steelhead","migration",152,1493801,0.214306198850712
+"323","Middle Columbia River Steelhead","migration",176,1152320,0.165316075608232
+"324","Middle Columbia River Steelhead","migration",190,48359,0.006937760431424
+"325","Middle Columbia River Steelhead","migration",195,79660,0.0114283172928976
+"326","Middle Columbia River Steelhead","migration",205,4981,0.000714592624101469
+"327","Middle Columbia River Steelhead","migration",206,1378,0.000197692960452083
+"328","Middle Columbia River Steelhead","migration",207,1068,0.000153219217534706
+"329","Middle Columbia River Steelhead","migration",208,1405,0.000201566479996499
+"330","Middle Columbia River Steelhead","migration",209,10,1.43463686830249e-06
+"331","Middle Columbia River Steelhead","migration",214,4,5.73854747320995e-07
+"332","Middle Columbia River Steelhead","migration",216,25,3.58659217075622e-06
+"333","Middle Columbia River Steelhead","migration",219,6,8.60782120981492e-07
+"334","Middle Columbia River Steelhead","migration",220,134,1.92241340352533e-05
+"335","Middle Columbia River Steelhead","migration",221,5,7.17318434151244e-07
+"336","Middle Columbia River Steelhead","migration",222,170,2.43888267611423e-05
+"337","Middle Columbia River Steelhead","migration",223,235,3.37139664051085e-05
+"338","Middle Columbia River Steelhead","migration",228,13972,0.00200447463239224
+"339","Middle Columbia River Steelhead","migration",229,904,0.000129691172894545
+"340","Middle Columbia River Steelhead","migration",237,14,2.00849161562348e-06
+"341","Middle Columbia River Steelhead","migration",242,11434,0.00164036379521706
+"342","Middle Columbia River Steelhead","migration",246,27,3.87351954441672e-06
+"343","Middle Columbia River Steelhead","migration",250,13,1.86502792879323e-06
+"344","Middle Columbia River Steelhead",NA,1,128555,0.0175763323893572
+"345","Middle Columbia River Steelhead",NA,5,73,9.98072626053496e-06
+"346","Middle Columbia River Steelhead",NA,6,672,9.18773705079383e-05
+"347","Middle Columbia River Steelhead",NA,12,52643,0.00719747085662112
+"348","Middle Columbia River Steelhead",NA,14,11162,0.00152609406191906
+"349","Middle Columbia River Steelhead",NA,21,22410,0.00306394623970669
+"350","Middle Columbia River Steelhead",NA,22,3,4.10166832624725e-07
+"351","Middle Columbia River Steelhead",NA,23,237245,0.0324366767353509
+"352","Middle Columbia River Steelhead",NA,24,1205240,0.164783157784208
+"353","Middle Columbia River Steelhead",NA,27,85,1.16213935910339e-05
+"354","Middle Columbia River Steelhead",NA,28,256,3.50009030506432e-05
+"355","Middle Columbia River Steelhead",NA,30,19,2.59772327328992e-06
+"356","Middle Columbia River Steelhead",NA,31,15430,0.0021096247424665
+"357","Middle Columbia River Steelhead",NA,33,17,2.32427871820677e-06
+"358","Middle Columbia River Steelhead",NA,35,3891,0.000531986381914268
+"359","Middle Columbia River Steelhead",NA,36,139020,0.0190071310238297
+"360","Middle Columbia River Steelhead",NA,37,35861,0.00490299759491842
+"361","Middle Columbia River Steelhead",NA,39,68,9.29711487282709e-06
+"362","Middle Columbia River Steelhead",NA,41,11074,0.0015140625014954
+"363","Middle Columbia River Steelhead",NA,42,28661,0.00391859719661908
+"364","Middle Columbia River Steelhead",NA,43,138091,0.0188801160279936
+"365","Middle Columbia River Steelhead",NA,44,337,4.60754075315107e-05
+"366","Middle Columbia River Steelhead",NA,47,81,1.10745044808676e-05
+"367","Middle Columbia River Steelhead",NA,48,1922,0.000262780217434907
+"368","Middle Columbia River Steelhead",NA,49,48006,0.00656348965566084
+"369","Middle Columbia River Steelhead",NA,51,8852,0.00121026560079802
+"370","Middle Columbia River Steelhead",NA,52,5,6.83611387707874e-07
+"371","Middle Columbia River Steelhead",NA,53,63588,0.00869389618431366
+"372","Middle Columbia River Steelhead",NA,56,29195,0.00399160689282628
+"373","Middle Columbia River Steelhead",NA,57,1857,0.000253893269394705
+"374","Middle Columbia River Steelhead",NA,58,3,4.10166832624725e-07
+"375","Middle Columbia River Steelhead",NA,59,33220,0.00454191405993112
+"376","Middle Columbia River Steelhead",NA,61,1210799,0.165543196925061
+"377","Middle Columbia River Steelhead",NA,66,13216,0.00180692161998945
+"378","Middle Columbia River Steelhead",NA,67,213,2.91218451163554e-05
+"379","Middle Columbia River Steelhead",NA,68,101475,0.0138738931135313
+"380","Middle Columbia River Steelhead",NA,69,88800,0.0121409382456918
+"381","Middle Columbia River Steelhead",NA,70,50,6.83611387707874e-06
+"382","Middle Columbia River Steelhead",NA,71,29,3.96494604870567e-06
+"383","Middle Columbia River Steelhead",NA,76,1,1.36722277541575e-07
+"384","Middle Columbia River Steelhead",NA,77,5946,0.000812950662262204
+"385","Middle Columbia River Steelhead",NA,111,5662,0.000774121535440397
+"386","Middle Columbia River Steelhead",NA,112,3955,0.000540736607676929
+"387","Middle Columbia River Steelhead",NA,121,123957,0.016947683357221
+"388","Middle Columbia River Steelhead",NA,122,52416,0.00716643489961919
+"389","Middle Columbia River Steelhead",NA,123,20682,0.00282769014411485
+"390","Middle Columbia River Steelhead",NA,124,4823,0.000659411544583016
+"391","Middle Columbia River Steelhead",NA,131,15922,0.00217689210301695
+"392","Middle Columbia River Steelhead",NA,141,303,4.14268500950972e-05
+"393","Middle Columbia River Steelhead",NA,142,332671,0.0454835367920332
+"394","Middle Columbia River Steelhead",NA,143,66,9.02367031774394e-06
+"395","Middle Columbia River Steelhead",NA,152,1708889,0.233643196145744
+"396","Middle Columbia River Steelhead",NA,176,1356068,0.185404705461248
+"397","Middle Columbia River Steelhead",NA,190,3806,0.000520364988323234
+"398","Middle Columbia River Steelhead",NA,195,10685,0.00146087753553173
+"399","Middle Columbia River Steelhead",NA,205,8536,0.00116706136109488
+"400","Middle Columbia River Steelhead",NA,206,6072,0.000830177669232443
+"401","Middle Columbia River Steelhead",NA,207,292,3.99229050421399e-05
+"402","Middle Columbia River Steelhead",NA,208,178,2.43365654024003e-05
+"403","Middle Columbia River Steelhead",NA,209,187,2.55670659002745e-05
+"404","Middle Columbia River Steelhead",NA,214,4,5.46889110166299e-07
+"405","Middle Columbia River Steelhead",NA,216,10,1.36722277541575e-06
+"406","Middle Columbia River Steelhead",NA,219,22,3.00789010591465e-06
+"407","Middle Columbia River Steelhead",NA,220,46,6.28922476691244e-06
+"408","Middle Columbia River Steelhead",NA,221,5,6.83611387707874e-07
+"409","Middle Columbia River Steelhead",NA,222,146,1.99614525210699e-05
+"410","Middle Columbia River Steelhead",NA,223,184,2.51568990676498e-05
+"411","Middle Columbia River Steelhead",NA,228,4542,0.000620992584593833
+"412","Middle Columbia River Steelhead",NA,229,39,5.33216882412142e-06
+"413","Middle Columbia River Steelhead",NA,237,19,2.59772327328992e-06
+"414","Middle Columbia River Steelhead",NA,242,15835,0.00216499726487084
+"415","Middle Columbia River Steelhead",NA,246,3,4.10166832624725e-07
+"416","Middle Columbia River Steelhead",NA,250,1,1.36722277541575e-07
+"417","Olympic Peninsula Steelhead",NA,0,1746,0.00105035381763909
+"418","Olympic Peninsula Steelhead",NA,1,48,2.88757063268477e-05
+"419","Olympic Peninsula Steelhead",NA,21,9,5.41419493628395e-06
+"420","Olympic Peninsula Steelhead",NA,36,8,4.81261772114129e-06
+"421","Olympic Peninsula Steelhead",NA,37,63,3.78993645539876e-05
+"422","Olympic Peninsula Steelhead",NA,43,5,3.00788607571331e-06
+"423","Olympic Peninsula Steelhead",NA,55,8,4.81261772114129e-06
+"424","Olympic Peninsula Steelhead",NA,59,4,2.40630886057064e-06
+"425","Olympic Peninsula Steelhead",NA,68,3,1.80473164542798e-06
+"426","Olympic Peninsula Steelhead",NA,69,4,2.40630886057064e-06
+"427","Olympic Peninsula Steelhead",NA,70,64,3.85009417691303e-05
+"428","Olympic Peninsula Steelhead",NA,111,25368,0.015260810793739
+"429","Olympic Peninsula Steelhead",NA,121,45126,0.0271467734105277
+"430","Olympic Peninsula Steelhead",NA,122,16510,0.00993203982200533
+"431","Olympic Peninsula Steelhead",NA,123,4942,0.00297299459723503
+"432","Olympic Peninsula Steelhead",NA,124,838,0.00050412170628955
+"433","Olympic Peninsula Steelhead",NA,131,3630,0.00218372529096786
+"434","Olympic Peninsula Steelhead",NA,141,13749,0.00827108513099645
+"435","Olympic Peninsula Steelhead",NA,142,1345470,0.809404095657996
+"436","Olympic Peninsula Steelhead",NA,143,11723,0.00705228969311742
+"437","Olympic Peninsula Steelhead",NA,152,102294,0.0615377396458034
+"438","Olympic Peninsula Steelhead",NA,176,33153,0.0199440894136246
+"439","Olympic Peninsula Steelhead",NA,190,47776,0.0287409530306558
+"440","Olympic Peninsula Steelhead",NA,195,9590,0.00576912549321812
+"441","Olympic Peninsula Steelhead",NA,219,3,1.80473164542798e-06
+"442","Olympic Peninsula Steelhead",NA,222,1,6.01577215142661e-07
+"443","Olympic Peninsula Steelhead",NA,242,17,1.02268126574252e-05
+"444","Olympic Peninsula Steelhead",NA,250,145,8.72286961956858e-05
+"445","Oregon Coast Steelhead",NA,0,2086,0.00104995173040702
+"446","Oregon Coast Steelhead",NA,1,298,0.000149993104343861
+"447","Oregon Coast Steelhead",NA,12,5,2.51666282456142e-06
+"448","Oregon Coast Steelhead",NA,14,2,1.00666512982457e-06
+"449","Oregon Coast Steelhead",NA,21,44,2.21466328561405e-05
+"450","Oregon Coast Steelhead",NA,23,11,5.53665821403513e-06
+"451","Oregon Coast Steelhead",NA,24,18,9.05998616842112e-06
+"452","Oregon Coast Steelhead",NA,28,3,1.50999769473685e-06
+"453","Oregon Coast Steelhead",NA,36,12,6.03999077894741e-06
+"454","Oregon Coast Steelhead",NA,37,1475,0.000742415533245619
+"455","Oregon Coast Steelhead",NA,42,10,5.03332564912284e-06
+"456","Oregon Coast Steelhead",NA,44,5,2.51666282456142e-06
+"457","Oregon Coast Steelhead",NA,56,10,5.03332564912284e-06
+"458","Oregon Coast Steelhead",NA,57,1,5.03332564912284e-07
+"459","Oregon Coast Steelhead",NA,58,127,6.39232357438601e-05
+"460","Oregon Coast Steelhead",NA,59,368,0.000185226383887721
+"461","Oregon Coast Steelhead",NA,61,29,1.45966443824562e-05
+"462","Oregon Coast Steelhead",NA,66,5,2.51666282456142e-06
+"463","Oregon Coast Steelhead",NA,69,8,4.02666051929827e-06
+"464","Oregon Coast Steelhead",NA,70,26,1.30866466877194e-05
+"465","Oregon Coast Steelhead",NA,71,106,5.33532518807021e-05
+"466","Oregon Coast Steelhead",NA,76,10,5.03332564912284e-06
+"467","Oregon Coast Steelhead",NA,111,3041,0.00153063432989826
+"468","Oregon Coast Steelhead",NA,121,84863,0.0427143114561512
+"469","Oregon Coast Steelhead",NA,122,20504,0.0103203309109615
+"470","Oregon Coast Steelhead",NA,123,8198,0.00412632036715091
+"471","Oregon Coast Steelhead",NA,124,2078,0.00104592506988773
+"472","Oregon Coast Steelhead",NA,131,1255,0.000631682368964917
+"473","Oregon Coast Steelhead",NA,141,18455,0.00928900248545621
+"474","Oregon Coast Steelhead",NA,142,1243994,0.626142690755492
+"475","Oregon Coast Steelhead",NA,143,259965,0.130848850237422
+"476","Oregon Coast Steelhead",NA,152,205287,0.103327632253148
+"477","Oregon Coast Steelhead",NA,176,99441,0.0500518935874425
+"478","Oregon Coast Steelhead",NA,190,15887,0.00799644445876146
+"479","Oregon Coast Steelhead",NA,195,19055,0.00959100202440358
+"480","Oregon Coast Steelhead",NA,205,2,1.00666512982457e-06
+"481","Oregon Coast Steelhead",NA,208,4,2.01333025964914e-06
+"482","Oregon Coast Steelhead",NA,220,2,1.00666512982457e-06
+"483","Oregon Coast Steelhead",NA,221,1,5.03332564912284e-07
+"484","Oregon Coast Steelhead",NA,224,33,1.66099746421054e-05
+"485","Oregon Coast Steelhead",NA,242,26,1.30866466877194e-05
+"486","Oregon Coast Steelhead",NA,246,8,4.02666051929827e-06
+"487","Puget Sound Steelhead","spawn+rearing",0,2227,0.000469029914715324
+"488","Puget Sound Steelhead","spawn+rearing",1,3420,0.000720288418646793
+"489","Puget Sound Steelhead","spawn+rearing",6,5,1.05305324363566e-06
+"490","Puget Sound Steelhead","spawn+rearing",12,13,2.73793843345272e-06
+"491","Puget Sound Steelhead","spawn+rearing",21,100,2.10610648727132e-05
+"492","Puget Sound Steelhead","spawn+rearing",23,396,8.34018168959444e-05
+"493","Puget Sound Steelhead","spawn+rearing",24,2,4.21221297454265e-07
+"494","Puget Sound Steelhead","spawn+rearing",27,12,2.52732778472559e-06
+"495","Puget Sound Steelhead","spawn+rearing",28,1,2.10610648727132e-07
+"496","Puget Sound Steelhead","spawn+rearing",36,246,5.18102195868746e-05
+"497","Puget Sound Steelhead","spawn+rearing",37,5089,0.00107179759137238
+"498","Puget Sound Steelhead","spawn+rearing",42,33,6.95015140799537e-06
+"499","Puget Sound Steelhead","spawn+rearing",43,58,1.22154176261737e-05
+"500","Puget Sound Steelhead","spawn+rearing",44,39,8.21381530035816e-06
+"501","Puget Sound Steelhead","spawn+rearing",47,19,4.00160232581552e-06
+"502","Puget Sound Steelhead","spawn+rearing",53,38,8.00320465163103e-06
+"503","Puget Sound Steelhead","spawn+rearing",55,1316,0.000277163613724906
+"504","Puget Sound Steelhead","spawn+rearing",58,57,1.20048069774465e-05
+"505","Puget Sound Steelhead","spawn+rearing",59,161,3.39083144450683e-05
+"506","Puget Sound Steelhead","spawn+rearing",61,32,6.73954075926824e-06
+"507","Puget Sound Steelhead","spawn+rearing",67,3,6.31831946181397e-07
+"508","Puget Sound Steelhead","spawn+rearing",68,172,3.62250315810668e-05
+"509","Puget Sound Steelhead","spawn+rearing",69,115,2.42202246036202e-05
+"510","Puget Sound Steelhead","spawn+rearing",70,10338,0.00217729288654109
+"511","Puget Sound Steelhead","spawn+rearing",71,14,2.94854908217985e-06
+"512","Puget Sound Steelhead","spawn+rearing",76,28,5.89709816435971e-06
+"513","Puget Sound Steelhead","spawn+rearing",77,4,8.4244259490853e-07
+"514","Puget Sound Steelhead","spawn+rearing",111,62451,0.0131528456236581
+"515","Puget Sound Steelhead","spawn+rearing",112,1,2.10610648727132e-07
+"516","Puget Sound Steelhead","spawn+rearing",121,336282,0.0708245701752575
+"517","Puget Sound Steelhead","spawn+rearing",122,372584,0.0784701579453499
+"518","Puget Sound Steelhead","spawn+rearing",123,226909,0.0477894516920249
+"519","Puget Sound Steelhead","spawn+rearing",124,76437,0.0160984461567558
+"520","Puget Sound Steelhead","spawn+rearing",131,13008,0.00273962331864254
+"521","Puget Sound Steelhead","spawn+rearing",141,84600,0.0178176608823154
+"522","Puget Sound Steelhead","spawn+rearing",142,2295941,0.483549623449221
+"523","Puget Sound Steelhead","spawn+rearing",143,520965,0.109720776614131
+"524","Puget Sound Steelhead","spawn+rearing",152,268151,0.0564754560668293
+"525","Puget Sound Steelhead","spawn+rearing",176,329715,0.0694414900450665
+"526","Puget Sound Steelhead","spawn+rearing",190,92195,0.019417248759398
+"527","Puget Sound Steelhead","spawn+rearing",195,43317,0.0091230214709132
+"528","Puget Sound Steelhead","spawn+rearing",214,2,4.21221297454265e-07
+"529","Puget Sound Steelhead","spawn+rearing",219,49,1.03199217876295e-05
+"530","Puget Sound Steelhead","spawn+rearing",221,11,2.31671713599846e-06
+"531","Puget Sound Steelhead","spawn+rearing",222,9,1.89549583854419e-06
+"532","Puget Sound Steelhead","spawn+rearing",229,153,3.22234292552513e-05
+"533","Puget Sound Steelhead","spawn+rearing",242,1315,0.000276953003076179
+"534","Puget Sound Steelhead","spawn+rearing",250,65,1.36896921672636e-05
+"535","Puget Sound Steelhead","rearing+migration",0,206,0.000500010922568697
+"536","Puget Sound Steelhead","rearing+migration",1,276,0.000669917546742526
+"537","Puget Sound Steelhead","rearing+migration",21,9,2.1845137393778e-05
+"538","Puget Sound Steelhead","rearing+migration",23,7,1.69906624173829e-05
+"539","Puget Sound Steelhead","rearing+migration",24,1,2.42723748819756e-06
+"540","Puget Sound Steelhead","rearing+migration",36,15,3.64085623229634e-05
+"541","Puget Sound Steelhead","rearing+migration",37,74,0.000179615574126619
+"542","Puget Sound Steelhead","rearing+migration",42,1,2.42723748819756e-06
+"543","Puget Sound Steelhead","rearing+migration",43,2,4.85447497639512e-06
+"544","Puget Sound Steelhead","rearing+migration",44,2,4.85447497639512e-06
+"545","Puget Sound Steelhead","rearing+migration",47,7,1.69906624173829e-05
+"546","Puget Sound Steelhead","rearing+migration",53,12,2.91268498583707e-05
+"547","Puget Sound Steelhead","rearing+migration",55,44,0.000106798449480693
+"548","Puget Sound Steelhead","rearing+migration",57,5,1.21361874409878e-05
+"549","Puget Sound Steelhead","rearing+migration",58,2,4.85447497639512e-06
+"550","Puget Sound Steelhead","rearing+migration",59,25,6.06809372049389e-05
+"551","Puget Sound Steelhead","rearing+migration",61,1,2.42723748819756e-06
+"552","Puget Sound Steelhead","rearing+migration",66,2,4.85447497639512e-06
+"553","Puget Sound Steelhead","rearing+migration",67,1,2.42723748819756e-06
+"554","Puget Sound Steelhead","rearing+migration",68,2,4.85447497639512e-06
+"555","Puget Sound Steelhead","rearing+migration",69,2,4.85447497639512e-06
+"556","Puget Sound Steelhead","rearing+migration",70,348,0.00084467864589275
+"557","Puget Sound Steelhead","rearing+migration",77,1,2.42723748819756e-06
+"558","Puget Sound Steelhead","rearing+migration",111,3191,0.00774531482483841
+"559","Puget Sound Steelhead","rearing+migration",121,33649,0.0816741142403596
+"560","Puget Sound Steelhead","rearing+migration",122,57756,0.140187528368338
+"561","Puget Sound Steelhead","rearing+migration",123,62914,0.152707219332461
+"562","Puget Sound Steelhead","rearing+migration",124,51180,0.124226014645951
+"563","Puget Sound Steelhead","rearing+migration",131,860,0.0020874242398499
+"564","Puget Sound Steelhead","rearing+migration",141,5810,0.0141022498064278
+"565","Puget Sound Steelhead","rearing+migration",142,95442,0.231660400348551
+"566","Puget Sound Steelhead","rearing+migration",143,19888,0.048272899165273
+"567","Puget Sound Steelhead","rearing+migration",152,9288,0.0225441817903789
+"568","Puget Sound Steelhead","rearing+migration",176,60070,0.145804155916027
+"569","Puget Sound Steelhead","rearing+migration",190,5703,0.0138425353951907
+"570","Puget Sound Steelhead","rearing+migration",195,4852,0.0117769562927346
+"571","Puget Sound Steelhead","rearing+migration",214,1,2.42723748819756e-06
+"572","Puget Sound Steelhead","rearing+migration",219,20,4.85447497639512e-05
+"573","Puget Sound Steelhead","rearing+migration",221,4,9.70894995279023e-06
+"574","Puget Sound Steelhead","rearing+migration",222,5,1.21361874409878e-05
+"575","Puget Sound Steelhead","rearing+migration",229,125,0.000303404686024695
+"576","Puget Sound Steelhead","rearing+migration",242,184,0.000446611697828351
+"577","Puget Sound Steelhead","rearing+migration",250,4,9.70894995279023e-06
+"578","Puget Sound Steelhead","migration",0,4019,0.00221280597452107
+"579","Puget Sound Steelhead","migration",1,268,0.000147557104048681
+"580","Puget Sound Steelhead","migration",21,21,1.15623103918742e-05
+"581","Puget Sound Steelhead","migration",23,91,5.0103345031455e-05
+"582","Puget Sound Steelhead","migration",27,2,1.10117241827374e-06
+"583","Puget Sound Steelhead","migration",28,2,1.10117241827374e-06
+"584","Puget Sound Steelhead","migration",36,35,1.92705173197904e-05
+"585","Puget Sound Steelhead","migration",37,464,0.000255472001039507
+"586","Puget Sound Steelhead","migration",42,11,6.05644830050555e-06
+"587","Puget Sound Steelhead","migration",43,25,1.37646552284217e-05
+"588","Puget Sound Steelhead","migration",44,15,8.25879313705302e-06
+"589","Puget Sound Steelhead","migration",47,2,1.10117241827374e-06
+"590","Puget Sound Steelhead","migration",53,1,5.50586209136868e-07
+"591","Puget Sound Steelhead","migration",55,656,0.000361184553193785
+"592","Puget Sound Steelhead","migration",58,5,2.75293104568434e-06
+"593","Puget Sound Steelhead","migration",59,92,5.06539312405919e-05
+"594","Puget Sound Steelhead","migration",61,9,4.95527588223181e-06
+"595","Puget Sound Steelhead","migration",66,1,5.50586209136868e-07
+"596","Puget Sound Steelhead","migration",67,1,5.50586209136868e-07
+"597","Puget Sound Steelhead","migration",68,32,1.76187586923798e-05
+"598","Puget Sound Steelhead","migration",69,10,5.50586209136868e-06
+"599","Puget Sound Steelhead","migration",70,2722,0.00149869566127055
+"600","Puget Sound Steelhead","migration",71,15,8.25879313705302e-06
+"601","Puget Sound Steelhead","migration",77,6,3.30351725482121e-06
+"602","Puget Sound Steelhead","migration",111,20334,0.0111956199765891
+"603","Puget Sound Steelhead","migration",121,198125,0.109084892685242
+"604","Puget Sound Steelhead","migration",122,236614,0.130276405288711
+"605","Puget Sound Steelhead","migration",123,165707,0.091235988957443
+"606","Puget Sound Steelhead","migration",124,73046,0.0402181202326117
+"607","Puget Sound Steelhead","migration",131,6721,0.00370048991160889
+"608","Puget Sound Steelhead","migration",141,62501,0.0344121886572634
+"609","Puget Sound Steelhead","migration",142,628015,0.34577639813109
+"610","Puget Sound Steelhead","migration",143,166401,0.091618095786584
+"611","Puget Sound Steelhead","migration",152,76633,0.0421930729647856
+"612","Puget Sound Steelhead","migration",176,110929,0.0610759775933436
+"613","Puget Sound Steelhead","migration",190,41423,0.0228069325410765
+"614","Puget Sound Steelhead","migration",195,20607,0.0113459300116834
+"615","Puget Sound Steelhead","migration",214,1,5.50586209136868e-07
+"616","Puget Sound Steelhead","migration",219,9,4.95527588223181e-06
+"617","Puget Sound Steelhead","migration",221,2,1.10117241827374e-06
+"618","Puget Sound Steelhead","migration",229,13,7.15762071877928e-06
+"619","Puget Sound Steelhead","migration",242,572,0.000314935311626288
+"620","Puget Sound Steelhead","migration",243,3,1.6517586274106e-06
+"621","Puget Sound Steelhead","migration",250,85,4.67998277766338e-05
+"622","Puget Sound Steelhead",NA,0,6243,0.00841064081457791
+"623","Puget Sound Steelhead",NA,1,36,4.84996106559033e-05
+"624","Puget Sound Steelhead",NA,12,1,1.34721140710843e-06
+"625","Puget Sound Steelhead",NA,21,4,5.38884562843371e-06
+"626","Puget Sound Steelhead",NA,23,2,2.69442281421685e-06
+"627","Puget Sound Steelhead",NA,24,1,1.34721140710843e-06
+"628","Puget Sound Steelhead",NA,36,7,9.43047984975898e-06
+"629","Puget Sound Steelhead",NA,37,70,9.43047984975898e-05
+"630","Puget Sound Steelhead",NA,42,3,4.04163422132528e-06
+"631","Puget Sound Steelhead",NA,43,2,2.69442281421685e-06
+"632","Puget Sound Steelhead",NA,55,29,3.90691308061444e-05
+"633","Puget Sound Steelhead",NA,58,5,6.73605703554213e-06
+"634","Puget Sound Steelhead",NA,59,12,1.61665368853011e-05
+"635","Puget Sound Steelhead",NA,61,3,4.04163422132528e-06
+"636","Puget Sound Steelhead",NA,68,17,2.29025939208432e-05
+"637","Puget Sound Steelhead",NA,69,3,4.04163422132528e-06
+"638","Puget Sound Steelhead",NA,70,548,0.000738271851095418
+"639","Puget Sound Steelhead",NA,71,4,5.38884562843371e-06
+"640","Puget Sound Steelhead",NA,111,10207,0.0137509868323557
+"641","Puget Sound Steelhead",NA,112,12,1.61665368853011e-05
+"642","Puget Sound Steelhead",NA,121,64041,0.0862767657226307
+"643","Puget Sound Steelhead",NA,122,102837,0.138543179472809
+"644","Puget Sound Steelhead",NA,123,134757,0.18154616758771
+"645","Puget Sound Steelhead",NA,124,45581,0.0614072431474092
+"646","Puget Sound Steelhead",NA,131,6170,0.00831229438185899
+"647","Puget Sound Steelhead",NA,141,18598,0.0250554377494025
+"648","Puget Sound Steelhead",NA,142,247611,0.333584363725525
+"649","Puget Sound Steelhead",NA,143,43050,0.0579974510760178
+"650","Puget Sound Steelhead",NA,152,18134,0.0244303316565042
+"651","Puget Sound Steelhead",NA,176,25371,0.0341801006097479
+"652","Puget Sound Steelhead",NA,190,12083,0.0162783554320911
+"653","Puget Sound Steelhead",NA,195,6718,0.00905056623295441
+"654","Puget Sound Steelhead",NA,219,5,6.73605703554213e-06
+"655","Puget Sound Steelhead",NA,242,92,0.000123943449453975
+"656","Puget Sound Steelhead",NA,243,1,1.34721140710843e-06
+"657","Puget Sound Steelhead",NA,250,16,2.15553825137348e-05
+"658","Snake River Basin Steelhead","spawn+rearing",0,3417,0.000149886144431815
+"659","Snake River Basin Steelhead","spawn+rearing",1,1251,5.48749097700325e-05
+"660","Snake River Basin Steelhead","spawn+rearing",4,1,4.38648359472682e-08
+"661","Snake River Basin Steelhead","spawn+rearing",5,3,1.31594507841804e-07
+"662","Snake River Basin Steelhead","spawn+rearing",6,324,1.42122068469149e-05
+"663","Snake River Basin Steelhead","spawn+rearing",12,20,8.77296718945363e-07
+"664","Snake River Basin Steelhead","spawn+rearing",14,37,1.62299893004892e-06
+"665","Snake River Basin Steelhead","spawn+rearing",21,61106,0.00268040466539377
+"666","Snake River Basin Steelhead","spawn+rearing",23,462447,0.0202851617893063
+"667","Snake River Basin Steelhead","spawn+rearing",24,1183997,0.0519358341670576
+"668","Snake River Basin Steelhead","spawn+rearing",27,7,3.07053851630877e-07
+"669","Snake River Basin Steelhead","spawn+rearing",28,20303,0.000890587764237385
+"670","Snake River Basin Steelhead","spawn+rearing",29,180,7.89567047050827e-06
+"671","Snake River Basin Steelhead","spawn+rearing",31,205948,0.00903387523366798
+"672","Snake River Basin Steelhead","spawn+rearing",32,688,3.01790071317205e-05
+"673","Snake River Basin Steelhead","spawn+rearing",33,26,1.14048573462897e-06
+"674","Snake River Basin Steelhead","spawn+rearing",35,213,9.34321005676812e-06
+"675","Snake River Basin Steelhead","spawn+rearing",36,155783,0.00683339573837327
+"676","Snake River Basin Steelhead","spawn+rearing",37,406418,0.0178274588960168
+"677","Snake River Basin Steelhead","spawn+rearing",39,304,1.33349101279695e-05
+"678","Snake River Basin Steelhead","spawn+rearing",41,10,4.38648359472681e-07
+"679","Snake River Basin Steelhead","spawn+rearing",42,24,1.05275606273444e-06
+"680","Snake River Basin Steelhead","spawn+rearing",43,66,2.8950791725197e-06
+"681","Snake River Basin Steelhead","spawn+rearing",44,12,5.26378031367218e-07
+"682","Snake River Basin Steelhead","spawn+rearing",47,2,8.77296718945363e-08
+"683","Snake River Basin Steelhead","spawn+rearing",49,11,4.8251319541995e-07
+"684","Snake River Basin Steelhead","spawn+rearing",51,237595,0.0104220656968912
+"685","Snake River Basin Steelhead","spawn+rearing",52,41866,0.00183644522176833
+"686","Snake River Basin Steelhead","spawn+rearing",53,90375,0.00396428454873436
+"687","Snake River Basin Steelhead","spawn+rearing",56,4,1.75459343789073e-07
+"688","Snake River Basin Steelhead","spawn+rearing",57,1,4.38648359472682e-08
+"689","Snake River Basin Steelhead","spawn+rearing",58,2378,0.000104310579882604
+"690","Snake River Basin Steelhead","spawn+rearing",59,137521,0.00603233610430426
+"691","Snake River Basin Steelhead","spawn+rearing",61,200158,0.0087798978335333
+"692","Snake River Basin Steelhead","spawn+rearing",66,37,1.62299893004892e-06
+"693","Snake River Basin Steelhead","spawn+rearing",67,1,4.38648359472682e-08
+"694","Snake River Basin Steelhead","spawn+rearing",68,123,5.39537482151398e-06
+"695","Snake River Basin Steelhead","spawn+rearing",69,122,5.35150998556671e-06
+"696","Snake River Basin Steelhead","spawn+rearing",70,705,3.0924709342824e-05
+"697","Snake River Basin Steelhead","spawn+rearing",76,1,4.38648359472682e-08
+"698","Snake River Basin Steelhead","spawn+rearing",77,37,1.62299893004892e-06
+"699","Snake River Basin Steelhead","spawn+rearing",111,70206,0.00307957467251391
+"700","Snake River Basin Steelhead","spawn+rearing",112,332,1.4563125534493e-05
+"701","Snake River Basin Steelhead","spawn+rearing",121,223807,0.00981725733885024
+"702","Snake River Basin Steelhead","spawn+rearing",122,69481,0.00304777266645214
+"703","Snake River Basin Steelhead","spawn+rearing",123,26766,0.00117408619896458
+"704","Snake River Basin Steelhead","spawn+rearing",124,4366,0.000191513873745773
+"705","Snake River Basin Steelhead","spawn+rearing",131,2254,9.88713402251424e-05
+"706","Snake River Basin Steelhead","spawn+rearing",141,3251,0.000142604581664569
+"707","Snake River Basin Steelhead","spawn+rearing",142,11935511,0.523549231961814
+"708","Snake River Basin Steelhead","spawn+rearing",143,4612,0.000202304623388801
+"709","Snake River Basin Steelhead","spawn+rearing",152,4219919,0.18510605464576
+"710","Snake River Basin Steelhead","spawn+rearing",176,3003594,0.131752158062199
+"711","Snake River Basin Steelhead","spawn+rearing",190,7476,0.000327933513541777
+"712","Snake River Basin Steelhead","spawn+rearing",195,10571,0.000463695180798572
+"713","Snake River Basin Steelhead","spawn+rearing",205,1582,6.93941704685782e-05
+"714","Snake River Basin Steelhead","spawn+rearing",208,4,1.75459343789073e-07
+"715","Snake River Basin Steelhead","spawn+rearing",228,9,3.94783523525413e-07
+"716","Snake River Basin Steelhead","spawn+rearing",237,20,8.77296718945363e-07
+"717","Snake River Basin Steelhead","spawn+rearing",242,3,1.31594507841804e-07
+"718","Snake River Basin Steelhead","spawn+rearing",246,3,1.31594507841804e-07
+"719","Snake River Basin Steelhead","spawn+rearing",247,14,6.14107703261754e-07
+"720","Snake River Basin Steelhead","spawn+rearing",250,1,4.38648359472682e-08
+"721","Snake River Basin Steelhead","rearing+migration",1,11,1.13038358025364e-05
+"722","Snake River Basin Steelhead","rearing+migration",6,2,2.05524287318843e-06
+"723","Snake River Basin Steelhead","rearing+migration",14,2,2.05524287318843e-06
+"724","Snake River Basin Steelhead","rearing+migration",21,2707,0.00278177122886054
+"725","Snake River Basin Steelhead","rearing+migration",23,44299,0.0455226020196872
+"726","Snake River Basin Steelhead","rearing+migration",24,61922,0.063632374596787
+"727","Snake River Basin Steelhead","rearing+migration",28,770,0.000791268506177546
+"728","Snake River Basin Steelhead","rearing+migration",31,5355,0.00550291279296203
+"729","Snake River Basin Steelhead","rearing+migration",32,2,2.05524287318843e-06
+"730","Snake River Basin Steelhead","rearing+migration",36,3526,0.00362339318543121
+"731","Snake River Basin Steelhead","rearing+migration",37,10346,0.0106317713830038
+"732","Snake River Basin Steelhead","rearing+migration",43,5,5.13810718297108e-06
+"733","Snake River Basin Steelhead","rearing+migration",44,2,2.05524287318843e-06
+"734","Snake River Basin Steelhead","rearing+migration",49,1,1.02762143659422e-06
+"735","Snake River Basin Steelhead","rearing+migration",51,22756,0.023384553411138
+"736","Snake River Basin Steelhead","rearing+migration",52,888,0.000912527835695664
+"737","Snake River Basin Steelhead","rearing+migration",53,2450,0.00251767251965583
+"738","Snake River Basin Steelhead","rearing+migration",58,906,0.00093102502155436
+"739","Snake River Basin Steelhead","rearing+migration",59,1506,0.00154759788351089
+"740","Snake River Basin Steelhead","rearing+migration",61,16309,0.0167594780094151
+"741","Snake River Basin Steelhead","rearing+migration",66,4,4.11048574637686e-06
+"742","Snake River Basin Steelhead","rearing+migration",68,21,2.15800501684785e-05
+"743","Snake River Basin Steelhead","rearing+migration",69,10,1.02762143659422e-05
+"744","Snake River Basin Steelhead","rearing+migration",77,3,3.08286430978265e-06
+"745","Snake River Basin Steelhead","rearing+migration",111,38301,0.0393589286429951
+"746","Snake River Basin Steelhead","rearing+migration",121,23211,0.0238521211647883
+"747","Snake River Basin Steelhead","rearing+migration",122,20841,0.0214166583600601
+"748","Snake River Basin Steelhead","rearing+migration",123,13579,0.0139540714875129
+"749","Snake River Basin Steelhead","rearing+migration",124,2023,0.0020788781662301
+"750","Snake River Basin Steelhead","rearing+migration",131,187,0.000192165208643118
+"751","Snake River Basin Steelhead","rearing+migration",141,161,0.000165447051291669
+"752","Snake River Basin Steelhead","rearing+migration",142,311623,0.320230474935799
+"753","Snake River Basin Steelhead","rearing+migration",143,105,0.000107900250842393
+"754","Snake River Basin Steelhead","rearing+migration",152,147647,0.151725222248826
+"755","Snake River Basin Steelhead","rearing+migration",176,240523,0.247166590793951
+"756","Snake River Basin Steelhead","rearing+migration",190,338,0.000347336045568845
+"757","Snake River Basin Steelhead","rearing+migration",195,600,0.00061657286195653
+"758","Snake River Basin Steelhead","rearing+migration",205,168,0.000172640401347828
+"759","Snake River Basin Steelhead","rearing+migration",237,4,4.11048574637686e-06
+"760","Snake River Basin Steelhead","rearing+migration",242,6,6.1657286195653e-06
+"761","Snake River Basin Steelhead","rearing+migration",247,1,1.02762143659422e-06
+"762","Snake River Basin Steelhead","migration",1,23486,0.00667083439964621
+"763","Snake River Basin Steelhead","migration",5,129,3.66404512285771e-05
+"764","Snake River Basin Steelhead","migration",6,29,8.23700066378864e-06
+"765","Snake River Basin Steelhead","migration",12,13755,0.00390689462518665
+"766","Snake River Basin Steelhead","migration",14,1553,0.000441105587271164
+"767","Snake River Basin Steelhead","migration",21,5428,0.00154173929665672
+"768","Snake River Basin Steelhead","migration",23,142637,0.0405138297820972
+"769","Snake River Basin Steelhead","migration",24,395772,0.112412904369274
+"770","Snake River Basin Steelhead","migration",27,17,4.82858659601403e-06
+"771","Snake River Basin Steelhead","migration",28,854,0.000242565467823293
+"772","Snake River Basin Steelhead","migration",31,22844,0.00648848424702026
+"773","Snake River Basin Steelhead","migration",33,7,1.98824153953519e-06
+"774","Snake River Basin Steelhead","migration",35,17,4.82858659601403e-06
+"775","Snake River Basin Steelhead","migration",36,31118,0.00883858574675086
+"776","Snake River Basin Steelhead","migration",37,11816,0.0033561517187354
+"777","Snake River Basin Steelhead","migration",39,3,8.52103516943652e-07
+"778","Snake River Basin Steelhead","migration",41,1,2.84034505647884e-07
+"779","Snake River Basin Steelhead","migration",42,463,0.00013150797611497
+"780","Snake River Basin Steelhead","migration",43,31183,0.00885704798961797
+"781","Snake River Basin Steelhead","migration",44,8,2.27227604518307e-06
+"782","Snake River Basin Steelhead","migration",47,131,3.72085202398728e-05
+"783","Snake River Basin Steelhead","migration",48,1,2.84034505647884e-07
+"784","Snake River Basin Steelhead","migration",49,7428,0.00210980830795248
+"785","Snake River Basin Steelhead","migration",51,58373,0.0165799461981839
+"786","Snake River Basin Steelhead","migration",52,122,3.46522096890419e-05
+"787","Snake River Basin Steelhead","migration",53,18165,0.00515948679509382
+"788","Snake River Basin Steelhead","migration",56,12,3.40841406777461e-06
+"789","Snake River Basin Steelhead","migration",57,19,5.3966556073098e-06
+"790","Snake River Basin Steelhead","migration",58,583,0.000165592116792716
+"791","Snake River Basin Steelhead","migration",59,5221,0.0014829441539876
+"792","Snake River Basin Steelhead","migration",61,231418,0.0657306972280221
+"793","Snake River Basin Steelhead","migration",66,4475,0.00127105441277428
+"794","Snake River Basin Steelhead","migration",67,26,7.38489714684499e-06
+"795","Snake River Basin Steelhead","migration",68,55262,0.0156963148511134
+"796","Snake River Basin Steelhead","migration",69,6159,0.00174936852028532
+"797","Snake River Basin Steelhead","migration",70,14,3.97648307907038e-06
+"798","Snake River Basin Steelhead","migration",75,1,2.84034505647884e-07
+"799","Snake River Basin Steelhead","migration",77,32,9.08910418073229e-06
+"800","Snake River Basin Steelhead","migration",111,140832,0.0400011474994028
+"801","Snake River Basin Steelhead","migration",121,48097,0.0136612076181463
+"802","Snake River Basin Steelhead","migration",122,19261,0.0054707886132839
+"803","Snake River Basin Steelhead","migration",123,8564,0.00243247150636848
+"804","Snake River Basin Steelhead","migration",124,944,0.000268128573331603
+"805","Snake River Basin Steelhead","migration",131,74,2.10185534179434e-05
+"806","Snake River Basin Steelhead","migration",141,61,1.73261048445209e-05
+"807","Snake River Basin Steelhead","migration",142,260183,0.0739009497829834
+"808","Snake River Basin Steelhead","migration",143,93,2.64152090252532e-05
+"809","Snake River Basin Steelhead","migration",152,597371,0.169673976673382
+"810","Snake River Basin Steelhead","migration",176,1365915,0.38796699178203
+"811","Snake River Basin Steelhead","migration",190,1647,0.000467804830802065
+"812","Snake River Basin Steelhead","migration",195,4929,0.00140000607833842
+"813","Snake River Basin Steelhead","migration",205,203,5.76590046465205e-05
+"814","Snake River Basin Steelhead","migration",206,1426,0.000405033205053883
+"815","Snake River Basin Steelhead","migration",207,31,8.80506967508441e-06
+"816","Snake River Basin Steelhead","migration",208,55,1.56218978106336e-05
+"817","Snake River Basin Steelhead","migration",214,56,1.59059323162815e-05
+"818","Snake River Basin Steelhead","migration",221,1,2.84034505647884e-07
+"819","Snake River Basin Steelhead","migration",222,5,1.42017252823942e-06
+"820","Snake River Basin Steelhead","migration",223,5,1.42017252823942e-06
+"821","Snake River Basin Steelhead","migration",228,17,4.82858659601403e-06
+"822","Snake River Basin Steelhead","migration",237,12,3.40841406777461e-06
+"823","Snake River Basin Steelhead","migration",242,2353,0.000668333191789471
+"824","Snake River Basin Steelhead","migration",250,2,5.68069011295768e-07
+"825","Snake River Basin Steelhead",NA,1,2966,0.000895464889987036
+"826","Snake River Basin Steelhead",NA,5,10,3.01909942679378e-06
+"827","Snake River Basin Steelhead",NA,6,5,1.50954971339689e-06
+"828","Snake River Basin Steelhead",NA,12,1296,0.000391275285712474
+"829","Snake River Basin Steelhead",NA,14,40,1.20763977071751e-05
+"830","Snake River Basin Steelhead",NA,21,16865,0.00509171118328771
+"831","Snake River Basin Steelhead",NA,23,171092,0.0516543759129002
+"832","Snake River Basin Steelhead",NA,24,437866,0.132196098961249
+"833","Snake River Basin Steelhead",NA,27,1,3.01909942679378e-07
+"834","Snake River Basin Steelhead",NA,28,8017,0.00242041201046058
+"835","Snake River Basin Steelhead",NA,29,51,1.53974070766483e-05
+"836","Snake River Basin Steelhead",NA,31,55238,0.0166769014137235
+"837","Snake River Basin Steelhead",NA,32,29,8.75538833770197e-06
+"838","Snake River Basin Steelhead",NA,33,6,1.81145965607627e-06
+"839","Snake River Basin Steelhead",NA,35,652,0.000196845282626955
+"840","Snake River Basin Steelhead",NA,36,62024,0.0187256622847458
+"841","Snake River Basin Steelhead",NA,37,77769,0.0234792343322326
+"842","Snake River Basin Steelhead",NA,41,7,2.11336959875565e-06
+"843","Snake River Basin Steelhead",NA,42,28,8.45347839502259e-06
+"844","Snake River Basin Steelhead",NA,43,3093,0.000933807452707317
+"845","Snake River Basin Steelhead",NA,49,20,6.03819885358757e-06
+"846","Snake River Basin Steelhead",NA,51,20300,0.00612877183639138
+"847","Snake River Basin Steelhead",NA,52,1117,0.000337233405972866
+"848","Snake River Basin Steelhead",NA,53,16444,0.0049646070974197
+"849","Snake River Basin Steelhead",NA,56,16,4.83055908287005e-06
+"850","Snake River Basin Steelhead",NA,57,1,3.01909942679378e-07
+"851","Snake River Basin Steelhead",NA,58,1335,0.00040304977347697
+"852","Snake River Basin Steelhead",NA,59,14961,0.00451687465242618
+"853","Snake River Basin Steelhead",NA,61,276675,0.083530933390817
+"854","Snake River Basin Steelhead",NA,66,24,7.24583862430508e-06
+"855","Snake River Basin Steelhead",NA,67,1,3.01909942679378e-07
+"856","Snake River Basin Steelhead",NA,68,5261,0.00158834820843621
+"857","Snake River Basin Steelhead",NA,69,193,5.826861893712e-05
+"858","Snake River Basin Steelhead",NA,70,3,9.05729828038135e-07
+"859","Snake River Basin Steelhead",NA,77,2,6.03819885358757e-07
+"860","Snake River Basin Steelhead",NA,111,1738,0.000524719480376759
+"861","Snake River Basin Steelhead",NA,121,54219,0.0163692551821332
+"862","Snake River Basin Steelhead",NA,122,23469,0.00708552444474233
+"863","Snake River Basin Steelhead",NA,123,10353,0.0031256736365596
+"864","Snake River Basin Steelhead",NA,124,1724,0.000520492741179248
+"865","Snake River Basin Steelhead",NA,131,71,2.14356059302359e-05
+"866","Snake River Basin Steelhead",NA,141,243,7.33641160710889e-05
+"867","Snake River Basin Steelhead",NA,142,889508,0.268551309292848
+"868","Snake River Basin Steelhead",NA,143,163,4.92113206567387e-05
+"869","Snake River Basin Steelhead",NA,152,533418,0.161044197804149
+"870","Snake River Basin Steelhead",NA,176,619818,0.187129216851647
+"871","Snake River Basin Steelhead",NA,190,635,0.000191712813601405
+"872","Snake River Basin Steelhead",NA,195,1966,0.000593554947307658
+"873","Snake River Basin Steelhead",NA,205,226,6.82316470455395e-05
+"874","Snake River Basin Steelhead",NA,206,1278,0.000385840906744245
+"875","Snake River Basin Steelhead",NA,208,2,6.03819885358757e-07
+"876","Snake River Basin Steelhead",NA,228,1,3.01909942679378e-07
+"877","Snake River Basin Steelhead",NA,237,3,9.05729828038135e-07
+"878","Snake River Basin Steelhead",NA,242,2,6.03819885358757e-07
+"879","Snake River Basin Steelhead",NA,247,1,3.01909942679378e-07
+"880","Southwest Washington Steelhead",NA,0,814315,0.0634250665296675
+"881","Southwest Washington Steelhead",NA,1,3807,0.000296518212581672
+"882","Southwest Washington Steelhead",NA,12,10,7.78876313584639e-07
+"883","Southwest Washington Steelhead",NA,14,821,6.39457453452989e-05
+"884","Southwest Washington Steelhead",NA,21,652,5.07827356457185e-05
+"885","Southwest Washington Steelhead",NA,23,77,5.99734761460172e-06
+"886","Southwest Washington Steelhead",NA,24,170,1.32408973309389e-05
+"887","Southwest Washington Steelhead",NA,27,3,2.33662894075392e-07
+"888","Southwest Washington Steelhead",NA,28,66,5.14058366965862e-06
+"889","Southwest Washington Steelhead",NA,36,237,1.84593686319559e-05
+"890","Southwest Washington Steelhead",NA,37,11460,0.000892592255367996
+"891","Southwest Washington Steelhead",NA,39,6,4.67325788150783e-07
+"892","Southwest Washington Steelhead",NA,41,2,1.55775262716928e-07
+"893","Southwest Washington Steelhead",NA,42,110,8.56763944943103e-06
+"894","Southwest Washington Steelhead",NA,43,241,1.87709191573898e-05
+"895","Southwest Washington Steelhead",NA,44,23,1.79141552124467e-06
+"896","Southwest Washington Steelhead",NA,47,2,1.55775262716928e-07
+"897","Southwest Washington Steelhead",NA,49,3,2.33662894075392e-07
+"898","Southwest Washington Steelhead",NA,53,4,3.11550525433856e-07
+"899","Southwest Washington Steelhead",NA,55,474,3.69187372639119e-05
+"900","Southwest Washington Steelhead",NA,56,24,1.86930315260313e-06
+"901","Southwest Washington Steelhead",NA,57,7,5.45213419509247e-07
+"902","Southwest Washington Steelhead",NA,58,382,2.97530751789332e-05
+"903","Southwest Washington Steelhead",NA,59,838,6.52698350783927e-05
+"904","Southwest Washington Steelhead",NA,61,223,1.73689417929374e-05
+"905","Southwest Washington Steelhead",NA,66,13,1.01253920766003e-06
+"906","Southwest Washington Steelhead",NA,68,327,2.54692554542177e-05
+"907","Southwest Washington Steelhead",NA,69,149,1.16052570724111e-05
+"908","Southwest Washington Steelhead",NA,70,16056,0.0012505638090915
+"909","Southwest Washington Steelhead",NA,71,1147,8.93371131681581e-05
+"910","Southwest Washington Steelhead",NA,76,56,4.36170735607398e-06
+"911","Southwest Washington Steelhead",NA,77,5,3.89438156792319e-07
+"912","Southwest Washington Steelhead",NA,111,73596,0.00573221811745751
+"913","Southwest Washington Steelhead",NA,112,1,7.78876313584639e-08
+"914","Southwest Washington Steelhead",NA,121,551531,0.0429574432107649
+"915","Southwest Washington Steelhead",NA,122,235824,0.0183677727774784
+"916","Southwest Washington Steelhead",NA,123,92247,0.00718490032992422
+"917","Southwest Washington Steelhead",NA,124,37014,0.00288293278710218
+"918","Southwest Washington Steelhead",NA,131,12323,0.00095980928123035
+"919","Southwest Washington Steelhead",NA,141,207736,0.0161800649878819
+"920","Southwest Washington Steelhead",NA,142,7662056,0.596779393175906
+"921","Southwest Washington Steelhead",NA,143,485611,0.037823090551615
+"922","Southwest Washington Steelhead",NA,152,1050657,0.0818331851001896
+"923","Southwest Washington Steelhead",NA,176,835679,0.0650890578860097
+"924","Southwest Washington Steelhead",NA,190,345721,0.0269273898008795
+"925","Southwest Washington Steelhead",NA,195,383971,0.0299065917003407
+"926","Southwest Washington Steelhead",NA,208,5,3.89438156792319e-07
+"927","Southwest Washington Steelhead",NA,214,1,7.78876313584639e-08
+"928","Southwest Washington Steelhead",NA,219,56,4.36170735607398e-06
+"929","Southwest Washington Steelhead",NA,220,13,1.01253920766003e-06
+"930","Southwest Washington Steelhead",NA,221,3,2.33662894075392e-07
+"931","Southwest Washington Steelhead",NA,222,2,1.55775262716928e-07
+"932","Southwest Washington Steelhead",NA,224,11,8.56763944943103e-07
+"933","Southwest Washington Steelhead",NA,229,10,7.78876313584639e-07
+"934","Southwest Washington Steelhead",NA,242,4101,0.00031941717620106
+"935","Southwest Washington Steelhead",NA,243,12,9.34651576301567e-07
+"936","Southwest Washington Steelhead",NA,246,3,2.33662894075392e-07
+"937","Southwest Washington Steelhead",NA,247,3,2.33662894075392e-07
+"938","Southwest Washington Steelhead",NA,250,9112,0.000709712096938323
+"939","Upper Columbia River Steelhead","spawn+rearing",1,9482,0.00792338333983727
+"940","Upper Columbia River Steelhead","spawn+rearing",6,26,2.17262145998491e-05
+"941","Upper Columbia River Steelhead","spawn+rearing",12,385,0.000321715100805458
+"942","Upper Columbia River Steelhead","spawn+rearing",14,1144,0.00095595344239336
+"943","Upper Columbia River Steelhead","spawn+rearing",21,24,2.00549673229376e-05
+"944","Upper Columbia River Steelhead","spawn+rearing",23,1713,0.00143142329267467
+"945","Upper Columbia River Steelhead","spawn+rearing",24,25893,0.0216368028705343
+"946","Upper Columbia River Steelhead","spawn+rearing",28,5,4.17811819227867e-06
+"947","Upper Columbia River Steelhead","spawn+rearing",31,27,2.25618382383048e-05
+"948","Upper Columbia River Steelhead","spawn+rearing",36,44016,0.0367808100702676
+"949","Upper Columbia River Steelhead","spawn+rearing",37,10736,0.00897125538246076
+"950","Upper Columbia River Steelhead","spawn+rearing",39,7,5.84936546919014e-06
+"951","Upper Columbia River Steelhead","spawn+rearing",42,10621,0.00887515866403835
+"952","Upper Columbia River Steelhead","spawn+rearing",43,4983,0.00416391259042492
+"953","Upper Columbia River Steelhead","spawn+rearing",44,22,1.83837200460262e-05
+"954","Upper Columbia River Steelhead","spawn+rearing",47,1,8.35623638455734e-07
+"955","Upper Columbia River Steelhead","spawn+rearing",48,20,1.67124727691147e-05
+"956","Upper Columbia River Steelhead","spawn+rearing",49,3372,0.00281772290887274
+"957","Upper Columbia River Steelhead","spawn+rearing",53,1690,0.00141220394899019
+"958","Upper Columbia River Steelhead","spawn+rearing",55,2,1.67124727691147e-06
+"959","Upper Columbia River Steelhead","spawn+rearing",56,131,0.000109466696637701
+"960","Upper Columbia River Steelhead","spawn+rearing",57,71,5.93292783303571e-05
+"961","Upper Columbia River Steelhead","spawn+rearing",59,319,0.000266563940667379
+"962","Upper Columbia River Steelhead","spawn+rearing",61,21676,0.0181129779871665
+"963","Upper Columbia River Steelhead","spawn+rearing",66,2051,0.00171386408247271
+"964","Upper Columbia River Steelhead","spawn+rearing",67,6,5.0137418307344e-06
+"965","Upper Columbia River Steelhead","spawn+rearing",68,23696,0.0198009377368471
+"966","Upper Columbia River Steelhead","spawn+rearing",69,3465,0.00289543590724912
+"967","Upper Columbia River Steelhead","spawn+rearing",70,2,1.67124727691147e-06
+"968","Upper Columbia River Steelhead","spawn+rearing",71,5,4.17811819227867e-06
+"969","Upper Columbia River Steelhead","spawn+rearing",77,3725,0.00311269805324761
+"970","Upper Columbia River Steelhead","spawn+rearing",111,24365,0.020359969950974
+"971","Upper Columbia River Steelhead","spawn+rearing",112,777,0.000649279567080105
+"972","Upper Columbia River Steelhead","spawn+rearing",121,15012,0.0125443820604975
+"973","Upper Columbia River Steelhead","spawn+rearing",122,11349,0.00948349267283413
+"974","Upper Columbia River Steelhead","spawn+rearing",123,6669,0.00557277404486129
+"975","Upper Columbia River Steelhead","spawn+rearing",124,1253,0.00104703641898503
+"976","Upper Columbia River Steelhead","spawn+rearing",131,30489,0.0254773291128769
+"977","Upper Columbia River Steelhead","spawn+rearing",141,79,6.6014267438003e-05
+"978","Upper Columbia River Steelhead","spawn+rearing",142,334009,0.279105815856961
+"979","Upper Columbia River Steelhead","spawn+rearing",143,257,0.000214755275083124
+"980","Upper Columbia River Steelhead","spawn+rearing",152,396701,0.331492732999028
+"981","Upper Columbia River Steelhead","spawn+rearing",176,200585,0.167613567519643
+"982","Upper Columbia River Steelhead","spawn+rearing",190,1204,0.0010060908607007
+"983","Upper Columbia River Steelhead","spawn+rearing",195,1415,0.00118240744841486
+"984","Upper Columbia River Steelhead","spawn+rearing",205,1047,0.000874897949463154
+"985","Upper Columbia River Steelhead","spawn+rearing",206,947,0.00079133558561758
+"986","Upper Columbia River Steelhead","spawn+rearing",207,9,7.52061274610161e-06
+"987","Upper Columbia River Steelhead","spawn+rearing",208,1,8.35623638455734e-07
+"988","Upper Columbia River Steelhead","spawn+rearing",214,3,2.5068709153672e-06
+"989","Upper Columbia River Steelhead","spawn+rearing",216,2,1.67124727691147e-06
+"990","Upper Columbia River Steelhead","spawn+rearing",220,1,8.35623638455734e-07
+"991","Upper Columbia River Steelhead","spawn+rearing",222,3,2.5068709153672e-06
+"992","Upper Columbia River Steelhead","spawn+rearing",223,5,4.17811819227867e-06
+"993","Upper Columbia River Steelhead","spawn+rearing",228,1137,0.00095010407692417
+"994","Upper Columbia River Steelhead","spawn+rearing",229,3,2.5068709153672e-06
+"995","Upper Columbia River Steelhead","spawn+rearing",242,73,6.10005256072686e-05
+"996","Upper Columbia River Steelhead","rearing+migration",1,145,0.000190278475830041
+"997","Upper Columbia River Steelhead","rearing+migration",6,17,2.23085109593841e-05
+"998","Upper Columbia River Steelhead","rearing+migration",12,6,7.87359210331203e-06
+"999","Upper Columbia River Steelhead","rearing+migration",14,17,2.23085109593841e-05
+"1000","Upper Columbia River Steelhead","rearing+migration",21,8,1.0498122804416e-05
+"1001","Upper Columbia River Steelhead","rearing+migration",23,42,5.51151447231842e-05
+"1002","Upper Columbia River Steelhead","rearing+migration",24,989,0.00129783043169593
+"1003","Upper Columbia River Steelhead","rearing+migration",28,5,6.56132675276002e-06
+"1004","Upper Columbia River Steelhead","rearing+migration",31,2,2.62453070110401e-06
+"1005","Upper Columbia River Steelhead","rearing+migration",36,561,0.000736180861659675
+"1006","Upper Columbia River Steelhead","rearing+migration",37,245,0.000321505010885241
+"1007","Upper Columbia River Steelhead","rearing+migration",42,60,7.87359210331203e-05
+"1008","Upper Columbia River Steelhead","rearing+migration",43,5,6.56132675276002e-06
+"1009","Upper Columbia River Steelhead","rearing+migration",44,2,2.62453070110401e-06
+"1010","Upper Columbia River Steelhead","rearing+migration",48,1,1.312265350552e-06
+"1011","Upper Columbia River Steelhead","rearing+migration",49,1,1.312265350552e-06
+"1012","Upper Columbia River Steelhead","rearing+migration",53,8,1.0498122804416e-05
+"1013","Upper Columbia River Steelhead","rearing+migration",56,44,5.77396754242882e-05
+"1014","Upper Columbia River Steelhead","rearing+migration",57,3,3.93679605165601e-06
+"1015","Upper Columbia River Steelhead","rearing+migration",59,6,7.87359210331203e-06
+"1016","Upper Columbia River Steelhead","rearing+migration",61,3246,0.00425961332789181
+"1017","Upper Columbia River Steelhead","rearing+migration",66,12233,0.0160529420333027
+"1018","Upper Columbia River Steelhead","rearing+migration",67,3,3.93679605165601e-06
+"1019","Upper Columbia River Steelhead","rearing+migration",68,4893,0.00642091436025096
+"1020","Upper Columbia River Steelhead","rearing+migration",69,1393,0.00182798563331894
+"1021","Upper Columbia River Steelhead","rearing+migration",70,1,1.312265350552e-06
+"1022","Upper Columbia River Steelhead","rearing+migration",76,1,1.312265350552e-06
+"1023","Upper Columbia River Steelhead","rearing+migration",77,422,0.000553775977932946
+"1024","Upper Columbia River Steelhead","rearing+migration",111,14905,0.0195593150499776
+"1025","Upper Columbia River Steelhead","rearing+migration",121,12927,0.0169636541865858
+"1026","Upper Columbia River Steelhead","rearing+migration",122,7022,0.00921472729157618
+"1027","Upper Columbia River Steelhead","rearing+migration",123,3720,0.00488162710405346
+"1028","Upper Columbia River Steelhead","rearing+migration",124,1056,0.00138575221018292
+"1029","Upper Columbia River Steelhead","rearing+migration",131,181,0.000237520028449913
+"1030","Upper Columbia River Steelhead","rearing+migration",141,38,4.98660833209762e-05
+"1031","Upper Columbia River Steelhead","rearing+migration",142,122551,0.160819430975499
+"1032","Upper Columbia River Steelhead","rearing+migration",143,4,5.24906140220802e-06
+"1033","Upper Columbia River Steelhead","rearing+migration",152,374921,0.491995837494308
+"1034","Upper Columbia River Steelhead","rearing+migration",176,198821,0.2609059092621
+"1035","Upper Columbia River Steelhead","rearing+migration",190,630,0.000826727170847763
+"1036","Upper Columbia River Steelhead","rearing+migration",195,870,0.00114167085498024
+"1037","Upper Columbia River Steelhead","rearing+migration",205,10,1.312265350552e-05
+"1038","Upper Columbia River Steelhead","rearing+migration",206,2,2.62453070110401e-06
+"1039","Upper Columbia River Steelhead","rearing+migration",223,14,1.83717149077281e-05
+"1040","Upper Columbia River Steelhead","rearing+migration",242,10,1.312265350552e-05
+"1041","Upper Columbia River Steelhead","migration",1,39561,0.0144833039842723
+"1042","Upper Columbia River Steelhead","migration",6,43,1.57423237866512e-05
+"1043","Upper Columbia River Steelhead","migration",12,12027,0.00440309135307103
+"1044","Upper Columbia River Steelhead","migration",14,1868,0.000683875833336384
+"1045","Upper Columbia River Steelhead","migration",21,275,0.000100677652123932
+"1046","Upper Columbia River Steelhead","migration",23,5132,0.00187882803890917
+"1047","Upper Columbia River Steelhead","migration",24,31053,0.0113685204778344
+"1048","Upper Columbia River Steelhead","migration",27,186,6.80947028910961e-05
+"1049","Upper Columbia River Steelhead","migration",28,25,9.1525138294484e-06
+"1050","Upper Columbia River Steelhead","migration",30,62,2.2698234297032e-05
+"1051","Upper Columbia River Steelhead","migration",31,154,5.63794851894021e-05
+"1052","Upper Columbia River Steelhead","migration",35,19,6.95591051038078e-06
+"1053","Upper Columbia River Steelhead","migration",36,128931,0.0472017104217844
+"1054","Upper Columbia River Steelhead","migration",37,24676,0.00903389725021875
+"1055","Upper Columbia River Steelhead","migration",39,1297,0.000474832417471783
+"1056","Upper Columbia River Steelhead","migration",41,9,3.29490497860142e-06
+"1057","Upper Columbia River Steelhead","migration",42,10470,0.00383307279177299
+"1058","Upper Columbia River Steelhead","migration",43,32473,0.0118883832633471
+"1059","Upper Columbia River Steelhead","migration",44,132,4.83252730194875e-05
+"1060","Upper Columbia River Steelhead","migration",47,126,4.61286697004199e-05
+"1061","Upper Columbia River Steelhead","migration",48,469,0.000171701159440452
+"1062","Upper Columbia River Steelhead","migration",49,8369,0.00306389552954615
+"1063","Upper Columbia River Steelhead","migration",53,2731,0.000999820610728943
+"1064","Upper Columbia River Steelhead","migration",56,485,0.000177558768291299
+"1065","Upper Columbia River Steelhead","migration",57,82,3.00202453605907e-05
+"1066","Upper Columbia River Steelhead","migration",58,1,3.66100553177936e-07
+"1067","Upper Columbia River Steelhead","migration",59,4190,0.00153396131781555
+"1068","Upper Columbia River Steelhead","migration",61,25893,0.00947944162343629
+"1069","Upper Columbia River Steelhead","migration",66,47168,0.0172682308922969
+"1070","Upper Columbia River Steelhead","migration",67,1825,0.000668133509549733
+"1071","Upper Columbia River Steelhead","migration",68,154722,0.0566438097887966
+"1072","Upper Columbia River Steelhead","migration",69,40880,0.014966190613914
+"1073","Upper Columbia River Steelhead","migration",70,9,3.29490497860142e-06
+"1074","Upper Columbia River Steelhead","migration",71,13,4.75930719131317e-06
+"1075","Upper Columbia River Steelhead","migration",76,9,3.29490497860142e-06
+"1076","Upper Columbia River Steelhead","migration",77,1971,0.000721584190313712
+"1077","Upper Columbia River Steelhead","migration",111,146251,0.0535425720028263
+"1078","Upper Columbia River Steelhead","migration",121,36941,0.0135241205349461
+"1079","Upper Columbia River Steelhead","migration",122,50566,0.0185122405719955
+"1080","Upper Columbia River Steelhead","migration",123,43786,0.0160300788214491
+"1081","Upper Columbia River Steelhead","migration",124,8716,0.00319093242149889
+"1082","Upper Columbia River Steelhead","migration",131,497,0.000181951974929434
+"1083","Upper Columbia River Steelhead","migration",141,81,2.96541448074128e-05
+"1084","Upper Columbia River Steelhead","migration",142,11820,0.0043273085385632
+"1085","Upper Columbia River Steelhead","migration",143,36,1.31796199144057e-05
+"1086","Upper Columbia River Steelhead","migration",152,1200705,0.439578764703513
+"1087","Upper Columbia River Steelhead","migration",176,618827,0.226552907021443
+"1088","Upper Columbia River Steelhead","migration",190,4424,0.00161962884725919
+"1089","Upper Columbia River Steelhead","migration",195,19176,0.0070203442077401
+"1090","Upper Columbia River Steelhead","migration",205,1005,0.000367931055943826
+"1091","Upper Columbia River Steelhead","migration",206,1750,0.000640675968061388
+"1092","Upper Columbia River Steelhead","migration",207,870,0.000318507481264804
+"1093","Upper Columbia River Steelhead","migration",208,30,1.09830165953381e-05
+"1094","Upper Columbia River Steelhead","migration",209,1,3.66100553177936e-07
+"1095","Upper Columbia River Steelhead","migration",214,677,0.000247850074501463
+"1096","Upper Columbia River Steelhead","migration",216,10,3.66100553177936e-06
+"1097","Upper Columbia River Steelhead","migration",219,11,4.02710608495729e-06
+"1098","Upper Columbia River Steelhead","migration",220,6,2.19660331906761e-06
+"1099","Upper Columbia River Steelhead","migration",222,228,8.34709261245694e-05
+"1100","Upper Columbia River Steelhead","migration",223,297,0.000108731864293847
+"1101","Upper Columbia River Steelhead","migration",225,1,3.66100553177936e-07
+"1102","Upper Columbia River Steelhead","migration",228,6003,0.00219770162072715
+"1103","Upper Columbia River Steelhead","migration",229,4,1.46440221271174e-06
+"1104","Upper Columbia River Steelhead","migration",237,7,2.56270387224555e-06
+"1105","Upper Columbia River Steelhead","migration",242,1424,0.000521327187725381
+"1106","Upper Columbia River Steelhead","migration",250,4,1.46440221271174e-06
+"1107","Upper Columbia River Steelhead",NA,1,35393,0.0363116483926866
+"1108","Upper Columbia River Steelhead",NA,5,4,4.10382260816394e-06
+"1109","Upper Columbia River Steelhead",NA,6,74,7.59207182510329e-05
+"1110","Upper Columbia River Steelhead",NA,12,7980,0.00818712610328706
+"1111","Upper Columbia River Steelhead",NA,14,4967,0.00509592172368757
+"1112","Upper Columbia River Steelhead",NA,21,49,5.02718269500083e-05
+"1113","Upper Columbia River Steelhead",NA,22,1,1.02595565204098e-06
+"1114","Upper Columbia River Steelhead",NA,23,5624,0.0057699745870785
+"1115","Upper Columbia River Steelhead",NA,24,30970,0.0317738465437093
+"1116","Upper Columbia River Steelhead",NA,27,11,1.12855121724508e-05
+"1117","Upper Columbia River Steelhead",NA,28,7,7.18168956428689e-06
+"1118","Upper Columbia River Steelhead",NA,31,40,4.10382260816394e-05
+"1119","Upper Columbia River Steelhead",NA,35,20,2.05191130408197e-05
+"1120","Upper Columbia River Steelhead",NA,36,95050,0.0975170847264956
+"1121","Upper Columbia River Steelhead",NA,37,16946,0.0173858444794865
+"1122","Upper Columbia River Steelhead",NA,39,14,1.43633791285738e-05
+"1123","Upper Columbia River Steelhead",NA,41,14,1.43633791285738e-05
+"1124","Upper Columbia River Steelhead",NA,42,11605,0.0119062153419356
+"1125","Upper Columbia River Steelhead",NA,43,23338,0.0239437530073325
+"1126","Upper Columbia River Steelhead",NA,44,441,0.000452446442550074
+"1127","Upper Columbia River Steelhead",NA,47,2,2.05191130408197e-06
+"1128","Upper Columbia River Steelhead",NA,48,1037,0.0010639160111665
+"1129","Upper Columbia River Steelhead",NA,49,5352,0.00549091464972335
+"1130","Upper Columbia River Steelhead",NA,53,2521,0.00258643419879532
+"1131","Upper Columbia River Steelhead",NA,56,133,0.000136452101721451
+"1132","Upper Columbia River Steelhead",NA,57,137,0.000140555924329615
+"1133","Upper Columbia River Steelhead",NA,59,2932,0.00300810197178417
+"1134","Upper Columbia River Steelhead",NA,61,28534,0.0292746185753375
+"1135","Upper Columbia River Steelhead",NA,66,9051,0.00928592460662295
+"1136","Upper Columbia River Steelhead",NA,67,1604,0.00164563286587374
+"1137","Upper Columbia River Steelhead",NA,68,53735,0.0551297269624223
+"1138","Upper Columbia River Steelhead",NA,69,5626,0.00577202649838258
+"1139","Upper Columbia River Steelhead",NA,70,2,2.05191130408197e-06
+"1140","Upper Columbia River Steelhead",NA,71,15,1.53893347806148e-05
+"1141","Upper Columbia River Steelhead",NA,75,1,1.02595565204098e-06
+"1142","Upper Columbia River Steelhead",NA,77,260,0.000266748469530656
+"1143","Upper Columbia River Steelhead",NA,111,6945,0.00712526200342464
+"1144","Upper Columbia River Steelhead",NA,112,230,0.000235969799969427
+"1145","Upper Columbia River Steelhead",NA,121,10447,0.0107181586968722
+"1146","Upper Columbia River Steelhead",NA,122,10469,0.0107407297212171
+"1147","Upper Columbia River Steelhead",NA,123,3820,0.00391915059079656
+"1148","Upper Columbia River Steelhead",NA,124,592,0.000607365746008263
+"1149","Upper Columbia River Steelhead",NA,131,18228,0.0187011196254031
+"1150","Upper Columbia River Steelhead",NA,141,24,2.46229356489836e-05
+"1151","Upper Columbia River Steelhead",NA,142,34736,0.0356375955292957
+"1152","Upper Columbia River Steelhead",NA,143,27,2.77008026051066e-05
+"1153","Upper Columbia River Steelhead",NA,152,291539,0.299106084840377
+"1154","Upper Columbia River Steelhead",NA,176,233700,0.239765835881978
+"1155","Upper Columbia River Steelhead",NA,190,2509,0.00257412273097083
+"1156","Upper Columbia River Steelhead",NA,195,5825,0.00597619167313874
+"1157","Upper Columbia River Steelhead",NA,205,202,0.000207243041712279
+"1158","Upper Columbia River Steelhead",NA,206,2242,0.00230019257187589
+"1159","Upper Columbia River Steelhead",NA,207,21,2.15450686928607e-05
+"1160","Upper Columbia River Steelhead",NA,208,4,4.10382260816394e-06
+"1161","Upper Columbia River Steelhead",NA,209,1,1.02595565204098e-06
+"1162","Upper Columbia River Steelhead",NA,214,62,6.36092504265411e-05
+"1163","Upper Columbia River Steelhead",NA,216,4,4.10382260816394e-06
+"1164","Upper Columbia River Steelhead",NA,219,1,1.02595565204098e-06
+"1165","Upper Columbia River Steelhead",NA,220,1,1.02595565204098e-06
+"1166","Upper Columbia River Steelhead",NA,222,18,1.84672017367377e-05
+"1167","Upper Columbia River Steelhead",NA,223,159,0.000163126948674517
+"1168","Upper Columbia River Steelhead",NA,228,7819,0.00802194724330846
+"1169","Upper Columbia River Steelhead",NA,229,4,4.10382260816394e-06
+"1170","Upper Columbia River Steelhead",NA,237,288,0.000295475227787804
+"1171","Upper Columbia River Steelhead",NA,242,1294,0.00132758661374103
